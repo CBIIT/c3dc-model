@@ -3,12 +3,12 @@ Nodes:
   pdx: #27 jan 2023 pdunn
     Props: 
       - model_id
-      - model_type
       - mouse_strain
       - strain_immune_system_humanized
+      - implantation_type
+      - implantation_site
       - type_of_humanization
       - tumor_preparation
-      - injection_type_and_site
       - tumor_characterization_method
       - tumor_not_mus_or_ebv_origin
   clinical_measure_file: # 09.20.22 pdunn
@@ -25,16 +25,18 @@ Nodes:
       - checksum_value
       - file_mapping_level
       - participant_list
-  diagnosis: #09.20.22 pd
+  diagnosis:
     Props:
       - diagnosis_id
       - diagnosis_icd_o
       - diagnosis_icd_cm
       - diagnosis_finer_resolution
+      - disease_phase
       - primary_site
       - tissue_or_organ_of_origin
       - site_of_resection_or_biopsy
       - age_at_diagnosis
+      - vital_status
       - days_to_recurrence
       - last_known_disease_status
       - days_to_last_known_disease_status
@@ -45,13 +47,14 @@ Nodes:
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
       - tumor_morphology
-      - tumor_incidence_type # primary, metastatic, recurrence, progression
+     # - tumor_incidence_type # primary, metastatic, recurrence, progression
   sample_diagnosis:
     Props:
       - sample_diagnosis_id
       - diagnosis_icd_o
       - diagnosis_icd_cm
       - diagnosis_finer_resolution
+      - tumor_classification
       - primary_site
       - tissue_or_organ_of_origin
       - site_of_resection_or_biopsy
@@ -66,7 +69,7 @@ Nodes:
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
       - tumor_morphology
-      - tumor_incidence_type # primary, metastatic, recurrence, progression
+      #- tumor_incidence_type # primary, metastatic, recurrence, progression
   imaging_file: # 01.03.22 pdunn
     Props:
       - file_name
@@ -148,10 +151,13 @@ Nodes:
   study:
     Props:
       - phs_accession #dbGaP accession
+      - acl
       - study_name
       - study_short_title
       - study_acronym
       - study_description
+      - consent
+      - consent_shorthand
       - external_url
       - experimental_strategy_and_data_subtype
       - study_data_types
@@ -164,7 +170,6 @@ Nodes:
       - adult_or_childhood_study # adult, pediatric - needs review, there are many other facets of study type (interventional, longitudinal), should this be added after a query of study_subject.age
       - data_types # generate from a DB query of list of data_types vs. template based entry?, generate from a query of list from enumerated values
       - file_types_and_format # generate from a DB query of list of file extensions vs. template based entry?, list from enumerated values
-      - acl
       - number_of_participants
       - number_of_samples
   study_arm: # 09.21.22 pd
