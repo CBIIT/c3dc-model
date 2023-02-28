@@ -219,6 +219,12 @@ Terms:
     Code: 3225640
     Version: '2'
     Value: Patient Diagnosis Age Day Value
+  alive:
+    Origin: caDSR
+    Definition: 'Life; the organic phenomenon that distinguishes living organisms from nonliving ones.'
+    Code: 2580948
+    Version: '1'
+    Value: alive
   alternate_participant_id:
     Origin: caDSR
     Definition: A unique sequence of alphanumeric characters used to identify the
@@ -1203,6 +1209,12 @@ Terms:
     Code: 6154726
     Version: '1'
     Value: Index Date To Treatment Start Day Count
+  dead:
+    Origin: caDSR
+    Definition: 'The absence of life or state of being dead.'
+    Code: 2847328
+    Version: '1'
+    Value: dead   
   Descended testis:
     Origin: caDSR
     Definition: 'To travel downward.: Either of the paired male reproductive glands
@@ -1234,6 +1246,12 @@ Terms:
     Code: 11326261
     Version: '1'
     Value: Specimen Tumor Tissue ICD-O-3 Morphology Code
+  disease_phase:
+    Origin: caDSR
+    Definition: The stage or period of an individual's treatment process during which relevant observations were recorded.
+    Code: 12217251
+    Version: '1'
+    Value: Disease Phase
   Distant met recurrence/progression:
     Origin: caDSR
     Definition: 'Refers to cancer that has spread from the original (primary) tumor
@@ -2105,6 +2123,12 @@ Terms:
     Code: 6352164
     Version: '1'
     Value: Sequencing Library Platform Model Name
+  Initial_Diagnosis:
+    Origin: caDSR
+    Definition: The first diagnosis of the individual's condition.    
+    Code: 8002761
+    Version: '1'
+    Value: 8002761
   Intermediate Grade:
     Origin: caDSR
     Definition: A term referring to the degree of differentiation of a malignant neoplasm
@@ -2676,6 +2700,12 @@ Terms:
     Code: 6273405
     Version: '1'
     Value: Metagenomic
+  Metastatic:
+    Origin: caDSR  
+    Definition: A term referring to the clinical or pathologic observation of a tumor extension from its original site of growth to another anatomic site.
+    Code: 5189148
+    Version: '1'
+    Value: Metastatic
   Metastatic Tumor:
     Origin: caDSR
     Definition: A malignant tumor that has spread from its original (primary) site
@@ -3192,6 +3222,12 @@ Terms:
     Code: 4592313
     Version: '1'
     Value: No Measureable Tumor or Tumor Markers
+  not reported:
+    Origin: caDSR
+    Definition: 'Not provided or available.'
+    Code: 2572231
+    Version: '1'
+    Value: not reported
   No Response:
     Origin: caDSR
     Definition: No apparent change or worsening in tumor staging classification.
@@ -4383,6 +4419,12 @@ Terms:
     Code: 3698197
     Version: '1'
     Value: Prepuce
+  Primary:
+    Origin: caDSR
+    Definition: A tumor at the original site of origin.
+    Code: 5189150
+    Version: '1'
+    Value: Primary
   Primary Tumor:
     Origin: caDSR
     Definition: A tumor at the original site of origin.
@@ -4397,6 +4439,12 @@ Terms:
     Code: 6161019
     Version: '1'
     Value: ICD-O Primary Anatomic Site Category
+  Progression:
+    Origin: caDSR
+    Definition: The worsening of a disease over time
+    Code: 2816916
+    Version: '1'
+    Value: Progression
   progression_or_recurrence:
     Origin: caDSR
     Definition: Yes/No/Unknown indicator to identify whether a patient has had a new
@@ -4604,6 +4652,30 @@ Terms:
     Code: 6287908
     Version: '1'
     Value: Reduced Representation
+  Refractory:
+    Origin: caDSR
+    Definition: Not responding to treatment.
+    Code: 2566882
+    Version: '1'
+    Value: Refractory
+  Regional:
+    Origin: caDSR
+    Definition: A disease or condition that extends beyond the site and spreads into adjacent tissues and regional lymph nodes.
+    Code: 2971661
+    Version: '1'
+    Value: Regional
+  Relapse:
+    Origin: caDSR
+    Definition: The return of a disease after a period of remission.
+    Code: 3828963
+    Version: '1'
+    Value: Relapse
+  Relapse/Progression:
+    Origin: caDSR
+    Definition: Either the return of the disease or the progression of the disease.
+    Code: 12217248
+    Version: '1'
+    Value: Relapse/Progression
   Renal pelvis:
     Origin: caDSR
     Definition: The area at the center of the kidney. Urine collects here and is funneled
@@ -5697,6 +5769,12 @@ Terms:
     Code: 3071117
     Version: '1'
     Value: Neoplasm
+  tumor_classification:
+    Origin: caDSR
+    Definition: The classification of a tumor based primarily on histopathological characteristics.
+    Code: 12922545
+    Version: '1'
+    Value: Tumor Classification Type
   Tumor free:
     Origin: caDSR
     Definition: 'A benign or malignant tissue growth resulting from uncontrolled cell
@@ -5796,12 +5874,12 @@ Terms:
     Code: 7701743
     Version: '1'
     Value: Undescended Testes
-  Unknown:
+  unknown:
     Origin: caDSR
     Definition: Not known, not observed, not recorded, or refused.
-    Code: 5682953
+    Code: 2575365
     Version: '1'
-    Value: Unknown
+    Value: unknown
   Unknown primary site:
     Origin: caDSR
     Definition: Referring to the fact that the original site of growth of a metastatic
@@ -5822,12 +5900,12 @@ Terms:
     Code: 3623802
     Version: '1'
     Value: Tumor Unknown Status
-  Unspecified:
+  unspecified:
     Origin: caDSR
     Definition: Not stated explicitly or in detail.
     Code: 2573360
     Version: '1'
-    Value: Unspecified
+    Value: unspecified
   Upper Gum:
     Origin: caDSR
     Definition: The gingiva covering the maxillary alveolar bone.
@@ -6026,6 +6104,12 @@ Terms:
     Code: 6273402
     Version: '1'
     Value: Viral Small RNA
+  vital_status:
+    Origin: caDSR
+    Definition: The response to a question that describes a participant's survival status.
+    Code: 2847330
+    Version: '1'
+    Value: Vital Status
   Vulva:
     Origin: caDSR
     Definition: The external female genital organs, including the clitoris, vaginal
