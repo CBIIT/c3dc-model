@@ -1,117 +1,117 @@
 PropDefinitions:
-  #pdx
-  model_id:
-    Desc: The PDX model identifier.
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: true
-    Private: false
-  implantation_type:
-    Desc: How the xenograft was introduced into host.
-    Term:
-      - Origin: 'EMBL OLS OBI'
-        Code: 'OBI_0000426'
-        Value: Process which aims at introducing a compound or a mixture into a material entity (either biological entity or instrument) by relying on devices such as syringe or injector connection, attached or forced into a vascular system (veins of an organism or tubes of a machine) or in a tissue
-    Enum:
-      - 'injection'
-      - 'trocar'
-      - 'surgical'
-      - 'orthotopic'
-    Req: true
-    Private: false
-  implantation_site:
-    Desc: Anatomic site of xenograft.
-    Term:
-      - Origin: caDSR
-        Code: '12299653'
-        Value: Specimen Original Anatomic Site Uberon Name
-    Enum:
-      - 'tail vein'
-      - 'subcutaneous'
-      - 'renal capsule'
-      - 'subrenal capsule'
-      - 'muscle'
-      - 'mammary fat pad'
-      - 'intra peritoneal cavity'
-    Req: true
-    Private: false
-  mouse_strain:  
-    Desc: The host mouse strain to which the tumor is engrafted. May become an enum if terms are provided.
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: true
-    Private: false
-  strain_immune_system_humanized: 
-    Desc: Was the mouse host humanized?
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Enum:
-      - Yes
-      - No
-    Req: true
-    Private: false
-  type_of_humanization:
-    Desc: How the mouse host was humanized.
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: false
-    Private: false
-  tumor_preparation:
-    Desc: How the tumor was prepared for grafting.
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: false
-    Private: false
-  tumor_characterization_method:
-    Desc: How the tumor was evaluated in the mouse host. May become an enum if terms are provided.
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: false
-    Private: false 
-  tumor_not_mus_or_ebv_origin: 
-    Desc: Was tumor evaluated for having a mouse or EBV orgin?
-    Term:
-      - Origin: PubMedCentral
-        Code: 'PMC5738926'
-        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
-    Type: string
-    Req: false
-    Private: false  
-  #publication
-  pubmed_id:
-    Desc: The accession number used in PubMed.
-    Type: string
-    Req: true
-    Private: false
-    Key: true
-  #synonym
-  synonym_id:
-    Desc: The synonym of the id that is found in a different repository.
-    Type: string
-    Req: true
-    Private: false
-  repository_of_synonym_id:
-    Desc: The repository of the synonym.
-    Type: string
-    Req: true
-    Private: false
+#  #pdx
+#  model_id:
+#    Desc: The PDX model identifier.
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: true
+#    Private: false
+#  implantation_type:
+#    Desc: How the xenograft was introduced into host.
+#    Term:
+#      - Origin: 'EMBL OLS OBI'
+#        Code: 'OBI_0000426'
+#        Value: Process which aims at introducing a compound or a mixture into a material entity (either biological entity or instrument) by relying on devices such as syringe or injector connection, attached or forced into a vascular system (veins of an organism or tubes of a machine) or in a tissue
+#    Enum:
+#      - 'injection'
+#      - 'trocar'
+#      - 'surgical'
+#      - 'orthotopic'
+#    Req: true
+#    Private: false
+#  implantation_site:
+#    Desc: Anatomic site of xenograft.
+#    Term:
+#      - Origin: caDSR
+#        Code: '12299653'
+#        Value: Specimen Original Anatomic Site Uberon Name
+#    Enum:
+#      - 'tail vein'
+#      - 'subcutaneous'
+#      - 'renal capsule'
+#      - 'subrenal capsule'
+#      - 'muscle'
+#      - 'mammary fat pad'
+#      - 'intra peritoneal cavity'
+#    Req: true
+#    Private: false
+#  mouse_strain:  
+#    Desc: The host mouse strain to which the tumor is engrafted. May become an enum if terms are provided.
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: true
+#    Private: false
+#  strain_immune_system_humanized: 
+#    Desc: Was the mouse host humanized?
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Enum:
+#      - Yes
+#      - No
+#    Req: true
+#    Private: false
+#  type_of_humanization:
+#    Desc: How the mouse host was humanized.
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: false
+#    Private: false
+#  tumor_preparation:
+#    Desc: How the tumor was prepared for grafting.
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: false
+#    Private: false
+#  tumor_characterization_method:
+#    Desc: How the tumor was evaluated in the mouse host. May become an enum if terms are provided.
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: false
+#    Private: false 
+#  tumor_not_mus_or_ebv_origin: 
+#    Desc: Was tumor evaluated for having a mouse or EBV orgin?
+#    Term:
+#      - Origin: PubMedCentral
+#        Code: 'PMC5738926'
+#        Value: PDX-MI Minimal Information for Patient-Derived Tumor Xenograft Models
+#    Type: string
+#    Req: false
+#    Private: false  
+#  #publication
+#  pubmed_id:
+#    Desc: The accession number used in PubMed.
+#    Type: string
+#    Req: true
+#    Private: false
+#    Key: true
+#  #synonym
+#  synonym_id:
+#    Desc: The synonym of the id that is found in a different repository.
+#    Type: string
+#    Req: true
+#    Private: false
+#  repository_of_synonym_id:
+#    Desc: The repository of the synonym.
+#    Type: string
+#    Req: true
+#    Private: false
   # clinical_measure_file
   participant_list:
     Desc: The list of participant ids that are found in this clinical file. This is often used for files that have a large number of participants referenced within the file.
@@ -2478,27 +2478,27 @@ PropDefinitions:
       - Study
     Req: false
     Private: false    
-  # imaging file props
-  image_modality:
-    Desc: The method in which the images are generated.
-    Type: string
-    Req: true
-    Private: false
-  imaging_platform:
-    Desc: The words used to describe the instrument used to carry out an imaging experiment.
-    Type: String
-    Req: false
-    Private: false
-  imaging_instrument_model:
-    Desc: The words used to describe the specific model of the instrument used to carry out an imaging experiment.
-    Type: string
-    Req: true
-    Private: false    
-  software_package:
-    Desc: The name of the software package that was used.
-    Type: string
-    Req: true
-    Private: false
+#  # imaging file props
+#  image_modality:
+#    Desc: The method in which the images are generated.
+#    Type: string
+#    Req: true
+#    Private: false
+#  imaging_platform:
+#    Desc: The words used to describe the instrument used to carry out an imaging experiment.
+#    Type: String
+#    Req: false
+#    Private: false
+#  imaging_instrument_model:
+#    Desc: The words used to describe the specific model of the instrument used to carry out an imaging experiment.
+#    Type: string
+#    Req: true
+#    Private: false    
+#  software_package:
+#    Desc: The name of the software package that was used.
+#    Type: string
+#    Req: true
+#    Private: false
   # participant
   participant_id:
     Desc: A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
@@ -2567,17 +2567,7 @@ PropDefinitions:
       - "Not reported"
       - "Unknown" 
     Req: true
-    Private: false
-  consent:
-    Desc: The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
-    Type: string
-    Req: true
-    Private: false 
-  consent_shorthand:
-    Desc: The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
-    Type: string
-    Req: true
-    Private: false     
+    Private: false    
  # sample
   sample_id:
     Desc: A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
@@ -4364,297 +4354,297 @@ PropDefinitions:
       - Unspecified
     Req: true
     Private: false      
-  # sequencing_file props
-  library_id: # per dbGaP, library_id can be == sample_id if there is only 1 seq file per sample
-    Desc: Short unique identifier for the sequencing library.
-    Term:
-      - Origin: NCIt
-        Code: 'C175893'
-        Value: Sequencing Library Unique Identifier 
-    Type: string
-    Req: true
-    Private: false
-  library_strategy: 
-    Desc: The overall strategy for the collection of double stranded DNA fragments flanked by oligonucleotide sequence adapters to enable their analysis by high-throughput sequencing.
-    Term:
-      - Origin: caDSR
-        Code: '6273393'
-        Value: Sequencing Library Technique Type
-    Enum:
-      - "AMPLICON"
-      - "ATAC-seq"
-      - "Bisulfite-Seq"
-      - "ChIA-PET"
-      - "ChIP-Seq"
-      - "CLONE"
-      - "CLONEEND"
-      - "CTS"
-      - "DNase-Hypersensitivity"
-      - "EST"
-      - "FAIRE-seq"
-      - "FINISHING"
-      - "FL-cDNA"
-      - "Hi-C"
-      - "MBD-Seq"
-      - "MeDIP-Seq"
-      - "miRNA-Seq"
-      - "MNase-Seq"
-      - "MRE-Seq"
-      - "ncRNA-Seq"
-      - "Other"
-      - "POOLCLONE"
-      - "RAD-Seq"
-      - "RIP-Seq"
-      - "RNA-Seq"
-      - "SELEX"
-      - "ssRNA-seq"
-      - "Synthetic-Long-Read"
-      - "Targeted-Capture"
-      - "Tethered Chromatin Conformation Capture"
-      - "Tn-Seq"
-      - "Validation"
-      - "WCS"
-      - "WGA"
-      - "WGS"
-      - "WXS"
-    Req: true
-    Private: false
-  platform:
-    Desc: The words used to describe the instrument used to carry out a high-throughput sequencing experiment.
-    Term:
-      - Origin: caDSR
-        Code: '6347771'
-        Value: Sequencing Library Platform Name
-      - Origin: NCIt
-        Code: 'C172274'
-        Value: Sequencing Platform Name 
-    Enum:
-      - "AB Capillary"
-      - "ABI Solid"
-      - "BGISEQ"
-      - "Complete Genomics"
-      - "Helicos"
-      - "Illumina"
-      - "Ion Torrent"
-      - "LS 454"
-      - "Oxford Nanopore"
-      - "PacBio SMRT"
-    Req: true
-    Private: false    
-  instrument_model:
-    Desc: The words used to describe the specific model of the instrument used to carry out a high-throughput sequencing experiment.
-    Term:
-      - Origin: caDSR
-        Code: '6352164'
-        Value: Sequencing Library Platform Model Name
-    Enum:
-      - "454 GS"
-      - "454 GS 20"
-      - "454 GS FLX"
-      - "454 GS FLX Titanium"
-      - "454 GS FLX+"
-      - "454 GS Junior"
-      - "AB 310 Genetic Analyzer"
-      - "AB 3130 Genetic Analyzer"
-      - "AB 3130xL Genetic Analyzer"
-      - "AB 3500 Genetic Analyzer"
-      - "AB 3500xL Genetic Analyzer"
-      - "AB 3730 Genetic Analyzer"
-      - "AB 3730xL Genetic Analyzer"
-      - "AB SOLiD 2"
-      - "AB SOLiD 3"
-      - "AB SOLiD 4"
-      - "BGISEQ-500"
-      - "Complete Genomics"
-      - "GridION"
-      - "HeliScope"
-      - "HiSeq X Five"
-      - "HiSeq X Ten"
-      - "Illumina Genome Analyzer"
-      - "Illumina Genome Analyzer II"
-      - "Illumina Genome Analyzer IIx"
-      - "Illumina HiScanSQ"
-      - "Illumina HiSeq 1000"
-      - "Illumina HiSeq 1500"
-      - "Illumina HiSeq 2000"
-      - "Illumina HiSeq 2500"
-      - "Illumina HiSeq 3000"
-      - "Illumina HiSeq 4000"
-      - "Illumina HiSeq X Five"
-      - "Illumina HiSeq X Ten"
-      - "Illumina MiniSeq"
-      - "Illumina MiSeq"
-      - "Illumina NextSeq"
-      - "Illumina NovaSeq"
-      - "Ion Torrent PGM"
-      - "Ion Torrent Proton"
-      - "Ion Torrent S5"
-      - "Ion Torrent S5 XL"
-      - "MinION"
-      - "NextSeq 500"
-      - "NextSeq 550"
-      - "Not Reported"
-      - "Other"
-      - "PacBio RS"
-      - "PacBio RS II"
-      - "PromethION"
-      - "Unknown"
-    Req: true
-    Private: false    
-  library_layout: 
-    Desc: Paired-end or Single
-    Term:
-      - Origin: NCIt
-        Code: 'C175894'
-        Value: Sequencing Library Read Layout Indicator 
-    Enum:
-      - "Paired end"
-      - "Single end" #28feb22 pdunn
-      - "NA"  # 02/10/2022 adeforge, added this just to get past the loading error to see what happens next, will remove
-    Req: true
-    Private: false
-  library_source: # genomic, transcriptome, metagenomic, viral, synthetic; move from submission
-    Desc: The source of a sample collection of double stranded DNA fragments analyzed by high-throughput sequencing.
-    Term:
-      - Origin: caDSR
-        Code: '6285979'
-        Value: Sequencing Library Specimen Source
-      - Origin: NCIt
-        Code: 'C175895'
-        Value: Sequencing Library Source Indicator
-    Enum: #enum values in dbGaP are UC, in yaml, they are LC
-      - "Bulk cells"
-      - "Bulk nuclei"
-      - "Bulk tissue"
-      - "DNA"
-      - "Genomic Single Cell"
-      - "Metagenomic"
-      - "Metatranscriptomic"
-      - "Other"
-      - "RNA"
-      - "Single-cells"
-      - "Single-nuclei"
-      - "Synthetic"
-      - "Transcriptomic"
-      - "Transcriptomic Single Cell"
-      - "Viral RNA"
-      - "Genomic" #values from first DD version 08/18/2022
-      - "Viral" #values from first DD version 08/18/2022
-      - "NA"  # 02/10/2022 adeforge, added this just to get past the loading error to see what happens next, will remove
-    Req: true
-    Private: false
-  number_of_bp:
-    Desc: Count of unique basecalls present in the data. Please count each base only once if using secondary alignments.
-    Type: integer
-    Req: false
-    Private: false
-  number_of_reads:
-    Desc: Count of the number of reads in the data. Please count each read only once if using secondary alignments.
-    Term:
-      - Origin: NCIt
-        Code: 'C172300'
-        Value: Read Pair Number 
-    Type: integer
-    Req: false
-    Private: false
-  avg_read_length:
-    Desc: The number of nucleotides successfully ordered from each side of a
-      nucleic acid fragment obtained after the completion of a sequencing process.
-    Term:
-      - Origin: caDSR
-        Code: '6380354'
-        Value: Nucleotide Sequence Read Length Number
-    Type: number
-    Req: false
-    Private: false
-  coverage:
-    Desc: Depth of coverage on assembly used. Found by (Unique Aligned Basecalls)/(Reference Length).
-    Type: number
-    Req: false
-    Private: false
-  reference_genome_assembly:
-    Desc: A published genetic sequence that is used as a reference sequence against which other sequences are compared. This is only if you are submitting a bam file aligned against a NCBI assembly.
-    Term:
-      - Origin: NCIt
-        Code: 'C164388'
-        Value: Genetic Reference Sequence 
-    Type: string
-    Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
-    Private: false
-  custom_assembly_fasta_file_for_alignment:
-    Desc: The name of the custom assembly fasta file used during alignment.
-    Type: string
-    Req: false
-    Private: false    
-  sequence_alignment_software:
-    Desc: The name of the software program used to align nucleotide sequencing data. 
-    Term:
-      - Origin: NCIt
-        Code: 'C175896'
-        Value: Sequence Alignment Software Name 
-    Type: string
-    Req: false
-    Private: false    
-  library_selection:
-    Desc: The type of systematic actions performed to select or enrich DNA fragments used in analysis by high-throughput sequencing.
-    Term:
-      - Origin: caDSR
-        Code: '6347743'
-        Value: Sequencing Library Creation Method Type
-    Enum:
-      - RANDOM
-      - PCR
-      - RANDOM PCR
-      - RT-PCR
-      - HMPR
-      - MF
-      - CF-S
-      - CF-M
-      - CF-H
-      - CF-T
-      - MDA
-      - MSLL
-      - cDNA
-      - ChIP
-      - MNase
-      - DNAse
-      - Hybrid Selection
-      - Reduced Representation
-      - Restriction Digest
-      - 5-methylcytidine antibody
-      - MBD2 protein methyl-CpG binding domain
-      - CAGE
-      - RACE
-      - size fractionation
-      - Padlock probes capture method
-      - other
-      - unspecified
-      - cDNA_oligo_dT
-      - cDNA_randomPriming
-      - Inverse rRNA
-      - Oligo-dT
-      - PolyA
-      - repeat fractionation
-      - Affinity Enrichment
-      - cDNA oligo_dT
-      - cDNA random priming
-      - miRNA Size Fractionation
-      - Not applicable
-      - Other
-      - Poly-T Enrichment
-      - Random
-      - Random PCR
-      - Repeat fractionation
-      - rRNA Depletion
-      - Size fractionation
-      - Unspecified
-    Req: true
-    Private: false    
-  design_description:
-    Desc: Free-form description of the methods used to create the sequencing library; a brief 'materials and methods' section.
-    Type: string
-    Req: true
-    Private: false
+#  # sequencing_file props
+#  library_id: # per dbGaP, library_id can be == sample_id if there is only 1 seq file per sample
+#    Desc: Short unique identifier for the sequencing library.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C175893'
+#        Value: Sequencing Library Unique Identifier 
+#    Type: string
+#    Req: true
+#    Private: false
+#  library_strategy: 
+#    Desc: The overall strategy for the collection of double stranded DNA fragments flanked by oligonucleotide sequence adapters to enable their analysis by high-throughput sequencing.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6273393'
+#        Value: Sequencing Library Technique Type
+#    Enum:
+#      - "AMPLICON"
+#      - "ATAC-seq"
+#      - "Bisulfite-Seq"
+#      - "ChIA-PET"
+#      - "ChIP-Seq"
+#      - "CLONE"
+#      - "CLONEEND"
+#      - "CTS"
+#      - "DNase-Hypersensitivity"
+#      - "EST"
+#      - "FAIRE-seq"
+#      - "FINISHING"
+#      - "FL-cDNA"
+#      - "Hi-C"
+#      - "MBD-Seq"
+#      - "MeDIP-Seq"
+#      - "miRNA-Seq"
+#      - "MNase-Seq"
+#      - "MRE-Seq"
+#      - "ncRNA-Seq"
+#      - "Other"
+#      - "POOLCLONE"
+#      - "RAD-Seq"
+#      - "RIP-Seq"
+#      - "RNA-Seq"
+#      - "SELEX"
+#      - "ssRNA-seq"
+#      - "Synthetic-Long-Read"
+#      - "Targeted-Capture"
+#      - "Tethered Chromatin Conformation Capture"
+#      - "Tn-Seq"
+#      - "Validation"
+#      - "WCS"
+#      - "WGA"
+#      - "WGS"
+#      - "WXS"
+#    Req: true
+#    Private: false
+#  platform:
+#    Desc: The words used to describe the instrument used to carry out a high-throughput sequencing experiment.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6347771'
+#        Value: Sequencing Library Platform Name
+#      - Origin: NCIt
+#        Code: 'C172274'
+#        Value: Sequencing Platform Name 
+#    Enum:
+#      - "AB Capillary"
+#      - "ABI Solid"
+#      - "BGISEQ"
+#      - "Complete Genomics"
+#      - "Helicos"
+#      - "Illumina"
+#      - "Ion Torrent"
+#      - "LS 454"
+#      - "Oxford Nanopore"
+#      - "PacBio SMRT"
+#    Req: true
+#    Private: false    
+#  instrument_model:
+#    Desc: The words used to describe the specific model of the instrument used to carry out a high-throughput sequencing experiment.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6352164'
+#        Value: Sequencing Library Platform Model Name
+#    Enum:
+#      - "454 GS"
+#      - "454 GS 20"
+#      - "454 GS FLX"
+#      - "454 GS FLX Titanium"
+#      - "454 GS FLX+"
+#      - "454 GS Junior"
+#      - "AB 310 Genetic Analyzer"
+#      - "AB 3130 Genetic Analyzer"
+#      - "AB 3130xL Genetic Analyzer"
+#      - "AB 3500 Genetic Analyzer"
+#      - "AB 3500xL Genetic Analyzer"
+#      - "AB 3730 Genetic Analyzer"
+#      - "AB 3730xL Genetic Analyzer"
+#      - "AB SOLiD 2"
+#      - "AB SOLiD 3"
+#      - "AB SOLiD 4"
+#      - "BGISEQ-500"
+#      - "Complete Genomics"
+#      - "GridION"
+#      - "HeliScope"
+#      - "HiSeq X Five"
+#      - "HiSeq X Ten"
+#      - "Illumina Genome Analyzer"
+#      - "Illumina Genome Analyzer II"
+#      - "Illumina Genome Analyzer IIx"
+#      - "Illumina HiScanSQ"
+#      - "Illumina HiSeq 1000"
+#      - "Illumina HiSeq 1500"
+#      - "Illumina HiSeq 2000"
+#      - "Illumina HiSeq 2500"
+#      - "Illumina HiSeq 3000"
+#      - "Illumina HiSeq 4000"
+#      - "Illumina HiSeq X Five"
+#      - "Illumina HiSeq X Ten"
+#      - "Illumina MiniSeq"
+#      - "Illumina MiSeq"
+#      - "Illumina NextSeq"
+#      - "Illumina NovaSeq"
+#      - "Ion Torrent PGM"
+#      - "Ion Torrent Proton"
+#      - "Ion Torrent S5"
+#      - "Ion Torrent S5 XL"
+#      - "MinION"
+#      - "NextSeq 500"
+#      - "NextSeq 550"
+#      - "Not Reported"
+#      - "Other"
+#      - "PacBio RS"
+#      - "PacBio RS II"
+#      - "PromethION"
+#      - "Unknown"
+#    Req: true
+#    Private: false    
+#  library_layout: 
+#    Desc: Paired-end or Single
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C175894'
+#        Value: Sequencing Library Read Layout Indicator 
+#    Enum:
+#      - "Paired end"
+#      - "Single end" #28feb22 pdunn
+#      - "NA"  # 02/10/2022 adeforge, added this just to get past the loading error to see what happens next, will remove
+#    Req: true
+#    Private: false
+#  library_source: # genomic, transcriptome, metagenomic, viral, synthetic; move from submission
+#    Desc: The source of a sample collection of double stranded DNA fragments analyzed by high-throughput sequencing.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6285979'
+#        Value: Sequencing Library Specimen Source
+#      - Origin: NCIt
+#        Code: 'C175895'
+#        Value: Sequencing Library Source Indicator
+#    Enum: #enum values in dbGaP are UC, in yaml, they are LC
+#      - "Bulk cells"
+#      - "Bulk nuclei"
+#      - "Bulk tissue"
+#      - "DNA"
+#      - "Genomic Single Cell"
+#      - "Metagenomic"
+#      - "Metatranscriptomic"
+#      - "Other"
+#      - "RNA"
+#      - "Single-cells"
+#      - "Single-nuclei"
+#      - "Synthetic"
+#      - "Transcriptomic"
+#      - "Transcriptomic Single Cell"
+#      - "Viral RNA"
+#      - "Genomic" #values from first DD version 08/18/2022
+#      - "Viral" #values from first DD version 08/18/2022
+#      - "NA"  # 02/10/2022 adeforge, added this just to get past the loading error to see what happens next, will remove
+#    Req: true
+#    Private: false
+#  number_of_bp:
+#    Desc: Count of unique basecalls present in the data. Please count each base only once if using secondary alignments.
+#    Type: integer
+#    Req: false
+#    Private: false
+#  number_of_reads:
+#    Desc: Count of the number of reads in the data. Please count each read only once if using secondary alignments.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C172300'
+#        Value: Read Pair Number 
+#    Type: integer
+#    Req: false
+#    Private: false
+#  avg_read_length:
+#    Desc: The number of nucleotides successfully ordered from each side of a
+#      nucleic acid fragment obtained after the completion of a sequencing process.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6380354'
+#        Value: Nucleotide Sequence Read Length Number
+#    Type: number
+#    Req: false
+#    Private: false
+#  coverage:
+#    Desc: Depth of coverage on assembly used. Found by (Unique Aligned Basecalls)/(Reference Length).
+#    Type: number
+#    Req: false
+#    Private: false
+#  reference_genome_assembly:
+#    Desc: A published genetic sequence that is used as a reference sequence against which other sequences are compared. This is only if you are submitting a bam file aligned against a NCBI assembly.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C164388'
+#        Value: Genetic Reference Sequence 
+#    Type: string
+#    Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
+#    Private: false
+#  custom_assembly_fasta_file_for_alignment:
+#    Desc: The name of the custom assembly fasta file used during alignment.
+#    Type: string
+#    Req: false
+#    Private: false    
+#  sequence_alignment_software:
+#    Desc: The name of the software program used to align nucleotide sequencing data. 
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C175896'
+#        Value: Sequence Alignment Software Name 
+#    Type: string
+#    Req: false
+#    Private: false    
+#  library_selection:
+#    Desc: The type of systematic actions performed to select or enrich DNA fragments used in analysis by high-throughput sequencing.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6347743'
+#        Value: Sequencing Library Creation Method Type
+#    Enum:
+#      - RANDOM
+#      - PCR
+#      - RANDOM PCR
+#      - RT-PCR
+#      - HMPR
+#      - MF
+#      - CF-S
+#      - CF-M
+#      - CF-H
+#      - CF-T
+#      - MDA
+#      - MSLL
+#      - cDNA
+#      - ChIP
+#      - MNase
+#      - DNAse
+#      - Hybrid Selection
+#      - Reduced Representation
+#      - Restriction Digest
+#      - 5-methylcytidine antibody
+#      - MBD2 protein methyl-CpG binding domain
+#      - CAGE
+#      - RACE
+#      - size fractionation
+#      - Padlock probes capture method
+#      - other
+#      - unspecified
+#      - cDNA_oligo_dT
+#      - cDNA_randomPriming
+#      - Inverse rRNA
+#      - Oligo-dT
+#      - PolyA
+#      - repeat fractionation
+#      - Affinity Enrichment
+#      - cDNA oligo_dT
+#      - cDNA random priming
+#      - miRNA Size Fractionation
+#      - Not applicable
+#      - Other
+#      - Poly-T Enrichment
+#      - Random
+#      - Random PCR
+#      - Repeat fractionation
+#      - rRNA Depletion
+#      - Size fractionation
+#      - Unspecified
+#    Req: true
+#    Private: false    
+#  design_description:
+#    Desc: Free-form description of the methods used to create the sequencing library; a brief 'materials and methods' section.
+#    Type: string
+#    Req: true
+#    Private: false
   # study
   phs_accession:
     Desc: A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP). 
@@ -4676,6 +4666,25 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  acl: #populated from a dbGAP query?
+    Desc: Specifies whether the data in a repository is open access or controlled access. 
+    Term:
+      - Origin: NCIt
+        Code: 'C175887'
+        Value: Open or Controlled Data Access Indicator 
+    Type: string
+    Req: true
+    Private: false  
+  consent:
+    Desc: The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
+    Type: string
+    Req: true
+    Private: false 
+  consent_shorthand:
+    Desc: The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
+    Type: string
+    Req: true
+    Private: false   
   study_description:
     Desc: The long form description of the study.
     Type: string
@@ -4753,63 +4762,54 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false       
-  # study_admin
-  study_admin_id:
-    Desc: A unique sequence of alphanumeric characters used to identify the admin in the investigation or study, which is used for linking metadata.
-    Type: string
-    Req: true
-    Private: false
-    Key: true
-  organism_species:
-    Desc: The organism from which the sample is derived or originated.
-    Term:
-      - Origin: caDSR
-        Code: '6118266'
-        Value: Sample Organism Type
-      - Origin: NCIt
-        Code: 'C14250'
-        Value: Organism 
-    Enum:
-      - 'Canine'
-      - 'Cell Line'
-      - 'Human'
-      - 'Mouse'
-    Req: true
-    Private: false
-  adult_or_childhood_study: # adult, pediatric - needs review, there are many other facets of study type (interventional, longitudinal), should this be added after a query of study_subject.age
-    Desc: Specifies whether a study is using adults and/or children as subjects. 
-    Term:
-      - Origin: NCIt
-        Code: 'C175884'
-        Value: Adult and/or Child Study Indicator
-    Enum:
-      - "Adult"
-      - "Pediatric"
-    Req: true
-    Private: false
-  data_types: # generate from a DB query of list of data_types vs. template based entry?, generate from a query of list from enumerated values
-    Desc: The types of data files that can be found in the study.
-    Type: string
-    Req: false
-    Private: false
-  file_types_and_format: # generate from a DB query of list of file extensions vs. template based entry?, list from enumerated values
-    Desc: Specific kind of files in the dataset that will be uploaded to the study.
-    Term:
-      - Origin: NCIt
-        Code: 'C171252'
-        Value: Electronic File Format 
-    Type: string
-    Req: false
-    Private: false
-  acl: #populated from a dbGAP query?
-    Desc: Specifies whether the data in a repository is open access or controlled access. 
-    Term:
-      - Origin: NCIt
-        Code: 'C175887'
-        Value: Open or Controlled Data Access Indicator 
-    Type: string
-    Req: true
-    Private: false
+#  # study_admin
+#  study_admin_id:
+#    Desc: A unique sequence of alphanumeric characters used to identify the admin in the investigation or study, which is used for linking metadata.
+#    Type: string
+#    Req: true
+#    Private: false
+#    Key: true
+#  organism_species:
+#    Desc: The organism from which the sample is derived or originated.
+#    Term:
+#      - Origin: caDSR
+#        Code: '6118266'
+#        Value: Sample Organism Type
+#      - Origin: NCIt
+#        Code: 'C14250'
+#        Value: Organism 
+#    Enum:
+#      - 'Canine'
+#      - 'Cell Line'
+#      - 'Human'
+#      - 'Mouse'
+#    Req: true
+#    Private: false
+#  adult_or_childhood_study: # adult, pediatric - needs review, there are many other facets of study type (interventional, longitudinal), should this be added after a query of study_subject.age
+#    Desc: Specifies whether a study is using adults and/or children as subjects. 
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C175884'
+#        Value: Adult and/or Child Study Indicator
+#    Enum:
+#      - "Adult"
+#      - "Pediatric"
+#    Req: true
+#    Private: false
+#  data_types: # generate from a DB query of list of data_types vs. template based entry?, generate from a query of list from enumerated values
+#    Desc: The types of data files that can be found in the study.
+#    Type: string
+#    Req: false
+#    Private: false
+#  file_types_and_format: # generate from a DB query of list of file extensions vs. template based entry?, list from enumerated values
+#    Desc: Specific kind of files in the dataset that will be uploaded to the study.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C171252'
+#        Value: Electronic File Format 
+#    Type: string
+#    Req: false
+#    Private: false
 #  bioproject_accession:
 #    Desc: An alphanumeric identifier (PRJ accession number) assigned to a collection of experimental data associated with a project by the National Center for Biotechnology Information (NCBI) BioProject repository.
 #    Term:
@@ -4819,26 +4819,27 @@ PropDefinitions:
 #    Type: string
 #    Req: false
 #    Private: false    
-  # study_funding
-  funding_agency: # 0 or many per study
-    Desc: An organization/Sponsor that underwrites financial support for projects of a particular type. Typically, they process applications and award funds to the chosen qualified applicants.
-    Term:
-      - Origin: NCIt
-        Code: 'C39409'
-        Value: Funding Agency 
-    Type: string
-    Req: true
-    Private: false
-  grant_id: #grant or contract ID, NIH or other
-    Desc: Unique alphanumeric Identifier of a grant funding resource used to treat a patient on a study.
-    Term:
-      - Origin: caDSR
-        Code: '3434057'
-        Value: Grant Funding Identifier Number
-    Type: string
-    Req: true
-    Private: false
-    Key: true
+#  # study_funding
+#  funding_agency: # 0 or many per study
+#    Desc: An organization/Sponsor that underwrites financial support for projects of a particular type. Typically, they process applications and award funds to the chosen qualified applicants.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C39409'
+#        Value: Funding Agency 
+#    Type: string
+#    Req: true
+#    Private: false
+#  grant_id: #grant or contract ID, NIH or other
+#    Desc: Unique alphanumeric Identifier of a grant funding resource used to treat a patient on a study.
+#    Term:
+#      - Origin: caDSR
+#        Code: '3434057'
+#        Value: Grant Funding Identifier Number
+#    Type: string
+#    Req: true
+#    Private: false
+#    Key: true
+  #study_arm
   clinical_trial_arm:
     Desc: ARM of the clinical trial.
     Type: string
@@ -4859,46 +4860,46 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false    
-  funding_source_program_name:
-    Desc: The name of the program that is providing funding.
-    Term:
-      - Origin: NCIt
-        Code: 'C166274'
-        Value: Program Name 
-    Type: string
-    Req: false
-    Private: false    
-  # study_personnel
-  study_personnel_id:  # 02/03/2022 adeforge, used to be 'study_personnel_ID'
-    Desc: A unique sequence of alphanumeric characters used to identify the personnel in the investigation or study, which is used for linking metadata.
-    Type: string
-    Req: true
-    Private: false
-    Key: true
-  personnel_name:
-    Desc: The name of personnel who is an organizer in the study.
-    Type: string
-    Req: true
-    Private: false
-  personnel_type: #enum: PI, Co-PI, Data Submitter, etc
-    Desc: The role of personnel in the study.
-    Enum:
-      - "PI"
-      - "Co-PI"
-      - "Data Submitter" # these? 01/26/2022 adeforge
-      - "Data Manager"  # 02/22/2022 adeforge, is this different from a 'Data Submitter'?
-    Req: true
-    Private: false
-  email_address:
-    Desc: The email address of the personnel.
-    Type: string
-    Req: true
-    Private: false
-  institution:
-    Desc: The institution of the personnel.
-    Type: string
-    Req: true  # 28feb22 pdunn
-    Private: false
+#  funding_source_program_name:
+#    Desc: The name of the program that is providing funding.
+#    Term:
+#      - Origin: NCIt
+#        Code: 'C166274'
+#        Value: Program Name 
+#    Type: string
+#    Req: false
+#    Private: false    
+#  # study_personnel
+#  study_personnel_id:  # 02/03/2022 adeforge, used to be 'study_personnel_ID'
+#    Desc: A unique sequence of alphanumeric characters used to identify the personnel in the investigation or study, which is used for linking metadata.
+#    Type: string
+#    Req: true
+#    Private: false
+#    Key: true
+#  personnel_name:
+#    Desc: The name of personnel who is an organizer in the study.
+#    Type: string
+#    Req: true
+#    Private: false
+#  personnel_type: #enum: PI, Co-PI, Data Submitter, etc
+#    Desc: The role of personnel in the study.
+#    Enum:
+#      - "PI"
+#      - "Co-PI"
+#      - "Data Submitter" # these? 01/26/2022 adeforge
+#      - "Data Manager"  # 02/22/2022 adeforge, is this different from a 'Data Submitter'?
+#    Req: true
+#    Private: false
+#  email_address:
+#    Desc: The email address of the personnel.
+#    Type: string
+#    Req: true
+#    Private: false
+#  institution:
+#    Desc: The institution of the personnel.
+#    Type: string
+#    Req: true  # 28feb22 pdunn
+#    Private: false
   #therapeutic_procedure
   therapeutic_agents:
     Desc: Text identification of the individual agent(s) used as part of a prior treatment regimen.
@@ -9523,13 +9524,14 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
-  methylation_platform:
-    Desc: The words used to describe the instrument used to carry out a methylation experiment.
-    Type: string
-    Req: true
-    Private: false
-  reporter_label:
-    Desc: The class of tags used in the methylation experiment.
-    Type: string
-    Req: true
-    Private: false
+    #methylation_array_file
+#  methylation_platform:
+#    Desc: The words used to describe the instrument used to carry out a methylation experiment.
+#    Type: string
+#    Req: true
+#    Private: false
+#  reporter_label:
+#    Desc: The class of tags used in the methylation experiment.
+#    Type: string
+#    Req: true
+#    Private: false
