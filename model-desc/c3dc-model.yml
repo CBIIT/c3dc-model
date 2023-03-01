@@ -1,16 +1,5 @@
 Handle: CDA
 Nodes:
-#  pdx: #27 jan 2023 pdunn
-#    Props: 
-#      - model_id
-#      - mouse_strain
-#      - strain_immune_system_humanized
-#      - implantation_type
-#      - implantation_site
-#      - type_of_humanization
-#      - tumor_preparation
-#      - tumor_characterization_method
-#      - tumor_not_mus_or_ebv_origin
   clinical_measure_file: # 09.20.22 pdunn
     Props:
       # - file_id #system generated GUID/PK
@@ -47,7 +36,6 @@ Nodes:
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
       - tumor_morphology
-     # - tumor_incidence_type # primary, metastatic, recurrence, progression
   sample_diagnosis:
     Props:
       - sample_diagnosis_id
@@ -69,36 +57,6 @@ Nodes:
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
       - tumor_morphology
-      #- tumor_incidence_type # primary, metastatic, recurrence, progression
-#  imaging_file: # 01.03.22 pdunn
-#    Props:
-#      - file_name
-#      - file_type
-#      - file_description
-#      - file_size
-#      - md5sum
-#      - file_url_in_cds
-#      - dcf_indexd_guid
-#      - image_modality
-#      # - platform redundant with imaging_platform
-#      - imaging_instrument_model
-#      - software_package
-#      - imaging_platform
-#      - checksum_algorithm
-#      - checksum_value
-#      - file_mapping_level
-#  methylation_array_file: # 09.20.22 pd
-#    Props:
-#      - file_name
-#      - file_type
-#      - file_description
-#      - file_size
-#      - md5sum
-#      - file_url_in_cds
-#      - dcf_indexd_guid
-#      - file_mapping_level
-#      - methylation_platform
-#      - reporter_label
   participant:
     Props:
       - participant_id
@@ -107,9 +65,6 @@ Nodes:
       - ethnicity
       - alternate_participant_id
       # - dbgap_subject_id : store in synonym
-#  publication: # 09.20.22 pd
-#     Props:
-#      - pubmed_id
   sample:
     Props:
       - sample_id
@@ -120,34 +75,6 @@ Nodes:
       - sample_tumor_status
       - sample_description
       - alternate_sample_id
-#  sequencing_file: # 01.03.22 pdunn
-#    Props:
-#      # - file_id #system generated GUID/PK
-#      - file_name
-#      - file_type
-#      - file_description
-#      - file_size
-#      - md5sum
-#      - file_url_in_cds
-#      - dcf_indexd_guid
-#      - library_id # sra req'd
-#      - library_selection # sra req'd
-#      - library_strategy  # sra req'd
-#      - library_layout  # sra req'd # paired end, single, moved from submission
-#      - library_source  # sra req'd # genomic, transcriptome, metagenomic, viral, synthetic; move from submission
-#      - number_of_bp  # sra req'd
-#      - number_of_reads  # sra req'd
-#      - design_description
-#      - platform
-#      - instrument_model
-#      - avg_read_length # sra req'd
-#      - coverage  # sra req'd
-#      - reference_genome_assembly  # sra req'd
-#      - checksum_algorithm
-#      - checksum_value
-#      - custom_assembly_fasta_file_for_alignment
-#      - file_mapping_level
-#      - sequence_alignment_software
   study:
     Props:
       - phs_accession #dbGaP accession
@@ -163,36 +90,11 @@ Nodes:
       - study_data_types
       - size_of_data_being_uploaded
       # - bioproject_accession : store in synonym
-#  study_admin:
-#    Props:
-#      - study_admin_id
-#      - organism_species
-#      - adult_or_childhood_study # adult, pediatric - needs review, there are many other facets of study type (interventional, longitudinal), should this be added after a query of study_subject.age
-#      - data_types # generate from a DB query of list of data_types vs. template based entry?, generate from a query of list from enumerated values
-#      - file_types_and_format # generate from a DB query of list of file extensions vs. template based entry?, list from enumerated values
-#      - number_of_participants
-#      - number_of_samples
   study_arm: # 09.21.22 pd
     Props:
       - clinical_trial_arm
       - clinical_trial_identifier
       - clinical_trial_repository
-#  study_funding: # 0 or many grant or contract IDs
-#    Props: 
-#      - funding_agency # 0 or many per study
-#      - grant_id #grant or contract ID, NIH or other
-#      - funding_source_program_name
-#  study_personnel:
-#    Props:
-#      - study_personnel_id  # 02/03/2022 adeforge, used to be 'study_personnel_ID'
-#      - personnel_name
-#      - personnel_type #enum: PI, Co-PI, Data Submitter, etc
-#      - email_address
-#      - institution
-#  synonym:  # 09.20.22 pd, nee alias
-#     Props:
-#      - synonym_id #the alternate or alias id in another repo
-#      - repository_of_synonym_id #the name of the other repo
   therapeutic_procedure:
     Props:
       - treatment_id
@@ -201,12 +103,6 @@ Nodes:
       - treatment_outcome
       - treatment_type
 Relationships:
-#  of_pdx: #27jan2023 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: pdx
-#        Dst: sample
   of_clinical_measure_file: # #09.20.22 pd
     Props: null
     Mul: many_to_one 
@@ -231,18 +127,6 @@ Relationships:
     Ends:
       - Src: sample_diagnosis
         Dst: sample        
-#  of_imaging_file: #09.20.22 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: imaging_file
-#        Dst: sample
-#  of_methylation_array_file: # 09.20.22 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: methylation_array_file
-#        Dst: sample
   of_participant: #09.20.22 pd
     Props: null
     Mul: many_to_one #will need to mod this to many_to_many if a participant is in >1 study
@@ -251,12 +135,6 @@ Relationships:
         Dst: study_arm
       - Src: participant
         Dst: study
-#  of_publication: # 09.20.22 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#     - Src: publication
-#       Dst: study
   of_sample: 
     Props: null
     Mul: many_to_one
@@ -265,50 +143,15 @@ Relationships:
         Dst: participant
       - Src: sample
         Dst: study
-#  of_sequencing_file: #09.20.22 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: sequencing_file
-#        Dst: sample
-#  of_study_admin: 
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: study_admin
-#        Dst: study
   of_study_arm: # 09.21.22 pd
     Props: null
     Mul: many_to_one
     Ends:
       - Src: study_arm
         Dst: study
-#  of_study_funding: 
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: study_funding  
-#        Dst: study
-#  of_study_personnel:
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: study_personnel  
-#        Dst: study     
   of_therapeutic_procedure: # 09.07.22 svburke
     Props: null
     Mul: many_to_many
     Ends:
       - Src: therapeutic_procedure
         Dst: participant
-#  of_synonym: # 09.20.22 pd
-#    Props: null
-#    Mul: many_to_one
-#    Ends:
-#      - Src: synonym
-#        Dst: participant
-#      - Src: synonym
-#        Dst: sample
-#      - Src: synonym
-#        Dst: study
- 
