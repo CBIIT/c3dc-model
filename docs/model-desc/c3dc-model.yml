@@ -1,8 +1,19 @@
 Handle: CDA
 Nodes:
+  follow_up:
+    Props:
+      - follow_up_id
+      - days_to_follow_up 
+      - follow_up_category
+      - adverse_event
+      - comorbidity
+      - comorbidity_method_of_diagnosis
+      - disease_response
+      - risk_factor
+      - follow_up_other
   clinical_measure_file: # 09.20.22 pdunn
     Props:
-      # - file_id #system generated GUID/PK
+      - clinical_measure_file_id
       - file_name
       - file_type
       - file_description
@@ -21,42 +32,90 @@ Nodes:
       - diagnosis_icd_cm
       - diagnosis_finer_resolution
       - disease_phase
-      - primary_site
-      - tissue_or_organ_of_origin
-      - site_of_resection_or_biopsy
+      - anatomic_site
       - age_at_diagnosis
       - vital_status
+      - toronto_childhood_cancer_staging
       - days_to_recurrence
       - last_known_disease_status
       - days_to_last_known_disease_status
       - days_to_last_followup
-      - progression_or_recurrence
       - tumor_grade
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-      - tumor_morphology
-  sample_diagnosis:
+  exposure:
     Props:
-      - sample_diagnosis_id
-      - diagnosis_icd_o
-      - diagnosis_icd_cm
-      - diagnosis_finer_resolution
-      - tumor_classification
-      - primary_site
-      - tissue_or_organ_of_origin
-      - site_of_resection_or_biopsy
-      - age_at_diagnosis
-      - days_to_recurrence
-      - last_known_disease_status
-      - days_to_last_known_disease_status
-      - days_to_last_followup
-      - progression_or_recurrence   
-      - tumor_grade
-      - tumor_stage_clinical_t
-      - tumor_stage_clinical_n
-      - tumor_stage_clinical_m
-      - tumor_morphology
+      - exposure_id
+      - start_days_from_index
+      - pack_years_smoked
+      - years_smoked
+      - alcohol_days_per_week
+      - alcohol_drinks_per_day
+      - alcohol_history
+      - alcohol_intensity
+      - asbestos_exposure
+      - cigarettes_per_day
+      - coal_dust_exposure
+      - environmental_tobacco_smoke_exposure
+      - radon_exposure
+      - respirable_crystalline_silica_exposure
+      - smoking_frequency
+      - time_between_waking_and_first_smoke
+      - tobacco_smoking_onset_year
+      - tobacco_smoking_quit_year
+      - tobacco_smoking_status
+      - type_of_smoke_exposure
+      - type_of_tobacco_used
+  family_relationship:
+    Props:
+      - family_relationship_id
+      - related_to_participant_id
+      - relationship
+      - family_id
+  medical_history:
+    Props:
+      - medical_history_id
+      - medical_history_category
+      - medical_history_condition
+  molecular_test:
+    Props:
+      - molecular_test_id
+      - start_days_from_index
+      - gene_symbol
+      - molecular_analysis_method
+      - test_result
+      - aa_change
+      - antigen
+      - biospecimen_type
+      - blood_test_normal_range_upper
+      - blood_test_normal_range_lower
+      - cell_count
+      - chromosome
+      - copy_number
+      - cytoband
+      - exon
+      - histone_family
+      - histone_variant
+      - intron
+      - laboratory_test
+      - loci_abnormal_count
+      - loci_count
+      - locus
+      - mismatch_repair_mutation
+      - molecular_consequence
+      - pathogenicity
+      - ploidy
+      - second_exon
+      - second_gene_symbol
+      - specialized_molecular_test
+      - test_analyte_type
+      - test_units
+      - test_value
+      - transcript
+      - variant_origin
+      - variant_type
+      - zygosity  
   participant:
     Props:
       - participant_id
@@ -65,18 +124,45 @@ Nodes:
       - ethnicity
       - alternate_participant_id
       # - dbgap_subject_id : store in synonym
+  pdx: #27jan2023 pdunn
+    Props: 
+      - pdx_id
+      - model_id
+      - mouse_strain
+      - strain_immune_system_humanized
+      - implantation_type
+      - implantation_site
+      - type_of_humanization
+      - tumor_preparation
+      - tumor_characterization_method
+      - tumor_not_mus_or_ebv_origin
   sample:
     Props:
       - sample_id
       # - biosample_accession captured in synonym
       - sample_type 
-      - sample_anatomic_site
+      - anatomic_site
       - participant_age_at_collection # 28.02.22 pdunn
       - sample_tumor_status
       - sample_description
       - alternate_sample_id
+  sample_diagnosis:
+    Props:
+      - sample_diagnosis_id
+      - diagnosis_icd_o
+      - diagnosis_icd_cm
+      - diagnosis_finer_resolution
+      - tumor_classification
+      - last_known_disease_status
+      - days_to_last_known_disease_status
+      - days_to_last_followup
+      - tumor_grade
+      - tumor_stage_clinical_t
+      - tumor_stage_clinical_n
+      - tumor_stage_clinical_m
   study:
     Props:
+      - study_id
       - phs_accession #dbGaP accession
       - acl
       - study_name
@@ -90,18 +176,27 @@ Nodes:
       - study_data_types
       - size_of_data_being_uploaded
       # - bioproject_accession : store in synonym
-  study_arm: # 09.21.22 pd
+  study_admin:
     Props:
-      - clinical_trial_arm
-      - clinical_trial_identifier
-      - clinical_trial_repository
+      - study_admin_id
+      - organism_species
+      - adult_or_childhood_study # adult, pediatric - needs review, there are many other facets of study type (interventional, longitudinal), should this be added after a query of study_subject.age
+      - data_types # generate from a DB query of list of data_types vs. template based entry?, generate from a query of list from enumerated values
+      - file_types_and_format # generate from a DB query of list of file extensions vs. template based entry?, list from enumerated values
+      - number_of_participants
+      - number_of_samples
+  synonym:  # 09.20.22 pd, nee alias
+     Props:
+      - synonym_id #the alternate or alias id in another repo
+      - repository_of_synonym_id #the name of the other repo
   therapeutic_procedure:
     Props:
-      - treatment_id
-      - days_to_treatment
-      - therapeutic_agents
+      - therapeutic_procedure_id
+      - days_to_treatment_start
+      - days_to_treatment_end
       - treatment_outcome
       - treatment_type
+      - therapeutic_agents
 Relationships:
   of_clinical_measure_file: # #09.20.22 pd
     Props: null
@@ -121,20 +216,48 @@ Relationships:
     Ends:
       - Src: diagnosis
         Dst: participant
-  of_sample_diagnosis: 
+  of_exposure:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: sample_diagnosis
-        Dst: sample        
+      - Src: exposure
+        Dst: participant
+  of_family_relationship:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: family_relationship
+        Dst: participant      
+  of_follow_up:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: follow_up
+        Dst: participant
+  of_medical_history:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: medical_history
+        Dst: participant
+  of_molecular_test:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: molecular_test
+        Dst: participant
   of_participant: #09.20.22 pd
     Props: null
     Mul: many_to_one #will need to mod this to many_to_many if a participant is in >1 study
     Ends:
       - Src: participant
-        Dst: study_arm
-      - Src: participant
         Dst: study
+  of_pdx: #27jan2023 pd
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: pdx
+        Dst: sample
   of_sample: 
     Props: null
     Mul: many_to_one
@@ -143,15 +266,32 @@ Relationships:
         Dst: participant
       - Src: sample
         Dst: study
-  of_study_arm: # 09.21.22 pd
+  of_sample_diagnosis: 
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: study_arm
-        Dst: study
+      - Src: sample_diagnosis
+        Dst: sample  
+  of_study_admin: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: study_admin
+        Dst: study 
   of_therapeutic_procedure: # 09.07.22 svburke
     Props: null
     Mul: many_to_many
     Ends:
       - Src: therapeutic_procedure
         Dst: participant
+  of_synonym: # 09.20.22 pd
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: synonym
+        Dst: participant
+      - Src: synonym
+        Dst: sample
+      - Src: synonym
+        Dst: study
+ 
