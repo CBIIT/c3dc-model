@@ -283,8 +283,6 @@ Relationships:
     Mul: many_to_many
     Ends:
       - Src: therapeutic_procedure
-        Dst: sample
-      - Src: therapeutic_procedure
         Dst: participant
   of_synonym: # 09.20.22 pd
     Props: null
