@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit eb19288
+commit 378d21e
 node	property	value_or_TYPE
 clinical_measure_file	checksum_algorithm	STRING
 clinical_measure_file	checksum_value	STRING
@@ -11,7 +11,7 @@ clinical_measure_file	file_mapping_level	Sample
 clinical_measure_file	file_mapping_level	Study
 clinical_measure_file	file_name	STRING
 clinical_measure_file	file_size	STRING
-clinical_measure_file	file_type	ARRAY(0x561abfa290a8)
+clinical_measure_file	file_type	ARRAY(0x557bac0be4a0)
 clinical_measure_file	file_type	string
 clinical_measure_file	file_url_in_cds	STRING
 clinical_measure_file	md5sum	STRING
@@ -1675,24 +1675,24 @@ diagnosis	vital_status	Unknown
 diagnosis	vital_status	Unspecified
 exposure	alcohol_days_per_week	INTEGER
 exposure	alcohol_drinks_per_day	INTEGER
-exposure	alcohol_history	ARRAY(0x561abfa40b68)
+exposure	alcohol_history	ARRAY(0x557bac098e40)
 exposure	alcohol_history	string
-exposure	alcohol_intensity	ARRAY(0x561abf9f8348)
+exposure	alcohol_intensity	ARRAY(0x557bac0c7178)
 exposure	alcohol_intensity	string
-exposure	asbestos_exposure	ARRAY(0x561abfa414b0)
+exposure	asbestos_exposure	ARRAY(0x557bac141ea8)
 exposure	asbestos_exposure	string
 exposure	cigarettes_per_day	INTEGER
-exposure	coal_dust_exposure	ARRAY(0x561abfa6ad98)
+exposure	coal_dust_exposure	ARRAY(0x557bac0b9340)
 exposure	coal_dust_exposure	string
-exposure	environmental_tobacco_smoke_exposure	ARRAY(0x561abfa0a180)
+exposure	environmental_tobacco_smoke_exposure	ARRAY(0x557bac15d640)
 exposure	environmental_tobacco_smoke_exposure	string
 exposure	exposure_id	STRING
 exposure	pack_years_smoked	INTEGER
-exposure	radon_exposure	ARRAY(0x561abfa0d7a0)
+exposure	radon_exposure	ARRAY(0x557bac09d190)
 exposure	radon_exposure	string
-exposure	respirable_crystalline_silica_exposure	ARRAY(0x561abfa06de8)
+exposure	respirable_crystalline_silica_exposure	ARRAY(0x557babc82e78)
 exposure	respirable_crystalline_silica_exposure	string
-exposure	smoking_frequency	ARRAY(0x561abfa27020)
+exposure	smoking_frequency	ARRAY(0x557bac0a4eb8)
 exposure	smoking_frequency	string
 exposure	start_days_from_index	INTEGER
 exposure	time_between_waking_and_first_smoke	31-60 Minutes
@@ -1769,7 +1769,7 @@ exposure	years_smoked	INTEGER
 family_relationship	family_id	STRING
 family_relationship	family_relationship_id	STRING
 family_relationship	related_to_participant_id	STRING
-family_relationship	relationship	ARRAY(0x561abfa3a988)
+family_relationship	relationship	ARRAY(0x557bac17c6c0)
 family_relationship	relationship	string
 follow_up	adverse_event	Abdominal Distension
 follow_up	adverse_event	Abdominal Infection
@@ -2854,15 +2854,15 @@ follow_up	risk_factor	Undescended Testis
 follow_up	risk_factor	Unknown
 follow_up	risk_factor	Vision Changes
 follow_up	risk_factor	Wagr Syndrome
-medical_history	medical_history_category	ARRAY(0x561abfa3a9a0)
+medical_history	medical_history_category	ARRAY(0x557bac170440)
 medical_history	medical_history_category	string
-medical_history	medical_history_condition	ARRAY(0x561abfa37b38)
+medical_history	medical_history_condition	ARRAY(0x557bac137918)
 medical_history	medical_history_condition	string
 medical_history	medical_history_id	STRING
 molecular_test	aa_change	STRING
-molecular_test	antigen	ARRAY(0x561abfa0d1a0)
+molecular_test	antigen	ARRAY(0x557bac0c0d60)
 molecular_test	antigen	string
-molecular_test	biospecimen_type	ARRAY(0x561abfa35ab0)
+molecular_test	biospecimen_type	ARRAY(0x557bac15d1a8)
 molecular_test	biospecimen_type	string
 molecular_test	blood_test_normal_range_lower	INTEGER
 molecular_test	blood_test_normal_range_upper	INTEGER
@@ -2924,13 +2924,13 @@ molecular_test	histone_variant	mH2A
 molecular_test	histone_variant	mH2A.1
 molecular_test	histone_variant	mH2A.2
 molecular_test	intron	STRING
-molecular_test	laboratory_test	ARRAY(0x561abf95d240)
+molecular_test	laboratory_test	ARRAY(0x557bac172418)
 molecular_test	laboratory_test	string
 molecular_test	loci_abnormal_count	INTEGER
 molecular_test	loci_count	INTEGER
 molecular_test	locus	STRING
 molecular_test	mismatch_repair_mutation	NA
-molecular_test	molecular_analysis_method	ARRAY(0x561abfa6aee8)
+molecular_test	molecular_analysis_method	ARRAY(0x557bac168aa0)
 molecular_test	molecular_analysis_method	string
 molecular_test	molecular_consequence	NA
 molecular_test	molecular_test_id	STRING
@@ -2948,7 +2948,7 @@ molecular_test	test_analyte_type	Total RNA
 molecular_test	test_analyte_type	Unknown
 molecular_test	test_analyte_type	mRNA
 molecular_test	test_analyte_type	miRNA
-molecular_test	test_result	ARRAY(0x561abf9f4898)
+molecular_test	test_result	ARRAY(0x557bac141698)
 molecular_test	test_result	string
 molecular_test	test_units	STRING
 molecular_test	test_value	STRING
@@ -2956,7 +2956,7 @@ molecular_test	transcript	STRING
 molecular_test	variant_origin	Germline
 molecular_test	variant_origin	Somatic
 molecular_test	variant_origin	Unknown
-molecular_test	variant_type	ARRAY(0x561abea3ede8)
+molecular_test	variant_type	ARRAY(0x557bac165588)
 molecular_test	variant_type	string
 molecular_test	zygosity	Hemizygous
 molecular_test	zygosity	Heterozygous
@@ -4636,7 +4636,7 @@ sample_diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 sample_diagnosis	tumor_stage_clinical_t	Tis (Paget's)
 study	acl	STRING
 study	consent	STRING
-study	consent_shorthand	STRING
+study	consent_number	INTEGER
 study	experimental_strategy_and_data_subtype	STRING
 study	external_url	STRING
 study	phs_accession	STRING
@@ -9262,8 +9262,8 @@ of_medical_history	medical_history	participant	NA	NA
 of_molecular_test	molecular_test	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_pdx	pdx	sample	NA	NA
-of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
 of_sample_diagnosis	sample_diagnosis	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_synonym	synonym	study	NA	NA
@@ -9298,8 +9298,8 @@ clinical_measure_file_id	A unique identifier for a clinical measure file.
 coal_dust_exposure	The yes/no/unknown indicator used to describe whether a patient was exposed to fine powder derived by the crushing of coal.
 comorbidity	The text term used to describe a comorbidity disease, which coexists with the patient's malignant disease.
 comorbidity_method_of_diagnosis	The text term used to describe the method used to diagnose the patient's comorbidity disease.
-consent	The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
-consent_shorthand	The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
+consent	The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
+consent_number	The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
 copy_number	Numeric value used to describe the number of times a section of the genome is repeated or copied within an insertion, duplication or deletion variant.
 cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the cytoband where the variant is located. Format [chromosome][chromosome arm].[band+sub-bands]. Example 17p13.1.
 data_types	The types of data files that can be found in the study.
