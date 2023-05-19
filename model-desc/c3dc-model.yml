@@ -2,39 +2,46 @@ Handle: CDA
 Nodes:
   diagnosis:
     Props:
+      - harmonized_value_id
       - diagnosis_id
-      - diagnosis_icd_o
-      - diagnosis_icd_cm
-      - diagnosis_finer_resolution
-      - disease_phase
-      - anatomic_site
-      - age_at_diagnosis
-      - vital_status
-      - toronto_childhood_cancer_staging
-      - days_to_recurrence
-      - last_known_disease_status
-      - days_to_last_known_disease_status
-      - days_to_last_followup
-      - tumor_grade
-      - tumor_stage_clinical_t
-      - tumor_stage_clinical_n
-      - tumor_stage_clinical_m
+      - source_dataset
+      - source_fieldname
+      - source_value
+      - source_data_file_guid
+      - source_data_file_name
+      - transformation_logic
+      - version
+      - harmonized_term
+      - harmonized_cde
+      - harmonized_value
   participant:
     Props:
+      - harmonized_value_id
       - participant_id
-      - race       
-      - gender
-      - ethnicity
-      - alternate_participant_id
+      - source_dataset
+      - source_fieldname
+      - source_value
+      - source_data_file_guid
+      - source_data_file_name
+      - transformation_logic
+      - version
+      - harmonized_term
+      - harmonized_cde
+      - harmonized_value
   sample:
     Props:
+      - harmonized_value_id
       - sample_id
-      - sample_type 
-      - anatomic_site
-      - participant_age_at_collection # 28.02.22 pdunn
-      - sample_tumor_status
-      - sample_description
-      - alternate_sample_id
+      - source_dataset
+      - source_fieldname
+      - source_value
+      - source_data_file_guid
+      - source_data_file_name
+      - transformation_logic
+      - version
+      - harmonized_term
+      - harmonized_cde
+      - harmonized_value
   study:
     Props:
       - study_id
