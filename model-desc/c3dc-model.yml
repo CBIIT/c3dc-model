@@ -5,7 +5,7 @@ Nodes:
       - harmonized_value_id
       - diagnosis_id
       - source_dataset
-      - source_fieldname
+      - source_field_name
       - source_value
       - source_data_file_guid
       - source_data_file_name
@@ -19,7 +19,7 @@ Nodes:
       - harmonized_value_id
       - participant_id
       - source_dataset
-      - source_fieldname
+      - source_field_name
       - source_value
       - source_data_file_guid
       - source_data_file_name
@@ -33,7 +33,7 @@ Nodes:
       - harmonized_value_id
       - sample_id
       - source_dataset
-      - source_fieldname
+      - source_field_name
       - source_value
       - source_data_file_guid
       - source_data_file_name
