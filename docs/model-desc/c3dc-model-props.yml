@@ -184,6 +184,16 @@ PropDefinitions:
     Private: false
     Key: true
   # study
+  acl:
+    Desc: Specifies whether the data in a repository is open access or controlled access. 
+    Term:
+      - Origin: NCIt
+        Code: 'C175887'
+        Value: Open or Controlled Data Access Indicator 
+    Type: string
+    Req: true
+    Private: false
+  #study
   phs_accession:
     Desc: A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP). 
     Term:

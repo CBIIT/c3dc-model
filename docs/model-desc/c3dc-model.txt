@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 565c1a5
+commit 79cda73
 node	property	value_or_TYPE
 diagnosis	diagnosis_id	STRING
 diagnosis	harmonized_cde	STRING
@@ -37,7 +37,7 @@ sample	source_field_name	NA
 sample	source_value	STRING
 sample	transformation_logic	STRING
 sample	version	STRING
-study	acl	NA
+study	acl	STRING
 study	consent	STRING
 study	consent_number	INTEGER
 study	external_url	STRING
@@ -55,6 +55,7 @@ of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
 
 property	description
+acl	Specifies whether the data in a repository is open access or controlled access.
 consent	The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
 consent_number	The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
 diagnosis_id	A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
