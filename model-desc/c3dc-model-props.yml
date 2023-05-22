@@ -204,6 +204,16 @@ PropDefinitions:
     Req: false
     Private: false
   # study
+  study_name:
+    Desc: The name applied to an investigational project, also known as Study Title.
+    Term:
+      - Origin: caDSR
+        Code: '3443999'
+        Value: Study Research Identification Title Text
+    Type: string
+    Req: false
+    Private: false  
+  #study
   study_short_title:
     Desc: The succinct version of the study title if it exists.
     Term:
