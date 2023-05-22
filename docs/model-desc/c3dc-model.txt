@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 79cda73
+commit cd7df53
 node	property	value_or_TYPE
 diagnosis	diagnosis_id	STRING
 diagnosis	harmonized_cde	STRING
@@ -45,14 +45,14 @@ study	phs_accession	STRING
 study	study_acronym	STRING
 study	study_description	STRING
 study	study_id	STRING
-study	study_name	NA
+study	study_name	STRING
 study	study_short_title	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
-of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
 
 property	description
 acl	Specifies whether the data in a repository is open access or controlled access.
@@ -75,6 +75,7 @@ source_value	TBD
 study_acronym	A one word acronym to represent the study.
 study_description	The long form description of the study.
 study_id	A unique identifier for a study.
+study_name	The name applied to an investigational project, also known as Study Title.
 study_short_title	The succinct version of the study title if it exists.
 transformation_logic	TBD
 version	TBD
