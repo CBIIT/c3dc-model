@@ -155,46 +155,8 @@ PropDefinitions:
     Req: true
     Private: false
     Key: false
-#STUDY NODE SETUP
-  #study
-  consent:
-    Desc: The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
-    Term:
-      - Origin: caDSR
-        Code: '7218861'
-        Value: Consent Form Comment Text
-    Type: string
-    Req: true
-    Private: false 
-  #study
-  consent_number:
-    Desc: The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
-    Type: integer
-    Req: true
-    Private: false     
   # study
-  study_id: 
-    Desc: A unique identifier for a study.
-    Term:
-      - Origin: caDSR
-        Code: '6380045'
-        Value: Study Identifier
-    Type: string
-    Req: true
-    Private: false
-    Key: true
-  # study
-  acl:
-    Desc: Specifies whether the data in a repository is open access or controlled access. 
-    Term:
-      - Origin: NCIt
-        Code: 'C175887'
-        Value: Open or Controlled Data Access Indicator 
-    Type: string
-    Req: true
-    Private: false
-  #study
-  phs_accession:
+  study_id:
     Desc: A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP). 
     Term:
       - Origin: caDSR
@@ -203,46 +165,3 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false
-  # study
-  study_name:
-    Desc: The name applied to an investigational project, also known as Study Title.
-    Term:
-      - Origin: caDSR
-        Code: '3443999'
-        Value: Study Research Identification Title Text
-    Type: string
-    Req: false
-    Private: false  
-  #study
-  study_short_title:
-    Desc: The succinct version of the study title if it exists.
-    Term:
-      - Origin: caDSR
-        Code: '3443999'
-        Value: Study Research Identification Title Text
-    Type: string
-    Req: true
-    Private: false
-  # study
-  study_acronym:
-    Desc: A one word acronym to represent the study.
-    Type: string
-    Req: true
-    Private: false
-  # study
-  study_description:
-    Desc: The long form description of the study.
-    Term:
-      - Origin: caDSR
-        Code: '3444002'
-        Value: Study Research Identification Descriptive Text
-    Type: string
-    Req: true
-    Private: false
-  # study
-  external_url:
-    Desc: The url of the study (often a dbGaP study page).
-    Type: string
-    Req: false  # 02/22/2022 adeforge, not required?
-    Private: false
-    

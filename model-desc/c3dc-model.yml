@@ -45,15 +45,6 @@ Nodes:
   study:
     Props:
       - study_id
-      - phs_accession #dbGaP accession
-      - acl
-      - study_name
-      - study_short_title
-      - study_acronym
-      - study_description
-      - consent
-      - consent_number
-      - external_url
 Relationships:
   of_diagnosis: 
     Props: null
