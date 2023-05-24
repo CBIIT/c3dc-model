@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit cd7df53
+commit 6b4cc91
 node	property	value_or_TYPE
 diagnosis	diagnosis_id	STRING
 diagnosis	harmonized_cde	STRING
@@ -37,45 +37,27 @@ sample	source_field_name	NA
 sample	source_value	STRING
 sample	transformation_logic	STRING
 sample	version	STRING
-study	acl	STRING
-study	consent	STRING
-study	consent_number	INTEGER
-study	external_url	STRING
-study	phs_accession	STRING
-study	study_acronym	STRING
-study	study_description	STRING
 study	study_id	STRING
-study	study_name	STRING
-study	study_short_title	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 
 property	description
-acl	Specifies whether the data in a repository is open access or controlled access.
-consent	The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
-consent_number	The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
 diagnosis_id	A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
-external_url	The url of the study (often a dbGaP study page).
 harmonized_cde	TBD
 harmonized_term	TBD
 harmonized_value	TBD
 harmonized_value_id	The unqiue identifier for the harmonized value entry.
 participant_id	A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
-phs_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 source_data_file_guid	TBD
 source_data_file_name	TBD
 source_dataset	TBD
 source_fieldname	TBD
 source_value	TBD
-study_acronym	A one word acronym to represent the study.
-study_description	The long form description of the study.
-study_id	A unique identifier for a study.
-study_name	The name applied to an investigational project, also known as Study Title.
-study_short_title	The succinct version of the study title if it exists.
+study_id	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 transformation_logic	TBD
 version	TBD
