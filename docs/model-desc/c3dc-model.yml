@@ -63,7 +63,9 @@ Nodes:
       - file_description
       - file_size
       - md5sum
-      - file_url_in_cds
+      - source_file_url
+      - source_code_url
+      - mapping_documentaion_url
       - dcf_indexd_guid
       - checksum_algorithm
       - checksum_value

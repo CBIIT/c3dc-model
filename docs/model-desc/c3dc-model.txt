@@ -1,17 +1,17 @@
 repo https://github.com/CBIIT/c3dc-model
-commit b9165b2
+commit 1c69b10
 node	property	value_or_TYPE
-diagnosis	age_at_diagnosis	ARRAY(0x5596b2f51df0)
+diagnosis	age_at_diagnosis	ARRAY(0x55f0c2b9d9c0)
 diagnosis	age_at_diagnosis	integer
 diagnosis	age_at_last_known_disease_status	INTEGER
 diagnosis	age_at_recurrence	INTEGER
-diagnosis	anatomic_site	ARRAY(0x5596b2f37288)
+diagnosis	anatomic_site	ARRAY(0x55f0c2ba34a0)
 diagnosis	anatomic_site	string
 diagnosis	diagnosis_finer_resolution	STRING
 diagnosis	diagnosis_icd_cm	STRING
 diagnosis	diagnosis_icd_o	ARRAY
 diagnosis	diagnosis_id	STRING
-diagnosis	disease_phase	ARRAY(0x5596b2f4c508)
+diagnosis	disease_phase	ARRAY(0x55f0c2b9e5c0)
 diagnosis	disease_phase	string
 diagnosis	last_known_disease_status	Biochemical evidence of disease without structural correlate
 diagnosis	last_known_disease_status	Distant met recurrence/progression
@@ -174,7 +174,7 @@ diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 diagnosis	tumor_stage_clinical_t	Tis (Paget's)
 participant	alternate_participant_id	STRING
 participant	ethnicity	ARRAY
-participant	gender	ARRAY(0x5596b2f2a578)
+participant	gender	ARRAY(0x55f0c1c48f68)
 participant	gender	string
 participant	participant_id	STRING
 participant	race	ARRAY
@@ -183,16 +183,18 @@ reference_file	checksum_value	STRING
 reference_file	dcf_indexd_guid	STRING
 reference_file	file_description	STRING
 reference_file	file_name	STRING
-reference_file	file_size	ARRAY(0x5596b2f49030)
+reference_file	file_size	ARRAY(0x55f0c2b9d870)
 reference_file	file_size	integer
-reference_file	file_type	ARRAY(0x5596b2f52348)
+reference_file	file_type	ARRAY(0x55f0c2bb9000)
 reference_file	file_type	string
-reference_file	file_url_in_cds	STRING
+reference_file	mapping_documentaion_url	STRING
 reference_file	md5sum	STRING
 reference_file	reference_file_id	NA
+reference_file	source_code_url	STRING
+reference_file	source_file_url	STRING
 sample	age_at_last_known_disease_status	INTEGER
 sample	alternate_sample_id	STRING
-sample	anatomic_site	ARRAY(0x5596b2f37288)
+sample	anatomic_site	ARRAY(0x55f0c2ba34a0)
 sample	anatomic_site	string
 sample	diagnosis_finer_resolution	STRING
 sample	diagnosis_icd_cm	STRING
@@ -207,11 +209,11 @@ sample	last_known_disease_status	Tumor free
 sample	last_known_disease_status	Unknown
 sample	last_known_disease_status	Unknown tumor status
 sample	last_known_disease_status	With tumor
-sample	participant_age_at_collection	ARRAY(0x5596b2f4c5f8)
+sample	participant_age_at_collection	ARRAY(0x55f0c2bb9510)
 sample	participant_age_at_collection	integer
 sample	sample_description	STRING
 sample	sample_id	STRING
-sample	sample_tumor_status	ARRAY(0x5596b2f4c460)
+sample	sample_tumor_status	ARRAY(0x55f0c2b7e7f8)
 sample	sample_tumor_status	string
 sample	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
 sample	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
@@ -286,7 +288,7 @@ sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIA
 sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIB
 sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIC
 sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IS
-sample	tumor_classification	ARRAY(0x5596b2f49810)
+sample	tumor_classification	ARRAY(0x55f0c2ba1dd0)
 sample	tumor_classification	string
 sample	tumor_grade	G1
 sample	tumor_grade	G2
@@ -366,7 +368,7 @@ sample	tumor_stage_clinical_t	Tis (LCIS)
 sample	tumor_stage_clinical_t	Tis (Paget's)
 study	acl	STRING
 study	consent	STRING
-study	consent_number	ARRAY(0x5596b2f39f48)
+study	consent_number	ARRAY(0x55f0c2b9dfd8)
 study	consent_number	integer
 study	external_url	STRING
 study	phs_accession	STRING
@@ -380,8 +382,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 
 property	description
 acl	Specifies whether the data in a repository is open access or controlled access.
@@ -407,9 +409,9 @@ file_description	A freeform description of the file.
 file_name	The name by which a set of related records (either written or electronic) are known.
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
-file_url_in_cds	Location of the file on the CDS Cloud, using AWS S3 protocol.
 gender	Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1 Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
 last_known_disease_status	Text term that describes the last known state or condition of an individual's neoplasm.
+mapping_documentaion_url	Location of the mapping_documentaion_url file, using AWS S3 protocol.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
@@ -418,6 +420,8 @@ race	The text for reporting information about race based on the Office of Manage
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
+source_code_url	Location of the source_code_url file, using AWS S3 protocol.
+source_file_url	Location of the source_file_url file, using AWS S3 protocol.
 study_acronym	A one word acronym to represent the study.
 study_description	The long form description of the study.
 study_id	A unique identifier for a study.
