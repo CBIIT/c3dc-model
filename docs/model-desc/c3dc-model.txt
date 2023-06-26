@@ -1,63 +1,431 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 6b4cc91
+commit b9165b2
 node	property	value_or_TYPE
+diagnosis	age_at_diagnosis	ARRAY(0x5596b2f51df0)
+diagnosis	age_at_diagnosis	integer
+diagnosis	age_at_last_known_disease_status	INTEGER
+diagnosis	age_at_recurrence	INTEGER
+diagnosis	anatomic_site	ARRAY(0x5596b2f37288)
+diagnosis	anatomic_site	string
+diagnosis	diagnosis_finer_resolution	STRING
+diagnosis	diagnosis_icd_cm	STRING
+diagnosis	diagnosis_icd_o	ARRAY
 diagnosis	diagnosis_id	STRING
-diagnosis	harmonized_cde	STRING
-diagnosis	harmonized_term	STRING
-diagnosis	harmonized_value	STRING
-diagnosis	harmonized_value_id	STRING
-diagnosis	source_data_file_guid	STRING
-diagnosis	source_data_file_name	STRING
-diagnosis	source_dataset	STRING
-diagnosis	source_field_name	NA
-diagnosis	source_value	STRING
-diagnosis	transformation_logic	STRING
-diagnosis	version	STRING
-participant	harmonized_cde	STRING
-participant	harmonized_term	STRING
-participant	harmonized_value	STRING
-participant	harmonized_value_id	STRING
+diagnosis	disease_phase	ARRAY(0x5596b2f4c508)
+diagnosis	disease_phase	string
+diagnosis	last_known_disease_status	Biochemical evidence of disease without structural correlate
+diagnosis	last_known_disease_status	Distant met recurrence/progression
+diagnosis	last_known_disease_status	Loco-regional recurrence/progression
+diagnosis	last_known_disease_status	Never Tumor Free
+diagnosis	last_known_disease_status	New Tumor Event (remission/relapse)
+diagnosis	last_known_disease_status	Tumor Free at Follow-up
+diagnosis	last_known_disease_status	Tumor free
+diagnosis	last_known_disease_status	Unknown
+diagnosis	last_known_disease_status	Unknown tumor status
+diagnosis	last_known_disease_status	With tumor
+diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
+diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
+diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS3
+diagnosis	toronto_childhood_cancer_staging	Astrocytomas Localized
+diagnosis	toronto_childhood_cancer_staging	Astrocytomas Metastatic
+diagnosis	toronto_childhood_cancer_staging	Ependymoma M0
+diagnosis	toronto_childhood_cancer_staging	Ependymoma M1
+diagnosis	toronto_childhood_cancer_staging	Ependymoma M2
+diagnosis	toronto_childhood_cancer_staging	Ependymoma M3
+diagnosis	toronto_childhood_cancer_staging	Ependymoma M4
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT I
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT II
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT III
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT IV
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT I
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT II
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT III
+diagnosis	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT IV
+diagnosis	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage I
+diagnosis	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage II
+diagnosis	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage III
+diagnosis	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage IV
+diagnosis	toronto_childhood_cancer_staging	Malignant bone tumor Localized
+diagnosis	toronto_childhood_cancer_staging	Malignant bone tumor Metastatic
+diagnosis	toronto_childhood_cancer_staging	Medulloblastoma M0
+diagnosis	toronto_childhood_cancer_staging	Medulloblastoma M1
+diagnosis	toronto_childhood_cancer_staging	Medulloblastoma M2
+diagnosis	toronto_childhood_cancer_staging	Medulloblastoma M3
+diagnosis	toronto_childhood_cancer_staging	Medulloblastoma M4
+diagnosis	toronto_childhood_cancer_staging	Neuroblastoma Stage L1
+diagnosis	toronto_childhood_cancer_staging	Neuroblastoma Stage L2
+diagnosis	toronto_childhood_cancer_staging	Neuroblastoma Stage M
+diagnosis	toronto_childhood_cancer_staging	Neuroblastoma Stage MS
+diagnosis	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage I
+diagnosis	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage II
+diagnosis	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage III
+diagnosis	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage IV
+diagnosis	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage I
+diagnosis	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage II
+diagnosis	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage III
+diagnosis	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage IV
+diagnosis	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage I
+diagnosis	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage II
+diagnosis	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage III
+diagnosis	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage IV
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage I
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage II
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage III
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage IV
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-I
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-II
+diagnosis	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-III
+diagnosis	toronto_childhood_cancer_staging	Retinoblastoma Stage 0
+diagnosis	toronto_childhood_cancer_staging	Retinoblastoma Stage I
+diagnosis	toronto_childhood_cancer_staging	Retinoblastoma Stage II
+diagnosis	toronto_childhood_cancer_staging	Retinoblastoma Stage III
+diagnosis	toronto_childhood_cancer_staging	Retinoblastoma Stage IV
+diagnosis	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage I
+diagnosis	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage II
+diagnosis	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage III
+diagnosis	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage IV
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage I
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IA
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IB
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage II
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIA
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIB
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIC
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage III
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIA
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIB
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIC
+diagnosis	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IS
+diagnosis	tumor_grade	G1
+diagnosis	tumor_grade	G2
+diagnosis	tumor_grade	G3
+diagnosis	tumor_grade	G4
+diagnosis	tumor_grade	GB
+diagnosis	tumor_grade	GX
+diagnosis	tumor_grade	High Grade
+diagnosis	tumor_grade	Intermediate Grade
+diagnosis	tumor_grade	Low Grade
+diagnosis	tumor_grade	Not Applicable
+diagnosis	tumor_stage_clinical_m	M0
+diagnosis	tumor_stage_clinical_m	M1
+diagnosis	tumor_stage_clinical_m	M1a
+diagnosis	tumor_stage_clinical_m	M1b
+diagnosis	tumor_stage_clinical_m	M1c
+diagnosis	tumor_stage_clinical_m	MX
+diagnosis	tumor_stage_clinical_m	cM0 (i+)
+diagnosis	tumor_stage_clinical_n	N0
+diagnosis	tumor_stage_clinical_n	N0 (i+)
+diagnosis	tumor_stage_clinical_n	N0 (i-)
+diagnosis	tumor_stage_clinical_n	N0 (mol+)
+diagnosis	tumor_stage_clinical_n	N0 (mol-)
+diagnosis	tumor_stage_clinical_n	N1
+diagnosis	tumor_stage_clinical_n	N1a
+diagnosis	tumor_stage_clinical_n	N1b
+diagnosis	tumor_stage_clinical_n	N1bI
+diagnosis	tumor_stage_clinical_n	N1bII
+diagnosis	tumor_stage_clinical_n	N1bIII
+diagnosis	tumor_stage_clinical_n	N1bIV
+diagnosis	tumor_stage_clinical_n	N1c
+diagnosis	tumor_stage_clinical_n	N1mi
+diagnosis	tumor_stage_clinical_n	N2
+diagnosis	tumor_stage_clinical_n	N2a
+diagnosis	tumor_stage_clinical_n	N2b
+diagnosis	tumor_stage_clinical_n	N2c
+diagnosis	tumor_stage_clinical_n	N3
+diagnosis	tumor_stage_clinical_n	N3a
+diagnosis	tumor_stage_clinical_n	N3b
+diagnosis	tumor_stage_clinical_n	N3c
+diagnosis	tumor_stage_clinical_n	N4
+diagnosis	tumor_stage_clinical_n	NX
+diagnosis	tumor_stage_clinical_t	T0
+diagnosis	tumor_stage_clinical_t	T1
+diagnosis	tumor_stage_clinical_t	T1a
+diagnosis	tumor_stage_clinical_t	T1a1
+diagnosis	tumor_stage_clinical_t	T1a2
+diagnosis	tumor_stage_clinical_t	T1b
+diagnosis	tumor_stage_clinical_t	T1b1
+diagnosis	tumor_stage_clinical_t	T1b2
+diagnosis	tumor_stage_clinical_t	T1c
+diagnosis	tumor_stage_clinical_t	T1mi
+diagnosis	tumor_stage_clinical_t	T2
+diagnosis	tumor_stage_clinical_t	T2a
+diagnosis	tumor_stage_clinical_t	T2a1
+diagnosis	tumor_stage_clinical_t	T2a2
+diagnosis	tumor_stage_clinical_t	T2b
+diagnosis	tumor_stage_clinical_t	T2c
+diagnosis	tumor_stage_clinical_t	T2d
+diagnosis	tumor_stage_clinical_t	T3
+diagnosis	tumor_stage_clinical_t	T3a
+diagnosis	tumor_stage_clinical_t	T3b
+diagnosis	tumor_stage_clinical_t	T3c
+diagnosis	tumor_stage_clinical_t	T3d
+diagnosis	tumor_stage_clinical_t	T4
+diagnosis	tumor_stage_clinical_t	T4a
+diagnosis	tumor_stage_clinical_t	T4b
+diagnosis	tumor_stage_clinical_t	T4c
+diagnosis	tumor_stage_clinical_t	T4d
+diagnosis	tumor_stage_clinical_t	T4e
+diagnosis	tumor_stage_clinical_t	T5
+diagnosis	tumor_stage_clinical_t	TX
+diagnosis	tumor_stage_clinical_t	Ta
+diagnosis	tumor_stage_clinical_t	Tis
+diagnosis	tumor_stage_clinical_t	Tis (DCIS)
+diagnosis	tumor_stage_clinical_t	Tis (LCIS)
+diagnosis	tumor_stage_clinical_t	Tis (Paget's)
+participant	alternate_participant_id	STRING
+participant	ethnicity	ARRAY
+participant	gender	ARRAY(0x5596b2f2a578)
+participant	gender	string
 participant	participant_id	STRING
-participant	source_data_file_guid	STRING
-participant	source_data_file_name	STRING
-participant	source_dataset	STRING
-participant	source_field_name	NA
-participant	source_value	STRING
-participant	transformation_logic	STRING
-participant	version	STRING
-sample	harmonized_cde	STRING
-sample	harmonized_term	STRING
-sample	harmonized_value	STRING
-sample	harmonized_value_id	STRING
+participant	race	ARRAY
+reference_file	checksum_algorithm	STRING
+reference_file	checksum_value	STRING
+reference_file	dcf_indexd_guid	STRING
+reference_file	file_description	STRING
+reference_file	file_name	STRING
+reference_file	file_size	ARRAY(0x5596b2f49030)
+reference_file	file_size	integer
+reference_file	file_type	ARRAY(0x5596b2f52348)
+reference_file	file_type	string
+reference_file	file_url_in_cds	STRING
+reference_file	md5sum	STRING
+reference_file	reference_file_id	NA
+sample	age_at_last_known_disease_status	INTEGER
+sample	alternate_sample_id	STRING
+sample	anatomic_site	ARRAY(0x5596b2f37288)
+sample	anatomic_site	string
+sample	diagnosis_finer_resolution	STRING
+sample	diagnosis_icd_cm	STRING
+sample	diagnosis_icd_o	ARRAY
+sample	last_known_disease_status	Biochemical evidence of disease without structural correlate
+sample	last_known_disease_status	Distant met recurrence/progression
+sample	last_known_disease_status	Loco-regional recurrence/progression
+sample	last_known_disease_status	Never Tumor Free
+sample	last_known_disease_status	New Tumor Event (remission/relapse)
+sample	last_known_disease_status	Tumor Free at Follow-up
+sample	last_known_disease_status	Tumor free
+sample	last_known_disease_status	Unknown
+sample	last_known_disease_status	Unknown tumor status
+sample	last_known_disease_status	With tumor
+sample	participant_age_at_collection	ARRAY(0x5596b2f4c5f8)
+sample	participant_age_at_collection	integer
+sample	sample_description	STRING
 sample	sample_id	STRING
-sample	source_data_file_guid	STRING
-sample	source_data_file_name	STRING
-sample	source_dataset	STRING
-sample	source_field_name	NA
-sample	source_value	STRING
-sample	transformation_logic	STRING
-sample	version	STRING
+sample	sample_tumor_status	ARRAY(0x5596b2f4c460)
+sample	sample_tumor_status	string
+sample	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
+sample	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
+sample	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS3
+sample	toronto_childhood_cancer_staging	Astrocytomas Localized
+sample	toronto_childhood_cancer_staging	Astrocytomas Metastatic
+sample	toronto_childhood_cancer_staging	Ependymoma M0
+sample	toronto_childhood_cancer_staging	Ependymoma M1
+sample	toronto_childhood_cancer_staging	Ependymoma M2
+sample	toronto_childhood_cancer_staging	Ependymoma M3
+sample	toronto_childhood_cancer_staging	Ependymoma M4
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT I
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT II
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT III
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Localized PRETEXT IV
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT I
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT II
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT III
+sample	toronto_childhood_cancer_staging	Hepatoblastoma Metastatic PRETEXT IV
+sample	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage I
+sample	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage II
+sample	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage III
+sample	toronto_childhood_cancer_staging	Hodgkin lymphoma Stage IV
+sample	toronto_childhood_cancer_staging	Malignant bone tumor Localized
+sample	toronto_childhood_cancer_staging	Malignant bone tumor Metastatic
+sample	toronto_childhood_cancer_staging	Medulloblastoma M0
+sample	toronto_childhood_cancer_staging	Medulloblastoma M1
+sample	toronto_childhood_cancer_staging	Medulloblastoma M2
+sample	toronto_childhood_cancer_staging	Medulloblastoma M3
+sample	toronto_childhood_cancer_staging	Medulloblastoma M4
+sample	toronto_childhood_cancer_staging	Neuroblastoma Stage L1
+sample	toronto_childhood_cancer_staging	Neuroblastoma Stage L2
+sample	toronto_childhood_cancer_staging	Neuroblastoma Stage M
+sample	toronto_childhood_cancer_staging	Neuroblastoma Stage MS
+sample	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage I
+sample	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage II
+sample	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage III
+sample	toronto_childhood_cancer_staging	Non-Hodgkin lymphoma Stage IV
+sample	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage I
+sample	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage II
+sample	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage III
+sample	toronto_childhood_cancer_staging	Non-rhabdomyosarcoma soft tissue sarcoma Stage IV
+sample	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage I
+sample	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage II
+sample	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage III
+sample	toronto_childhood_cancer_staging	Ovarian germ cell tumor Stage IV
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage I
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage II
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage III
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage IV
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-I
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-II
+sample	toronto_childhood_cancer_staging	Renal tumor (excluding renal cell carcinomas) Stage y-III
+sample	toronto_childhood_cancer_staging	Retinoblastoma Stage 0
+sample	toronto_childhood_cancer_staging	Retinoblastoma Stage I
+sample	toronto_childhood_cancer_staging	Retinoblastoma Stage II
+sample	toronto_childhood_cancer_staging	Retinoblastoma Stage III
+sample	toronto_childhood_cancer_staging	Retinoblastoma Stage IV
+sample	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage I
+sample	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage II
+sample	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage III
+sample	toronto_childhood_cancer_staging	Rhabdomyosarcoma Stage IV
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage I
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IA
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IB
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage II
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIA
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIB
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIC
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage III
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIA
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIB
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IIIC
+sample	toronto_childhood_cancer_staging	Testicular germ cell tumor Stage IS
+sample	tumor_classification	ARRAY(0x5596b2f49810)
+sample	tumor_classification	string
+sample	tumor_grade	G1
+sample	tumor_grade	G2
+sample	tumor_grade	G3
+sample	tumor_grade	G4
+sample	tumor_grade	GB
+sample	tumor_grade	GX
+sample	tumor_grade	High Grade
+sample	tumor_grade	Intermediate Grade
+sample	tumor_grade	Low Grade
+sample	tumor_grade	Not Applicable
+sample	tumor_stage_clinical_m	M0
+sample	tumor_stage_clinical_m	M1
+sample	tumor_stage_clinical_m	M1a
+sample	tumor_stage_clinical_m	M1b
+sample	tumor_stage_clinical_m	M1c
+sample	tumor_stage_clinical_m	MX
+sample	tumor_stage_clinical_m	cM0 (i+)
+sample	tumor_stage_clinical_n	N0
+sample	tumor_stage_clinical_n	N0 (i+)
+sample	tumor_stage_clinical_n	N0 (i-)
+sample	tumor_stage_clinical_n	N0 (mol+)
+sample	tumor_stage_clinical_n	N0 (mol-)
+sample	tumor_stage_clinical_n	N1
+sample	tumor_stage_clinical_n	N1a
+sample	tumor_stage_clinical_n	N1b
+sample	tumor_stage_clinical_n	N1bI
+sample	tumor_stage_clinical_n	N1bII
+sample	tumor_stage_clinical_n	N1bIII
+sample	tumor_stage_clinical_n	N1bIV
+sample	tumor_stage_clinical_n	N1c
+sample	tumor_stage_clinical_n	N1mi
+sample	tumor_stage_clinical_n	N2
+sample	tumor_stage_clinical_n	N2a
+sample	tumor_stage_clinical_n	N2b
+sample	tumor_stage_clinical_n	N2c
+sample	tumor_stage_clinical_n	N3
+sample	tumor_stage_clinical_n	N3a
+sample	tumor_stage_clinical_n	N3b
+sample	tumor_stage_clinical_n	N3c
+sample	tumor_stage_clinical_n	N4
+sample	tumor_stage_clinical_n	NX
+sample	tumor_stage_clinical_t	T0
+sample	tumor_stage_clinical_t	T1
+sample	tumor_stage_clinical_t	T1a
+sample	tumor_stage_clinical_t	T1a1
+sample	tumor_stage_clinical_t	T1a2
+sample	tumor_stage_clinical_t	T1b
+sample	tumor_stage_clinical_t	T1b1
+sample	tumor_stage_clinical_t	T1b2
+sample	tumor_stage_clinical_t	T1c
+sample	tumor_stage_clinical_t	T1mi
+sample	tumor_stage_clinical_t	T2
+sample	tumor_stage_clinical_t	T2a
+sample	tumor_stage_clinical_t	T2a1
+sample	tumor_stage_clinical_t	T2a2
+sample	tumor_stage_clinical_t	T2b
+sample	tumor_stage_clinical_t	T2c
+sample	tumor_stage_clinical_t	T2d
+sample	tumor_stage_clinical_t	T3
+sample	tumor_stage_clinical_t	T3a
+sample	tumor_stage_clinical_t	T3b
+sample	tumor_stage_clinical_t	T3c
+sample	tumor_stage_clinical_t	T3d
+sample	tumor_stage_clinical_t	T4
+sample	tumor_stage_clinical_t	T4a
+sample	tumor_stage_clinical_t	T4b
+sample	tumor_stage_clinical_t	T4c
+sample	tumor_stage_clinical_t	T4d
+sample	tumor_stage_clinical_t	T4e
+sample	tumor_stage_clinical_t	T5
+sample	tumor_stage_clinical_t	TX
+sample	tumor_stage_clinical_t	Ta
+sample	tumor_stage_clinical_t	Tis
+sample	tumor_stage_clinical_t	Tis (DCIS)
+sample	tumor_stage_clinical_t	Tis (LCIS)
+sample	tumor_stage_clinical_t	Tis (Paget's)
+study	acl	STRING
+study	consent	STRING
+study	consent_number	ARRAY(0x5596b2f39f48)
+study	consent_number	integer
+study	external_url	STRING
+study	phs_accession	STRING
+study	study_acronym	STRING
+study	study_description	STRING
 study	study_id	STRING
+study	study_name	STRING
+study	study_short_title	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
-of_sample	sample	study	NA	NA
+of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
 
 property	description
+acl	Specifies whether the data in a repository is open access or controlled access.
+age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
+age_at_last_known_disease_status	Age at the time of last known disease status expressed in number of days since birth.
+age_at_recurrence	Number of days between the date used for index (DOB) and the date the patient's disease recurred.
+alternate_participant_id	A synonymous or alternate ID for a participant that is stored in another study or repository.
+alternate_sample_id	A synonymous or alternate ID for a sample that is stored in another study or repository.
+anatomic_site	The location within the body where cancer begins as captured in the topography codes of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+checksum_algorithm	Cryptographic checksum algorithm used for 'checksum_value' field. Available for use of something other than md5.
+checksum_value	One or more characters using a irreversible unique number generated from a string of text to identify a set of related electronic records.
+consent	The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
+consent_number	The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
+dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
+diagnosis_finer_resolution	Text term used to dprovide finer resolution diagnosis than available in ICD-O or ICD-10-CM.
+diagnosis_icd_cm	The diagnosis, in humans, as captured in the 2022 extension of the tenth version of the International Classification of Disease (ICD-10-CM, the disease code subset of ICD-10). Examples - C80.1, C44.510, D14.3-, D49.89.
+diagnosis_icd_o	The text term used to describe the type of malignant disease, as categorized by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
 diagnosis_id	A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
-harmonized_cde	TBD
-harmonized_term	TBD
-harmonized_value	TBD
-harmonized_value_id	The unqiue identifier for the harmonized value entry.
+disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
+ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
+external_url	The url of the study (often a dbGaP study page).
+file_description	A freeform description of the file.
+file_name	The name by which a set of related records (either written or electronic) are known.
+file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
+file_type	Text that provides a description of a particular kind of set of related records.
+file_url_in_cds	Location of the file on the CDS Cloud, using AWS S3 protocol.
+gender	Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1 Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
+last_known_disease_status	Text term that describes the last known state or condition of an individual's neoplasm.
+md5sum	md5 hash
+participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
+phs_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
+race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
+sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
-source_data_file_guid	TBD
-source_data_file_name	TBD
-source_dataset	TBD
-source_fieldname	TBD
-source_value	TBD
-study_id	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
-transformation_logic	TBD
-version	TBD
+sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
+study_acronym	A one word acronym to represent the study.
+study_description	The long form description of the study.
+study_id	A unique identifier for a study.
+study_name	The name applied to an investigational project, also known as Study Title.
+study_short_title	The succinct version of the study title if it exists.
+toronto_childhood_cancer_staging	For many of the malignancies that occur in childhood, TNM-based systems that document extent of disease at diagnosis are either inadequate or do not exist at all. Consensus guidelines for use by population cancer registries for staging childhood cancers (the Toronto Childhood Cancer Stage Guidelines) have been developed.
+tumor_classification	The classification of a tumor based primarily on histopathological characteristics.
+tumor_grade	Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness.
+tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
+tumor_stage_clinical_n	Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
+tumor_stage_clinical_t	Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
