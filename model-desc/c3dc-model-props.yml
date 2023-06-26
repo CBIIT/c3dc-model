@@ -1434,8 +1434,8 @@ PropDefinitions:
     Req: false
     Private: false    
   #file
-  file_url_in_cds:
-    Desc: Location of the file on the CDS Cloud, using AWS S3 protocol.
+  source_file_url:
+    Desc: Location of the source_file_url file, using AWS S3 protocol.
     Term:
       - Origin: NCIt
         Code: 'C47922'
@@ -1443,6 +1443,24 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  source_code_url:
+    Desc: Location of the source_code_url file, using AWS S3 protocol.
+    Term:
+      - Origin: NCIt
+        Code: 'C47922'
+        Value: Pathname
+    Type: string
+    Req: true
+    Private: false
+  mapping_documentaion_url:
+    Desc: Location of the mapping_documentaion_url file, using AWS S3 protocol.
+    Term:
+      - Origin: NCIt
+        Code: 'C47922'
+        Value: Pathname
+    Type: string
+    Req: true
+    Private: false  
   #file
   dcf_indexd_guid:
     Desc: An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
