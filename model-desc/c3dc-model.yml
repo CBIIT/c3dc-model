@@ -55,6 +55,18 @@ Nodes:
       - consent
       - consent_number
       - external_url
+  reference_file: 
+    Props:
+      - reference_file_id
+      - file_name
+      - file_type
+      - file_description
+      - file_size
+      - md5sum
+      - file_url_in_cds
+      - dcf_indexd_guid
+      - checksum_algorithm
+      - checksum_value
 Relationships:
   of_diagnosis: 
     Props: null
@@ -75,4 +87,10 @@ Relationships:
       - Src: sample
         Dst: participant
       - Src: sample
+        Dst: study
+  of_reference_file: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: reference_file
         Dst: study
