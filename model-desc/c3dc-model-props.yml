@@ -1452,8 +1452,8 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  mapping_documentaion_url:
-    Desc: Location of the mapping_documentaion_url file, using AWS S3 protocol.
+  mapping_documentation_url:
+    Desc: Location of the mapping_documentation_url file, using AWS S3 protocol.
     Term:
       - Origin: NCIt
         Code: 'C47922'
