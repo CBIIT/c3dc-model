@@ -65,7 +65,7 @@ Nodes:
       - md5sum
       - source_file_url
       - source_code_url
-      - mapping_documentaion_url
+      - mapping_documentation_url
       - dcf_indexd_guid
       - checksum_algorithm
       - checksum_value
