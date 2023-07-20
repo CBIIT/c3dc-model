@@ -47,7 +47,7 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="596" y="-416.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- study -->
-<g id="node3" class="node">
+<g id="node5" class="node">
 <title>study</title>
 <path fill="none" stroke="#000000" d="M333,-.5C333,-.5 552,-.5 552,-.5 558,-.5 564,-6.5 564,-12.5 564,-12.5 564,-218.5 564,-218.5 564,-224.5 558,-230.5 552,-230.5 552,-230.5 333,-230.5 333,-230.5 327,-230.5 321,-224.5 321,-218.5 321,-218.5 321,-12.5 321,-12.5 321,-6.5 327,-.5 333,-.5"/>
 <text text-anchor="middle" x="349" y="-111.8" font-family="Times,serif" font-size="14.00" fill="#000000">study</text>
@@ -77,7 +77,7 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="553.5" y="-111.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- participant&#45;&gt;study -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>participant&#45;&gt;study</title>
 <path fill="none" stroke="#000000" d="M442.5,-362.7733C442.5,-328.3185 442.5,-283.1703 442.5,-240.8937"/>
 <polygon fill="#000000" stroke="#000000" points="446.0001,-240.7883 442.5,-230.7883 439.0001,-240.7884 446.0001,-240.7883"/>
@@ -128,21 +128,21 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="364.5" y="-802.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- sample&#45;&gt;participant -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>sample&#45;&gt;participant</title>
 <path fill="none" stroke="#000000" d="M316.8676,-610.4266C346.4173,-565.7545 375.8331,-521.2846 398.7645,-486.6178"/>
 <polygon fill="#000000" stroke="#000000" points="401.853,-488.2926 404.4509,-478.0212 396.0147,-484.4307 401.853,-488.2926"/>
 <text text-anchor="middle" x="375" y="-580.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_sample</text>
 </g>
 <!-- sample&#45;&gt;study -->
-<g id="edge4" class="edge">
+<g id="edge1" class="edge">
 <title>sample&#45;&gt;study</title>
 <path fill="none" stroke="#000000" d="M149.2839,-610.2188C138.9833,-506.7328 142.8671,-381.0004 196.5,-282 221.9479,-235.0259 267.0832,-198.8044 311.8052,-172.3253"/>
 <polygon fill="#000000" stroke="#000000" points="313.8339,-175.1953 320.7382,-167.1591 310.3294,-169.1357 313.8339,-175.1953"/>
 <text text-anchor="middle" x="233" y="-416.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_sample</text>
 </g>
 <!-- reference_file -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>reference_file</title>
 <path fill="none" stroke="#000000" d="M637,-282.5C637,-282.5 992,-282.5 992,-282.5 998,-282.5 1004,-288.5 1004,-294.5 1004,-294.5 1004,-546.5 1004,-546.5 1004,-552.5 998,-558.5 992,-558.5 992,-558.5 637,-558.5 637,-558.5 631,-558.5 625,-552.5 625,-546.5 625,-546.5 625,-294.5 625,-294.5 625,-288.5 631,-282.5 637,-282.5"/>
 <text text-anchor="middle" x="683" y="-416.8" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file</text>
@@ -176,14 +176,14 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="993.5" y="-416.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- reference_file&#45;&gt;study -->
-<g id="edge1" class="edge">
+<g id="edge5" class="edge">
 <title>reference_file&#45;&gt;study</title>
 <path fill="none" stroke="#000000" d="M645.9148,-282.2783C621.1302,-261.9576 595.9295,-241.2957 572.0939,-221.753"/>
 <polygon fill="#000000" stroke="#000000" points="574.0176,-218.8043 564.0654,-215.1705 569.5794,-224.2175 574.0176,-218.8043"/>
 <text text-anchor="middle" x="677" y="-252.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_reference_file</text>
 </g>
 <!-- diagnosis -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>diagnosis</title>
 <path fill="none" stroke="#000000" d="M405,-633.5C405,-633.5 772,-633.5 772,-633.5 778,-633.5 784,-639.5 784,-645.5 784,-645.5 784,-966.5 784,-966.5 784,-972.5 778,-978.5 772,-978.5 772,-978.5 405,-978.5 405,-978.5 399,-978.5 393,-972.5 393,-966.5 393,-966.5 393,-645.5 393,-645.5 393,-639.5 399,-633.5 405,-633.5"/>
 <text text-anchor="middle" x="435" y="-802.3" font-family="Times,serif" font-size="14.00" fill="#000000">diagnosis</text>
@@ -223,7 +223,7 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="773.5" y="-802.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- diagnosis&#45;&gt;participant -->
-<g id="edge2" class="edge">
+<g id="edge3" class="edge">
 <title>diagnosis&#45;&gt;participant</title>
 <path fill="none" stroke="#000000" d="M523.0801,-633.2646C503.5548,-581.7099 483.2983,-528.2244 467.9793,-487.7759"/>
 <polygon fill="#000000" stroke="#000000" points="471.2081,-486.419 464.3931,-478.3069 464.6619,-488.8983 471.2081,-486.419"/>
