@@ -2108,19 +2108,18 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12217251'
         Value: Disease Phase Timepoint Category
-    Type:
-      - string
-      - 
-        - 'Initial Diagnosis'
-        - 'Disease Progression'
-        - 'Refractory'
-        - 'Recurrent Disease'
-        - 'Disease Relapse/Progression'
-        - 'Complete Remission'
-        - 'Post-treatment'
-        - 'Unknown'
-        - 'Not Reported'
-    Req: true  
+    Enum:
+      - 'Initial Diagnosis'
+      - 'Disease Progression'
+      - 'Refractory'
+      - 'Recurrent Disease'
+      - 'Disease Relapse/Progression'
+      - 'Complete Remission'
+      - 'Post-treatment'
+      - 'Unknown'
+      - 'Not Reported'
+    Req: true
+    Strict: false
     Private: false
   #diagnosis
   tumor_classification:
@@ -2129,16 +2128,15 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12922545'
         Value: Tumor Classification Type
-    Type:
-      - string
-      - 
-        - 'Primary'
-        - 'Regional'
-        - 'Metastatic'
-        - 'Unknown'
-        - 'Not Reported'
-        - 'Not Applicable'
-    Req: true  
+    Enum:
+      - 'Primary'
+      - 'Regional'
+      - 'Metastatic'
+      - 'Unknown'
+      - 'Not Reported'
+      - 'Not Applicable'
+    Req: true
+    Strict: false
     Private: false
   #sample
   sample_description:
@@ -2160,19 +2158,18 @@ PropDefinitions:
       - Origin: caDSR
         Code: '5432687'
         Value: Tissue Sample Description Category
-    Type:
-      - string
-      -
-        - 'Abnormal'
-        - 'Non-neoplastic'
-        - 'Normal'
-        - 'Peritumoral'
-        - 'Tumor'
-        - 'Unavailable'
-        - 'Unknown'
-        - 'Unspecified'
+    Enum:
+      - 'Abnormal'
+      - 'Non-neoplastic'
+      - 'Normal'
+      - 'Peritumoral'
+      - 'Tumor'
+      - 'Unavailable'
+      - 'Unknown'
+      - 'Unspecified'
     Req: true
-    Private: false        
+    Strict: false
+    Private: false    
   # study
   study_id: 
     Desc: A unique identifier for a study.
