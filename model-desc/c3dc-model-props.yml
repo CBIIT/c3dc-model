@@ -1413,7 +1413,7 @@ PropDefinitions:
       - "xlsx"
       - "xml"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #sequencing_file, imaging_file, clinical_measure_file
   file_description:
@@ -1538,7 +1538,7 @@ PropDefinitions:
         - "Unknown"
         - "White"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #participant
   gender:
@@ -1558,7 +1558,7 @@ PropDefinitions:
       - "Unknown"
       - "Unspecified" 
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #participant
   ethnicity:
@@ -1576,7 +1576,7 @@ PropDefinitions:
         - "Not reported"
         - "Unknown" 
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #study
   consent:
@@ -1968,7 +1968,7 @@ PropDefinitions:
       - "Vulva, NOS"
       - "Waldeyer ring"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   # sample
   participant_age_at_collection:     
@@ -1999,7 +1999,7 @@ PropDefinitions:
       - "Low Grade"
       - "Not Applicable"
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
-    Strict: false
+    Strict: true
     Private: false
   # sample
   tumor_stage_clinical_t: 
@@ -2045,7 +2045,7 @@ PropDefinitions:
       - "Tis (Paget's)"
       - "TX"
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
-    Strict: false
+    Strict: true
     Private: false
   # sample
   tumor_stage_clinical_n:
@@ -2080,7 +2080,7 @@ PropDefinitions:
       - "N4"
       - "NX"
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
-    Strict: false
+    Strict: true
     Private: false
   # sample
   tumor_stage_clinical_m:
@@ -2098,7 +2098,7 @@ PropDefinitions:
       - "M1c"
       - "MX"
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
-    Strict: false
+    Strict: true
     Private: false
 # tumor_morphology: CCDIDC-360
   #diagnosis
@@ -2119,7 +2119,7 @@ PropDefinitions:
       - 'Unknown'
       - 'Not Reported'
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #diagnosis
   tumor_classification:
@@ -2136,7 +2136,7 @@ PropDefinitions:
       - 'Not Reported'
       - 'Not Applicable'
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #sample
   sample_description:
@@ -2168,7 +2168,7 @@ PropDefinitions:
       - 'Unknown'
       - 'Unspecified'
     Req: true
-    Strict: false
+    Strict: true
     Private: false    
   # study
   study_id: 
