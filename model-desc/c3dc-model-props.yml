@@ -1391,6 +1391,7 @@ PropDefinitions:
       - "pdf"
       - "ped"
       - "png"
+      - "py"
       - "rda"
       - "rdata"
       - "rds"
