@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit caeb6f9
+commit 4ae0687
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	age_at_last_known_disease_status	INTEGER
@@ -533,6 +533,10 @@ participant	participant_id	STRING
 reference_file	checksum_algorithm	STRING
 reference_file	checksum_value	STRING
 reference_file	dcf_indexd_guid	STRING
+reference_file	file_category	input source data
+reference_file	file_category	output schema
+reference_file	file_category	programmatic source code
+reference_file	file_category	transformation/mapping
 reference_file	file_description	STRING
 reference_file	file_name	STRING
 reference_file	file_size	INTEGER
@@ -586,11 +590,9 @@ reference_file	file_type	vmu
 reference_file	file_type	xls
 reference_file	file_type	xlsx
 reference_file	file_type	xml
-reference_file	mapping_documentation_url	STRING
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
-reference_file	source_code_url	STRING
-reference_file	source_file_url	STRING
+reference_file	reference_file_url	STRING
 sample	age_at_last_known_disease_status	INTEGER
 sample	alternate_sample_id	STRING
 sample	anatomic_site	Abdomen, NOS
@@ -1153,24 +1155,23 @@ diagnosis_id	A unique sequence of alphanumeric characters used to identify the p
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
 external_url	The url of the study (often a dbGaP study page).
+file_category	A freeform description of the file.
 file_description	A freeform description of the file.
 file_name	The name by which a set of related records (either written or electronic) are known.
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
 gender	Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1 Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
 last_known_disease_status	Text term that describes the last known state or condition of an individual's neoplasm.
-mapping_documentation_url	Location of the mapping_documentation_url file, using AWS S3 protocol.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
 phs_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
 reference_file_id	A unique identifier for a clinical measure file.
+reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
-source_code_url	Location of the source_code_url file, using AWS S3 protocol.
-source_file_url	Location of the source_file_url file, using AWS S3 protocol.
 study_acronym	A one word acronym to represent the study.
 study_description	The long form description of the study.
 study_id	A unique identifier for a study.
