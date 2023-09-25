@@ -1421,6 +1421,16 @@ PropDefinitions:
     Type: string
     Req: false  # 02/22/2022 adeforge, not required?
     Private: false
+  file_category:
+    Desc: A freeform description of the file.
+    Enum:
+      - "programmatic source code"
+      - "transformation/mapping"
+      - "output schema"
+      - "input source data"
+    Req: true
+    Strict: true
+    Private: false
   #sequencing_file, imaging_file, clinical_measure_file
   file_size:
     Desc: The numerical quantity documenting the physical magnitude of a set of related electronic records.
@@ -1461,7 +1471,7 @@ PropDefinitions:
     Req: false
     Private: false    
   #file
-  source_file_url:
+  reference_file_url:
     Desc: Location of the source_file_url file, using AWS S3 protocol.
     Term:
       - Origin: NCIt
@@ -1470,24 +1480,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  source_code_url:
-    Desc: Location of the source_code_url file, using AWS S3 protocol.
-    Term:
-      - Origin: NCIt
-        Code: 'C47922'
-        Value: Pathname
-    Type: string
-    Req: true
-    Private: false
-  mapping_documentation_url:
-    Desc: Location of the mapping_documentation_url file, using AWS S3 protocol.
-    Term:
-      - Origin: NCIt
-        Code: 'C47922'
-        Value: Pathname
-    Type: string
-    Req: true
-    Private: false  
   #file
   dcf_indexd_guid:
     Desc: An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.

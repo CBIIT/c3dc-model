@@ -61,11 +61,10 @@ Nodes:
       - file_name
       - file_type
       - file_description
+      - file_category
       - file_size
       - md5sum
-      - source_file_url
-      - source_code_url
-      - mapping_documentation_url
+      - reference_file_url
       - dcf_indexd_guid
       - checksum_algorithm
       - checksum_value
