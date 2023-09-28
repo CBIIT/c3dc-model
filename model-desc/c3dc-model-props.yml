@@ -1357,7 +1357,7 @@ PropDefinitions:
     Private: false
     Key: false
   #event
-  event_details:
+  event_detail:
     Desc: Event details or values or results
     Term:
       - Origin: caDSR
