@@ -1328,7 +1328,57 @@ PropDefinitions:
     Type: integer
     Req: false
     Private: false  
-  #sequencing_file, imaging_file, clinical_measure_file
+  #event
+  event_id:
+    Desc: A unique identifier for an event
+    Term:
+      - Origin: caDSR
+        Code: '2534569'
+        Value: Additional Finding Identifier
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #event
+  event_category:
+    Desc: Event category
+    Term:
+      - Origin: caDSR
+        Code: '7197400'
+        Value: A grouping of topic-variable values based on sponsor defined characteristics.
+    Enum:
+      - "Adverse Event"
+      - "Last Known Disease Status"
+      - "Comorbidity"
+      - "Disease Event"
+      - "Disease Response"
+      - "Other"
+    Req: true
+    Private: false
+    Key: false
+  #event
+  event_details:
+    Desc: Event details or values or results
+    Term:
+      - Origin: caDSR
+        Code: '6642370'
+        Value: Result or Finding Original Result
+    Type: string
+    Req: true
+    Private: false
+    Key: false
+  #event
+  age_at_event: 6412753
+    Desc: Participant age at event
+    Term:
+      - Origin: caDSR
+        Code: '6412753'
+        Value: Age
+    Type: string
+    Req: true
+    Private: false
+    Key: false
+  #reference_file
   reference_file_id: 
     Desc: A unique identifier for a clinical measure file.
     Term:
@@ -1351,7 +1401,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #sequencing_file, imaging_file, clinical_measure_file
+  #reference_file
   file_type:
     Desc: Text that provides a description of a particular kind of set of related records.
     Term:
@@ -1416,7 +1466,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #sequencing_file, imaging_file, clinical_measure_file
+  #reference_file
   file_description:
     Desc: A freeform description of the file.
     Type: string
@@ -1432,7 +1482,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #sequencing_file, imaging_file, clinical_measure_file
+  #reference_file
   file_size:
     Desc: The numerical quantity documenting the physical magnitude of a set of related electronic records.
     Term:
@@ -1445,7 +1495,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
-  #sequencing_file, imaging_file, clinical_measure_file
+  #reference_file
   md5sum:
     Desc: md5 hash
     Term:
@@ -1455,7 +1505,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #sequencing_file, imaging_file, clinical_measure_file  
+  #reference_file  
   checksum_value:
     Desc: One or more characters using a irreversible unique number generated from a string of text to identify a set of related electronic records.
     Term:
