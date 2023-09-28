@@ -21,7 +21,7 @@ Nodes:
     Props:
       - event_id
       - event_category
-      - event_details
+      - event_detail
       - age_at_event
   participant:
     Props:
