@@ -81,6 +81,12 @@ Relationships:
     Ends:
       - Src: diagnosis
         Dst: participant
+  of_event:
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: event
+        Dst: participant
   of_participant: 
     Props: null
     Mul: many_to_one 
