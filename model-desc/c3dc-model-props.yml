@@ -1368,7 +1368,7 @@ PropDefinitions:
     Private: false
     Key: false
   #event
-  age_at_event: 6412753
+  age_at_event:
     Desc: Participant age at event
     Term:
       - Origin: caDSR
