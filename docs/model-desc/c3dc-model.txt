@@ -1,9 +1,7 @@
 repo https://github.com/CBIIT/c3dc-model
-commit feea783
+commit 25fa28b
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
-diagnosis	age_at_last_known_disease_status	INTEGER
-diagnosis	age_at_recurrence	INTEGER
 diagnosis	anatomic_site	Abdomen, NOS
 diagnosis	anatomic_site	Abdominal esophagus
 diagnosis	anatomic_site	Accessory sinus, NOS
@@ -360,16 +358,6 @@ diagnosis	disease_phase	Post-treatment
 diagnosis	disease_phase	Recurrent Disease
 diagnosis	disease_phase	Refractory
 diagnosis	disease_phase	Unknown
-diagnosis	last_known_disease_status	Biochemical evidence of disease without structural correlate
-diagnosis	last_known_disease_status	Distant met recurrence/progression
-diagnosis	last_known_disease_status	Loco-regional recurrence/progression
-diagnosis	last_known_disease_status	Never Tumor Free
-diagnosis	last_known_disease_status	New Tumor Event (remission/relapse)
-diagnosis	last_known_disease_status	Tumor Free at Follow-up
-diagnosis	last_known_disease_status	Tumor free
-diagnosis	last_known_disease_status	Unknown
-diagnosis	last_known_disease_status	Unknown tumor status
-diagnosis	last_known_disease_status	With tumor
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS3
@@ -519,6 +507,15 @@ diagnosis	tumor_stage_clinical_t	Tis
 diagnosis	tumor_stage_clinical_t	Tis (DCIS)
 diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 diagnosis	tumor_stage_clinical_t	Tis (Paget's)
+event	age_at_event	STRING
+event	event_category	Adverse Event
+event	event_category	Comorbidity
+event	event_category	Disease Event
+event	event_category	Disease Response
+event	event_category	Last Known Disease Status
+event	event_category	Other
+event	event_detail	STRING
+event	event_id	STRING
 participant	alternate_participant_id	STRING
 participant	gender	Female
 participant	gender	Female Gender
@@ -1131,6 +1128,7 @@ study	study_short_title	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
+of_event	event	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -1139,6 +1137,7 @@ of_sample	sample	study	NA	NA
 property	description
 acl	Specifies whether the data in a repository is open access or controlled access.
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
+age_at_event	Participant age at event
 age_at_last_known_disease_status	Age at the time of last known disease status expressed in number of days since birth.
 age_at_recurrence	Number of days between the date used for index (DOB) and the date the patient's disease recurred.
 alternate_participant_id	A synonymous or alternate ID for a participant that is stored in another study or repository.
@@ -1155,6 +1154,9 @@ diagnosis_icd_o	The text term used to describe the type of malignant disease, as
 diagnosis_id	A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
+event_category	Event category
+event_detail	Event details or values or results
+event_id	A unique identifier for an event
 external_url	The url of the study (often a dbGaP study page).
 file_category	A freeform description of the file.
 file_description	A freeform description of the file.

@@ -10,13 +10,16 @@ Nodes:
       - anatomic_site
       - age_at_diagnosis
       - toronto_childhood_cancer_staging
-      - age_at_recurrence
-      - last_known_disease_status
-      - age_at_last_known_disease_status
       - tumor_grade
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
+  event:
+    Props:
+      - event_id
+      - event_category
+      - event_detail
+      - age_at_event
   participant:
     Props:
       - participant_id
@@ -74,6 +77,12 @@ Relationships:
     Mul: many_to_one
     Ends:
       - Src: diagnosis
+        Dst: participant
+  of_event:
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: event
         Dst: participant
   of_participant: 
     Props: null
