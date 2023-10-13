@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 25fa28b
+commit 5248b11
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	Abdomen, NOS
