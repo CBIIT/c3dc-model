@@ -2308,7 +2308,7 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
- age_at_event_free_survival_status:
+  age_at_event_free_survival_status:
     Desc: ''
     Term:
       - Origin: caDSR
@@ -2317,7 +2317,7 @@ PropDefinitions:
     Type: integer
     Req: false
     Private: false
-first_event:
+  first_event:
     Desc: ''
     Term:
       - Origin: caDSR
