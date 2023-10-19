@@ -2263,18 +2263,18 @@ PropDefinitions:
     Desc: A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '14534325'
+        Value: CCDI Accession Number Identifier
     Type: string
     Req: true
     Private: false
     Key: true
   last_known_survival_status:
-    Desc: ''
+    Desc: 'Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '2847330'
+        Value: Participant Vital Status Type
     Type:
       value_type: list
       Enum:
@@ -2285,20 +2285,20 @@ PropDefinitions:
     Req: true
     Private: false
   age_at_last_known_survival_status:
-    Desc: ''
+    Desc: 'The age (in days) when the last known survival status of the subject was captured.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '12305768'
+        Value: Subject Age at Last Known Survival Status Day Count
     Type: integer
     Req: true
     Private: false
   event_free_survival_status:
-    Desc: ''
+    Desc: 'Identify the nature of the event that best characterizes the endpoint of the study.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '3070936'
+        Value: Study End Point Event Type
     Type:
       value_type: list
       Enum:
@@ -2309,20 +2309,20 @@ PropDefinitions:
     Req: true
     Private: false
   age_at_event_free_survival_status:
-    Desc: ''
+    Desc: 'Time from diagnosis to first event (or censoring), in days.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '3229334'
+        Value: Study End Point Event Occurrence Day Count
     Type: integer
     Req: false
     Private: false
   first_event:
-    Desc: ''
+    Desc: 'Identify the nature of the event that best characterizes the endpoint of the study.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '3070936'
+        Value: Study End Point Event Type
     Type:
       value_type: list
       Enum:
