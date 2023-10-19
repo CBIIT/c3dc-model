@@ -14,12 +14,6 @@ Nodes:
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-  event:
-    Props:
-      - event_id
-      - event_category
-      - event_detail
-      - age_at_event
   participant:
     Props:
       - participant_id
@@ -58,6 +52,14 @@ Nodes:
       - consent
       - consent_number
       - external_url
+  survival:
+    Props:
+      - survival_id
+      - last_known_survival_status
+      - age_at_last_known_survival_status
+      - event_free_survival_status
+      - age_at_event_free_survival_status
+      - first_event
   reference_file: 
     Props:
       - reference_file_id
