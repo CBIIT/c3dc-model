@@ -1,13 +1,10 @@
 repo https://github.com/CBIIT/c3dc-model
-commit ac8d430
+commit c4479c9
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_finer_resolution	STRING
 diagnosis	diagnosis_icd_cm	STRING
 diagnosis	diagnosis_id	STRING
-event	age_at_event	STRING
-event	event_detail	STRING
-event	event_id	STRING
 participant	alternate_participant_id	STRING
 participant	participant_id	STRING
 reference_file	checksum_algorithm	STRING
@@ -36,20 +33,24 @@ study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
 study	study_short_title	STRING
+survival	age_at_event_free_survival_status	INTEGER
+survival	age_at_last_known_survival_status	INTEGER
+survival	survival_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
-of_event	event	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
+of_survival	survival	participant	NA	NA
 
 property	description
 acl	Specifies whether the data in a repository is open access or controlled access.
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
-age_at_event	Participant age at event
+age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
 age_at_last_known_disease_status	Age at the time of last known disease status expressed in number of days since birth.
+age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
 age_at_recurrence	Number of days between the date used for index (DOB) and the date the patient's disease recurred.
 alternate_participant_id	A synonymous or alternate ID for a participant that is stored in another study or repository.
 alternate_sample_id	A synonymous or alternate ID for a sample that is stored in another study or repository.
@@ -65,17 +66,17 @@ diagnosis_icd_o	The text term used to describe the type of malignant disease, as
 diagnosis_id	A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
-event_category	Event category
-event_detail	Event details or values or results
-event_id	A unique identifier for an event
+event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
 external_url	The url of the study (often a dbGaP study page).
 file_category	A freeform description of the file.
 file_description	A freeform description of the file.
 file_name	The name by which a set of related records (either written or electronic) are known.
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
+first_event	Identify the nature of the event that best characterizes the endpoint of the study.
 gender	Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1 Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
 last_known_disease_status	Text term that describes the last known state or condition of an individual's neoplasm.
+last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
@@ -91,6 +92,7 @@ study_description	The long form description of the study.
 study_id	A unique identifier for a study.
 study_name	The name applied to an investigational project, also known as Study Title.
 study_short_title	The succinct version of the study title if it exists.
+survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
 toronto_childhood_cancer_staging	For many of the malignancies that occur in childhood, TNM-based systems that document extent of disease at diagnosis are either inadequate or do not exist at all. Consensus guidelines for use by population cancer registries for staging childhood cancers (the Toronto Childhood Cancer Stage Guidelines) have been developed.
 tumor_classification	The classification of a tumor based primarily on histopathological characteristics.
 tumor_grade	Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness.
