@@ -2270,7 +2270,7 @@ PropDefinitions:
     Private: false
     Key: true
   last_known_survival_status:
-    Desc: 'Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.'
+    Desc: Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
     Term:
       - Origin: caDSR
         Code: '2847330'
@@ -2285,7 +2285,7 @@ PropDefinitions:
     Req: true
     Private: false
   age_at_last_known_survival_status:
-    Desc: 'The age (in days) when the last known survival status of the subject was captured.'
+    Desc: The age (in days) when the last known survival status of the subject was captured.
     Term:
       - Origin: caDSR
         Code: '12305768'
@@ -2294,7 +2294,7 @@ PropDefinitions:
     Req: true
     Private: false
   event_free_survival_status:
-    Desc: 'Identify the nature of the event that best characterizes the endpoint of the study.'
+    Desc: Identify the nature of the event that best characterizes the endpoint of the study.
     Term:
       - Origin: caDSR
         Code: '3070936'
@@ -2309,7 +2309,7 @@ PropDefinitions:
     Req: true
     Private: false
   age_at_event_free_survival_status:
-    Desc: 'Time from diagnosis to first event (or censoring), in days.'
+    Desc: Time from diagnosis to first event (or censoring), in days.
     Term:
       - Origin: caDSR
         Code: '3229334'
@@ -2318,7 +2318,7 @@ PropDefinitions:
     Req: false
     Private: false
   first_event:
-    Desc: 'Identify the nature of the event that best characterizes the endpoint of the study.'
+    Desc: Identify the nature of the event that best characterizes the endpoint of the study.
     Term:
       - Origin: caDSR
         Code: '3070936'
