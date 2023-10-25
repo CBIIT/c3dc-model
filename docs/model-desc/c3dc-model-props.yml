@@ -1211,7 +1211,7 @@ PropDefinitions:
         Code: '13299113'
         Value: Toronto Childhood Cancer Staging
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Acute lymphoblastic leukemia CNS1"
         - "Acute lymphoblastic leukemia CNS2"
@@ -1307,7 +1307,7 @@ PropDefinitions:
         Code: '5424231'
         Value: Person Last Known Neoplasm Status
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Biochemical evidence of disease without structural correlate"
         - "Distant met recurrence/progression"
@@ -1366,7 +1366,7 @@ PropDefinitions:
         Code: '7797710' #caDSR PVs are csv, bam, fastq, txt
         Value: Raw Data File Format
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "bam"
         - "bam_index"
@@ -1431,7 +1431,7 @@ PropDefinitions:
   file_category:
     Desc: A freeform description of the file.
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "programmatic source code"
         - "transformation/mapping"
@@ -1549,7 +1549,7 @@ PropDefinitions:
         Code: '2200604'
         Value: Person Gender Text Type
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Female"
         - "Female Gender"
@@ -1993,7 +1993,7 @@ PropDefinitions:
         Code: '2785839'
         Value: Specimen Histologic Grade Grading System Name Histologic Grade
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "G1"
         - "G2"
@@ -2016,7 +2016,7 @@ PropDefinitions:
         Code: '3440328'
         Value: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "T0"
         - "T1"
@@ -2064,7 +2064,7 @@ PropDefinitions:
         Code: '3440330'
         Value: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node N Stage
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "N0"
         - "N0 (i-)"
@@ -2101,7 +2101,7 @@ PropDefinitions:
         Code: '3440331'
         Value: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis M Stage
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "cM0 (i+)"
         - "M0"
@@ -2122,7 +2122,7 @@ PropDefinitions:
         Code: '12217251'
         Value: Disease Phase Timepoint Category
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - 'Initial Diagnosis'
         - 'Disease Progression'
@@ -2144,7 +2144,7 @@ PropDefinitions:
         Code: '12922545'
         Value: Tumor Classification Type
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - 'Primary'
         - 'Regional'
@@ -2176,7 +2176,7 @@ PropDefinitions:
         Code: '5432687'
         Value: Tissue Sample Description Category
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - 'Abnormal'
         - 'Non-neoplastic'
@@ -2276,7 +2276,7 @@ PropDefinitions:
         Code: '2847330'
         Value: Participant Vital Status Type
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Alive"
         - "Dead"
@@ -2300,7 +2300,7 @@ PropDefinitions:
         Code: '3070936'
         Value: Study End Point Event Type
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Censored"
         - "Not Censored"
@@ -2324,7 +2324,7 @@ PropDefinitions:
         Code: '3070936'
         Value: Study End Point Event Type
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Progression"
         - "Relapse"
