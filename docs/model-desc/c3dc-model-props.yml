@@ -1626,7 +1626,7 @@ PropDefinitions:
         Code: '11341616'
         Value: Disease Primary Anatomic Site ICD-O-3 Code
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Abdomen, NOS"
         - "Abdominal esophagus"
