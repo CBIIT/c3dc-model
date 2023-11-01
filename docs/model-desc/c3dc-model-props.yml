@@ -10,25 +10,14 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
-  # diagnosis, sample
-  diagnosis_icd_cm:
-    Desc: The diagnosis, in humans, as captured in the 2022 extension of the tenth version of the International Classification of Disease (ICD-10-CM, the disease code subset of ICD-10). Examples - C80.1, C44.510, D14.3-, D49.89.
+  diagnosis_classification:
+    Desc: The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.    
     Term:
       - Origin: caDSR
-        Code: '11479873'
-        Value: Diagnosis Disease or Disorder ICD-10-CM Code
-    Type: string
-    Req: false
-    Private: false
-  #diagnosis, sample
-  diagnosis_icd_o:
-    Desc: The text term used to describe the type of malignant disease, as categorized by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
-    Term:
-      - Origin: caDSR
-        Code: '11326261'
-        Value: Specimen Tumor Tissue ICD-O-3 Morphology Code
+        Code: '13594090'
+        Value: Disease Morphology ICD-O-3 Code Label Text
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "8000/0 : Neoplasm, benign"
         - "8000/1 : Neoplasm, uncertain whether benign or malignant"
@@ -159,6 +148,7 @@ PropDefinitions:
         - "8148/2 : Glandular intraepithelial neoplasia, high grade"
         - "8149/0 : Canalicular adenoma"
         - "8150/0 : Pancreatic neuroendocrine microadenoma"
+        - "8150/1 : Islet cell tumor, NOS"
         - "8150/3 : Pancreatic neuroendocrine tumor, nonfunctioning"
         - "8151/3 : Insulinoma, NOS"
         - "8152/3 : Glucagonoma"
@@ -1183,13 +1173,69 @@ PropDefinitions:
         - "999 : Unknown, to be completed later"
     Req: true
     Strict: true
-    Private: false     
+    Private: false  
   #diagnosis, sample
-  diagnosis_finer_resolution:
-    Desc: Text term used to dprovide finer resolution diagnosis than available in ICD-O or ICD-10-CM. 
+  diagnosis_classification_system:
+    Desc: 'The classification source from which the diagnosis value was obtained.'
+    Term:
+      - Origin: caDSR
+        Code: ''
+        Value: ''
+      - Origin: NCIt
+        Code: ' C42673'
+        Value: 'Definition Source'
+    Type:
+      value_type: string
+      Enum:
+        - 'ICD-0-3.2'
+        - 'Unknown'
+        - 'Not Reported'
+    Req: true
+    Strict: false
+    Private: false 
+  #diagnosis, sample
+  diagnosis_verification_status: 
+    Desc: 'The type of generic chronology for which the diagnosis was obtained.'
+    Term:
+      - Origin: caDSR
+        Code: ''
+        Value: ''
+    Type:
+      value_type: string
+      Enum:
+        - 'Initial'
+        - 'Update'
+        - 'Final'
+        - 'Unknown'
+        - 'Not Reported'
+    Req: true
+    Strict: false
+    Private: false 
+  #diagnosis, sample
+  diagnosis_basis: 
+    Desc: 'The type of event for which the diagnosis was obtained.'
+    Term:
+      - Origin: caDSR
+        Code: ''
+        Value: ''
+    Type:
+      value_type: list
+      Enum:
+        - 'Pathology'
+        - 'Sequencing'
+        - 'Source change'
+        - 'Harmonization efforts'
+        - 'Unknown'
+        - 'Not Reported'
+    Req: true
+    Strict: false
+    Private: false 
+  #diagnosis, sample
+  diagnosis_comment:
+    Desc: Freeform text entry for further details about the diagnosis.
     Type: string
     Req: false
-    Private: false    
+    Private: false     
   #diagnosis
   age_at_diagnosis:
     Desc: Age at the time of diagnosis expressed in number of days since birth.

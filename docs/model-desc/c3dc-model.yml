@@ -3,9 +3,11 @@ Nodes:
   diagnosis:
     Props:
       - diagnosis_id
-      - diagnosis_icd_o
-      - diagnosis_icd_cm
-      - diagnosis_finer_resolution
+      - diagnosis_classification
+      - diagnosis_classification_system
+      - diagnosis_verification_status
+      - diagnosis_basis
+      - diagnosis_comment
       - disease_phase
       - anatomic_site
       - age_at_diagnosis
