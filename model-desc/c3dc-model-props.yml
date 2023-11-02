@@ -2378,5 +2378,5 @@ PropDefinitions:
         - "Death"
         - "Not Reported"
         - "Unknown"
-    Req: true
+    Req: false
     Private: false
