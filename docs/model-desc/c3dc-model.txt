@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit c1cd5fa
+commit e9d783b
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -18,7 +18,6 @@ reference_file	reference_file_url	STRING
 sample	age_at_last_known_disease_status	INTEGER
 sample	alternate_sample_id	STRING
 sample	diagnosis_comment	STRING
-sample	diagnosis_icd_cm	NA
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
 sample	sample_id	STRING
