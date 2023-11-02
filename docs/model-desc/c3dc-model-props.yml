@@ -2377,6 +2377,7 @@ PropDefinitions:
         - "Second Malignant Neoplasm"
         - "Death"
         - "Not Reported"
+        - "Not Applicable"
         - "Unknown"
     Req: false
     Private: false
