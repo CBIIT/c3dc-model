@@ -1,11 +1,10 @@
 repo https://github.com/CBIIT/c3dc-model
-commit ca19ba9
+commit 895c13a
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
 participant	alternate_participant_id	STRING
-participant	gender	NA
 participant	participant_id	STRING
 reference_file	checksum_algorithm	STRING
 reference_file	checksum_value	STRING
