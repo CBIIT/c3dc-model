@@ -1,10 +1,11 @@
 repo https://github.com/CBIIT/c3dc-model
-commit d4f96e3
+commit ca19ba9
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
 participant	alternate_participant_id	STRING
+participant	gender	NA
 participant	participant_id	STRING
 reference_file	checksum_algorithm	STRING
 reference_file	checksum_value	STRING
@@ -39,8 +40,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
 of_survival	survival	participant	NA	NA
 
 property	description
@@ -74,7 +75,6 @@ file_name	The name by which a set of related records (either written or electron
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
-gender	Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1 Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
 last_known_disease_status	Text term that describes the last known state or condition of an individual's neoplasm.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 md5sum	md5 hash
@@ -87,6 +87,7 @@ reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
+sex_at_birth	A textual description of a person's sex at birth.
 study_acronym	A one word acronym to represent the study.
 study_description	The long form description of the study.
 study_id	A unique identifier for a study.
