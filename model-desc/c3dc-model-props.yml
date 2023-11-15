@@ -1221,10 +1221,9 @@ PropDefinitions:
     Type:
       value_type: list
       Enum:
-        - 'Pathology'
-        - 'Sequencing'
-        - 'Source change'
-        - 'Harmonization efforts'
+        - 'Clinical'
+        - 'Molecular'
+        - 'Pathological'
         - 'Unknown'
         - 'Not Reported'
     Req: true
