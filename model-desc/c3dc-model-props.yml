@@ -1548,7 +1548,8 @@ PropDefinitions:
     Private: false
   # participant
   participant_id:
-    Desc: A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.    Term:
+    Desc: A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
+    Term:
       - Origin: caDSR
         Code: '12220014'
         Value: Subject Data Origin Identifier
