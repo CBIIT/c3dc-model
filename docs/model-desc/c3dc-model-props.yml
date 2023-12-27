@@ -1,11 +1,11 @@
 PropDefinitions:
   # diagnosis
   diagnosis_id:
-    Desc: A unique sequence of alphanumeric characters used to identify the participant diagnosis in the investigation or study, which is used for linking metadata.
+    Desc:  sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
     Term:
       - Origin: caDSR
-        Code: '2534569'
-        Value: Additional Finding Identifier
+        Code: '14540952'
+        Value: Diagnosis Disease or Disorder Unique Identifier
     Type: string
     Req: true
     Private: false
@@ -880,6 +880,7 @@ PropDefinitions:
         - "9362/3 : Pineoblastoma"
         - "9363/0 : Melanotic neuroectodermal tumor"
         - "9260/3 : Ewing sarcoma"
+        - "9364/3 : Ewing sarcoma"
         - "9365/3 : Askin tumor"
         - "9370/0 : Benign notochordal cell tumor"
         - "9370/3 : Chordoma, NOS"
@@ -1336,44 +1337,45 @@ PropDefinitions:
     Private: false
   #diagnosis
   age_at_recurrence:
-    Desc: Number of days between the date used for index (DOB) and the date the patient's disease recurred.
+    Desc: The age (in days) of the subject at the time of recurrence.
     Term:
       - Origin: caDSR
-        Code: '6154731'
-        Value: Index Date To Recurrence Day Count
+        Code: '14483684'
+        Value: Subject Age at Recurrence Day Count
     Type: integer
     Req: false
     Private: false     
    #diagnosis, sample
   last_known_disease_status:
-    Desc: Text term that describes the last known state or condition of an individual's neoplasm.
+    Desc: The most recently documented condition or state of an individual's disease.
     Term:
       - Origin: caDSR
-        Code: '5424231'
-        Value: Person Last Known Neoplasm Status
+        Code: '12447172'
+        Value: Subject Last Known Disease Status
     Type:
       value_type: string
       Enum:
         - "Biochemical evidence of disease without structural correlate"
-        - "Distant met recurrence/progression"
-        - "Loco-regional recurrence/progression"
-        - "Never Tumor Free"
-        - "New Tumor Event (remission/relapse)"
-        - "Tumor free"
-        - "Tumor Free at Follow-up"
+        - "Distant Metastasis"
+        - "Localized Disease"
+        - "New Tumor Event"
+        - "Not Allowed To Collect"
+        - "Not Applicable"
+        - "Not Reported"
+        - "Regional Disease"
+        - "Tumor Free"
         - "Unknown"
-        - "Unknown tumor status"
-        - "With tumor"
+        - "With Tumor"
     Req: false
     Strict: true
     Private: false     
   #diagnosis, sample
   age_at_last_known_disease_status:
-    Desc: Age at the time of last known disease status expressed in number of days since birth.
+    Desc: Subject Age at Last Known Disease Status Day Count
     Term:
       - Origin: caDSR
-        Code: '10169253'
-        Value: Person Number of Days Between Index Date and Last Known Disease Status Day Count
+        Code: '14589579'
+        Value: The age (in days) of subject at the time of their last known disease status.
     Type: integer
     Req: false
     Private: false  
@@ -1546,22 +1548,22 @@ PropDefinitions:
     Private: false
   # participant
   participant_id:
-    Desc: A unique sequence of alphanumeric characters used to identify the participant, in the investigation or study, of the specimen at it's point of origin.
+    Desc: A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
     Term:
       - Origin: caDSR
-        Code: '6867052'
-        Value: Biospecimen Source Subject Identifier
+        Code: '12220014'
+        Value: Subject Data Origin Identifier
     Type: string
     Req: true
     Private: false
     Key: true
   #participant
   alternate_participant_id:
-    Desc: A synonymous or alternate ID for a participant that is stored in another study or repository.
+    Desc: An alternate sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
     Term:
       - Origin: caDSR
-        Code: '6867052'
-        Value: Biospecimen Source Subject Identifier
+        Code: '14528097'
+        Value: Subject Alternate Data Origin Identifier
     Type: string
     Req: false
     Private: false
@@ -1629,17 +1631,21 @@ PropDefinitions:
     Private: false
   #study
   consent:
-    Desc: The human readable value of the consent group as designated by dbGaP, examples GRU, HMB, IRB, NPU, etc.
+    Desc: Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
     Term:
       - Origin: caDSR
-        Code: '7218861'
-        Value: Consent Form Comment Text
+        Code: '14534329'
+        Value: Research Activity dbGaP Consent Group Text
     Type: string
     Req: true
     Private: false 
   #study
   consent_number:
-    Desc: The numeric value of the consent group as designated by dbGaP full accession identifier, phs######.v#.p#.c#.
+    Desc: A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+    Term:
+      - Origin: caDSR
+        Code: '14534330'
+        Value: Research Activity dbGaP Consent Group Number
     Type: integer
     Req: true
     Private: false     
@@ -1666,11 +1672,11 @@ PropDefinitions:
     Private: false 
   # sample
   anatomic_site:
-    Desc: The location within the body where cancer begins as captured in the topography codes of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+    Desc: The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
     Term:
       - Origin: caDSR
-        Code: '11341616'
-        Value: Disease Primary Anatomic Site ICD-O-3 Code
+        Code: '14156279'
+        Value: Disease Anatomic Site ICD-O-3 Label Text
     Type:
       value_type: list
       Enum:
@@ -2041,11 +2047,11 @@ PropDefinitions:
     Private: false
   # sample
   tumor_grade:
-    Desc: Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness.
+    Desc: A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
     Term:
       - Origin: caDSR
-        Code: '2785839'
-        Value: Specimen Histologic Grade Grading System Name Histologic Grade
+        Code: '11325685'
+        Value: Diagnosis Tumor Grade
     Type:
       value_type: string
       Enum:
@@ -2245,11 +2251,11 @@ PropDefinitions:
     Private: false    
   # study
   study_id: 
-    Desc: A unique identifier for a study.
+    Desc: A sequence of characters used to identify, name, or characterize a pediatric study.
     Term:
       - Origin: caDSR
-        Code: '6380045'
-        Value: Study Identifier
+        Code: '12960571'
+        Value: Study Pediatric Identifier
     Type: string
     Req: true
     Private: false
@@ -2260,23 +2266,27 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11524544'
-        Value: dbGaP Accession Number 
+        Value: Research Activity dbGaP Accession Number Identifier 
     Type: string
     Req: false
     Private: false
   # study
   study_short_title:
-    Desc: The succinct version of the study title if it exists.
+    Desc: The acronym or abbreviated form of the title for a research data collection.
     Term:
       - Origin: caDSR
-        Code: '3443999'
-        Value: Study Research Identification Title Text
+        Code: '11459812'
+        Value: Study Short Name Text
     Type: string
     Req: true
     Private: false
   # study
   study_acronym:
-    Desc: A one word acronym to represent the study.
+    Desc: The acronym or abbreviated form of the title for a research data collection.
+    Term:
+      - Origin: caDSR
+        Code: '11459812'
+        Value: Study Short Name Text
     Type: string
     Req: true
     Private: false
@@ -2296,20 +2306,20 @@ PropDefinitions:
     Req: false  # 02/22/2022 adeforge, not required?
     Private: false
   study_name:
-    Desc: The name applied to an investigational project, also known as Study Title.
+    Desc: The narrative title used as a textual label for a research data collection.
     Term:
       - Origin: caDSR
-        Code: '3443999'
-        Value: Study Research Identification Title Text
+        Code: '11459810'
+        Value: Study Name Text
     Type: string
     Req: false
     Private: false       
   acl: 
-    Desc: Specifies whether the data in a repository is open access or controlled access. 
+    Desc: A free text field used to document whether the data in a repository is open access or controlled access. 
     Term:
-      - Origin: NCIt
-        Code: 'C175887'
-        Value: Open or Controlled Data Access Indicator 
+      - Origin: caDSR
+        Code: '11555664'
+        Value: Electronic Data File Access Level Text 
     Type: string
     Req: true
     Private: false
