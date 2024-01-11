@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 12fccd8
+commit 1e4a9cc
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -93,7 +93,7 @@ study_id	A sequence of characters used to identify, name, or characterize a pedi
 study_name	The narrative title used as a textual label for a research data collection.
 study_short_title	The acronym or abbreviated form of the title for a research data collection.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
-toronto_childhood_cancer_staging	For many of the malignancies that occur in childhood, TNM-based systems that document extent of disease at diagnosis are either inadequate or do not exist at all. Consensus guidelines for use by population cancer registries for staging childhood cancers (the Toronto Childhood Cancer Stage Guidelines) have been developed.
+toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 tumor_classification	The classification of a tumor based primarily on histopathological characteristics.
 tumor_grade	A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
 tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
