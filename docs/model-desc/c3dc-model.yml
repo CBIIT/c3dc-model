@@ -3,10 +3,13 @@ Nodes:
   diagnosis:
     Props:
       - diagnosis_id
-      - diagnosis_icd_o
-      - diagnosis_icd_cm
-      - diagnosis_finer_resolution
+      - diagnosis_classification
+      - diagnosis_classification_system
+      - diagnosis_verification_status
+      - diagnosis_basis
+      - diagnosis_comment
       - disease_phase
+      - tumor_classification
       - anatomic_site
       - age_at_diagnosis
       - toronto_childhood_cancer_staging
@@ -14,26 +17,23 @@ Nodes:
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-  event:
-    Props:
-      - event_id
-      - event_category
-      - event_detail
-      - age_at_event
   participant:
     Props:
       - participant_id
       - race       
-      - gender
       - ethnicity
+      - sex_at_birth
       - alternate_participant_id
   sample:
     Props:
       - sample_id
       - anatomic_site
       - participant_age_at_collection
-      - diagnosis_icd_o
-      - diagnosis_finer_resolution
+      - diagnosis_classification
+      - diagnosis_classification_system
+      - diagnosis_verification_status
+      - diagnosis_basis
+      - diagnosis_comment
       - sample_tumor_status
       - tumor_classification
       - sample_description
@@ -45,7 +45,6 @@ Nodes:
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-      - diagnosis_icd_cm
   study:
     Props:
       - study_id
@@ -58,6 +57,14 @@ Nodes:
       - consent
       - consent_number
       - external_url
+  survival:
+    Props:
+      - survival_id
+      - last_known_survival_status
+      - age_at_last_known_survival_status
+      - event_free_survival_status
+      - age_at_event_free_survival_status
+      - first_event
   reference_file: 
     Props:
       - reference_file_id
@@ -78,11 +85,11 @@ Relationships:
     Ends:
       - Src: diagnosis
         Dst: participant
-  of_event:
+  of_survival:
     Props: null
     Mul: many_to_one 
     Ends:
-      - Src: event
+      - Src: survival
         Dst: participant
   of_participant: 
     Props: null
