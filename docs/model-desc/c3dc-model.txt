@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 1e4a9cc
+commit 90c0e27
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
