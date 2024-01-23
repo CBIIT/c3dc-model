@@ -1192,7 +1192,9 @@ PropDefinitions:
     Type:
       value_type: string
       Enum:
+        - 'CNS Diagnosis Category'
         - 'ICD-O-3.2'
+        - 'WHO CNS5 Integrated Diagnosis'
         - 'Unknown'
         - 'Not Reported'
     Req: true
@@ -1238,7 +1240,7 @@ PropDefinitions:
   diagnosis_comment:
     Desc: Freeform text entry for further details about the diagnosis.
     Type: string
-    Req: false
+    Req: true
     Private: false     
   #diagnosis
   age_at_diagnosis:
@@ -1336,7 +1338,8 @@ PropDefinitions:
         - "Testicular germ cell tumor Stage IIIB"
         - "Testicular germ cell tumor Stage IIIC"
         - "Testicular germ cell tumor Stage IS"
-    Req: false
+        - 'Not Reported'
+    Req: true
     Strict: true
     Private: false
   #diagnosis
@@ -1347,7 +1350,7 @@ PropDefinitions:
         Code: '14483684'
         Value: Subject Age at Recurrence Day Count
     Type: integer
-    Req: false
+    Req: true
     Private: false     
    #diagnosis, sample
   last_known_disease_status:
@@ -1365,12 +1368,12 @@ PropDefinitions:
         - "New Tumor Event"
         - "Not Allowed To Collect"
         - "Not Applicable"
-        - "Not Reported"
+        - 'Not Reported'
         - "Regional Disease"
         - "Tumor Free"
         - "Unknown"
         - "With Tumor"
-    Req: false
+    Req: true
     Strict: true
     Private: false     
   #diagnosis, sample
@@ -1381,7 +1384,7 @@ PropDefinitions:
         Code: '14589579'
         Value: The age (in days) of subject at the time of their last known disease status.
     Type: integer
-    Req: false
+    Req: true
     Private: false  
   #reference_file
   reference_file_id: 
@@ -1477,7 +1480,7 @@ PropDefinitions:
   file_description:
     Desc: A freeform description of the file.
     Type: string
-    Req: false  # 02/22/2022 adeforge, not required?
+    Req: true  # 02/22/2022 adeforge, not required?
     Private: false
   file_category:
     Desc: A freeform description of the file.
@@ -1560,7 +1563,7 @@ PropDefinitions:
         - "Black or African American"
         - "Native Hawaiian or other Pacific Islander"
         - "Not allowed to collect"
-        - "Not Reported"
+        - 'Not Reported'
         - "Unknown"
         - "White"
     Req: true
@@ -1580,7 +1583,7 @@ PropDefinitions:
         - "Intersex"
         - "Male"
         - "X"
-        - "Not Reported"
+        - 'Not Reported'
         - "Unknown"
         - "Don't Know"
         - "Decline to answer"
@@ -1602,7 +1605,7 @@ PropDefinitions:
         - "Hispanic or Latino"
         - "Not allowed to collect"
         - "Not Hispanic or Latino"
-        - "Not reported"
+        - 'Not Reported'
         - "Unknown" 
     Req: true
     Strict: true
@@ -1999,7 +2002,7 @@ PropDefinitions:
         - "C14.2 : Waldeyer ring"
         - "C80.9 : Unknown primary site"
         - "Unknown"
-        - "Not Reported"
+        - 'Not Reported'
     Req: true
     Strict: true
     Private: false
@@ -2033,7 +2036,8 @@ PropDefinitions:
         - "Intermediate Grade"
         - "Low Grade"
         - "Not Applicable"
-    Req: false  
+        - "Not Reported"
+    Req: true  
     Strict: true
     Private: false
   # sample
@@ -2081,7 +2085,8 @@ PropDefinitions:
         - "Tis (LCIS)"
         - "Tis (Paget's)"
         - "TX"
-    Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
+        - "Not Reported"
+    Req: true
     Strict: true
     Private: false
   # sample
@@ -2118,7 +2123,8 @@ PropDefinitions:
         - "N3c"
         - "N4"
         - "NX"
-    Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
+        - "Not Reported"
+    Req: true
     Strict: true
     Private: false
   # sample
@@ -2138,7 +2144,8 @@ PropDefinitions:
         - "M1b"
         - "M1c"
         - "MX"
-    Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
+        - "Not Reported"
+    Req: true
     Strict: true
     Private: false
 # tumor_morphology: CCDIDC-360
@@ -2194,7 +2201,7 @@ PropDefinitions:
         Code: '5432687'
         Value: Tissue Sample Description
     Type: string
-    Req: false
+    Req: true
     Private: false
   #sample
   sample_tumor_status:
@@ -2209,6 +2216,7 @@ PropDefinitions:
         - 'Abnormal'
         - 'Non-neoplastic'
         - 'Normal'
+        - 'Not Reported'
         - 'Peritumoral'
         - 'Tumor'
         - 'Unavailable'
@@ -2236,7 +2244,7 @@ PropDefinitions:
         Code: '11524544'
         Value: Research Activity dbGaP Accession Number Identifier 
     Type: string
-    Req: false
+    Req: true
     Private: false
   # study
   study_short_title:
@@ -2271,7 +2279,7 @@ PropDefinitions:
   external_url:
     Desc: The url of the study (often a dbGaP study page).
     Type: string
-    Req: false  # 02/22/2022 adeforge, not required?
+    Req: true  # 02/22/2022 adeforge, not required?
     Private: false
   study_name:
     Desc: The narrative title used as a textual label for a research data collection.
@@ -2280,7 +2288,7 @@ PropDefinitions:
         Code: '11459810'
         Value: Study Name Text
     Type: string
-    Req: false
+    Req: true
     Private: false       
   acl: 
     Desc: A free text field used to document whether the data in a repository is open access or controlled access. 
@@ -2312,7 +2320,7 @@ PropDefinitions:
       Enum:
         - "Alive"
         - "Dead"
-        - "Not Reported"
+        - 'Not Reported'
         - "Unknown"
     Req: true
     Private: false
@@ -2336,7 +2344,7 @@ PropDefinitions:
       Enum:
         - "Censored"
         - "Not Censored"
-        - "Not Reported"
+        - 'Not Reported'
         - "Unknown"
     Req: true
     Private: false
@@ -2347,7 +2355,7 @@ PropDefinitions:
         Code: '3229334'
         Value: Study End Point Event Occurrence Day Count
     Type: integer
-    Req: false
+    Req: true
     Private: false
   first_event:
     Desc: Identify the nature of the event that best characterizes the endpoint of the study.
@@ -2362,8 +2370,8 @@ PropDefinitions:
         - "Relapse"
         - "Second Malignant Neoplasm"
         - "Death"
-        - "Not Reported"
+        - 'Not Reported'
         - "Not Applicable"
         - "Unknown"
-    Req: false
+    Req: true
     Private: false
