@@ -37,8 +37,6 @@ Nodes:
       - sample_tumor_status
       - tumor_classification
       - sample_description
-      - last_known_disease_status
-      - age_at_last_known_disease_status
       - toronto_childhood_cancer_staging
       - tumor_grade
       - tumor_stage_clinical_t

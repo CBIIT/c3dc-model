@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 22dfed1
+commit 9bc1935
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -12,7 +12,6 @@ reference_file	file_size	INTEGER
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
-sample	age_at_last_known_disease_status	INTEGER
 sample	diagnosis_comment	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
@@ -45,7 +44,6 @@ age_at_diagnosis	Age at the time of diagnosis expressed in number of days since 
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
 age_at_last_known_disease_status	Subject Age at Last Known Disease Status Day Count
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
-age_at_recurrence	The age (in days) of the subject at the time of recurrence.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
