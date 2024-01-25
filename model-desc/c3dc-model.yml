@@ -24,7 +24,6 @@ Nodes:
       - race       
       - ethnicity
       - sex_at_birth
-      - alternate_participant_id
   sample:
     Props:
       - sample_id
@@ -38,7 +37,6 @@ Nodes:
       - sample_tumor_status
       - tumor_classification
       - sample_description
-      - alternate_sample_id
       - last_known_disease_status
       - age_at_last_known_disease_status
       - toronto_childhood_cancer_staging
@@ -77,8 +75,6 @@ Nodes:
       - md5sum
       - reference_file_url
       - dcf_indexd_guid
-      - checksum_algorithm
-      - checksum_value
 Relationships:
   of_diagnosis: 
     Props: null
