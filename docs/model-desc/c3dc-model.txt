@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 9bc1935
+commit 8f651c2
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -42,7 +42,6 @@ property	description
 acl	A free text field used to document whether the data in a repository is open access or controlled access.
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
-age_at_last_known_disease_status	Subject Age at Last Known Disease Status Day Count
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
@@ -64,7 +63,6 @@ file_name	The name by which a set of related records (either written or electron
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
-last_known_disease_status	The most recently documented condition or state of an individual's disease.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.

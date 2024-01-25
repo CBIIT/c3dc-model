@@ -1342,40 +1342,6 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #diagnosis, sample
-  last_known_disease_status:
-    Desc: The most recently documented condition or state of an individual's disease.
-    Term:
-      - Origin: caDSR
-        Code: '12447172'
-        Value: Subject Last Known Disease Status
-    Type:
-      value_type: string
-      Enum:
-        - "Biochemical evidence of disease without structural correlate"
-        - "Distant Metastasis"
-        - "Localized Disease"
-        - "New Tumor Event"
-        - "Not Allowed To Collect"
-        - "Not Applicable"
-        - 'Not Reported'
-        - "Regional Disease"
-        - "Tumor Free"
-        - "Unknown"
-        - "With Tumor"
-    Req: true
-    Strict: true
-    Private: false     
-  #diagnosis, sample
-  age_at_last_known_disease_status:
-    Desc: Subject Age at Last Known Disease Status Day Count
-    Term:
-      - Origin: caDSR
-        Code: '14589579'
-        Value: The age (in days) of subject at the time of their last known disease status.
-    Type: integer
-    Req: true
-    Private: false  
   #reference_file
   reference_file_id: 
     Desc: A unique identifier for a clinical measure file.
@@ -1387,6 +1353,7 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
+  #reference_file
   file_name:
     Desc: The name by which a set of related records (either written or electronic) are known.
     Term:
