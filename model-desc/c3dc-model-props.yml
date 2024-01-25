@@ -1342,17 +1342,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #diagnosis
-  age_at_recurrence:
-    Desc: The age (in days) of the subject at the time of recurrence.
-    Term:
-      - Origin: caDSR
-        Code: '14483684'
-        Value: Subject Age at Recurrence Day Count
-    Type: integer
-    Req: true
-    Private: false     
-   #diagnosis, sample
+  #diagnosis, sample
   last_known_disease_status:
     Desc: The most recently documented condition or state of an individual's disease.
     Term:
