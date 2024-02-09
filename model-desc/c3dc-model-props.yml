@@ -1210,7 +1210,7 @@ PropDefinitions:
     Type:
       value_type: string
       Enum:
-        - 'Initial'
+        - 'Provisional'
         - 'Update'
         - 'Final'
         - 'Unknown'
