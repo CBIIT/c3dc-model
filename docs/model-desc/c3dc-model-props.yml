@@ -1325,7 +1325,7 @@ PropDefinitions:
     Strict: false
     Private: false 
   #diagnosis, sample
-  diagnosis_verification_status: 
+  diagnosis_certainty: 
     Desc: 'The type of generic chronology for which the diagnosis was obtained.'
     Term:
       - Origin: caDSR
@@ -1334,7 +1334,7 @@ PropDefinitions:
     Type:
       value_type: string
       Enum:
-        - 'Initial'
+        - 'Provisional'
         - 'Final'
         - 'Unknown'
         - 'Not Reported'
