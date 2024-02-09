@@ -6,7 +6,7 @@ Nodes:
       - diagnosis_id
       - diagnosis_classification
       - diagnosis_classification_system
-      - diagnosis_verification_status
+      - diagnosis_certainty
       - diagnosis_basis
       - diagnosis_comment
       - disease_phase
