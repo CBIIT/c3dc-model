@@ -1334,7 +1334,7 @@ PropDefinitions:
     Type:
       value_type: string
       Enum:
-        - 'Initial'
+        - 'Provisional'
         - 'Final'
         - 'Unknown'
         - 'Not Reported'
