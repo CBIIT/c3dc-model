@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit a14e642
+commit 5138d4d
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -24,7 +24,6 @@ study	phs_accession	STRING
 study	study_acronym	STRING
 study	study_description	STRING
 study	study_id	STRING
-study	study_name	STRING
 study	study_short_title	STRING
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
@@ -78,7 +77,6 @@ sex_at_birth	A textual description of a person's sex at birth.
 study_acronym	The acronym or abbreviated form of the title for a research data collection.
 study_description	The long form description of the study.
 study_id	A sequence of characters used to identify, name, or characterize a pediatric study.
-study_name	The narrative title used as a textual label for a research data collection.
 study_short_title	The acronym or abbreviated form of the title for a research data collection.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
