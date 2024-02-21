@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 04fb3d8
+commit 11bfe8b
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -12,7 +12,6 @@ reference_file	file_size	INTEGER
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
-sample	diagnosis_certainty	NA
 sample	diagnosis_comment	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
@@ -34,8 +33,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
 
 property	description
