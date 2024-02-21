@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 5138d4d
+commit 04fb3d8
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -12,6 +12,7 @@ reference_file	file_size	INTEGER
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
+sample	diagnosis_certainty	NA
 sample	diagnosis_comment	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
@@ -33,8 +34,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	study	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	study	NA	NA
 of_survival	survival	participant	NA	NA
 
 property	description
@@ -46,12 +47,12 @@ anatomic_site	The location within the body as captured in the topography label o
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
-diagnosis	The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.
 diagnosis_basis	The type of event for which the diagnosis was obtained.
-diagnosis_certainty	The type of generic chronology for which the diagnosis was obtained.
+diagnosis_classification	The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.
 diagnosis_classification_system	The classification source from which the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
+diagnosis_verification_status	The type of generic chronology for which the diagnosis was obtained.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
