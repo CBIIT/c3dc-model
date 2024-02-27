@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 11bfe8b
+commit 01d4974
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -51,7 +51,6 @@ diagnosis_classification	The text term used to describe the type of malignant di
 diagnosis_classification_system	The classification source from which the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
-diagnosis_verification_status	The type of generic chronology for which the diagnosis was obtained.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
