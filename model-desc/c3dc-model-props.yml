@@ -1070,7 +1070,7 @@ PropDefinitions:
         - "9718/1 : Primary cutaneous CD30 positive T-cell lymphoproliferative disorder"
         - "9718/3 : Primary cutaneous anaplastic large cell lymphoma"
         - "9719/3 : NK/T-cell lymphoma, nasal and nasal type"
-        - "9724/3 : Systemic EBV positive T-cell lymphoproliferative disease of childhood"
+        - "9724/3 : ic EBV positive T-cell lymphoproliferative disease of childhood"
         - "9725/1 : Hydroa vacciniforme-like lymphoproliferative disorder"
         - "9726/3 : Primary cutaneous gamma-delta T-cell lymphoma"
         - "9727/3 : Precursor cell lymphoblastic lymphoma, NOS"
@@ -1083,7 +1083,7 @@ PropDefinitions:
         - "9738/3 : HHV8 positive diffuse large B-cell lymphoma"
         - "9740/1 : Mastocytoma, NOS"
         - "9740/3 : Mast cell sarcoma"
-        - "9741/1 : Indolent systemic mastocytosis"
+        - "9741/1 : Indolent ic mastocytosis"
         - "9741/3 : Malignant mastocytosis"
         - "9742/3 : Mast cell leukemia"
         - "9749/3 : Erdheim-Chester disease"
@@ -1304,7 +1304,7 @@ PropDefinitions:
     Strict: true
     Private: false  
   #diagnosis, sample
-  diagnosis_system:
+  diagnosis_classification_system:
     Desc: 'The classification source from which the diagnosis value was obtained.'
     Term:
       - Origin: caDSR
