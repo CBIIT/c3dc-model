@@ -6,7 +6,6 @@ Nodes:
       - diagnosis_id
       - diagnosis_classification
       - diagnosis_classification_system
-      - diagnosis_verification_status
       - diagnosis_basis
       - diagnosis_comment
       - disease_phase
@@ -31,7 +30,6 @@ Nodes:
       - participant_age_at_collection
       - diagnosis_classification
       - diagnosis_classification_system
-      - diagnosis_verification_status
       - diagnosis_basis
       - diagnosis_comment
       - sample_tumor_status
