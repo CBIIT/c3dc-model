@@ -4,7 +4,7 @@ Nodes:
   diagnosis:
     Props:
       - diagnosis_id
-      - diagnosis_classification
+      - diagnosis
       - diagnosis_classification_system
       - diagnosis_basis
       - diagnosis_comment
@@ -28,7 +28,7 @@ Nodes:
       - sample_id
       - anatomic_site
       - participant_age_at_collection
-      - diagnosis_classification
+      - diagnosis
       - diagnosis_classification_system
       - diagnosis_basis
       - diagnosis_comment
