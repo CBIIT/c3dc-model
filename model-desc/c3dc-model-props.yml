@@ -10,7 +10,7 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
-  diagnosis_classification:
+  diagnosis:
     Desc: The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.    
     Term:
       - Origin: caDSR
@@ -1304,7 +1304,7 @@ PropDefinitions:
     Strict: true
     Private: false  
   #diagnosis, sample
-  diagnosis_classification_system:
+  diagnosis_system:
     Desc: 'The classification source from which the diagnosis value was obtained.'
     Term:
       - Origin: caDSR
