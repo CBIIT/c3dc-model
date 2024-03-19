@@ -6,7 +6,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14540952'
         Value: Diagnosis Disease or Disorder Unique Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -17,7 +16,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '13594090'
         Value: Disease Morphology ICD-O-3 Code Label Text
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -1312,11 +1310,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: ''
         Value: ''
-        Version: "null"
       - Origin: NCIt
         Code: ' C42673'
         Value: 'Definition Source'
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -1335,7 +1331,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: ''
         Value: ''
-        Version: "null"
     Type:
       value_type: list
       Enum:
@@ -1360,11 +1355,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: '10609539'
         Value: Subject Age at Diagnosis Integer
-        Version: "null"
       - Origin: NCIt
         Code: 'C156420'
         Value: Age at Diagnosis 
-        Version: "null"
     Type: integer
     Req: true
     Private: false
@@ -1375,7 +1368,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '13299113'
         Value: Childhood Cancer Toronto Guidelines Stage
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -1463,7 +1455,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2534569'
         Value: Additional Finding Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1475,11 +1466,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115804'
         Value: File Occurrence Name
-        Version: "null"
       - Origin: caDSR
         Code: '7787681'
         Value: Raw Data Electronic File Name
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1490,11 +1479,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6983162'
         Value: File Type Descriptive Text # no PVs
-        Version: "null"
       - Origin: caDSR
         Code: '7797710' #caDSR PVs are csv, bam, fastq, txt
         Value: Raw Data File Format
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -1577,11 +1564,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115806'
         Value: Data File Size Value
-        Version: "null"
       - Origin: NCIt
         Code: 'C171276'
         Value: MD5 Checksum 
-        Version: "null"
     Type: integer
     Req: true
     Private: false
@@ -1592,7 +1577,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115805'
         Value: File Hash Value Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1603,7 +1587,6 @@ PropDefinitions:
       - Origin: NCIt
         Code: 'C47922'
         Value: Pathname
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1614,7 +1597,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6584918'
         Value: unique universal identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1625,7 +1607,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12220014'
         Value: Subject Data Origin Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1637,7 +1618,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2192199'
         Value: Race Category Text
-        Version: "null"
     Type:
       value_type: list
       Enum:
@@ -1659,7 +1639,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '7572817'
         Value: Person Sex at Birth Category
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -1683,7 +1662,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2192217'
         Value: Ethnic Group Category Text
-        Version: "null"
     Type:
       value_type: list
       Enum:
@@ -1702,7 +1680,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14534329'
         Value: Research Activity dbGaP Consent Group Text
-        Version: "null"
     Type: string
     Req: true
     Private: false 
@@ -1713,7 +1690,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14534330'
         Value: Research Activity dbGaP Consent Group Number
-        Version: "null"
     Type: integer
     Req: true
     Private: false     
@@ -1724,7 +1700,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2003904'
         Value: Sample ID
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -1736,7 +1711,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14156279'
         Value: Disease Anatomic Site ICD-O-3 Label Text
-        Version: "null"
     Type:
       value_type: list
       Enum:
@@ -2108,7 +2082,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2731348'
         Value: Biospecimen Collection Study Subject Age
-        Version: "null"
     Type: integer
     Req: true  
     Private: false
@@ -2119,7 +2092,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11325685'
         Value: Diagnosis Tumor Grade
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2144,7 +2116,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440328'
         Value: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2194,7 +2165,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440330'
         Value: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node N Stage
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2233,7 +2203,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440331'
         Value: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis M Stage
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2256,7 +2225,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12217251'
         Value: Disease Phase Timepoint Category
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2279,7 +2247,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12922545'
         Value: Tumor Classification Type
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2299,11 +2266,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2003907'
         Value: Sample Description Text
-        Version: "null"
       - Origin: caDSR
         Code: '5432687'
         Value: Tissue Sample Description
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2314,7 +2279,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14688604'
         Value: Specimen Neoplasm Category
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2332,7 +2296,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12960571'
         Value: Study Pediatric Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2344,7 +2307,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11524544'
         Value: Research Activity dbGaP Accession Number Identifier 
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2355,7 +2317,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11459812'
         Value: Study Short Name Text
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2366,7 +2327,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11459812'
         Value: Study Short Name Text
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2377,7 +2337,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3444002'
         Value: Study Research Identification Descriptive Text
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2392,7 +2351,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11555664'
         Value: Electronic Data File Access Level Text 
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2402,7 +2360,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14534325'
         Value: CCDI Accession Number Identifier
-        Version: "null"
     Type: string
     Req: true
     Private: false
@@ -2413,7 +2370,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2847330'
         Value: Participant Vital Status Type
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2429,7 +2385,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12305768'
         Value: Subject Age at Last Known Survival Status Day Count
-        Version: "null"
     Type: integer
     Req: true
     Private: false
@@ -2439,7 +2394,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3070936'
         Value: Study End Point Event Type
-        Version: "null"
     Type:
       value_type: string
       Enum:
@@ -2455,7 +2409,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3229334'
         Value: Study End Point Event Occurrence Day Count
-        Version: "null"
     Type: integer
     Req: true
     Private: false
@@ -2465,7 +2418,6 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3070936'
         Value: Study End Point Event Type
-        Version: "null"
     Type:
       value_type: string
       Enum:
