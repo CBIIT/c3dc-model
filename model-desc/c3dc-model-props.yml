@@ -1585,6 +1585,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
+  #id
   id:
     Desc: A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
     Term:
@@ -1596,7 +1597,8 @@ PropDefinitions:
     Req: false
     Key: false
     Private: false  
-  #reference_filemd5sum:
+  #reference_file
+  md5sum:
     Desc: md5 hash
     Term:
       - Origin: caDSR
