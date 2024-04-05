@@ -54,6 +54,7 @@ Nodes:
       - consent
       - consent_number
       - external_url
+      - id
   survival:
     Props:
       - survival_id
