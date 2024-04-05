@@ -1585,8 +1585,18 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
-  #reference_file
-  md5sum:
+  id:
+    Desc: A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
+    Term:
+      - Origin: caDSR
+        Code: '14534325'
+        Value: CCDI Property Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: false
+    Key: false
+    Private: false  
+  #reference_filemd5sum:
     Desc: md5 hash
     Term:
       - Origin: caDSR
