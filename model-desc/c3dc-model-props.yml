@@ -11,6 +11,7 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
+  #diagnosis
   diagnosis:
     Desc: The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.    
     Term:
@@ -2393,11 +2394,13 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  #study
   external_url:
     Desc: The url of the study (often a dbGaP study page).
     Type: string
     Req: true  # 02/22/2022 adeforge, not required?
     Private: false     
+  #study
   acl: 
     Desc: A free text field used to document whether the data in a repository is open access or controlled access. 
     Term:
@@ -2408,6 +2411,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  #survival
   survival_id:
     Desc: A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
     Term:
@@ -2419,6 +2423,7 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
+  #survival
   last_known_survival_status:
     Desc: Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
     Term:
@@ -2435,6 +2440,7 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
+  #survival
   age_at_last_known_survival_status:
     Desc: The age (in days) when the last known survival status of the subject was captured.
     Term:
@@ -2445,6 +2451,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
+  #survival
   event_free_survival_status:
     Desc: Identify the nature of the event that best characterizes the endpoint of the study.
     Term:
@@ -2461,6 +2468,7 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
+  #survival
   age_at_event_free_survival_status:
     Desc: Time from diagnosis to first event (or censoring), in days.
     Term:
@@ -2471,6 +2479,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
+  #survival
   first_event:
     Desc: Identify the nature of the event that best characterizes the endpoint of the study.
     Term:
@@ -2490,3 +2499,109 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
+  #therapeutic_procedure
+  age_at_treatment_start:
+    Desc: Subject Age in Days at Start of Treatment Course Day Count
+    Term:
+      - Origin: caDSR
+        Code: '12304720'
+        Value: Subject Age at Start of Treatment Course Day Count
+        Version: "null"
+    Type: integer
+    Req: true
+    Private: false
+  #therapeutic_procedure
+  age_at_treatment_end:
+    Desc: Subject Age in Days at End of Treatment Course Day Count
+    Term:
+      - Origin: caDSR
+        Code: '12304723'
+        Value: Subject Age at End of Treatment Course Day Count
+        Version: "null"
+    Type: integer
+    Req: true
+    Private: false  
+  #therapeutic_procedure
+  therapeutic_procedure_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "null"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #therapeutic_procedure
+  treatment_outcome:
+    Desc: Text term that describes the patient's final outcome after the treatment was administered.
+    Term:
+      - Origin: caDSR
+        Code: '5102383'
+        Value: Treatment Outcome Type
+        Version: "null"
+    Type:
+      value_type: list
+      Enum:
+        - "Complete Remission/Response"
+        - "Complete Response"
+        - "Elevated Tumor Markers and Residual Mass"
+        - "First Course Treatment Still in Progress"
+        - "Mixed Response"
+        - "No Measurable Disease"
+        - "No Measureable Tumor or Tumor Markers"
+        - "No Response"
+        - "Normalization of Tumor Markers, but Residual Tumor Mass"
+        - "Not Applicable"
+        - "Not Reported"
+        - "Other"
+        - "Partial Remission/Response"
+        - "Partial Response"
+        - "Persistent Disease"
+        - "Progressive Disease"
+        - "Progressive Tumor Mass and Tumor Markers"
+        - "Stable Disease"
+        - "Treatment Ongoing"
+        - "Treatment Stopped Due to Toxicity"
+        - "Unknown"
+        - "Very Good Partial Response"
+    Req: true
+    Strict: false
+    Private: false
+  #therapeutic_procedure
+  treatment_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      Enum:
+        - "3-Dimensional Conformal Radiation Therapy"
+        - "Allogeneic Hematopoietic Stem Cell Transplantation"
+        - "Autologous Stem Cell Transplantation"
+        - "Chemotherapy"
+        - "Concurrent Chemoradiation"
+        - "Conventional Radiotherapy"
+        - "External Beam Radiation Therapy"
+        - "High-Dose Rate Brachytherapy"
+        - "Hormone Therapy"
+        - "Immunotherapy"
+        - "Intensity-Modulated Radiation Therapy"
+        - "Low-Dose Rate Brachytherapy"
+        - "Not Reported"
+        - "Pharmacotherapy"
+        - "Proton Beam Radiation Therapy"
+        - "Radiation Therapy, NOS"
+        - "Radiofrequency Ablation"
+        - "Stereotactic Body Radiation Therapy"
+        - "Stereotactic Radiosurgery"
+        - "Surgical Procedure"
+        - "Targeted Molecular Therapy"
+        - "Unknown"
+    Req: true
+    Strict: false
+    Private: false  
