@@ -25,6 +25,14 @@ Nodes:
       - ethnicity
       - sex_at_birth
       - id
+  response:
+    Props:
+      - response_id
+      - response
+      - response_category
+      - response_system
+      - age_at_response
+      - id
   sample:
     Props:
       - sample_id
@@ -71,14 +79,6 @@ Nodes:
       - age_at_treatment_end
       - treatment_type
       - therapeutic_agent
-      - id
-  response:
-    Props:
-      - response_id
-      - response
-      - response_category
-      - response_system
-      - age_at_response
       - id
   reference_file: 
     Props:
