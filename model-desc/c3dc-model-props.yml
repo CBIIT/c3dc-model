@@ -1,5 +1,5 @@
 PropDefinitions:
-  # diagnosis
+  #diagnosis
   diagnosis_id:
     Desc:  sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
     Term:
@@ -1329,7 +1329,7 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false 
-  #diagnosis, sample
+  #diagnosis
   diagnosis_basis: 
     Desc: 'The type of event for which the diagnosis was obtained.'
     Term:
@@ -1348,7 +1348,7 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false 
-  #diagnosis, sample
+  #diagnosis
   diagnosis_comment:
     Desc: Freeform text entry for further details about the diagnosis.
     Type: string
@@ -1369,7 +1369,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
-  #diagnosis, sample
+  #diagnosis
   toronto_childhood_cancer_staging:
     Desc: Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
     Term: 
@@ -1454,6 +1454,117 @@ PropDefinitions:
         - "Testicular germ cell tumor Stage IIIC"
         - "Testicular germ cell tumor Stage IS"
         - 'Not Reported'
+    Req: true
+    Strict: true
+    Private: false
+  #file
+  reference_file_url:
+    Desc: Location of the source_file_url file, using AWS S3 protocol.
+    Term:
+      - Origin: NCIt
+        Code: 'C47922'
+        Value: Pathname
+        Version: "null"
+    Type: string
+    Req: true
+    Private: false
+  #file
+  dcf_indexd_guid:
+    Desc: An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
+    Term:
+      - Origin: caDSR
+        Code: '6584918'
+        Value: unique universal identifier
+        Version: "null"
+    Type: string
+    Req: true
+    Private: false
+  #id
+  id:
+    Desc: A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
+    Term:
+      - Origin: caDSR
+        Code: '14534325'
+        Value: CCDI Property Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: false
+    Key: false
+    Private: false
+  #participant
+  participant_id:
+    Desc: A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
+    Term:
+      - Origin: caDSR
+        Code: '12220014'
+        Value: Subject Data Origin Identifier
+        Version: "null"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #participant
+  race: 
+    Desc: The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
+    Term:
+      - Origin: caDSR
+        Code: '2192199'
+        Value: Race Category Text
+        Version: "null"
+    Type:
+      value_type: list
+      Enum:
+        - "American Indian or Alaska Native"
+        - "Asian"
+        - "Black or African American"
+        - "Native Hawaiian or other Pacific Islander"
+        - "Not allowed to collect"
+        - 'Not Reported'
+        - "Unknown"
+        - "White"
+    Req: true
+    Strict: true
+    Private: false
+  #participant
+  sex_at_birth:
+    Desc: "A textual description of a person's sex at birth."
+    Term:
+      - Origin: caDSR
+        Code: '7572817'
+        Value: Person Sex at Birth Category
+        Version: "null"
+    Type:
+      value_type: string
+      Enum:
+        - "Female"
+        - "Intersex"
+        - "Male"
+        - "X"
+        - 'Not Reported'
+        - "Unknown"
+        - "Don't Know"
+        - "Decline to answer"
+        - "None of These Describe Me"
+        - "Prefer Not to Answer" 
+    Req: true
+    Strict: true
+    Private: false
+  #participant
+  ethnicity:
+    Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
+    Term:
+      - Origin: caDSR
+        Code: '2192217'
+        Value: Ethnic Group Category Text
+        Version: "null"
+    Type:
+      value_type: list
+      Enum:
+        - "Hispanic or Latino"
+        - "Not allowed to collect"
+        - "Not Hispanic or Latino"
+        - 'Not Reported'
+        - "Unknown" 
     Req: true
     Strict: true
     Private: false
@@ -1585,18 +1696,6 @@ PropDefinitions:
         Version: "null"
     Type: integer
     Req: true
-    Private: false
-  #id
-  id:
-    Desc: A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
-    Term:
-      - Origin: caDSR
-        Code: '14534325'
-        Value: CCDI Property Unique Identifier
-        Version: "1.00"
-    Type: string
-    Req: false
-    Key: false
     Private: false  
   #reference_file
   md5sum:
@@ -1609,104 +1708,44 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #file
-  reference_file_url:
-    Desc: Location of the source_file_url file, using AWS S3 protocol.
-    Term:
-      - Origin: NCIt
-        Code: 'C47922'
-        Value: Pathname
-        Version: "null"
-    Type: string
-    Req: true
-    Private: false
-  #file
-  dcf_indexd_guid:
-    Desc: An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
+  #response
+  response_id:
+    Desc: In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
     Term:
       - Origin: caDSR
-        Code: '6584918'
-        Value: unique universal identifier
-        Version: "null"
+        Code: '2608389'
+        Value: Response Identifier
+        Version: "1.00"
     Type: string
     Req: true
-    Private: false
-  # participant
-  participant_id:
-    Desc: A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
-    Term:
-      - Origin: caDSR
-        Code: '12220014'
-        Value: Subject Data Origin Identifier
-        Version: "null"
-    Type: string
-    Req: true
-    Private: false
+    Private: false 
     Key: true
-  #participant
-  race: 
-    Desc: The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
+  response:
+    Desc: The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
     Term:
       - Origin: caDSR
-        Code: '2192199'
-        Value: Race Category Text
-        Version: "null"
-    Type:
-      value_type: list
-      Enum:
-        - "American Indian or Alaska Native"
-        - "Asian"
-        - "Black or African American"
-        - "Native Hawaiian or other Pacific Islander"
-        - "Not allowed to collect"
-        - 'Not Reported'
-        - "Unknown"
-        - "White"
+        Code: '13383448'
+        Value: Disease Response Assessment Outcome
+        Version: "1.00"
+    Type: string
     Req: true
-    Strict: true
     Private: false
-  #participant
-  sex_at_birth:
-    Desc: "A textual description of a person's sex at birth."
-    Term:
+  response_category:
+    Desc: A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.    Term:
       - Origin: caDSR
-        Code: '7572817'
-        Value: Person Sex at Birth Category
-        Version: "null"
-    Type:
-      value_type: string
-      Enum:
-        - "Female"
-        - "Intersex"
-        - "Male"
-        - "X"
-        - 'Not Reported'
-        - "Unknown"
-        - "Don't Know"
-        - "Decline to answer"
-        - "None of These Describe Me"
-        - "Prefer Not to Answer" 
+        Code: '13383449'
+        Value: Disease Response Assessment Category
+        Version: "1.00"
+    Type: string
     Req: true
-    Strict: true
     Private: false
-  #participant
-  ethnicity:
-    Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
-    Term:
-      - Origin: caDSR
-        Code: '2192217'
-        Value: Ethnic Group Category Text
-        Version: "null"
-    Type:
-      value_type: list
-      Enum:
-        - "Hispanic or Latino"
-        - "Not allowed to collect"
-        - "Not Hispanic or Latino"
-        - 'Not Reported'
-        - "Unknown" 
+  response_system:
+    Desc: 	The type of standard from which a judgment concerning tumor response to therapy can be established.      - Origin: caDSR
+        Code: '13381490'
+        Value: Disease Tumor Response System Type
+        Version: "1.00"
+    Type: string
     Req: true
-    Strict: true
     Private: false
   #study
   consent:
@@ -1742,7 +1781,7 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
-  # sample
+  #sample
   anatomic_site:
     Desc: The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
     Term:
@@ -2114,7 +2153,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  # sample
+  #sample
   participant_age_at_collection:     
     Desc: The age of the participant (in days) at the time of sample collection.
     Term:
@@ -2125,7 +2164,7 @@ PropDefinitions:
     Type: integer
     Req: true  
     Private: false
-  # sample
+  #sample
   tumor_grade:
     Desc: A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
     Term:
@@ -2150,7 +2189,7 @@ PropDefinitions:
     Req: true  
     Strict: true
     Private: false
-  # sample
+  #sample
   tumor_stage_clinical_t: 
     Desc: Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
     Term:
@@ -2200,7 +2239,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  # sample
+  #sample
   tumor_stage_clinical_n:
     Desc: Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
     Term:
@@ -2239,7 +2278,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  # sample
+  #sample
   tumor_stage_clinical_m:
     Desc: Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
     Term:
