@@ -2538,7 +2538,7 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
-  #therapeutic_procedure
+  #treatment_response
   age_at_treatment_start:
     Desc: Subject Age in Days at Start of Treatment Course Day Count
     Term:
