@@ -25,14 +25,6 @@ Nodes:
       - ethnicity
       - sex_at_birth
       - id
-  response:
-    Props:
-      - response_id
-      - response
-      - response_category
-      - response_system
-      - age_at_response
-      - id
   sample:
     Props:
       - sample_id
@@ -87,6 +79,7 @@ Nodes:
       - age_at_response
       - response_category
       - response_system
+      - id
   reference_file: 
     Props:
       - reference_file_id
