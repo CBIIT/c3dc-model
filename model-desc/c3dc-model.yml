@@ -72,14 +72,21 @@ Nodes:
       - age_at_event_free_survival_status
       - first_event
       - id
-  therapeutic_procedure:
+  treatment:
     Props:
-      - therapeutic_procedure_id
+      - treatment_id
       - age_at_treatment_start
       - age_at_treatment_end
       - treatment_type
-      - therapeutic_agent
+      - treatment_agent
       - id
+  treatment_response:
+    Props:
+      _ treatment_response_id
+      - response
+      - age_at_response
+      - response_category
+      - response_system
   reference_file: 
     Props:
       - reference_file_id
