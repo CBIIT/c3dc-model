@@ -1,9 +1,11 @@
 repo https://github.com/CBIIT/c3dc-model
-commit ad59fb6
+commit a76129f
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
+diagnosis	id	STRING
+participant	id	STRING
 participant	participant_id	STRING
 reference_file	dcf_indexd_guid	STRING
 reference_file	file_description	STRING
@@ -13,6 +15,7 @@ reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
 sample	diagnosis_comment	STRING
+sample	id	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
 sample	sample_id	STRING
@@ -20,6 +23,7 @@ study	acl	STRING
 study	consent	STRING
 study	consent_number	INTEGER
 study	external_url	STRING
+study	id	STRING
 study	phs_accession	STRING
 study	study_acronym	STRING
 study	study_description	STRING
@@ -27,6 +31,7 @@ study	study_id	STRING
 study	study_short_title	STRING
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
+survival	id	STRING
 survival	survival_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
@@ -61,6 +66,7 @@ file_name	The name by which a set of related records (either written or electron
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
+id	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
