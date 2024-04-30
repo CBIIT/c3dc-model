@@ -2551,30 +2551,8 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Private: false
-  #treatment_response
-  age_at_treatment_start:
-    Desc: Subject Age in Days at Start of Treatment Course Day Count
-    Term:
-      - Origin: caDSR
-        Code: '12304720'
-        Value: Subject Age at Start of Treatment Course Day Count
-        Version: "null"
-    Type: integer
-    Req: true
-    Private: false
-  #therapeutic_procedure
-  age_at_treatment_end:
-    Desc: Subject Age in Days at End of Treatment Course Day Count
-    Term:
-      - Origin: caDSR
-        Code: '12304723'
-        Value: Subject Age at End of Treatment Course Day Count
-        Version: "null"
-    Type: integer
-    Req: true
-    Private: false  
-  #therapeutic_procedure
-  therapeutic_procedure_id: 
+  #treatment
+  treatment_id: 
     Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
     Term:
       - Origin: caDSR
@@ -2585,35 +2563,29 @@ PropDefinitions:
     Req: true
     Private: false
     Key: true
-  #therapeutic_procedure
-  treatment_outcome:
-    Desc: Text term that describes the patient's final outcome after the treatment was administered.
+  #treatment
+  age_at_treatment_end:
+    Desc: Subject Age in Days at End of Treatment Course Day Count
     Term:
       - Origin: caDSR
-        Code: '5102383'
-        Value: Treatment Outcome Type
+        Code: '12304723'
+        Value: Subject Age at End of Treatment Course Day Count
         Version: "null"
-    Type:
-      value_type: list
-      Enum:
-        - "Complete Remission"
-        - "Minor Response"
-        - "Mixed Response"
-        - "No Evidence of Disease"
-        - "Non-Response"
-        - "Not Applicable"
-        - "Not Done"
-        - "Not Evaluable"
-        - "Not Reported"
-        - "Partial Response"
-        - "Progressive Disease"
-        - "Stable Disease"
-        - "Unknown"
-        - "Very Good Partial Response"
+    Type: integer
     Req: true
-    Strict: false
     Private: false
-  #therapeutic_procedure
+  #treatment
+  age_at_treatment_start:
+    Desc: Subject Age in Days at Start of Treatment Course Day Count
+    Term:
+      - Origin: caDSR
+        Code: '12304720'
+        Value: Subject Age at Start of Treatment Course Day Count
+        Version: "null"
+    Type: integer
+    Req: true
+    Private: false
+  #treatment  
   treatment_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
@@ -2648,4 +2620,16 @@ PropDefinitions:
         - "Unknown"
     Req: true
     Strict: false
-    Private: false  
+    Private: false
+  #treatment
+  treatment_agent:
+    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+    Term:
+      - Origin: caDSR
+        Code: '13579886'
+        Value: Therapeutic Procedure Agent Name
+        Version: "1.00"
+    Type: string
+    Req: true
+    Strict: false
+    Private: false
