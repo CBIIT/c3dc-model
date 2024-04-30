@@ -2313,7 +2313,6 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-# tumor_morphology: CCDIDC-360
   #diagnosis
   disease_phase:
     Desc: The stage or period of an individual's treatment process during which relevant observations were recorded.
@@ -2630,6 +2629,73 @@ PropDefinitions:
         Value: Therapeutic Procedure Agent Name
         Version: "1.00"
     Type: string
+    Req: true
+    Strict: false
+    Private: false
+  #treatment_response
+  treatment_response_id:
+    Desc: yyy
+    Term:
+      - Origin: caDSR
+        Code: 'nnn'
+        Value: www
+        Version: "1.00"
+    Type: string
+    Req: true
+    Strict: false
+    Private: false
+    Key: true
+  #treatment_response
+  response:
+    Desc: yyy
+    Term:
+      - Origin: caDSR
+        Code: 'nnn'
+        Value: www
+        Version: "1.00"
+    Type: string
+    Req: true
+    Strict: false
+    Private: false
+    Key: true
+  #treatment_response
+  age_at_response:
+    Desc: Subject Age at Reponse Day Count
+    Term:
+      - Origin: caDSR
+        Code: 'nnn'
+        Value: www
+        Version: "null"
+    Type: integer
+    Req: true
+    Private: false
+  #treatment_response
+  response_category:
+    Desc: yyy
+    Term:
+      - Origin: caDSR
+        Code: 'nnn'
+        Value: www
+        Version: "1.00"
+    Type:
+      value_type: list
+      Enum:
+        - ""
+    Req: true
+    Strict: false
+    Private: false
+  #treatment_response
+  response_system
+    Desc: yyy
+    Term:
+      - Origin: caDSR
+        Code: 'nnn'
+        Value: www
+        Version: "1.00"
+    Type:
+      value_type: list
+      Enum:
+        - ""
     Req: true
     Strict: false
     Private: false
