@@ -2642,7 +2642,17 @@ PropDefinitions:
     Type:
       value_type: list
       Enum:
-        - ""
+        - "Bone Marrow Response"
+        - "CNS Response"
+        - "Metastatic Soft Tissue and Bone Response"
+        - "Myeloid Sarcoma Response"
+        - "Non-Target Lesions"
+        - "Not Reported"
+        - "Other"
+        - "Overall Response"
+        - "Primary Site Response"
+        - "Target Lesions"
+        - "Unknown"
     Req: true
     Private: false
   #treatment_response
@@ -2657,6 +2667,18 @@ PropDefinitions:
         Type:
       value_type: list
       Enum:
-        - ""
+                - "Choi"
+        - "INRC, Brodeur 1993"
+        - "INRC, Park 2017"
+        - "iRANO"
+        - "Modified MacDonald"
+        - "mRECIST"
+        - "Not Reported"
+        - "PERCIST"
+        - "RANO"
+        - "RAPNO"
+        - "RECIST"
+        - "Unknown"
+        - "WHO"
     Req: true
     Private: false
