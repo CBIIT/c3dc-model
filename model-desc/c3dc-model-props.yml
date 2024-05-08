@@ -2638,7 +2638,6 @@ PropDefinitions:
         Code: '13383449'
         Value: Disease Response Assessment Category
         Version: "1.00"
-    Type: string
     Type:
       value_type: list
       Enum:
@@ -2663,11 +2662,10 @@ PropDefinitions:
         Code: '13381490'
         Value: Disease Tumor Response System Type
         Version: "1.00"
-    Type: string
-        Type:
+    Type:
       value_type: list
       Enum:
-                - "Choi"
+        - "Choi"
         - "INRC, Brodeur 1993"
         - "INRC, Park 2017"
         - "iRANO"
