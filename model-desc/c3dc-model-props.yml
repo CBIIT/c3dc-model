@@ -1744,7 +1744,8 @@ PropDefinitions:
     Private: false
   #treatment_response
   response_category:
-    Desc: A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.    Term:
+    Desc: A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.    
+    Term:
       - Origin: caDSR
         Code: '13383449'
         Value: Disease Response Assessment Category
@@ -1753,7 +1754,9 @@ PropDefinitions:
     Req: true
     Private: false
   response_system:
-    Desc: 	The type of standard from which a judgment concerning tumor response to therapy can be established.      - Origin: caDSR
+    Desc: 	The type of standard from which a judgment concerning tumor response to therapy can be established.      
+    Term:
+      - Origin: caDSR
         Code: '13381490'
         Value: Disease Tumor Response System Type
         Version: "1.00"
