@@ -2688,7 +2688,7 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment_response
-  response_system
+  response_system:
     Desc: yyy
     Term:
       - Origin: caDSR
