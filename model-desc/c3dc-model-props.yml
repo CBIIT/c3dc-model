@@ -1754,7 +1754,7 @@ PropDefinitions:
     Req: true
     Private: false
   response_system:
-    Desc: 	The type of standard from which a judgment concerning tumor response to therapy can be established.      
+    Desc: The type of standard from which a judgment concerning tumor response to therapy can be established.      
     Term:
       - Origin: caDSR
         Code: '13381490'
