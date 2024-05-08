@@ -1708,61 +1708,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #treatment_response
-  treatment_response_id:
-    Desc: In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
-    Term:
-      - Origin: caDSR
-        Code: '2608389'
-        Value: Response Identifier
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false 
-    Key: true
-  #treatment_response
-  response:
-    Desc: The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
-    Term:
-      - Origin: caDSR
-        Code: '13383448'
-        Value: Disease Response Assessment Outcome
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  #treatment_response
-  age_at_response:
-    Desc: The age (in days) of subject when the response assessment was made.
-    Term:
-      - Origin: caDSR
-        Code: '12326598'
-        Value: Subject Age at Response Assessment Day Count
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  #treatment_response
-  response_category:
-    Desc: A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.    
-    Term:
-      - Origin: caDSR
-        Code: '13383449'
-        Value: Disease Response Assessment Category
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  response_system:
-    Desc: The type of standard from which a judgment concerning tumor response to therapy can be established.      
-    Term:
-      - Origin: caDSR
-        Code: '13381490'
-        Value: Disease Tumor Response System Type
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
   #study
   consent:
     Desc: Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
@@ -2637,68 +2582,81 @@ PropDefinitions:
     Private: false
   #treatment_response
   treatment_response_id:
-    Desc: yyy
+    Desc: In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
     Term:
       - Origin: caDSR
-        Code: 'nnn'
-        Value: www
+        Code: '2608389'
+        Value: Response Identifier
         Version: "1.00"
     Type: string
     Req: true
-    Strict: false
-    Private: false
+    Private: false 
     Key: true
   #treatment_response
   response:
-    Desc: yyy
+    Desc: The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
     Term:
       - Origin: caDSR
-        Code: 'nnn'
-        Value: www
+        Code: '13383448'
+        Value: Disease Response Assessment Outcome
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      Enum:
+        - "Complete Remission"
+        - "Minor Response"
+        - "Mixed Response"
+        - "No Evidence of Disease"
+        - "Non-Response"
+        - "Not Applicable"
+        - "Not Done"
+        - "Not Evaluable"
+        - "Not Reported"
+        - "Partial Response"
+        - "Progressive Disease"
+        - "Stable Disease"
+        - "Unknown"
+        - "Very Good Partial Response"
     Req: true
-    Strict: false
-    Private: false
-    Key: true
+    Private: false  
   #treatment_response
   age_at_response:
-    Desc: Subject Age at Reponse Day Count
+    Desc: The age (in days) of subject when the response assessment was made.
     Term:
       - Origin: caDSR
-        Code: 'nnn'
-        Value: www
-        Version: "null"
-    Type: integer
+        Code: '12326598'
+        Value: Subject Age at Response Assessment Day Count
+        Version: "1.00"
+    Type: string
     Req: true
     Private: false
   #treatment_response
   response_category:
-    Desc: yyy
+    Desc: A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.    
     Term:
       - Origin: caDSR
-        Code: 'nnn'
-        Value: www
+        Code: '13383449'
+        Value: Disease Response Assessment Category
         Version: "1.00"
+    Type: string
     Type:
       value_type: list
       Enum:
         - ""
     Req: true
-    Strict: false
     Private: false
   #treatment_response
   response_system:
-    Desc: yyy
+    Desc: The type of standard from which a judgment concerning tumor response to therapy can be established.      
     Term:
       - Origin: caDSR
-        Code: 'nnn'
-        Value: www
+        Code: '13381490'
+        Value: Disease Tumor Response System Type
         Version: "1.00"
-    Type:
+    Type: string
+        Type:
       value_type: list
       Enum:
         - ""
     Req: true
-    Strict: false
     Private: false
