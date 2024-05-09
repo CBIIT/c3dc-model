@@ -46,9 +46,9 @@ Nodes:
   study:
     Props:
       - study_id
-      - phs_accession #dbGaP accession
+      - dbgap_accession 
       - acl
-      - study_short_title
+      - study_name
       - study_acronym
       - study_description
       - consent
@@ -63,6 +63,22 @@ Nodes:
       - event_free_survival_status
       - age_at_event_free_survival_status
       - first_event
+      - id
+  treatment:
+    Props:
+      - treatment_id
+      - age_at_treatment_start
+      - age_at_treatment_end
+      - treatment_type
+      - treatment_agent
+      - id
+  treatment_response:
+    Props:
+      - treatment_response_id
+      - response
+      - age_at_response
+      - response_category
+      - response_system
       - id
   reference_file: 
     Props:

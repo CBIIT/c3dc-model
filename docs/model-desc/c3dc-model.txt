@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit b070147
+commit 73d739a
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -22,17 +22,25 @@ sample	sample_id	STRING
 study	acl	STRING
 study	consent	STRING
 study	consent_number	INTEGER
+study	dbgap_accession	STRING
 study	external_url	STRING
 study	id	STRING
-study	phs_accession	STRING
 study	study_acronym	STRING
 study	study_description	STRING
 study	study_id	STRING
-study	study_short_title	STRING
+study	study_name	STRING
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
 survival	id	STRING
 survival	survival_id	STRING
+treatment	age_at_treatment_end	INTEGER
+treatment	age_at_treatment_start	INTEGER
+treatment	id	STRING
+treatment	treatment_agent	STRING
+treatment	treatment_id	STRING
+treatment_response	age_at_response	STRING
+treatment_response	id	STRING
+treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
@@ -47,9 +55,13 @@ acl	A free text field used to document whether the data in a repository is open 
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
+age_at_response	The age (in days) of subject when the response assessment was made.
+age_at_treatment_end	Subject Age in Days at End of Treatment Course Day Count
+age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Count
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
 diagnosis	The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.
 diagnosis_basis	The type of event for which the diagnosis was obtained.
@@ -71,10 +83,12 @@ last_known_survival_status	Individual's vital status, indicating whether they ar
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
-phs_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
 reference_file_id	A unique identifier for a clinical measure file.
 reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
+response	The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
+response_category	A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.
+response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
@@ -82,9 +96,13 @@ sex_at_birth	A textual description of a person's sex at birth.
 study_acronym	The acronym or abbreviated form of the title for a research data collection.
 study_description	The long form description of the study.
 study_id	A sequence of characters used to identify, name, or characterize a pediatric study.
-study_short_title	The acronym or abbreviated form of the title for a research data collection.
+study_name	The narrative title used as a textual label for a research data collection.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
+treatment_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+treatment_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+treatment_response_id	In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
+treatment_type	Text term that describes the kind of treatment administered.
 tumor_classification	The classification of a tumor based primarily on histopathological characteristics.
 tumor_grade	A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
 tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
