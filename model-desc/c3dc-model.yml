@@ -91,12 +91,12 @@ Relationships:
         Dst: participant
       - Src: diagnosis
         Dst: sample
-  of_survival:
+  of_reference_file: 
     Props: null
-    Mul: many_to_one 
+    Mul: many_to_one
     Ends:
-      - Src: survival
-        Dst: participant
+      - Src: reference_file
+        Dst: study  
   of_participant: 
     Props: null
     Mul: many_to_one 
@@ -111,9 +111,21 @@ Relationships:
         Dst: participant
       - Src: sample
         Dst: study
-  of_reference_file: 
+  of_survival:
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: survival
+        Dst: participant
+  of_treatment:
+    Props: null
+    Mul: many_to_many
+    Ends:
+      - Src: treatment
+        Dst: participant
+  of_treatment_response:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: reference_file
-        Dst: study
+      - Src: treatment_response
+        Dst: participant
