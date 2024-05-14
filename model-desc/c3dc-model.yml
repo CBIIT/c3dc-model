@@ -89,6 +89,8 @@ Relationships:
     Ends:
       - Src: diagnosis
         Dst: participant
+      - Src: diagnosis
+        Dst: sample
   of_survival:
     Props: null
     Mul: many_to_one 
