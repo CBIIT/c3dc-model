@@ -30,18 +30,9 @@ Nodes:
       - sample_id
       - anatomic_site
       - participant_age_at_collection
-      - diagnosis
-      - diagnosis_classification_system
-      - diagnosis_basis
-      - diagnosis_comment
       - sample_tumor_status
       - tumor_classification
       - sample_description
-      - toronto_childhood_cancer_staging
-      - tumor_grade
-      - tumor_stage_clinical_t
-      - tumor_stage_clinical_n
-      - tumor_stage_clinical_m
       - id
   study:
     Props:
