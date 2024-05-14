@@ -119,7 +119,7 @@ Relationships:
         Dst: participant
   of_treatment:
     Props: null
-    Mul: many_to_many
+    Mul: many_to_one
     Ends:
       - Src: treatment
         Dst: participant
