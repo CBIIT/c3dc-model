@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 73d739a
+commit 89ea595
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -14,7 +14,6 @@ reference_file	file_size	INTEGER
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
-sample	diagnosis_comment	STRING
 sample	id	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
@@ -44,11 +43,14 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
 of_survival	survival	participant	NA	NA
+of_treatment	treatment	participant	NA	NA
+of_treatment_response	treatment_response	participant	NA	NA
 
 property	description
 acl	A free text field used to document whether the data in a repository is open access or controlled access.

@@ -1,5 +1,5 @@
 Handle: C3DC
-Version: v1.1.1
+Version: v1.2.0
 Nodes:
   diagnosis:
     Props:
@@ -30,18 +30,9 @@ Nodes:
       - sample_id
       - anatomic_site
       - participant_age_at_collection
-      - diagnosis
-      - diagnosis_classification_system
-      - diagnosis_basis
-      - diagnosis_comment
       - sample_tumor_status
       - tumor_classification
       - sample_description
-      - toronto_childhood_cancer_staging
-      - tumor_grade
-      - tumor_stage_clinical_t
-      - tumor_stage_clinical_n
-      - tumor_stage_clinical_m
       - id
   study:
     Props:
@@ -98,12 +89,14 @@ Relationships:
     Ends:
       - Src: diagnosis
         Dst: participant
-  of_survival:
+      - Src: diagnosis
+        Dst: sample
+  of_reference_file: 
     Props: null
-    Mul: many_to_one 
+    Mul: many_to_one
     Ends:
-      - Src: survival
-        Dst: participant
+      - Src: reference_file
+        Dst: study  
   of_participant: 
     Props: null
     Mul: many_to_one 
@@ -118,9 +111,21 @@ Relationships:
         Dst: participant
       - Src: sample
         Dst: study
-  of_reference_file: 
+  of_survival:
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: survival
+        Dst: participant
+  of_treatment:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: reference_file
-        Dst: study
+      - Src: treatment
+        Dst: participant
+  of_treatment_response:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_response
+        Dst: participant
