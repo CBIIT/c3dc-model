@@ -13,12 +13,12 @@ PropDefinitions:
     Key: true
   #diagnosis
   diagnosis:
-    Desc: The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.    
+    Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.    
     Term:
       - Origin: caDSR
-        Code: '13594090'
-        Value: Disease Morphology ICD-O-3 Code Label Text
-        Version: "null"
+        Code: '14714127'
+        Value: Diagnosis Disease or Disorder Text
+        Version: "1.00"
     Type:
       value_type: string
       Enum:
@@ -1331,7 +1331,7 @@ PropDefinitions:
         - 'Unknown'
         - 'Not Reported'
     Req: true
-    Strict: false
+    Strict: true
     Private: false 
   #diagnosis
   diagnosis_basis: 
@@ -1342,7 +1342,7 @@ PropDefinitions:
         Value: ''
         Version: "null"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - 'Clinical'
         - 'Molecular'
@@ -1350,7 +1350,7 @@ PropDefinitions:
         - 'Unknown'
         - 'Not Reported'
     Req: true
-    Strict: false
+    Strict: true
     Private: false 
   #diagnosis
   diagnosis_comment:
@@ -1755,7 +1755,7 @@ PropDefinitions:
         Value: Disease Anatomic Site ICD-O-3 Label Text
         Version: "null"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "C76.2 : Abdomen, NOS"
         - "C15.2 : Abdominal esophagus"
@@ -2442,6 +2442,7 @@ PropDefinitions:
         - 'Not Reported'
         - "Unknown"
     Req: true
+    Strict: true
     Private: false
   #survival
   age_at_last_known_survival_status:
@@ -2470,6 +2471,7 @@ PropDefinitions:
         - 'Not Reported'
         - "Unknown"
     Req: true
+    Strict: true
     Private: false
   #survival
   age_at_event_free_survival_status:
@@ -2501,6 +2503,7 @@ PropDefinitions:
         - "Not Applicable"
         - "Unknown"
     Req: true
+    Strict: true
     Private: false
   #treatment
   treatment_id: 
@@ -2545,7 +2548,7 @@ PropDefinitions:
         Value: Therapeutic Procedure Performed Type
         Version: "1.00"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "3-Dimensional Conformal Radiation Therapy"
         - "Allogeneic Hematopoietic Stem Cell Transplantation"
@@ -2570,7 +2573,7 @@ PropDefinitions:
         - "Targeted Molecular Therapy"
         - "Unknown"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #treatment
   treatment_agent:
@@ -2582,7 +2585,7 @@ PropDefinitions:
         Version: "1.00"
     Type: string
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #treatment_response
   treatment_response_id:
@@ -2605,7 +2608,7 @@ PropDefinitions:
         Value: Disease Response Assessment Outcome
         Version: "1.00"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Complete Remission"
         - "Minor Response"
@@ -2622,6 +2625,7 @@ PropDefinitions:
         - "Unknown"
         - "Very Good Partial Response"
     Req: true
+    Strict: true
     Private: false  
   #treatment_response
   age_at_response:
@@ -2643,7 +2647,7 @@ PropDefinitions:
         Value: Disease Response Assessment Category
         Version: "1.00"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Bone Marrow Response"
         - "CNS Response"
@@ -2657,6 +2661,7 @@ PropDefinitions:
         - "Target Lesions"
         - "Unknown"
     Req: true
+    Strict: true
     Private: false
   #treatment_response
   response_system:
@@ -2667,7 +2672,7 @@ PropDefinitions:
         Value: Disease Tumor Response System Type
         Version: "1.00"
     Type:
-      value_type: list
+      value_type: string
       Enum:
         - "Choi"
         - "INRC, Brodeur 1993"
@@ -2683,4 +2688,5 @@ PropDefinitions:
         - "Unknown"
         - "WHO"
     Req: true
+    Strict: true
     Private: false
