@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 89ea595
+commit a90f485
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -42,12 +42,12 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
@@ -65,7 +65,7 @@ consent	Words which describe a set of study participants who have signed the sam
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
-diagnosis	The text term used to describe the type of malignant disease, as categorized by diagnosis_classification_system property.
+diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
 diagnosis_basis	The type of event for which the diagnosis was obtained.
 diagnosis_classification_system	The classification source from which the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
