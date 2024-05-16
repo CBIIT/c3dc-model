@@ -1516,7 +1516,7 @@ PropDefinitions:
         Value: Race Category Text
         Version: "null"
     Type:
-      value_type: string
+      value_type: list
       Enum:
         - "American Indian or Alaska Native"
         - "Asian"
@@ -1562,7 +1562,7 @@ PropDefinitions:
         Value: Ethnic Group Category Text
         Version: "null"
     Type:
-      value_type: string
+      value_type: list
       Enum:
         - "Hispanic or Latino"
         - "Not allowed to collect"
