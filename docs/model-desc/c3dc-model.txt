@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit cf0c5af
+commit 0af038d
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -42,8 +42,8 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -67,7 +67,7 @@ dbgap_accession	A stable unique alphanumeric identifier assigned to a study and 
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
 diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
 diagnosis_basis	The type of event for which the diagnosis was obtained.
-diagnosis_classification_system	The classification source from which the diagnosis value was obtained.
+diagnosis_classification_system	The standard or agency upon which the specific term used as the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
