@@ -1775,26 +1775,36 @@ PropDefinitions:
     Private: false  
   #diagnosis, sample
   diagnosis_classification_system:
-    Desc: 'The classification source from which the diagnosis value was obtained.'
+    Desc: 'The standard or agency upon which the specific term used as the diagnosis value was obtained.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
+        Code: '14714144'
+        Value: Diagnosis Term Source Name
+        Version: "1.00"
+      - Origin: NCIt
+        Code: 'C42673'
+        Value: Definition Source
         Version: "null"
       - Origin: NCIt
-        Code: ' C42673'
-        Value: 'Definition Source'
-        Version: "null"
+        Code: 'C91220'
+        Value: French-American-British Classification
+      - Origin: NCIt
+        Code: 'C159157'
+        Value: WHO AML Classification of Tumors
     Type:
       value_type: string
       Enum:
         - 'CNS Diagnosis Category'
+        - 'French-American-British Classification'
         - 'ICD-O-3.2'
+        - 'Indication for Study'
+        - 'St. Jude Cloud Disease Ontology'
+        - 'WHO AML Classification of Tumors'
         - 'WHO CNS5 Integrated Diagnosis'
         - 'Unknown'
         - 'Not Reported'
     Req: true
-    Strict: true
+    Strict: false
     Private: false 
   #diagnosis
   diagnosis_basis: 
