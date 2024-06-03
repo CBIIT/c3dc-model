@@ -54,6 +54,7 @@ Nodes:
       - event_free_survival_status
       - age_at_event_free_survival_status
       - first_event
+      - cause_of_death
       - id
   treatment:
     Props:
