@@ -3108,7 +3108,7 @@ PropDefinitions:
         Code: '12326598'
         Value: Subject Age at Response Assessment Day Count
         Version: "1.00"
-    Type: string
+    Type: integer
     Req: true
     Private: false
   #treatment_response
