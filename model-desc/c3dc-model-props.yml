@@ -2983,9 +2983,9 @@ PropDefinitions:
     Desc: A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
     Term:
       - Origin: caDSR
-      Code: '4783273'
-      Value: Primary Cause of Death Reason Category
-      Version: "1.00"
+        Code: '4783273'
+        Value: Primary Cause of Death Reason Category
+        Version: "1.00"
     Type:
       value_type: string
       Enum:
