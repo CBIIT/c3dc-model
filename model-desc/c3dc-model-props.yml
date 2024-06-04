@@ -2994,6 +2994,8 @@ PropDefinitions:
         - "Due to protocol treatment"
         - "Due to secondary primary cancer"
         - "Due to this disease"
+        - "Not Applicable"
+        - "Not Reported"
         - "Unknown"
     Req: false
     Strict: true
