@@ -2964,7 +2964,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3070936'
         Value: Study End Point Event Type
-        Version: "null"
+        Version: "1.00"
     Type:
       value_type: string
       Enum:
@@ -2976,6 +2976,28 @@ PropDefinitions:
         - "Not Applicable"
         - "Unknown"
     Req: true
+    Strict: true
+    Private: false
+  #survival
+  cause_of_death:
+    Desc: A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
+    Term:
+      - Origin: caDSR
+        Code: '4783273'
+        Value: Primary Cause of Death Reason Category
+        Version: "1.00"
+    Type:
+      value_type: string
+      Enum:
+        - "Due to non-study treatment"
+        - "Due to other cause"
+        - "Due to protocol treatment"
+        - "Due to secondary primary cancer"
+        - "Due to this disease"
+        - "Not Applicable"
+        - "Not Reported"
+        - "Unknown"
+    Req: false
     Strict: true
     Private: false
   #treatment
@@ -3108,7 +3130,7 @@ PropDefinitions:
         Code: '12326598'
         Value: Subject Age at Response Assessment Day Count
         Version: "1.00"
-    Type: string
+    Type: integer
     Req: true
     Private: false
   #treatment_response

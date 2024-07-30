@@ -1,5 +1,5 @@
 Handle: C3DC
-Version: v1.2.0
+Version: v1.2.1
 Nodes:
   diagnosis:
     Props:
@@ -54,6 +54,7 @@ Nodes:
       - event_free_survival_status
       - age_at_event_free_survival_status
       - first_event
+      - cause_of_death
       - id
   treatment:
     Props:
