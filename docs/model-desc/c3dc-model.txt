@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 0af038d
+commit 200891e
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -37,7 +37,7 @@ treatment	age_at_treatment_start	INTEGER
 treatment	id	STRING
 treatment	treatment_agent	STRING
 treatment	treatment_id	STRING
-treatment_response	age_at_response	STRING
+treatment_response	age_at_response	INTEGER
 treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
@@ -61,6 +61,7 @@ age_at_response	The age (in days) of subject when the response assessment was ma
 age_at_treatment_end	Subject Age in Days at End of Treatment Course Day Count
 age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Count
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
