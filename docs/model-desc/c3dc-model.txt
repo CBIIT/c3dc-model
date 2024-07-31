@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 200891e
+commit 5195d43
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -24,7 +24,6 @@ study	consent_number	INTEGER
 study	dbgap_accession	STRING
 study	external_url	STRING
 study	id	STRING
-study	study_acronym	STRING
 study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
@@ -42,8 +41,8 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -96,7 +95,6 @@ sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
 sex_at_birth	A textual description of a person's sex at birth.
-study_acronym	The acronym or abbreviated form of the title for a research data collection.
 study_description	The long form description of the study.
 study_id	A sequence of characters used to identify, name, or characterize a pediatric study.
 study_name	The narrative title used as a textual label for a research data collection.
