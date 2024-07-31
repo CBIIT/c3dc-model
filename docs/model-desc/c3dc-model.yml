@@ -38,7 +38,6 @@ Nodes:
     Props:
       - study_id
       - dbgap_accession 
-      - acl
       - study_name
       - study_description
       - consent

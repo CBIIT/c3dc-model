@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 5195d43
+commit ce314f1
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	diagnosis_comment	STRING
@@ -18,7 +18,6 @@ sample	id	STRING
 sample	participant_age_at_collection	INTEGER
 sample	sample_description	STRING
 sample	sample_id	STRING
-study	acl	STRING
 study	consent	STRING
 study	consent_number	INTEGER
 study	dbgap_accession	STRING
@@ -41,18 +40,17 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
 property	description
-acl	A free text field used to document whether the data in a repository is open access or controlled access.
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
