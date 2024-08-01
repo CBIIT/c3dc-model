@@ -1943,7 +1943,7 @@ PropDefinitions:
         Value: Subject Age at Recurrence Day Count
         Version: "null"
     Type: integer
-    Req: false
+    Req: true
     Private: false
      #diagnosis, sample
   last_known_disease_status:
@@ -1967,7 +1967,7 @@ PropDefinitions:
         - "Tumor Free"
         - "Unknown"
         - "With Tumor"
-    Req: false
+    Req: true
     Strict: true
     Private: false     
   #diagnosis
@@ -1979,7 +1979,7 @@ PropDefinitions:
         Value: The age (in days) of subject at the time of their last known disease status.
         Version: "null"
     Type: integer
-    Req: false
+    Req: true
     Private: false  
   #diagnosis
   tumor_stage_source: 
@@ -2000,7 +2000,7 @@ PropDefinitions:
         - "AJCC Lymph Node N Stage"
         - "AJCC Tumor T Stage"
         - "Toronto Childhood Cancer Stage Guidelines"
-    Req: false
+    Req: true
     Strict: false
     Private: false
   #diagnosis
@@ -2012,7 +2012,7 @@ PropDefinitions:
         Value: Diagnosis Tumor Grade
         Version: "null"
     Type: string
-    Req: false
+    Req: true
     Strict: false
     Private: false
   #file
@@ -2046,7 +2046,7 @@ PropDefinitions:
         Value: CCDI Property Unique Identifier
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Key: false
     Private: false
   #participant
@@ -3056,7 +3056,7 @@ PropDefinitions:
         - "Not Applicable"
         - "Not Reported"
         - "Unknown"
-    Req: false
+    Req: true
     Strict: true
     Private: false
   #treatment
