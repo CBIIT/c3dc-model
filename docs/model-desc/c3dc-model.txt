@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 225cfb6
+commit bf0fb07
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	age_at_last_known_disease_status	INTEGER

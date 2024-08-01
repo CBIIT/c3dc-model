@@ -2046,7 +2046,7 @@ PropDefinitions:
         Value: CCDI Property Unique Identifier
         Version: "1.00"
     Type: string
-    Req: true
+    Req: false
     Key: false
     Private: false
   #participant
