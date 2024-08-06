@@ -3137,7 +3137,8 @@ PropDefinitions:
         Code: '13579886'
         Value: Therapeutic Procedure Agent Name
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
     Req: true
     Strict: true
     Private: false
