@@ -1,13 +1,10 @@
 repo https://github.com/CBIIT/c3dc-model
-commit bf0fb07
+commit b0e6ee4
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
-diagnosis	age_at_last_known_disease_status	INTEGER
-diagnosis	age_at_recurrence	INTEGER
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
 diagnosis	id	STRING
-diagnosis	tumor_grade_source	STRING
 participant	id	STRING
 participant	participant_id	STRING
 reference_file	dcf_indexd_guid	STRING
@@ -36,7 +33,6 @@ survival	survival_id	STRING
 treatment	age_at_treatment_end	INTEGER
 treatment	age_at_treatment_start	INTEGER
 treatment	id	STRING
-treatment	treatment_agent	STRING
 treatment	treatment_id	STRING
 treatment_response	age_at_response	INTEGER
 treatment_response	id	STRING
@@ -56,9 +52,7 @@ of_treatment_response	treatment_response	participant	NA	NA
 property	description
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
-age_at_last_known_disease_status	Subject Age at Last Known Disease Status Day Count
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
-age_at_recurrence	The age (in days) of the subject at the time of recurrence.
 age_at_response	The age (in days) of subject when the response assessment was made.
 age_at_treatment_end	Subject Age in Days at End of Treatment Course Day Count
 age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Count
@@ -74,7 +68,6 @@ diagnosis_classification_system	The standard or agency upon which the specific t
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
-ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
 external_url	The url of the study (often a dbGaP study page).
 file_category	A freeform description of the file.
@@ -84,7 +77,6 @@ file_size	The numerical quantity documenting the physical magnitude of a set of 
 file_type	Text that provides a description of a particular kind of set of related records.
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
 id	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
-last_known_disease_status	The most recently documented condition or state of an individual's disease.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
@@ -110,8 +102,6 @@ treatment_response_id	In medicine, an improvement related to treatment. One or m
 treatment_type	Text term that describes the kind of treatment administered.
 tumor_classification	The classification of a tumor based primarily on histopathological characteristics.
 tumor_grade	A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
-tumor_grade_source	A text term for the origin of tumor grade permissible values.
 tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_n	Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_t	Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
-tumor_stage_source	Code of pathological T (primary tumor) to define the size or contiguous extension of the primary tumor (T), using staging criteria from the American Joint Committee on Cancer (AJCC).
