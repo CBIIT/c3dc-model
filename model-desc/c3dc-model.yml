@@ -22,7 +22,6 @@ Nodes:
     Props:
       - participant_id
       - race       
-      - ethnicity
       - sex_at_birth
       - id
   sample:
