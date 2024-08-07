@@ -1934,87 +1934,6 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #diagnosis
-  age_at_recurrence:
-    Desc: The age (in days) of the subject at the time of recurrence.
-    Term:
-      - Origin: caDSR
-        Code: '14483684'
-        Value: Subject Age at Recurrence Day Count
-        Version: "null"
-    Type: integer
-    Req: true
-    Private: false
-     #diagnosis, sample
-  last_known_disease_status:
-    Desc: The most recently documented condition or state of an individual's disease.
-    Term:
-      - Origin: caDSR
-        Code: '12447172'
-        Value: Subject Last Known Disease Status
-        Version: "null"
-    Type:
-      value_type: string
-      Enum:
-        - "Biochemical evidence of disease without structural correlate"
-        - "Distant Metastasis"
-        - "Localized Disease"
-        - "New Tumor Event"
-        - "Not Allowed To Collect"
-        - "Not Applicable"
-        - "Not Reported"
-        - "Regional Disease"
-        - "Tumor Free"
-        - "Unknown"
-        - "With Tumor"
-    Req: true
-    Strict: true
-    Private: false     
-  #diagnosis
-  age_at_last_known_disease_status:
-    Desc: Subject Age at Last Known Disease Status Day Count
-    Term:
-      - Origin: caDSR
-        Code: '14589579'
-        Value: The age (in days) of subject at the time of their last known disease status.
-        Version: "null"
-    Type: integer
-    Req: true
-    Private: false  
-  #diagnosis
-  tumor_stage_source: 
-    Desc: Code of pathological T (primary tumor) to define the size or contiguous extension of the primary tumor (T), using staging criteria from the American Joint Committee on Cancer (AJCC).
-    Term:
-      - Origin: caDSR
-        Code: '3045435'
-        Value: American Joint Committee on Cancer Tumor Stage Code
-        Version: "null"
-      - Origin: caDSR
-        Code: '13299113'
-        Value: Childhood Cancer Toronto Guidelines Stage
-        Version: "null"
-    Type:
-      value_type: string
-      Enum:
-        - "AJCC Metastasis M Stage"
-        - "AJCC Lymph Node N Stage"
-        - "AJCC Tumor T Stage"
-        - "Toronto Childhood Cancer Stage Guidelines"
-    Req: true
-    Strict: false
-    Private: false
-  #diagnosis
-  tumor_grade_source:
-    Desc: A text term for the origin of tumor grade permissible values.
-    Term:
-      - Origin: caDSR
-        Code: '11325685'
-        Value: Diagnosis Tumor Grade
-        Version: "null"
-    Type: string
-    Req: true
-    Strict: false
-    Private: false
   #file
   reference_file_url:
     Desc: Location of the source_file_url file, using AWS S3 protocol.
@@ -2075,9 +1994,11 @@ PropDefinitions:
         - "American Indian or Alaska Native"
         - "Asian"
         - "Black or African American"
+        - "Hispanic or Latino"
+        - "Middle Eastern or North African"
         - "Native Hawaiian or other Pacific Islander"
-        - "Not allowed to collect"
-        - 'Not Reported'
+        - "Not Allowed to Collect"
+        - "Not Reported"
         - "Unknown"
         - "White"
     Req: true
@@ -2104,25 +2025,6 @@ PropDefinitions:
         - "Decline to answer"
         - "None of These Describe Me"
         - "Prefer Not to Answer" 
-    Req: true
-    Strict: true
-    Private: false
-  #participant
-  ethnicity:
-    Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
-    Term:
-      - Origin: caDSR
-        Code: '2192217'
-        Value: Ethnic Group Category Text
-        Version: "null"
-    Type:
-      value_type: list
-      Enum:
-        - "Hispanic or Latino"
-        - "Not allowed to collect"
-        - "Not Hispanic or Latino"
-        - 'Not Reported'
-        - "Unknown" 
     Req: true
     Strict: true
     Private: false
