@@ -1,5 +1,5 @@
 Handle: C3DC
-Version: v1.2.1
+Version: v1.3.0
 Nodes:
   diagnosis:
     Props:
@@ -22,7 +22,6 @@ Nodes:
     Props:
       - participant_id
       - race       
-      - ethnicity
       - sex_at_birth
       - id
   sample:
@@ -38,9 +37,7 @@ Nodes:
     Props:
       - study_id
       - dbgap_accession 
-      - acl
       - study_name
-      - study_acronym
       - study_description
       - consent
       - consent_number

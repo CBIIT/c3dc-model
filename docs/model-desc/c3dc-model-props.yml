@@ -1994,9 +1994,11 @@ PropDefinitions:
         - "American Indian or Alaska Native"
         - "Asian"
         - "Black or African American"
+        - "Hispanic or Latino"
+        - "Middle Eastern or North African"
         - "Native Hawaiian or other Pacific Islander"
-        - "Not allowed to collect"
-        - 'Not Reported'
+        - "Not Allowed to Collect"
+        - "Not Reported"
         - "Unknown"
         - "White"
     Req: true
@@ -2023,25 +2025,6 @@ PropDefinitions:
         - "Decline to answer"
         - "None of These Describe Me"
         - "Prefer Not to Answer" 
-    Req: true
-    Strict: true
-    Private: false
-  #participant
-  ethnicity:
-    Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
-    Term:
-      - Origin: caDSR
-        Code: '2192217'
-        Value: Ethnic Group Category Text
-        Version: "null"
-    Type:
-      value_type: list
-      Enum:
-        - "Hispanic or Latino"
-        - "Not allowed to collect"
-        - "Not Hispanic or Latino"
-        - 'Not Reported'
-        - "Unknown" 
     Req: true
     Strict: true
     Private: false
@@ -2849,17 +2832,6 @@ PropDefinitions:
     Req: true
     Private: false
   # study
-  study_acronym:
-    Desc: The acronym or abbreviated form of the title for a research data collection.
-    Term:
-      - Origin: caDSR
-        Code: '11459812'
-        Value: Study Short Name Text
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  # study
   study_description:
     Desc: The long form description of the study.
     Term:
@@ -2876,17 +2848,6 @@ PropDefinitions:
     Type: string
     Req: true  # 02/22/2022 adeforge, not required?
     Private: false     
-  #study
-  acl: 
-    Desc: A free text field used to document whether the data in a repository is open access or controlled access. 
-    Term:
-      - Origin: caDSR
-        Code: '11555664'
-        Value: Electronic Data File Access Level Text 
-        Version: "null"
-    Type: string
-    Req: true
-    Private: false
   #survival
   survival_id:
     Desc: A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
@@ -2964,7 +2925,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3070936'
         Value: Study End Point Event Type
-        Version: "null"
+        Version: "1.00"
     Type:
       value_type: string
       Enum:
@@ -2974,6 +2935,28 @@ PropDefinitions:
         - "Death"
         - 'Not Reported'
         - "Not Applicable"
+        - "Unknown"
+    Req: true
+    Strict: true
+    Private: false
+  #survival
+  cause_of_death:
+    Desc: A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
+    Term:
+      - Origin: caDSR
+        Code: '4783273'
+        Value: Primary Cause of Death Reason Category
+        Version: "1.00"
+    Type:
+      value_type: string
+      Enum:
+        - "Due to non-study treatment"
+        - "Due to other cause"
+        - "Due to protocol treatment"
+        - "Due to secondary primary cancer"
+        - "Due to this disease"
+        - "Not Applicable"
+        - "Not Reported"
         - "Unknown"
     Req: true
     Strict: true
@@ -3026,9 +3009,12 @@ PropDefinitions:
         - "3-Dimensional Conformal Radiation Therapy"
         - "Allogeneic Hematopoietic Stem Cell Transplantation"
         - "Autologous Stem Cell Transplantation"
+        - “Brachytherapy”
+        - "Cellular Therapy"
         - "Chemotherapy"
         - "Concurrent Chemoradiation"
         - "Conventional Radiotherapy"
+        - “Electron Beam Radiation Therapy”
         - "External Beam Radiation Therapy"
         - "High-Dose Rate Brachytherapy"
         - "Hormone Therapy"
@@ -3037,9 +3023,12 @@ PropDefinitions:
         - "Low-Dose Rate Brachytherapy"
         - "Not Reported"
         - "Pharmacotherapy"
+        - “Photon Beam Radiation Therapy”
         - "Proton Beam Radiation Therapy"
         - "Radiation Therapy, NOS"
         - "Radiofrequency Ablation"
+        - “Radiopharmaceutical”
+        - "Stem Cell Transplant"
         - "Stereotactic Body Radiation Therapy"
         - "Stereotactic Radiosurgery"
         - "Surgical Procedure"
@@ -3056,7 +3045,8 @@ PropDefinitions:
         Code: '13579886'
         Value: Therapeutic Procedure Agent Name
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
     Req: true
     Strict: true
     Private: false
@@ -3108,7 +3098,7 @@ PropDefinitions:
         Code: '12326598'
         Value: Subject Age at Response Assessment Day Count
         Version: "1.00"
-    Type: string
+    Type: integer
     Req: true
     Private: false
   #treatment_response
