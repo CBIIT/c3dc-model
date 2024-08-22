@@ -1819,7 +1819,7 @@ PropDefinitions:
       Enum:
         - 'Clinical'
         - 'Molecular'
-        - 'Pathological'
+        - 'Pathology'
         - 'Unknown'
         - 'Not Reported'
     Req: true
