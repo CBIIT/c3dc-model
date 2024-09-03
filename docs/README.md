@@ -49,93 +49,32 @@ Zoom to Node: <select id="node_select">
 <text text-anchor="middle" x="1593" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- participant -->
-<g id="node7" class="node">
+<g id="node8" class="node">
 <title>participant</title>
-<path fill="none" stroke="#000000" d="M557.5,-294C557.5,-294 788.5,-294 788.5,-294 794.5,-294 800.5,-300 800.5,-306 800.5,-306 800.5,-374 800.5,-374 800.5,-380 794.5,-386 788.5,-386 788.5,-386 557.5,-386 557.5,-386 551.5,-386 545.5,-380 545.5,-374 545.5,-374 545.5,-306 545.5,-306 545.5,-300 551.5,-294 557.5,-294"/>
-<text text-anchor="middle" x="593.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">participant</text>
-<polyline fill="none" stroke="#000000" points="641.5,-294 641.5,-386 "/>
-<text text-anchor="middle" x="652" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="662.5,-294 662.5,-386 "/>
-<text text-anchor="middle" x="721" y="-370.8" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
-<polyline fill="none" stroke="#000000" points="662.5,-363 779.5,-363 "/>
-<text text-anchor="middle" x="721" y="-347.8" font-family="Times,serif" font-size="14.00" fill="#000000">participant_id</text>
-<polyline fill="none" stroke="#000000" points="662.5,-340 779.5,-340 "/>
-<text text-anchor="middle" x="721" y="-324.8" font-family="Times,serif" font-size="14.00" fill="#000000">race</text>
-<polyline fill="none" stroke="#000000" points="662.5,-317 779.5,-317 "/>
-<text text-anchor="middle" x="721" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">sex_at_birth</text>
-<polyline fill="none" stroke="#000000" points="779.5,-294 779.5,-386 "/>
-<text text-anchor="middle" x="790" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<path fill="none" stroke="#000000" d="M408.5,-294C408.5,-294 639.5,-294 639.5,-294 645.5,-294 651.5,-300 651.5,-306 651.5,-306 651.5,-374 651.5,-374 651.5,-380 645.5,-386 639.5,-386 639.5,-386 408.5,-386 408.5,-386 402.5,-386 396.5,-380 396.5,-374 396.5,-374 396.5,-306 396.5,-306 396.5,-300 402.5,-294 408.5,-294"/>
+<text text-anchor="middle" x="444.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">participant</text>
+<polyline fill="none" stroke="#000000" points="492.5,-294 492.5,-386 "/>
+<text text-anchor="middle" x="503" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="513.5,-294 513.5,-386 "/>
+<text text-anchor="middle" x="572" y="-370.8" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
+<polyline fill="none" stroke="#000000" points="513.5,-363 630.5,-363 "/>
+<text text-anchor="middle" x="572" y="-347.8" font-family="Times,serif" font-size="14.00" fill="#000000">participant_id</text>
+<polyline fill="none" stroke="#000000" points="513.5,-340 630.5,-340 "/>
+<text text-anchor="middle" x="572" y="-324.8" font-family="Times,serif" font-size="14.00" fill="#000000">race</text>
+<polyline fill="none" stroke="#000000" points="513.5,-317 630.5,-317 "/>
+<text text-anchor="middle" x="572" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">sex_at_birth</text>
+<polyline fill="none" stroke="#000000" points="630.5,-294 630.5,-386 "/>
+<text text-anchor="middle" x="641" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- treatment_response&#45;&gt;participant -->
-<g id="edge9" class="edge">
+<g id="edge4" class="edge">
 <title>treatment_response&#45;&gt;participant</title>
-<path fill="none" stroke="#000000" d="M1267.725,-518.4053C1248.5041,-510.0696 1228.9016,-502.0317 1210,-495 1076.6953,-445.4084 919.9974,-401.792 810.3955,-373.566"/>
-<polygon fill="#000000" stroke="#000000" points="811.1586,-370.1485 800.6024,-371.0526 809.4184,-376.9288 811.1586,-370.1485"/>
-<text text-anchor="middle" x="1235" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_treatment_response</text>
-</g>
-<!-- reference_file -->
-<g id="node2" class="node">
-<title>reference_file</title>
-<path fill="none" stroke="#000000" d="M238.5,-236.5C238.5,-236.5 515.5,-236.5 515.5,-236.5 521.5,-236.5 527.5,-242.5 527.5,-248.5 527.5,-248.5 527.5,-431.5 527.5,-431.5 527.5,-437.5 521.5,-443.5 515.5,-443.5 515.5,-443.5 238.5,-443.5 238.5,-443.5 232.5,-443.5 226.5,-437.5 226.5,-431.5 226.5,-431.5 226.5,-248.5 226.5,-248.5 226.5,-242.5 232.5,-236.5 238.5,-236.5"/>
-<text text-anchor="middle" x="284.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file</text>
-<polyline fill="none" stroke="#000000" points="342.5,-236.5 342.5,-443.5 "/>
-<text text-anchor="middle" x="353" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="363.5,-236.5 363.5,-443.5 "/>
-<text text-anchor="middle" x="435" y="-428.3" font-family="Times,serif" font-size="14.00" fill="#000000">dcf_indexd_guid</text>
-<polyline fill="none" stroke="#000000" points="363.5,-420.5 506.5,-420.5 "/>
-<text text-anchor="middle" x="435" y="-405.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_category</text>
-<polyline fill="none" stroke="#000000" points="363.5,-397.5 506.5,-397.5 "/>
-<text text-anchor="middle" x="435" y="-382.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_description</text>
-<polyline fill="none" stroke="#000000" points="363.5,-374.5 506.5,-374.5 "/>
-<text text-anchor="middle" x="435" y="-359.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_name</text>
-<polyline fill="none" stroke="#000000" points="363.5,-351.5 506.5,-351.5 "/>
-<text text-anchor="middle" x="435" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_size</text>
-<polyline fill="none" stroke="#000000" points="363.5,-328.5 506.5,-328.5 "/>
-<text text-anchor="middle" x="435" y="-313.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_type</text>
-<polyline fill="none" stroke="#000000" points="363.5,-305.5 506.5,-305.5 "/>
-<text text-anchor="middle" x="435" y="-290.3" font-family="Times,serif" font-size="14.00" fill="#000000">md5sum</text>
-<polyline fill="none" stroke="#000000" points="363.5,-282.5 506.5,-282.5 "/>
-<text text-anchor="middle" x="435" y="-267.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file_id</text>
-<polyline fill="none" stroke="#000000" points="363.5,-259.5 506.5,-259.5 "/>
-<text text-anchor="middle" x="435" y="-244.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file_url</text>
-<polyline fill="none" stroke="#000000" points="506.5,-236.5 506.5,-443.5 "/>
-<text text-anchor="middle" x="517" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-</g>
-<!-- study -->
-<g id="node4" class="node">
-<title>study</title>
-<path fill="none" stroke="#000000" d="M267.5,-.5C267.5,-.5 486.5,-.5 486.5,-.5 492.5,-.5 498.5,-6.5 498.5,-12.5 498.5,-12.5 498.5,-172.5 498.5,-172.5 498.5,-178.5 492.5,-184.5 486.5,-184.5 486.5,-184.5 267.5,-184.5 267.5,-184.5 261.5,-184.5 255.5,-178.5 255.5,-172.5 255.5,-172.5 255.5,-12.5 255.5,-12.5 255.5,-6.5 261.5,-.5 267.5,-.5"/>
-<text text-anchor="middle" x="283.5" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000">study</text>
-<polyline fill="none" stroke="#000000" points="311.5,-.5 311.5,-184.5 "/>
-<text text-anchor="middle" x="322" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="332.5,-.5 332.5,-184.5 "/>
-<text text-anchor="middle" x="405" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">consent</text>
-<polyline fill="none" stroke="#000000" points="332.5,-161.5 477.5,-161.5 "/>
-<text text-anchor="middle" x="405" y="-146.3" font-family="Times,serif" font-size="14.00" fill="#000000">consent_number</text>
-<polyline fill="none" stroke="#000000" points="332.5,-138.5 477.5,-138.5 "/>
-<text text-anchor="middle" x="405" y="-123.3" font-family="Times,serif" font-size="14.00" fill="#000000">dbgap_accession</text>
-<polyline fill="none" stroke="#000000" points="332.5,-115.5 477.5,-115.5 "/>
-<text text-anchor="middle" x="405" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">external_url</text>
-<polyline fill="none" stroke="#000000" points="332.5,-92.5 477.5,-92.5 "/>
-<text text-anchor="middle" x="405" y="-77.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
-<polyline fill="none" stroke="#000000" points="332.5,-69.5 477.5,-69.5 "/>
-<text text-anchor="middle" x="405" y="-54.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_description</text>
-<polyline fill="none" stroke="#000000" points="332.5,-46.5 477.5,-46.5 "/>
-<text text-anchor="middle" x="405" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_id</text>
-<polyline fill="none" stroke="#000000" points="332.5,-23.5 477.5,-23.5 "/>
-<text text-anchor="middle" x="405" y="-8.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_name</text>
-<polyline fill="none" stroke="#000000" points="477.5,-.5 477.5,-184.5 "/>
-<text text-anchor="middle" x="488" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-</g>
-<!-- reference_file&#45;&gt;study -->
-<g id="edge1" class="edge">
-<title>reference_file&#45;&gt;study</title>
-<path fill="none" stroke="#000000" d="M377,-236.4718C377,-222.7494 377,-208.686 377,-194.9814"/>
-<polygon fill="#000000" stroke="#000000" points="380.5001,-194.5829 377,-184.5829 373.5001,-194.5829 380.5001,-194.5829"/>
-<text text-anchor="middle" x="437.5" y="-206.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_reference_file</text>
+<path fill="none" stroke="#000000" d="M1277.3721,-518.4695C1255.3211,-509.2872 1232.3551,-500.992 1210,-495 1195.1798,-491.0276 674.2902,-449.5863 660,-444 630.2782,-432.3811 601.5658,-412.2157 578.2438,-392.716"/>
+<polygon fill="#000000" stroke="#000000" points="580.4245,-389.9757 570.5476,-386.1419 575.8779,-395.2982 580.4245,-389.9757"/>
+<text text-anchor="middle" x="1097" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_treatment_response</text>
 </g>
 <!-- sample -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>sample</title>
 <path fill="none" stroke="#000000" d="M12,-507C12,-507 326,-507 326,-507 332,-507 338,-513 338,-519 338,-519 338,-656 338,-656 338,-662 332,-668 326,-668 326,-668 12,-668 12,-668 6,-668 0,-662 0,-656 0,-656 0,-519 0,-519 0,-513 6,-507 12,-507"/>
 <text text-anchor="middle" x="34" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">sample</text>
@@ -158,19 +97,107 @@ Zoom to Node: <select id="node_select">
 <polyline fill="none" stroke="#000000" points="317,-507 317,-668 "/>
 <text text-anchor="middle" x="327.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
+<!-- study -->
+<g id="node7" class="node">
+<title>study</title>
+<path fill="none" stroke="#000000" d="M414.5,-.5C414.5,-.5 633.5,-.5 633.5,-.5 639.5,-.5 645.5,-6.5 645.5,-12.5 645.5,-12.5 645.5,-172.5 645.5,-172.5 645.5,-178.5 639.5,-184.5 633.5,-184.5 633.5,-184.5 414.5,-184.5 414.5,-184.5 408.5,-184.5 402.5,-178.5 402.5,-172.5 402.5,-172.5 402.5,-12.5 402.5,-12.5 402.5,-6.5 408.5,-.5 414.5,-.5"/>
+<text text-anchor="middle" x="430.5" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000">study</text>
+<polyline fill="none" stroke="#000000" points="458.5,-.5 458.5,-184.5 "/>
+<text text-anchor="middle" x="469" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="479.5,-.5 479.5,-184.5 "/>
+<text text-anchor="middle" x="552" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">consent</text>
+<polyline fill="none" stroke="#000000" points="479.5,-161.5 624.5,-161.5 "/>
+<text text-anchor="middle" x="552" y="-146.3" font-family="Times,serif" font-size="14.00" fill="#000000">consent_number</text>
+<polyline fill="none" stroke="#000000" points="479.5,-138.5 624.5,-138.5 "/>
+<text text-anchor="middle" x="552" y="-123.3" font-family="Times,serif" font-size="14.00" fill="#000000">dbgap_accession</text>
+<polyline fill="none" stroke="#000000" points="479.5,-115.5 624.5,-115.5 "/>
+<text text-anchor="middle" x="552" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">external_url</text>
+<polyline fill="none" stroke="#000000" points="479.5,-92.5 624.5,-92.5 "/>
+<text text-anchor="middle" x="552" y="-77.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
+<polyline fill="none" stroke="#000000" points="479.5,-69.5 624.5,-69.5 "/>
+<text text-anchor="middle" x="552" y="-54.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_description</text>
+<polyline fill="none" stroke="#000000" points="479.5,-46.5 624.5,-46.5 "/>
+<text text-anchor="middle" x="552" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_id</text>
+<polyline fill="none" stroke="#000000" points="479.5,-23.5 624.5,-23.5 "/>
+<text text-anchor="middle" x="552" y="-8.3" font-family="Times,serif" font-size="14.00" fill="#000000">study_name</text>
+<polyline fill="none" stroke="#000000" points="624.5,-.5 624.5,-184.5 "/>
+<text text-anchor="middle" x="635" y="-88.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
 <!-- sample&#45;&gt;study -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>sample&#45;&gt;study</title>
-<path fill="none" stroke="#000000" d="M139.2318,-506.6398C116.924,-431.6203 97.4599,-319.3217 144,-236 166.7703,-195.2338 206.402,-164.6179 246.5911,-142.3674"/>
-<polygon fill="#000000" stroke="#000000" points="248.2939,-145.4257 255.4403,-137.6039 244.976,-139.262 248.2939,-145.4257"/>
-<text text-anchor="middle" x="180.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">of_sample</text>
+<path fill="none" stroke="#000000" d="M187.898,-506.9369C208.8527,-430.8311 248.6235,-316.6312 314,-236 336.1478,-208.6843 364.8388,-184.4764 393.8585,-164.0863"/>
+<polygon fill="#000000" stroke="#000000" points="396.2086,-166.7173 402.4559,-158.1603 392.236,-160.9538 396.2086,-166.7173"/>
+<text text-anchor="middle" x="350.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">of_sample</text>
 </g>
 <!-- sample&#45;&gt;participant -->
-<g id="edge5" class="edge">
+<g id="edge2" class="edge">
 <title>sample&#45;&gt;participant</title>
-<path fill="none" stroke="#000000" d="M227.7458,-506.985C244.7915,-489.2015 264.8562,-472.5381 287,-462 387.1889,-414.3208 432.1861,-483.1635 536,-444 566.1224,-432.6364 595.1716,-412.3987 618.709,-392.7768"/>
-<polygon fill="#000000" stroke="#000000" points="621.1327,-395.3099 626.4736,-386.1597 616.5923,-389.9821 621.1327,-395.3099"/>
+<path fill="none" stroke="#000000" d="M236.9584,-506.937C252.4777,-490.9897 269.5646,-475.1391 287,-462 323.4304,-434.5467 366.9437,-410.1471 406.6843,-390.52"/>
+<polygon fill="#000000" stroke="#000000" points="408.4472,-393.5542 415.8973,-386.0211 405.3756,-387.2641 408.4472,-393.5542"/>
 <text text-anchor="middle" x="323.5" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_sample</text>
+</g>
+<!-- treatment -->
+<g id="node3" class="node">
+<title>treatment</title>
+<path fill="none" stroke="#000000" d="M493,-518.5C493,-518.5 785,-518.5 785,-518.5 791,-518.5 797,-524.5 797,-530.5 797,-530.5 797,-644.5 797,-644.5 797,-650.5 791,-656.5 785,-656.5 785,-656.5 493,-656.5 493,-656.5 487,-656.5 481,-650.5 481,-644.5 481,-644.5 481,-530.5 481,-530.5 481,-524.5 487,-518.5 493,-518.5"/>
+<text text-anchor="middle" x="525.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">treatment</text>
+<polyline fill="none" stroke="#000000" points="570,-518.5 570,-656.5 "/>
+<text text-anchor="middle" x="580.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="591,-518.5 591,-656.5 "/>
+<text text-anchor="middle" x="683.5" y="-641.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_treatment_end</text>
+<polyline fill="none" stroke="#000000" points="591,-633.5 776,-633.5 "/>
+<text text-anchor="middle" x="683.5" y="-618.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_treatment_start</text>
+<polyline fill="none" stroke="#000000" points="591,-610.5 776,-610.5 "/>
+<text text-anchor="middle" x="683.5" y="-595.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
+<polyline fill="none" stroke="#000000" points="591,-587.5 776,-587.5 "/>
+<text text-anchor="middle" x="683.5" y="-572.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_agent</text>
+<polyline fill="none" stroke="#000000" points="591,-564.5 776,-564.5 "/>
+<text text-anchor="middle" x="683.5" y="-549.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_id</text>
+<polyline fill="none" stroke="#000000" points="591,-541.5 776,-541.5 "/>
+<text text-anchor="middle" x="683.5" y="-526.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_type</text>
+<polyline fill="none" stroke="#000000" points="776,-518.5 776,-656.5 "/>
+<text text-anchor="middle" x="786.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- treatment&#45;&gt;participant -->
+<g id="edge5" class="edge">
+<title>treatment&#45;&gt;participant</title>
+<path fill="none" stroke="#000000" d="M606.8132,-518.2283C588.8192,-479.5021 566.6931,-431.8829 549.8396,-395.6112"/>
+<polygon fill="#000000" stroke="#000000" points="552.8424,-393.7676 545.4544,-386.1736 546.4942,-396.7173 552.8424,-393.7676"/>
+<text text-anchor="middle" x="632" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_treatment</text>
+</g>
+<!-- survival -->
+<g id="node4" class="node">
+<title>survival</title>
+<path fill="none" stroke="#000000" d="M827.5,-495.5C827.5,-495.5 1188.5,-495.5 1188.5,-495.5 1194.5,-495.5 1200.5,-501.5 1200.5,-507.5 1200.5,-507.5 1200.5,-667.5 1200.5,-667.5 1200.5,-673.5 1194.5,-679.5 1188.5,-679.5 1188.5,-679.5 827.5,-679.5 827.5,-679.5 821.5,-679.5 815.5,-673.5 815.5,-667.5 815.5,-667.5 815.5,-507.5 815.5,-507.5 815.5,-501.5 821.5,-495.5 827.5,-495.5"/>
+<text text-anchor="middle" x="852.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">survival</text>
+<polyline fill="none" stroke="#000000" points="889.5,-495.5 889.5,-679.5 "/>
+<text text-anchor="middle" x="900" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="910.5,-495.5 910.5,-679.5 "/>
+<text text-anchor="middle" x="1045" y="-664.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_event_free_survival_status</text>
+<polyline fill="none" stroke="#000000" points="910.5,-656.5 1179.5,-656.5 "/>
+<text text-anchor="middle" x="1045" y="-641.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_last_known_survival_status</text>
+<polyline fill="none" stroke="#000000" points="910.5,-633.5 1179.5,-633.5 "/>
+<text text-anchor="middle" x="1045" y="-618.3" font-family="Times,serif" font-size="14.00" fill="#000000">cause_of_death</text>
+<polyline fill="none" stroke="#000000" points="910.5,-610.5 1179.5,-610.5 "/>
+<text text-anchor="middle" x="1045" y="-595.3" font-family="Times,serif" font-size="14.00" fill="#000000">event_free_survival_status</text>
+<polyline fill="none" stroke="#000000" points="910.5,-587.5 1179.5,-587.5 "/>
+<text text-anchor="middle" x="1045" y="-572.3" font-family="Times,serif" font-size="14.00" fill="#000000">first_event</text>
+<polyline fill="none" stroke="#000000" points="910.5,-564.5 1179.5,-564.5 "/>
+<text text-anchor="middle" x="1045" y="-549.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
+<polyline fill="none" stroke="#000000" points="910.5,-541.5 1179.5,-541.5 "/>
+<text text-anchor="middle" x="1045" y="-526.3" font-family="Times,serif" font-size="14.00" fill="#000000">last_known_survival_status</text>
+<polyline fill="none" stroke="#000000" points="910.5,-518.5 1179.5,-518.5 "/>
+<text text-anchor="middle" x="1045" y="-503.3" font-family="Times,serif" font-size="14.00" fill="#000000">survival_id</text>
+<polyline fill="none" stroke="#000000" points="1179.5,-495.5 1179.5,-679.5 "/>
+<text text-anchor="middle" x="1190" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- survival&#45;&gt;participant -->
+<g id="edge9" class="edge">
+<title>survival&#45;&gt;participant</title>
+<path fill="none" stroke="#000000" d="M815.4531,-498.8441C812.2836,-497.5428 809.1308,-496.2605 806,-495 742.2395,-469.3302 720.5014,-476.6178 660,-444 633.5535,-429.742 606.7884,-410.5292 584.0795,-392.4973"/>
+<polygon fill="#000000" stroke="#000000" points="586.2093,-389.7187 576.2235,-386.1785 581.8221,-395.1733 586.2093,-389.7187"/>
+<text text-anchor="middle" x="789.5" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_survival</text>
 </g>
 <!-- diagnosis -->
 <g id="node5" class="node">
@@ -222,78 +249,51 @@ Zoom to Node: <select id="node_select">
 <!-- diagnosis&#45;&gt;participant -->
 <g id="edge6" class="edge">
 <title>diagnosis&#45;&gt;participant</title>
-<path fill="none" stroke="#000000" d="M332.312,-731.3331C337.5846,-714.0811 342.5851,-696.7552 347,-680 368.3432,-599.0002 327.728,-557.9404 383,-495 430.2969,-441.1411 472.6058,-477.4508 536,-444 562.8143,-429.8511 589.9084,-410.5668 612.8427,-392.4461"/>
-<polygon fill="#000000" stroke="#000000" points="615.1556,-395.0778 620.774,-386.0954 610.7804,-389.6136 615.1556,-395.0778"/>
+<path fill="none" stroke="#000000" d="M332.312,-731.3331C337.5846,-714.0811 342.5851,-696.7552 347,-680 368.3432,-599.0002 345.4258,-569.8644 383,-495 402.1738,-456.7975 433.4506,-421.0103 461.681,-393.4693"/>
+<polygon fill="#000000" stroke="#000000" points="464.3731,-395.7368 469.1654,-386.2877 459.5266,-390.6859 464.3731,-395.7368"/>
 <text text-anchor="middle" x="427.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_diagnosis</text>
 </g>
-<!-- treatment -->
+<!-- reference_file -->
 <g id="node6" class="node">
-<title>treatment</title>
-<path fill="none" stroke="#000000" d="M493,-518.5C493,-518.5 785,-518.5 785,-518.5 791,-518.5 797,-524.5 797,-530.5 797,-530.5 797,-644.5 797,-644.5 797,-650.5 791,-656.5 785,-656.5 785,-656.5 493,-656.5 493,-656.5 487,-656.5 481,-650.5 481,-644.5 481,-644.5 481,-530.5 481,-530.5 481,-524.5 487,-518.5 493,-518.5"/>
-<text text-anchor="middle" x="525.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">treatment</text>
-<polyline fill="none" stroke="#000000" points="570,-518.5 570,-656.5 "/>
-<text text-anchor="middle" x="580.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="591,-518.5 591,-656.5 "/>
-<text text-anchor="middle" x="683.5" y="-641.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_treatment_end</text>
-<polyline fill="none" stroke="#000000" points="591,-633.5 776,-633.5 "/>
-<text text-anchor="middle" x="683.5" y="-618.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_treatment_start</text>
-<polyline fill="none" stroke="#000000" points="591,-610.5 776,-610.5 "/>
-<text text-anchor="middle" x="683.5" y="-595.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
-<polyline fill="none" stroke="#000000" points="591,-587.5 776,-587.5 "/>
-<text text-anchor="middle" x="683.5" y="-572.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_agent</text>
-<polyline fill="none" stroke="#000000" points="591,-564.5 776,-564.5 "/>
-<text text-anchor="middle" x="683.5" y="-549.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_id</text>
-<polyline fill="none" stroke="#000000" points="591,-541.5 776,-541.5 "/>
-<text text-anchor="middle" x="683.5" y="-526.3" font-family="Times,serif" font-size="14.00" fill="#000000">treatment_type</text>
-<polyline fill="none" stroke="#000000" points="776,-518.5 776,-656.5 "/>
-<text text-anchor="middle" x="786.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<title>reference_file</title>
+<path fill="none" stroke="#000000" d="M681.5,-236.5C681.5,-236.5 958.5,-236.5 958.5,-236.5 964.5,-236.5 970.5,-242.5 970.5,-248.5 970.5,-248.5 970.5,-431.5 970.5,-431.5 970.5,-437.5 964.5,-443.5 958.5,-443.5 958.5,-443.5 681.5,-443.5 681.5,-443.5 675.5,-443.5 669.5,-437.5 669.5,-431.5 669.5,-431.5 669.5,-248.5 669.5,-248.5 669.5,-242.5 675.5,-236.5 681.5,-236.5"/>
+<text text-anchor="middle" x="727.5" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file</text>
+<polyline fill="none" stroke="#000000" points="785.5,-236.5 785.5,-443.5 "/>
+<text text-anchor="middle" x="796" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="806.5,-236.5 806.5,-443.5 "/>
+<text text-anchor="middle" x="878" y="-428.3" font-family="Times,serif" font-size="14.00" fill="#000000">dcf_indexd_guid</text>
+<polyline fill="none" stroke="#000000" points="806.5,-420.5 949.5,-420.5 "/>
+<text text-anchor="middle" x="878" y="-405.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_category</text>
+<polyline fill="none" stroke="#000000" points="806.5,-397.5 949.5,-397.5 "/>
+<text text-anchor="middle" x="878" y="-382.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_description</text>
+<polyline fill="none" stroke="#000000" points="806.5,-374.5 949.5,-374.5 "/>
+<text text-anchor="middle" x="878" y="-359.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_name</text>
+<polyline fill="none" stroke="#000000" points="806.5,-351.5 949.5,-351.5 "/>
+<text text-anchor="middle" x="878" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_size</text>
+<polyline fill="none" stroke="#000000" points="806.5,-328.5 949.5,-328.5 "/>
+<text text-anchor="middle" x="878" y="-313.3" font-family="Times,serif" font-size="14.00" fill="#000000">file_type</text>
+<polyline fill="none" stroke="#000000" points="806.5,-305.5 949.5,-305.5 "/>
+<text text-anchor="middle" x="878" y="-290.3" font-family="Times,serif" font-size="14.00" fill="#000000">md5sum</text>
+<polyline fill="none" stroke="#000000" points="806.5,-282.5 949.5,-282.5 "/>
+<text text-anchor="middle" x="878" y="-267.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file_id</text>
+<polyline fill="none" stroke="#000000" points="806.5,-259.5 949.5,-259.5 "/>
+<text text-anchor="middle" x="878" y="-244.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_file_url</text>
+<polyline fill="none" stroke="#000000" points="949.5,-236.5 949.5,-443.5 "/>
+<text text-anchor="middle" x="960" y="-336.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
-<!-- treatment&#45;&gt;participant -->
-<g id="edge3" class="edge">
-<title>treatment&#45;&gt;participant</title>
-<path fill="none" stroke="#000000" d="M648.5161,-518.2283C653.7908,-479.8317 660.2664,-432.6928 665.2329,-396.5398"/>
-<polygon fill="#000000" stroke="#000000" points="668.7634,-396.5569 666.657,-386.1736 661.8285,-395.6042 668.7634,-396.5569"/>
-<text text-anchor="middle" x="703" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_treatment</text>
+<!-- reference_file&#45;&gt;study -->
+<g id="edge1" class="edge">
+<title>reference_file&#45;&gt;study</title>
+<path fill="none" stroke="#000000" d="M696.1844,-236.4718C678.3249,-221.5386 659.9825,-206.2016 642.2356,-191.3625"/>
+<polygon fill="#000000" stroke="#000000" points="644.0442,-188.3125 634.1274,-184.5829 639.5539,-193.6826 644.0442,-188.3125"/>
+<text text-anchor="middle" x="732.5" y="-206.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_reference_file</text>
 </g>
 <!-- participant&#45;&gt;study -->
-<g id="edge2" class="edge">
-<title>participant&#45;&gt;study</title>
-<path fill="none" stroke="#000000" d="M617.6719,-293.7375C583.1737,-264.8919 537.4348,-226.6473 495.1015,-191.2504"/>
-<polygon fill="#000000" stroke="#000000" points="497.1567,-188.4066 487.24,-184.677 492.6665,-193.7767 497.1567,-188.4066"/>
-<text text-anchor="middle" x="575.5" y="-206.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_participant</text>
-</g>
-<!-- survival -->
-<g id="node8" class="node">
-<title>survival</title>
-<path fill="none" stroke="#000000" d="M827.5,-495.5C827.5,-495.5 1188.5,-495.5 1188.5,-495.5 1194.5,-495.5 1200.5,-501.5 1200.5,-507.5 1200.5,-507.5 1200.5,-667.5 1200.5,-667.5 1200.5,-673.5 1194.5,-679.5 1188.5,-679.5 1188.5,-679.5 827.5,-679.5 827.5,-679.5 821.5,-679.5 815.5,-673.5 815.5,-667.5 815.5,-667.5 815.5,-507.5 815.5,-507.5 815.5,-501.5 821.5,-495.5 827.5,-495.5"/>
-<text text-anchor="middle" x="852.5" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000">survival</text>
-<polyline fill="none" stroke="#000000" points="889.5,-495.5 889.5,-679.5 "/>
-<text text-anchor="middle" x="900" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="910.5,-495.5 910.5,-679.5 "/>
-<text text-anchor="middle" x="1045" y="-664.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_event_free_survival_status</text>
-<polyline fill="none" stroke="#000000" points="910.5,-656.5 1179.5,-656.5 "/>
-<text text-anchor="middle" x="1045" y="-641.3" font-family="Times,serif" font-size="14.00" fill="#000000">age_at_last_known_survival_status</text>
-<polyline fill="none" stroke="#000000" points="910.5,-633.5 1179.5,-633.5 "/>
-<text text-anchor="middle" x="1045" y="-618.3" font-family="Times,serif" font-size="14.00" fill="#000000">cause_of_death</text>
-<polyline fill="none" stroke="#000000" points="910.5,-610.5 1179.5,-610.5 "/>
-<text text-anchor="middle" x="1045" y="-595.3" font-family="Times,serif" font-size="14.00" fill="#000000">event_free_survival_status</text>
-<polyline fill="none" stroke="#000000" points="910.5,-587.5 1179.5,-587.5 "/>
-<text text-anchor="middle" x="1045" y="-572.3" font-family="Times,serif" font-size="14.00" fill="#000000">first_event</text>
-<polyline fill="none" stroke="#000000" points="910.5,-564.5 1179.5,-564.5 "/>
-<text text-anchor="middle" x="1045" y="-549.3" font-family="Times,serif" font-size="14.00" fill="#000000">id</text>
-<polyline fill="none" stroke="#000000" points="910.5,-541.5 1179.5,-541.5 "/>
-<text text-anchor="middle" x="1045" y="-526.3" font-family="Times,serif" font-size="14.00" fill="#000000">last_known_survival_status</text>
-<polyline fill="none" stroke="#000000" points="910.5,-518.5 1179.5,-518.5 "/>
-<text text-anchor="middle" x="1045" y="-503.3" font-family="Times,serif" font-size="14.00" fill="#000000">survival_id</text>
-<polyline fill="none" stroke="#000000" points="1179.5,-495.5 1179.5,-679.5 "/>
-<text text-anchor="middle" x="1190" y="-583.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-</g>
-<!-- survival&#45;&gt;participant -->
 <g id="edge8" class="edge">
-<title>survival&#45;&gt;participant</title>
-<path fill="none" stroke="#000000" d="M883.2584,-495.3401C836.0946,-460.4953 784.0837,-422.0693 743.5909,-392.153"/>
-<polygon fill="#000000" stroke="#000000" points="745.514,-389.2222 735.3912,-386.095 741.3544,-394.8523 745.514,-389.2222"/>
-<text text-anchor="middle" x="890.5" y="-465.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_survival</text>
+<title>participant&#45;&gt;study</title>
+<path fill="none" stroke="#000000" d="M524,-293.7375C524,-265.8494 524,-229.176 524,-194.7844"/>
+<polygon fill="#000000" stroke="#000000" points="527.5001,-194.677 524,-184.677 520.5001,-194.6771 527.5001,-194.677"/>
+<text text-anchor="middle" x="574.5" y="-206.8" font-family="Times,serif" font-size="14.00" fill="#000000">of_participant</text>
 </g>
 </g>
 </svg>
