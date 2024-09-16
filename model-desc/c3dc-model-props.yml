@@ -1785,8 +1785,8 @@ PropDefinitions:
         Code: 'C42673'
         Value: Definition Source
         Version: "null"
-      - Origin: NCIt
-        Code: 'C91220'
+      - Origin: caDSR
+        Code: '15026558'
         Value: French-American-British Classification
       - Origin: NCIt
         Code: 'C159157'
@@ -1819,7 +1819,7 @@ PropDefinitions:
       Enum:
         - 'Clinical'
         - 'Molecular'
-        - 'Pathological'
+        - 'Pathology'
         - 'Unknown'
         - 'Not Reported'
     Req: true
@@ -1836,9 +1836,9 @@ PropDefinitions:
     Desc: Age at the time of diagnosis expressed in number of days since birth.
     Term:
       - Origin: caDSR
-        Code: '10609539'
-        Value: Subject Age at Diagnosis Integer
-        Version: "null"
+        Code: '15019300'
+        Value: Subject Age at Diagnosis Day Count
+        Version: "1.00"
       - Origin: NCIt
         Code: 'C156420'
         Value: Age at Diagnosis 
@@ -3008,12 +3008,12 @@ PropDefinitions:
         - "3-Dimensional Conformal Radiation Therapy"
         - "Allogeneic Hematopoietic Stem Cell Transplantation"
         - "Autologous Stem Cell Transplantation"
-        - “Brachytherapy”
+        - "Brachytherapy"
         - "Cellular Therapy"
         - "Chemotherapy"
         - "Concurrent Chemoradiation"
         - "Conventional Radiotherapy"
-        - “Electron Beam Radiation Therapy”
+        - "Electron Beam Radiation Therapy"
         - "External Beam Radiation Therapy"
         - "High-Dose Rate Brachytherapy"
         - "Hormone Therapy"
@@ -3021,12 +3021,14 @@ PropDefinitions:
         - "Intensity-Modulated Radiation Therapy"
         - "Low-Dose Rate Brachytherapy"
         - "Not Reported"
+        - "Organ Transplantation"
+        - "Palliative Care"
         - "Pharmacotherapy"
-        - “Photon Beam Radiation Therapy”
+        - "Photon Beam Radiation Therapy"
         - "Proton Beam Radiation Therapy"
-        - "Radiation Therapy, NOS"
+        - "Radiation Therapy"
         - "Radiofrequency Ablation"
-        - “Radiopharmaceutical”
+        - "Radiopharmaceutical"
         - "Stem Cell Transplant"
         - "Stereotactic Body Radiation Therapy"
         - "Stereotactic Radiosurgery"
