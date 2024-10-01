@@ -1847,6 +1847,21 @@ PropDefinitions:
     Req: true
     Private: false
   #diagnosis
+  year_of_diagnosis:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+      - Origin: NCIt
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: integer
+    Req: true
+    Private: false
+  #diagnosis
   toronto_childhood_cancer_staging:
     Desc: Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
     Term: 
@@ -2574,6 +2589,29 @@ PropDefinitions:
     Strict: true
     Private: false
   #sample
+  laterality:
+    Desc: A qualifier for the side of the body related to tumor identification.
+    Term:
+      - Origin: caDSR
+        Code: '6648992'
+        Value: Laterality
+        Version: "1.00"
+    Type:
+      value_type: string
+      Enum:
+        - "Bilateral"
+        - "Contralateral"
+        - "Ipsilateral"
+        - "Lateral"
+        - "Left"
+        - "Right"
+        - "Unilateral"
+        - "Not Applicable"
+        - "Not Reported"
+    Req: true  
+    Strict: true
+    Private: false
+  #sample
   participant_age_at_collection:     
     Desc: The age of the participant (in days) at the time of sample collection.
     Term:
@@ -3154,3 +3192,579 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
+  #genetic_analysis
+  genetic_analysis_id:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: string
+    Req: true
+    Private: false 
+    Key: true
+  #genetic_analysis
+  age_at_genetic_analysis:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: integer
+    Req: true
+    Private: false 
+  #genetic_analysis
+  alteration:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "12q Gain"
+        - "16q Loss"
+        - "17q Gain"
+        - "1q Gain"
+        - "22q11.23 alterations"
+        - "45XO"
+        - "45XO w/ Y chromosomal material"
+        - "46XX"
+        - "46XY"
+        - "47XXX"
+        - "47XXY"
+        - "47XYY"
+        - "48XXXX"
+        - "48XXXY"
+        - "5q21 loss; trisomies 8,20"
+        - "8q Gain"
+        - "AKT Variant"
+        - "ALK Alteration, NOS"
+        - "ALK Amplification"
+        - "ALK Copy Number Gain"
+        - "ALK Copy Number Loss"
+        - "ALK Rearrangement"
+        - "ALK Variant"
+        - "ARID1A Variant"
+        - "ASPSCR1-TFE3"
+        - "ATM Variant"
+        - "BCOR Deletion"
+        - "BCOR ITD Rearranged"
+        - "BCOR Rearranged"
+        - "BCOR Variant"
+        - "BCOR-MAML3"
+        - "BRAF Variant"
+        - "BRCA2 Variant"
+        - "C19MC Amplification"
+        - "CCNB3-BCOR"
+        - "CCND1 Variant"
+        - "CCND2 Variant"
+        - "CDK4 Variant"
+        - "CDKN2A"
+        - "CDKN2A Variant"
+        - "CEBPA Mutation - Biallelic"
+        - "CEBPA Mutation - Monoallelic"
+        - "CEBPA Mutation - Mutation Unspecified"
+        - "Chromosome 11 Loss"
+        - "Chromosome 13q Loss"
+        - "Chromosome 14q Loss"
+        - "Chromosome 16q Loss"
+        - "Chromosome 1q Gain"
+        - "Chromosome 2p Gain"
+        - "Chromosome 6p Gain"
+        - "CIC Rearranged"
+        - "CIC-DUX4"
+        - "CIC-DUX4L10"
+        - "CKIT Mutation - Ex17"
+        - "CKIT Mutation - Ex8"
+        - "CKIT Mutation - Unspecified"
+        - "Complex karyotype"
+        - "CTNNB1 Variant"
+        - "del(13q)(13q14-21)"
+        - "del(17p)"
+        - "del(5q)(5q31-q32)"
+        - "Deletion of 1p.8p"
+        - "der.12p"
+        - "DICER1 Variant"
+        - "E2A/PBX1 t(1;19)"
+        - "ETV6 rearranged"
+        - "ETV6-RUNX1 t(12;21)(p13;q22)(formerly TEL-AML1)"
+        - "EWSR1 Rearranged"
+        - "EWSR1-ATF1"
+        - "EWSR1-CREB1"
+        - "EWSR1-DDIT3"
+        - "EWSR1-ERG"
+        - "EWSR1-ETV1"
+        - "EWSR1-ETV4"
+        - "EWSR1-FEV"
+        - "EWSR1-FLI1"
+        - "EWSR1-KLF17"
+        - "EWSR1-NR4A3"
+        - "EWSR1-PBX1"
+        - "EWSR1-POU5F1"
+        - "EWSR1-WT1"
+        - "EWSR1-ZNF444"
+        - "FBXW7 Variant"
+        - "FGFR4 Variant"
+        - "FLT3 Internal Tandem Duplication (ITD)"
+        - "FLT3 Tyrosine Kinase Domain (TKD)"
+        - "FOXO1 rearranged"
+        - "FUS Rearranged"
+        - "FUS Translocation Present"
+        - "FUS-CREB3L2"
+        - "FUS-DDIT3"
+        - "FUS-ERG"
+        - "FUS-FEV"
+        - "FUS-KLF17"
+        - "GAB1 Variant"
+        - "GATA1 Mutation"
+        - "GLI2 Amplification"
+        - "HRAS Variant"
+        - "iAMP21"
+        - "IGF1R Variant"
+        - "inv(16)(p13.3q24.3) / CBFA2T3-GLIS2"
+        - "inv(16)(p13q22)"
+        - "inv(3)(q21.3;q26.2)"
+        - "Inv(X)(p11.4 p11.22)"
+        - "inv(X)(p11.4;p11.22)"
+        - "Isochromosome 17q"
+        - "K-RAS Mutation"
+        - "KRAS Variant"
+        - "Loss of Chromosome 11q (Deletion)"
+        - "Loss of Chromosome 1p (Deletion)"
+        - "MDM2 Variant"
+        - "MLL Other Partner"
+        - "MLL Rearrangement (Translocation)"
+        - "Monosomy 5"
+        - "Monosomy 7"
+        - "MTOR Variant"
+        - "MYC Amplification"
+        - "MYCN Amplification"
+        - "MYCN Variant"
+        - "MYOD1 Variant"
+        - "N-RAS Mutation"
+        - "NF1 Variant"
+        - "Non-KMT2A MLLT10"
+        - "Not Reported"
+        - "NPM1 Mutation"
+        - "NRAS Variant"
+        - "NTRK Rearranged"
+        - "Other"
+        - "Other-FOXO1 fusion"
+        - "p53 mutation"
+        - "PAX3-FOXO1 fusion"
+        - "PAX3-Other fusion"
+        - "PAX7-FOXO1 fusion"
+        - "PDGFRA Variant"
+        - "PIK3CA Variant"
+        - "PKN1 Variant"
+        - "PTCH1 Variant"
+        - "PTPN11 Mutation"
+        - "RB Mutation"
+        - "RB1 Allele"
+        - "RB1 Variant"
+        - "RECQL2 mutation"
+        - "RECQL3 mutation"
+        - "RECQL4 mutation"
+        - "ROBO1 Variant"
+        - "ROS1 Rearranged"
+        - "RUNX1 Mutation"
+        - "SMARCA4 Variant"
+        - "SMARCB1 deleted/mutated"
+        - "SMARCB1 Variant"
+        - "SMO Variant"
+        - "Somatic Gene Mutation"
+        - "SOS1 Variant"
+        - "SOS2 Variant"
+        - "SSX-SS18"
+        - "STAG2"
+        - "SUFU Variant"
+        - "t(1;10)(p22-31; q24-25)"
+        - "t(1;11)(q21;q23) / MLL-MLLT11(AF1Q)"
+        - "t(1;16)(p34;p11)"
+        - "t(1;22)(p34;q12)"
+        - "t(1;22)(q23;q12)"
+        - "t(1;22)(RBM15-MKL1)"
+        - "t(10;11)(p11.2;q23)"
+        - "t(10;11)(p12;q23) / MLL-MLLT10(AF10)"
+        - "t(10;19)(q26;q13)"
+        - "t(11;15)(p15;q35) / NUP98/JARID1A"
+        - "t(11;16)(q13; p11)"
+        - "t(11;17)(AF17)"
+        - "t(11;19)(q13;q13.4)"
+        - "t(11;19)(q23;p13.1)(MLL-ELL)"
+        - "t(11;19)(q23;p13.3)(MLL-ENL)"
+        - "t(11;19)(q23;p13) / (MLL-ENL)/(MLL-ELL)"
+        - "t(11;22)"
+        - "t(11;22)(p13;q12)"
+        - "t(11;22)(q24;q12)"
+        - "t(12;15)(p13;q25)"
+        - "t(12;16)(q13;p11)"
+        - "t(12;22;20)(q13;q12;q11)"
+        - "t(12;22)(q13;q12)"
+        - "t(12;22)(q13.12;q12)"
+        - "t(12;22)(q13.3;q12)"
+        - "t(15;17)(q24;q21)"
+        - "t(16;16)(p13.1;q22)"
+        - "t(16;21)(p11;q22)"
+        - "t(16;21)(p11;q22) / FUS/ERG"
+        - "t(16;21)(q24;q22) / RUNX1-CBFA2T3"
+        - "t(17;22)(q21;q12)"
+        - "t(17;22)(q22;q13)"
+        - "t(19;22)(q13;q12)"
+        - "t(2;12)"
+        - "t(2;16)(q35;p11)"
+        - "t(2;22)(q33;q12)"
+        - "t(2;22)(q33.3;q12)"
+        - "t(2;22)(q34;q12)"
+        - "t(21;22)(q22;q12)"
+        - "t(3;12)(q23;p12.3)(ETV6/EVI1)"
+        - "t(3;3)(q21;q26.2), RPN1-EVI1"
+        - "t(3;5)(q25;q34) / NPM1/MLF1"
+        - "t(4;11)(q21;q23) / MLL-MLLT2(AF4)"
+        - "t(4;19)(q25;q13)"
+        - "t(4;19)(q35;q13)"
+        - "t(5;11)(q35;p15) / NSD1/NUP98"
+        - "t(5;18)(q35;q11)"
+        - "t(6;11)(q27;q23) / MLL-MLLT4(AF6)"
+        - "t(6;22)(p21;q12)"
+        - "t(6;9)(p23;q34) DEK/NUP214"
+        - "t(7;12)(q36;p13) / HLXB9(MNX1)/ETV6(TEL)"
+        - "t(7;16)(q33; p11)"
+        - "t(7;22)(p22;q12)"
+        - "t(8;14)(q24;q32) or other variant of B-ALL"
+        - "t(8;16)MOZ/CBP"
+        - "t(8;8)(q21;q13)"
+        - "t(9;11)(p22;q23) / MLL-MLLT3(AF9)"
+        - "t(9;15)(q22;q21)"
+        - "t(9;17)(q22;q11.2)"
+        - "t(9;17)(q22;q11)"
+        - "t(9;22)(q22-23;q11-12)"
+        - "t(9;22)(q22;q12)"
+        - "t(9;22)(q34;q11.2) / ABL/BCR"
+        - "t(X;17)(p11.2;q25)"
+        - "t(X;18)(p11.21;q11)"
+        - "t(X;18)(p11.23;q11)"
+        - "t(X;20)(p11.2;q13.3)"
+        - "t(X;22((p11;q13)"
+        - "t(X;4)(p11;q31)"
+        - "TAF15-NR4A3"
+        - "TGFBR3-MGEA5"
+        - "TP53"
+        - "TP53 Variant"
+        - "Translocations involving 2p23 and other chromosomes"
+        - "Trisomies 8,11,17,20"
+        - "Trisomy 10"
+        - "Trisomy 17"
+        - "Trisomy 4"
+        - "Trisomy 8"
+        - "Unknown"
+        - "VGLL2 Rearranged"
+        - "WT1 Mutation"
+        - "X chromosome inversion"
+        - "ZC3H7B-BCOR"
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
+  status:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "Present"
+        - "Absent"
+        - "Unknown"
+        - "Not Done"
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
+  maf_numeric:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: decimal
+    Req: true
+    Private: false 
+  #genetic_analysis
+  dna_index_numeric:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: decimal
+    Req: true
+    Private: false 
+  #genetic_analysis
+  iscn:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  laboratory_test_id:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: string
+    Req: true
+    Private: false 
+    Key: true
+  #laboratory_test
+  age_at_lab:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: integer
+    Req: true
+    Private: false 
+  #laboratory_test
+  test:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "5 Prime Nucleotidase"
+        - "Absolute Neutrophil Count"
+        - "AFP"
+        - "Albumin"
+        - "Alkaline Phophatase"
+        - "ALP"
+        - "ALT"
+        - "ANC"
+        - "AST"
+        - "Auer Rods"
+        - "Blasts"
+        - "Calcium"
+        - "CD34"
+        - "cfDNA"
+        - "Chloride"
+        - "Creatinine"
+        - "Creatinine Clearance"
+        - "CRP"
+        - "Cytology (malignant cells)"
+        - "Direct Bilirubin"
+        - "EBV DNA"
+        - "EBV IgG"
+        - "Eosinophils"
+        - "ESR"
+        - "Ferritin"
+        - "Free T3"
+        - "Free T4"
+        - "GGT"
+        - "Glucose"
+        - "HCT"
+        - "Hemoglobin"
+        - "HGB"
+        - "INR"
+        - "LDH"
+        - "Leukocytes"
+        - "Lipase"
+        - "Lymphocytes"
+        - "Malignant Cells"
+        - "miR-367-3p"
+        - "miR-371a-3p"
+        - "miR-372-3p"
+        - "miR-373-3p"
+        - "miR-375-3p"
+        - "Monocytes"
+        - "Myelocyte"
+        - "Neutrophils"
+        - "Phosphorus"
+        - "Platelets"
+        - "Potassium"
+        - "Protein"
+        - "Protein Total"
+        - "PT"
+        - "PTT"
+        - "RBC"
+        - "Segmented Neutrophils"
+        - "Sodium"
+        - "Total Bilirubin"
+        - "Total T4"
+        - "TSH"
+        - "Uric Acid"
+        - "WBC"
+        - "β-hCG"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  specimen:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "Blood"
+        - "Bone Marrow"
+        - "Cell Free DNA BCT"
+        - "Cerebrospinal Fluid"
+        - "Peritoneal Fluid"
+        - "Plasma"
+        - "Saliva"
+        - "Serum"
+        - "Stool Sample"
+        - "Urine"
+        - "Other"
+        - "Unknown"
+        - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  method:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "Cytology"
+        - "ddPCR"
+        - "Flow Cytometry"
+        - "MicroRNA Sequencing"
+        - "Morphology"
+        - "PCR"
+        - "qPCR"
+        - "Other"
+        - "Unknown"
+        - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  result:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "Positive"
+        - "Negative"
+        - "Present"
+        - "Absent"
+        - "Unknown"
+        - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  result_text:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_modifier:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_numeric:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: integer
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_unit:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type:
+      value_type: string
+      Enum:
+        - "%"
+        - "count/mm3"
+        - "g/dL"
+        - "g/L"
+        - "IU/L"
+        - "mcg/mL"
+        - "mg/L"
+        - "mIU/L"
+        - "mL/min"
+        - "mm/h"
+        - "mmol/L"
+        - "ng/mL"
+        - "seconds"
+        - "U/L"
+        - "uIU/mL"
+        - "umol/L"
+        - "µg/L"
+        - "Unknown"
+        - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  sensitivity:
+    Desc: TBD
+    Term:
+      - Origin: caDSR
+        Code: TBD
+        Value: TBD
+        Version: TBD
+    Type: decimal
+    Req: true
+    Private: false 
