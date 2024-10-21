@@ -1934,7 +1934,7 @@ PropDefinitions:
         Code: '15157224'
         Value: Subject Diagnosis Year Number
         Version: "1.00"
-    Type: string
+    Type: integer
     Req: true
     Private: false
   #diagnosis
