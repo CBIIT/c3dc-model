@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 173c945
+commit 1b8e825
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2134,6 +2134,14 @@ diagnosis	disease_phase	Relapse
 diagnosis	disease_phase	Relapse/Progression
 diagnosis	disease_phase	Unknown
 diagnosis	id	STRING
+diagnosis	laterality	Bilateral
+diagnosis	laterality	Left
+diagnosis	laterality	Midline
+diagnosis	laterality	Not Applicable
+diagnosis	laterality	Not Reported
+diagnosis	laterality	Not Specified
+diagnosis	laterality	Right
+diagnosis	laterality	Unknown
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS3
@@ -2294,6 +2302,7 @@ diagnosis	tumor_stage_clinical_t	Tis
 diagnosis	tumor_stage_clinical_t	Tis (DCIS)
 diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 diagnosis	tumor_stage_clinical_t	Tis (Paget's)
+diagnosis	year_of_diagnosis	INTEGER
 participant	id	STRING
 participant	participant_id	STRING
 participant	sex_at_birth	Decline to answer
@@ -2890,6 +2899,7 @@ file_type	Text that provides a description of a particular kind of set of relate
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
 id	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
+laterality	Designates the side of the body where disease is found.
 md5sum	md5 hash
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
@@ -2917,3 +2927,4 @@ tumor_grade	A text term to express the degree of abnormality of cancer cells as 
 tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_n	Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_t	Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
+year_of_diagnosis	The year in which a subject was diagnosed.
