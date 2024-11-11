@@ -3039,6 +3039,7 @@ PropDefinitions:
         Version: "1.00"
     Type:
       value_type: list
+      item_type: string
     Req: true
     Strict: true
     Private: false
