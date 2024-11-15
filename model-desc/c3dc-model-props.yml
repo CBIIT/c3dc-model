@@ -3489,6 +3489,24 @@ PropDefinitions:
     Private: false 
     Strict: true
   #genetic_analysis
+  allelic_ratio:
+    Desc: A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
+    Term:
+      - Origin: caDSR
+        Code: 15292721
+        Value: Molecular Specimen Allelic Ratio Float
+        Version: 1.00
+    Type:
+      value_type: string
+      Enum:
+        - "Present"
+        - "Absent"
+        - "Unknown"
+        - "Not Done"
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
   vaf_numeric:
     Desc: A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
     Term:
