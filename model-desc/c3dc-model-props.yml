@@ -6,7 +6,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14540952'
         Value: Diagnosis Disease or Disorder Unique Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1848,16 +1848,12 @@ PropDefinitions:
     Private: false
   #diagnosis
   year_of_diagnosis:
-    Desc: TBD
+    Desc: The year in which a subject was diagnosed.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
-      - Origin: NCIt
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15157224
+        Value: Subject Diagnosis Year Number
+        Version: 1.00
     Type: integer
     Req: true
     Private: false
@@ -2590,24 +2586,26 @@ PropDefinitions:
     Private: false
   #sample
   laterality:
-    Desc: A qualifier for the side of the body related to tumor identification.
+    Desc: Designates the side of the body where disease is found.
     Term:
       - Origin: caDSR
-        Code: '6648992'
-        Value: Laterality
+        Code: '15157293'
+        Value: Disease Laterality Type
         Version: "1.00"
     Type:
       value_type: string
       Enum:
         - "Bilateral"
         - "Contralateral"
-        - "Ipsilateral"
+        - "Midline"
         - "Lateral"
         - "Left"
         - "Right"
         - "Unilateral"
         - "Not Applicable"
         - "Not Reported"
+        - "Not Specified"
+        - "Unknown"
     Req: true  
     Strict: true
     Private: false
@@ -3206,23 +3204,23 @@ PropDefinitions:
     Key: true
   #genetic_analysis
   age_at_genetic_analysis:
-    Desc: TBD
+    Desc: The age in days of the subject at the time of the genetic analysis.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 12365610
+        Value: Subject Age at Genetic Analysis Day Count
+        Version: 2.00
     Type: integer
     Req: true
     Private: false 
   #genetic_analysis
   alteration:
-    Desc: TBD
+    Desc: The words by which the generally used name of the mutation is known.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13362278
+        Value: Gene Mutation Colloquial Name
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3472,12 +3470,12 @@ PropDefinitions:
     Strict: true
   #genetic_analysis
   status:
-    Desc: TBD
+    Desc: The presence or extent of a genetic alteration in an individual's genome.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13362328
+        Value: Gene Alteration Assessment Status
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3496,13 +3494,7 @@ PropDefinitions:
         Code: 15292721
         Value: Molecular Specimen Allelic Ratio Float
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "Present"
-        - "Absent"
-        - "Unknown"
-        - "Not Done"
+    Type: decimal
     Req: true
     Private: false 
     Strict: true
@@ -3526,6 +3518,27 @@ PropDefinitions:
         Value: Molecular Specimen DNA Index Float
         Version: 1.00
     Type: decimal
+    Req: true
+    Private: false 
+  #genetic_analysis
+  hgvs_coding
+    Desc: The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
+    Term:
+      - Origin: caDSR
+        Code: 13367956
+        Value: Gene Mutation HGVS Coding Text
+        Version: 1.00
+    Type: string
+    Req: true
+    Private: false 
+  #genetic_analysis
+  hgvs_protein 
+    Desc: The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.    Term:
+      - Origin: caDSR
+        Code: 13367959
+        Value: Gene Mutation HGVS Protein Text
+        Version: 1.00
+    Type: string
     Req: true
     Private: false 
   #genetic_analysis
