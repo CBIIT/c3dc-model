@@ -64,6 +64,8 @@ Nodes:
       - status
       - vaf_numeric
       - dna_index_numeric
+      - hgvs_coding
+      - hgvs_protein
       - iscn
       - id
   laboratory_test:
