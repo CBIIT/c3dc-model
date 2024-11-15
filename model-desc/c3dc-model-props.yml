@@ -3194,12 +3194,12 @@ PropDefinitions:
     Private: false
   #genetic_analysis
   genetic_analysis_id:
-    Desc: TBD
+    Desc: A unique sequence of characters used to identify the digital data associated with genetic testing.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15243156
+        Value: Genetic Analysis Electronic Record Unique Identifier
+        Version: 1.00
     Type: string
     Req: true
     Private: false 
@@ -3489,24 +3489,24 @@ PropDefinitions:
     Private: false 
     Strict: true
   #genetic_analysis
-  maf_numeric:
-    Desc: TBD
+  vaf_numeric:
+    Desc: A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15292724
+        Value: Molecular Specimen Variant Allele Frequency Float
+        Version: 1.00
     Type: decimal
     Req: true
     Private: false 
   #genetic_analysis
   dna_index_numeric:
-    Desc: TBD
+    Desc: A decimal number capturing the ratio of the DNA content or chromosome number in a tumor sample compared to that in a normal sample.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15292729
+        Value: Molecular Specimen DNA Index Float
+        Version: 1.00
     Type: decimal
     Req: true
     Private: false 
@@ -3523,12 +3523,12 @@ PropDefinitions:
     Private: false 
   #laboratory_test
   laboratory_test_id:
-    Desc: TBD
+    Desc: A unique sequence of characters used to identify the  digital data associated with laboratory testing.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15243682
+        Value: Laboratory Test Electronic Record Unique Identifier
+        Version: 1.00
     Type: string
     Req: true
     Private: false 
