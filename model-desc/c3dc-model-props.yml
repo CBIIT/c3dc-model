@@ -3691,12 +3691,12 @@ PropDefinitions:
     Strict: true
   #laboratory_test
   result:
-    Desc: TBD
+    Desc: The outcome of a laboratory test.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15296752
+        Value: Laboratory Procedure Test Result Positive Negative Finding Outcome
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3722,12 +3722,12 @@ PropDefinitions:
     Private: false 
   #laboratory_test
   result_modifier:
-    Desc: TBD
+    Desc: Text term that helps define the outcome of a laboratory test.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15296781
+        Value: Laboratory Procedure Test Result Modifier Text
+        Version: 1.00
     Type: string
     Req: true
     Private: false 
@@ -3777,12 +3777,12 @@ PropDefinitions:
     Strict: true
   #laboratory_test
   sensitivity:
-    Desc: TBD
+    Desc: The sensitivity of the modality used to determine minimal residual disease.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 14313826
+        Value: Disease Measurable Residual Disease Sensitivity Float
+        Version: 1.00
     Type: decimal
     Req: true
     Private: false 
