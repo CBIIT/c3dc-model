@@ -3543,18 +3543,18 @@ PropDefinitions:
     Private: false 
   #genetic_analysis
   iscn:
-    Desc: TBD
+    Desc: The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13367961
+        Value: Gene Mutation ISCN Karyotype Text
+        Version: 1.00
     Type: string
     Req: true
     Private: false 
   #laboratory_test
   laboratory_test_id:
-    Desc: A unique sequence of characters used to identify the  digital data associated with laboratory testing.
+    Desc: A unique sequence of characters used to identify the digital data associated with laboratory testing.
     Term:
       - Origin: caDSR
         Code: 15243682
@@ -3566,23 +3566,23 @@ PropDefinitions:
     Key: true
   #laboratory_test
   age_at_lab:
-    Desc: TBD
+    Desc: The age in days of the subject at the time of the laboratory test.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 12306999
+        Value: Subject Age at Time of Laboratory Test Day Count
+        Version: 1.00
     Type: integer
     Req: true
     Private: false 
   #laboratory_test
   test:
-    Desc: TBD
+    Desc: The words by which the laboratory assessment is known.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13569486
+        Value: Laboratory Procedure Test Name
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3653,12 +3653,12 @@ PropDefinitions:
     Strict: true
   #laboratory_test
   specimen:
-    Desc: TBD
+    Desc: The biospecimen grouping that describes the kind of material that forms the sample.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 12445832
+        Value: Specimen Material Category
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3680,12 +3680,12 @@ PropDefinitions:
     Strict: true
   #laboratory_test
   method:
-    Desc: TBD
+    Desc: The controlled methods and/or techniques used to assay a sample of blood, urine, or other body substance.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 15294491
+        Value: Laboratory Procedure Experimental Method Type
+        Version: 1.00
     Type:
       value_type: string
       Enum:
@@ -3724,12 +3724,12 @@ PropDefinitions:
     Strict: true
   #laboratory_test
   result_text:
-    Desc: TBD
+    Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13362271
+        Value: Laboratory Procedure Test Result Text
+        Version: 1.00
     Type: string
     Req: true
     Private: false 
@@ -3746,23 +3746,23 @@ PropDefinitions:
     Private: false 
   #laboratory_test
   result_numeric:
-    Desc: TBD
+    Desc: The numeric value of the blood, urine, or other body substance laboratory test being recorded.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 13336306
+        Value: Laboratory Procedure Test Result Float
+        Version: 1.00
     Type: integer
     Req: true
     Private: false 
   #laboratory_test
   result_unit:
-    Desc: TBD
+    Desc: The code that represents the name of a unit of measure for reporting a laboratory result.
     Term:
       - Origin: caDSR
-        Code: TBD
-        Value: TBD
-        Version: TBD
+        Code: 2179671
+        Value: Lab Test Result Unit of Measure Code
+        Version: 2.00
     Type:
       value_type: string
       Enum:
