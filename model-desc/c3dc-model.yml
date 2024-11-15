@@ -59,9 +59,10 @@ Nodes:
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
+      - allelic_ratio
       - alteration
       - status
-      - maf_numeric
+      - vaf_numeric
       - dna_index_numeric
       - iscn
       - id
