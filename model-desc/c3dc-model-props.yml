@@ -2589,31 +2589,6 @@ PropDefinitions:
     Strict: true
     Private: false
   #sample
-  laterality:
-    Desc: Designates the side of the body where disease is found.
-    Term:
-      - Origin: caDSR
-        Code: '15157293'
-        Value: Disease Laterality Type
-        Version: "1.00"
-    Type:
-      value_type: string
-      Enum:
-        - "Bilateral"
-        - "Contralateral"
-        - "Midline"
-        - "Lateral"
-        - "Left"
-        - "Right"
-        - "Unilateral"
-        - "Not Applicable"
-        - "Not Reported"
-        - "Not Specified"
-        - "Unknown"
-    Req: true  
-    Strict: true
-    Private: false
-  #sample
   participant_age_at_collection:     
     Desc: The age of the participant (in days) at the time of sample collection.
     Term:
@@ -3416,13 +3391,11 @@ PropDefinitions:
         Code: 13362328
         Value: Gene Alteration Assessment Status
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "Present"
-        - "Absent"
-        - "Unknown"
-        - "Not Done"
+    Enum:
+      - "Present"
+      - "Absent"
+      - "Unknown"
+      - "Not Done"
     Req: true
     Private: false 
     Strict: true
@@ -3523,71 +3496,69 @@ PropDefinitions:
         Code: 13569486
         Value: Laboratory Procedure Test Name
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "5 Prime Nucleotidase"
-        - "Absolute Neutrophil Count"
-        - "AFP"
-        - "Albumin"
-        - "Alkaline Phophatase"
-        - "ALP"
-        - "ALT"
-        - "ANC"
-        - "AST"
-        - "Auer Rods"
-        - "Blasts"
-        - "Calcium"
-        - "CD34"
-        - "cfDNA"
-        - "Chloride"
-        - "Creatinine"
-        - "Creatinine Clearance"
-        - "CRP"
-        - "Cytology (malignant cells)"
-        - "Direct Bilirubin"
-        - "EBV DNA"
-        - "EBV IgG"
-        - "Eosinophils"
-        - "ESR"
-        - "Ferritin"
-        - "Free T3"
-        - "Free T4"
-        - "GGT"
-        - "Glucose"
-        - "HCT"
-        - "Hemoglobin"
-        - "HGB"
-        - "INR"
-        - "LDH"
-        - "Leukocytes"
-        - "Lipase"
-        - "Lymphocytes"
-        - "Malignant Cells"
-        - "miR-367-3p"
-        - "miR-371a-3p"
-        - "miR-372-3p"
-        - "miR-373-3p"
-        - "miR-375-3p"
-        - "Monocytes"
-        - "Myelocyte"
-        - "Neutrophils"
-        - "Phosphorus"
-        - "Platelets"
-        - "Potassium"
-        - "Protein"
-        - "Protein Total"
-        - "PT"
-        - "PTT"
-        - "RBC"
-        - "Segmented Neutrophils"
-        - "Sodium"
-        - "Total Bilirubin"
-        - "Total T4"
-        - "TSH"
-        - "Uric Acid"
-        - "WBC"
-        - "β-hCG"
+    Enum:
+      - "5 Prime Nucleotidase"
+      - "Absolute Neutrophil Count"
+      - "AFP"
+      - "Albumin"
+      - "Alkaline Phophatase"
+      - "ALP"
+      - "ALT"
+      - "ANC"
+      - "AST"
+      - "Auer Rods"
+      - "Blasts"
+      - "Calcium"
+      - "CD34"
+      - "cfDNA"
+      - "Chloride"
+      - "Creatinine"
+      - "Creatinine Clearance"
+      - "CRP"
+      - "Cytology (malignant cells)"
+      - "Direct Bilirubin"
+      - "EBV DNA"
+      - "EBV IgG"
+      - "Eosinophils"
+      - "ESR"
+      - "Ferritin"
+      - "Free T3"
+      - "Free T4"
+      - "GGT"
+      - "Glucose"
+      - "HCT"
+      - "Hemoglobin"
+      - "HGB"
+      - "INR"
+      - "LDH"
+      - "Leukocytes"
+      - "Lipase"
+      - "Lymphocytes"
+      - "Malignant Cells"
+      - "miR-367-3p"
+      - "miR-371a-3p"
+      - "miR-372-3p"
+      - "miR-373-3p"
+      - "miR-375-3p"
+      - "Monocytes"
+      - "Myelocyte"
+      - "Neutrophils"
+      - "Phosphorus"
+      - "Platelets"
+      - "Potassium"
+      - "Protein"
+      - "Protein Total"
+      - "PT"
+      - "PTT"
+      - "RBC"
+      - "Segmented Neutrophils"
+      - "Sodium"
+      - "Total Bilirubin"
+      - "Total T4"
+      - "TSH"
+      - "Uric Acid"
+      - "WBC"
+      - "β-hCG"
     Req: true
     Private: false 
     Strict: true
@@ -3599,22 +3570,20 @@ PropDefinitions:
         Code: 12445832
         Value: Specimen Material Category
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "Blood"
-        - "Bone Marrow"
-        - "Cell Free DNA BCT"
-        - "Cerebrospinal Fluid"
-        - "Peritoneal Fluid"
-        - "Plasma"
-        - "Saliva"
-        - "Serum"
-        - "Stool Sample"
-        - "Urine"
-        - "Other"
-        - "Unknown"
-        - "Not Reported"
+    Enum:
+      - "Blood"
+      - "Bone Marrow"
+      - "Cell Free DNA BCT"
+      - "Cerebrospinal Fluid"
+      - "Peritoneal Fluid"
+      - "Plasma"
+      - "Saliva"
+      - "Serum"
+      - "Stool Sample"
+      - "Urine"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
     Req: true
     Private: false 
     Strict: true
@@ -3626,19 +3595,17 @@ PropDefinitions:
         Code: 15294491
         Value: Laboratory Procedure Experimental Method Type
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "Cytology"
-        - "ddPCR"
-        - "Flow Cytometry"
-        - "MicroRNA Sequencing"
-        - "Morphology"
-        - "PCR"
-        - "qPCR"
-        - "Other"
-        - "Unknown"
-        - "Not Reported"
+    Enum:
+      - "Cytology"
+      - "ddPCR"
+      - "Flow Cytometry"
+      - "MicroRNA Sequencing"
+      - "Morphology"
+      - "PCR"
+      - "qPCR"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
     Req: true
     Private: false 
     Strict: true
@@ -3650,15 +3617,13 @@ PropDefinitions:
         Code: 15296752
         Value: Laboratory Procedure Test Result Positive Negative Finding Outcome
         Version: 1.00
-    Type:
-      value_type: string
-      Enum:
-        - "Positive"
-        - "Negative"
-        - "Present"
-        - "Absent"
-        - "Unknown"
-        - "Not Reported"
+    Enum:
+      - "Positive"
+      - "Negative"
+      - "Present"
+      - "Absent"
+      - "Unknown"
+      - "Not Reported"
     Req: true
     Private: false 
     Strict: true
@@ -3703,28 +3668,26 @@ PropDefinitions:
         Code: 2179671
         Value: Lab Test Result Unit of Measure Code
         Version: 2.00
-    Type:
-      value_type: string
-      Enum:
-        - "%"
-        - "count/mm3"
-        - "g/dL"
-        - "g/L"
-        - "IU/L"
-        - "mcg/mL"
-        - "mg/L"
-        - "mIU/L"
-        - "mL/min"
-        - "mm/h"
-        - "mmol/L"
-        - "ng/mL"
-        - "seconds"
-        - "U/L"
-        - "uIU/mL"
-        - "umol/L"
-        - "µg/L"
-        - "Unknown"
-        - "Not Reported"
+    Enum:
+      - "%"
+      - "count/mm3"
+      - "g/dL"
+      - "g/L"
+      - "IU/L"
+      - "mcg/mL"
+      - "mg/L"
+      - "mIU/L"
+      - "mL/min"
+      - "mm/h"
+      - "mmol/L"
+      - "ng/mL"
+      - "seconds"
+      - "U/L"
+      - "uIU/mL"
+      - "umol/L"
+      - "µg/L"
+      - "Unknown"
+      - "Not Reported"
     Req: true
     Private: false 
     Strict: true
