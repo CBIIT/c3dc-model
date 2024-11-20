@@ -3434,7 +3434,7 @@ PropDefinitions:
     Req: true
     Private: false 
   #genetic_analysis
-  hgvs_coding
+  hgvs_coding:
     Desc: The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
     Term:
       - Origin: caDSR
