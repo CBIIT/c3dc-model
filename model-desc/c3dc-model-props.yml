@@ -1814,12 +1814,14 @@ PropDefinitions:
         Code: '14714146'
         Value: Diagnosis Assessment Basis Source
         Version: "1.00"
-    Enum:
-      - 'Clinical'
-      - 'Molecular'
-      - 'Pathology'
-      - 'Unknown'
-      - 'Not Reported'
+    Type:
+      value_type: string
+      Enum:
+        - 'Clinical'
+        - 'Molecular'
+        - 'Pathology'
+        - 'Unknown'
+        - 'Not Reported'
     Req: true
     Strict: true
     Private: false 
