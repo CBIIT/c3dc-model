@@ -1808,20 +1808,18 @@ PropDefinitions:
     Private: false 
   #diagnosis
   diagnosis_basis: 
-    Desc: 'The type of event for which the diagnosis was obtained.'
+    Desc: 'The origin of the diagnosis.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
-        Version: "null"
-    Type:
-      value_type: string
-      Enum:
-        - 'Clinical'
-        - 'Molecular'
-        - 'Pathology'
-        - 'Unknown'
-        - 'Not Reported'
+        Code: '14714146'
+        Value: Diagnosis Assessment Basis Source
+        Version: "1.00"
+    Enum:
+      - 'Clinical'
+      - 'Molecular'
+      - 'Pathology'
+      - 'Unknown'
+      - 'Not Reported'
     Req: true
     Strict: true
     Private: false 
