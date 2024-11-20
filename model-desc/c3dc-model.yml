@@ -19,7 +19,6 @@ Nodes:
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-      - year_of_diagnosis
       - laterality
       - id
   participant:
