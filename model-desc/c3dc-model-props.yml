@@ -3446,7 +3446,8 @@ PropDefinitions:
     Private: false 
   #genetic_analysis
   hgvs_protein: 
-    Desc: The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.    Term:
+    Desc: The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.    
+    Term:
       - Origin: caDSR
         Code: 13367959
         Value: Gene Mutation HGVS Protein Text
