@@ -1841,17 +1841,6 @@ PropDefinitions:
     Req: true
     Private: false
   #diagnosis
-  year_of_diagnosis:
-    Desc: The year in which a subject was diagnosed.
-    Term:
-      - Origin: caDSR
-        Code: 15157224
-        Value: Subject Diagnosis Year Number
-        Version: 1.00
-    Type: integer
-    Req: true
-    Private: false
-  #diagnosis
   toronto_childhood_cancer_staging:
     Desc: Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
     Term: 
