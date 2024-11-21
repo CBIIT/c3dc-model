@@ -6,7 +6,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14540952'
         Value: Diagnosis Disease or Disorder Unique Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1804,18 +1804,18 @@ PropDefinitions:
     Private: false 
   #diagnosis
   diagnosis_basis: 
-    Desc: 'The type of event for which the diagnosis was obtained.'
+    Desc: 'The origin of the diagnosis.'
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: ''
-        Version: "null"
+        Code: '14714146'
+        Value: Diagnosis Assessment Basis Source
+        Version: "1.00"
     Enum:
-      - 'Clinical'
-      - 'Molecular'
-      - 'Pathology'
-      - 'Unknown'
-      - 'Not Reported'
+        - 'Clinical'
+        - 'Molecular'
+        - 'Pathology'
+        - 'Unknown'
+        - 'Not Reported'
     Req: true
     Strict: true
     Private: false 
@@ -3139,3 +3139,565 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
+  #genetic_analysis
+  genetic_analysis_id:
+    Desc: A unique sequence of characters used to identify the digital data associated with genetic testing.
+    Term:
+      - Origin: caDSR
+        Code: '15243156'
+        Value: Genetic Analysis Electronic Record Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+    Key: true
+  #genetic_analysis
+  age_at_genetic_analysis:
+    Desc: The age in days of the subject at the time of the genetic analysis.
+    Term:
+      - Origin: caDSR
+        Code: '12365610'
+        Value: Subject Age at Genetic Analysis Day Count
+        Version: "2.00"
+    Type: integer
+    Req: true
+    Private: false 
+  #genetic_analysis
+  alteration:
+    Desc: The words by which the generally used name of the mutation is known.
+    Term:
+      - Origin: caDSR
+        Code: '13362278'
+        Value: Gene Mutation Colloquial Name
+        Version: "1.00"
+    Enum:
+      - "11q Deletion"
+      - "12q Gain"
+      - "16q Loss"
+      - "17q Gain"
+      - "1p Deletion"
+      - "1q Gain"
+      - "45XO"
+      - "45XO w/ Y chromosomal material"
+      - "46XX"
+      - "46XY"
+      - "47XXX"
+      - "47XXY"
+      - "47XYY"
+      - "48XXXX"
+      - "48XXXY"
+      - "8q Gain"
+      - "AKT mutation"
+      - "ALK Mutation"
+      - "ALK p.R1275L mutation"
+      - "ALK Rearrangement"
+      - "ARID1A mutation"
+      - "ATM mutation"
+      - "BCOR mutation"
+      - "BCOR Rearranged"
+      - "BCOR-MAML3"
+      - "BRAF Mutation"
+      - "BRAF V600E"
+      - "BRCA2 Mutation"
+      - "CCNB3-BCOR"
+      - "CCND1 mutation"
+      - "CCND2 Mutation"
+      - "CDK4 mutation"
+      - "CDKN2A"
+      - "CDKN2A Mutation"
+      - "CEBPA mutation - biallelic"
+      - "CEBPA mutation - monoallelic"
+      - "CEBPA mutation - mutation unspecified"
+      - "Chromosome 11 Loss"
+      - "Chromosome 14q Loss"
+      - "CIC Rearranged"
+      - "CIC-DUX4"
+      - "CIC-DUX4L10"
+      - "CKIT mutation - ex17"
+      - "CKIT mutation - ex8"
+      - "CKIT mutation - unspecified"
+      - "Complex karyotype"
+      - "CTNNB1 Mutation"
+      - "del(13q) (13q 14 - 21)"
+      - "del(17p)"
+      - "del(5q)(5q31-q32)"
+      - "der.12p"
+      - "DICER1 mutation"
+      - "E2A/PBX1 t(1;19)"
+      - "ETV6 rearranged"
+      - "ETV6-RUNX1 t(12;21)(p13;q22)(formerly TEL-AML1)"
+      - "EWSR1 Rearranged"
+      - "EWSR1-ATF1"
+      - "EWSR1-CREB1"
+      - "EWSR1-DDIT3"
+      - "EWSR1-ERG"
+      - "EWSR1-ETV1"
+      - "EWSR1-ETV4"
+      - "EWSR1-FEV"
+      - "EWSR1-FLI1"
+      - "EWSR1-KLF17"
+      - "EWSR1-NR4A3"
+      - "EWSR1-PBX1"
+      - "EWSR1-POU5F1"
+      - "EWSR1-WT1"
+      - "EWSR1-ZNF444"
+      - "FBXW7 mutation"
+      - "FGFR4 mutation"
+      - "FLT3 internal tandem duplication (ITD)"
+      - "FLT3-TKD"
+      - "FOXO1 rearranged"
+      - "FUS Rearranged"
+      - "FUS Translocation Present"
+      - "FUS-DDIT3"
+      - "FUS-ERG"
+      - "FUS-FEV"
+      - "FUS-KLF17"
+      - "GAB1 mutation"
+      - "GATA1 mutation"
+      - "GLI2 Amplification"
+      - "HRAS mutation"
+      - "iAMP21"
+      - "IGF1R mutation"
+      - "inv(16)(p13.3q24.3)/CBFA2T3-GLIS2"
+      - "inv(16)(p13q22)"
+      - "inv(3)(q21;q21.2)"
+      - "inv(X)(p11.4;p11.22)"
+      - "K-RAS mutation"
+      - "KRAS Mutation"
+      - "Loss of Chromosome 11q (Deletion)"
+      - "Loss of Chromosome 1p (Deletion)"
+      - "MDM2 mutation"
+      - "MLL Other partner"
+      - "Monosomy 5"
+      - "Monosomy 7"
+      - "MTOR mutation"
+      - "MYC Amplification"
+      - "MYCN Amplification"
+      - "MYCN mutation"
+      - "MYOD1 Mutation"
+      - "N-RAS mutation"
+      - "NF1 mutation"
+      - "Non-KMT2A MLLT10"
+      - "NPM1 mutation"
+      - "NRAS mutation"
+      - "NTRK Rearranged"
+      - "Other"
+      - "p.F1174L"
+      - "PDGFRA Mutation"
+      - "PIK3CA Mutation"
+      - "PKN1 mutation"
+      - "PTCH1 Mutation"
+      - "PTPN11 mutation"
+      - "ROBO1 mutation"
+      - "ROS1 rearranged"
+      - "RUNX1 mutation"
+      - "SMARCA4 mutation"
+      - "SMARCB1 deleted/mutated"
+      - "SMO Mutation"
+      - "SOS1 mutation"
+      - "SOS2 mutation"
+      - "STAG2"
+      - "SUFU Mutation"
+      - "t(10;11)(p11.2;q23)"
+      - "t(10;11)(p12;q23) / MLL-MLLT10(AF10)"
+      - "t(10;19)(q26;q13)"
+      - "t(11;15)(p15;q35)/NUP98/JARID1A"
+      - "t(11;16)(q13; p11)"
+      - "t(11;17)(AF17)"
+      - "t(11;19)(q13;q13.4)"
+      - "t(11;19)(q23;p13) (MLL-ENL)/(MLL-ELL)"
+      - "t(11;19)(q23;p13.1) (MLL-ELL)"
+      - "t(11;19)(q23;p13.3) (MLL-ENL)"
+      - "t(11;22)(p13;q12)"
+      - "t(11;22)(q24;q12)"
+      - "t(11;22), NOS"
+      - "t(12;15)(p13;q25)"
+      - "t(12;16)(q13;p11)"
+      - "t(12;22)(q13.12;q12)"
+      - "t(12;22)(q13.3;q12)"
+      - "t(12;22)(q13;q12)"
+      - "t(12;22;20)(q13;q12;q11)"
+      - "t(15;17)(q24;q21)"
+      - "t(16;16)(p13.1;q22)"
+      - "t(16;21)(p11;q22)"
+      - "t(16;21)(p11;q22)FUS/ERG"
+      - "t(16;21)(q24;q22)RUNX1-CBFA2T3"
+      - "t(17;22)(q21;q12)"
+      - "t(17;22)(q22;q13)"
+      - "t(19;22)(q13;q12)"
+      - "t(1;10)(p22-31; q24-25)"
+      - "t(1;11)(q21;q23) / MLL-MLLT11(AF1Q)"
+      - "t(1;16)(p34;p11)"
+      - "t(1;22)(p34;q12)"
+      - "t(1;22)(q23;q12)"
+      - "t(1;22)(RBM15-MKL1)"
+      - "t(21;22)(q22;q12)"
+      - "t(2;12)"
+      - "t(2;16)(q35;p11)"
+      - "t(2;22)(q33.3;q12)"
+      - "t(2;22)(q33;q12)"
+      - "t(2;22)(q34;q12)"
+      - "t(3;12)(q23;p12.3)(ETV6/EVI1)"
+      - "t(3;3)(q21;q26.2), RPN1-EVI1"
+      - "t(3;5)(p25;q34)NPM1/MLF1"
+      - "t(4;11)(q21;q23) / MLL-MLLT2(AF4)"
+      - "t(4;19)(q25;q13)"
+      - "t(4;19)(q35;q13)"
+      - "t(5;11)(q35;p15) NSD1/NUP98"
+      - "t(5;18)(q35;q11)"
+      - "t(6;11)(q27;q23) / MLL-MLLT4(AF6)"
+      - "t(6;22)(p21;q12)"
+      - "t(6;9)(p23;q34) DEK/NUP214"
+      - "t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)"
+      - "t(7;16)(q33;p11)"
+      - "t(7;22)(p22;q12)"
+      - "t(8;14)(q24;q32) or other variant of B-ALL"
+      - "t(8;16)MOZ/CBP"
+      - "t(8;8)(q21;q13)"
+      - "t(9;11)(p22;q23) / MLL-MLLT3(AF9)"
+      - "t(9;15)(q22;q21)"
+      - "t(9;17)(q22;q11)"
+      - "t(9;17)(q22;q11.2)"
+      - "t(9;22)(q22-23;q11-12)"
+      - "t(9;22)(q22;q12)"
+      - "t(X;17)(p11.2;q25)"
+      - "t(X;18)(p11.21;q11)"
+      - "t(X;18)(p11.23;q11)"
+      - "t(X;20)(p11.2;q13.3)"
+      - "t(X;22((p11;q13)"
+      - "t(X;4)(p11;q31)"
+      - "TAF15-NR4A3"
+      - "TLS/FEV"
+      - "TP53"
+      - "TP53 Mutation"
+      - "Trisomy 10"
+      - "Trisomy 17"
+      - "Trisomy 4"
+      - "Trisomy 8"
+      - "Unknown"
+      - "WT1 mutation"
+      - "X Chromosome Inversion"
+      - "ZC3H7B-BCOR"
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
+  status:
+    Desc: The presence or extent of a genetic alteration in an individual's genome.
+    Term:
+      - Origin: caDSR
+        Code: '13362328'
+        Value: Gene Alteration Assessment Status
+        Version: "1.00"
+    Enum:
+      - "Present"
+      - "Absent"
+      - "Unknown"
+      - "Not Done"
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
+  allelic_ratio:
+    Desc: A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
+    Term:
+      - Origin: caDSR
+        Code: '15292721'
+        Value: Molecular Specimen Allelic Ratio Float
+        Version: "1.00"
+    Type: decimal
+    Req: true
+    Private: false 
+    Strict: true
+  #genetic_analysis
+  vaf_numeric:
+    Desc: A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
+    Term:
+      - Origin: caDSR
+        Code: '15292724'
+        Value: Molecular Specimen Variant Allele Frequency Float
+        Version: "1.00"
+    Type: decimal
+    Req: true
+    Private: false 
+  #genetic_analysis
+  dna_index_numeric:
+    Desc: A decimal number capturing the ratio of the DNA content or chromosome number in a tumor sample compared to that in a normal sample.
+    Term:
+      - Origin: caDSR
+        Code: '15292729'
+        Value: Molecular Specimen DNA Index Float
+        Version: "1.00"
+    Type: decimal
+    Req: true
+    Private: false 
+  #genetic_analysis
+  hgvs_coding:
+    Desc: The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
+    Term:
+      - Origin: caDSR
+        Code: '13367956'
+        Value: Gene Mutation HGVS Coding Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #genetic_analysis
+  hgvs_protein: 
+    Desc: The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.    
+    Term:
+      - Origin: caDSR
+        Code: '13367959'
+        Value: Gene Mutation HGVS Protein Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #genetic_analysis
+  iscn:
+    Desc: The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
+    Term:
+      - Origin: caDSR
+        Code: '13367961'
+        Value: Gene Mutation ISCN Karyotype Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  laboratory_test_id:
+    Desc: A unique sequence of characters used to identify the digital data associated with laboratory testing.
+    Term:
+      - Origin: caDSR
+        Code: '15243682'
+        Value: Laboratory Test Electronic Record Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+    Key: true
+  #laboratory_test
+  age_at_lab:
+    Desc: The age in days of the subject at the time of the laboratory test.
+    Term:
+      - Origin: caDSR
+        Code: '12306999'
+        Value: Subject Age at Time of Laboratory Test Day Count
+        Version: "1.00"
+    Type: integer
+    Req: true
+    Private: false 
+  #laboratory_test
+  test:
+    Desc: The words by which the laboratory assessment is known.
+    Term:
+      - Origin: caDSR
+        Code: '13569486'
+        Value: Laboratory Procedure Test Name
+        Version: "1.00"
+    Enum:
+      - "5 Prime Nucleotidase"
+      - "Absolute Neutrophil Count"
+      - "AFP"
+      - "Albumin"
+      - "Alkaline Phophatase"
+      - "ALP"
+      - "ALT"
+      - "ANC"
+      - "AST"
+      - "Auer Rods"
+      - "Blasts"
+      - "Calcium"
+      - "CD34"
+      - "cfDNA"
+      - "Chloride"
+      - "Creatinine"
+      - "Creatinine Clearance"
+      - "CRP"
+      - "Cytology (malignant cells)"
+      - "Direct Bilirubin"
+      - "EBV DNA"
+      - "EBV IgG"
+      - "Eosinophils"
+      - "ESR"
+      - "Ferritin"
+      - "Free T3"
+      - "Free T4"
+      - "GGT"
+      - "Glucose"
+      - "HCT"
+      - "Hemoglobin"
+      - "HGB"
+      - "INR"
+      - "LDH"
+      - "Leukocytes"
+      - "Lipase"
+      - "Lymphocytes"
+      - "Malignant Cells"
+      - "miR-367-3p"
+      - "miR-371a-3p"
+      - "miR-372-3p"
+      - "miR-373-3p"
+      - "miR-375-3p"
+      - "Monocytes"
+      - "Myelocyte"
+      - "Neutrophils"
+      - "Phosphorus"
+      - "Platelets"
+      - "Potassium"
+      - "Protein"
+      - "Protein Total"
+      - "PT"
+      - "PTT"
+      - "RBC"
+      - "Segmented Neutrophils"
+      - "Sodium"
+      - "Total Bilirubin"
+      - "Total T4"
+      - "TSH"
+      - "Uric Acid"
+      - "WBC"
+      - "β-hCG"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  specimen:
+    Desc: The biospecimen grouping that describes the kind of material that forms the sample.
+    Term:
+      - Origin: caDSR
+        Code: '12445832'
+        Value: Specimen Material Category
+        Version: "1.00"
+    Enum:
+      - "Blood"
+      - "Bone Marrow"
+      - "Cell Free DNA BCT"
+      - "Cerebrospinal Fluid"
+      - "Peritoneal Fluid"
+      - "Plasma"
+      - "Saliva"
+      - "Serum"
+      - "Stool Sample"
+      - "Urine"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  method:
+    Desc: The controlled methods and/or techniques used to assay a sample of blood, urine, or other body substance.
+    Term:
+      - Origin: caDSR
+        Code: '15294491'
+        Value: Laboratory Procedure Experimental Method Type
+        Version: "1.00"
+    Enum:
+      - "Cytology"
+      - "ddPCR"
+      - "Flow Cytometry"
+      - "MicroRNA Sequencing"
+      - "Morphology"
+      - "PCR"
+      - "qPCR"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  result:
+    Desc: The outcome of a laboratory test.
+    Term:
+      - Origin: caDSR
+        Code: '15296752'
+        Value: Laboratory Procedure Test Result Positive Negative Finding Outcome
+        Version: "1.00"
+    Enum:
+      - "Positive"
+      - "Negative"
+      - "Present"
+      - "Absent"
+      - "Unknown"
+      - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  result_text:
+    Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
+    Term:
+      - Origin: caDSR
+        Code: '13362271'
+        Value: Laboratory Procedure Test Result Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_modifier:
+    Desc: Text term that helps define the outcome of a laboratory test.
+    Term:
+      - Origin: caDSR
+        Code: '15296781'
+        Value: Laboratory Procedure Test Result Modifier Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_numeric:
+    Desc: The numeric value of the blood, urine, or other body substance laboratory test being recorded.
+    Term:
+      - Origin: caDSR
+        Code: '13336306'
+        Value: Laboratory Procedure Test Result Float
+        Version: "1.00"
+    Type: integer
+    Req: true
+    Private: false 
+  #laboratory_test
+  result_unit:
+    Desc: The code that represents the name of a unit of measure for reporting a laboratory result.
+    Term:
+      - Origin: caDSR
+        Code: '2179671'
+        Value: Lab Test Result Unit of Measure Code
+        Version: "2.00"
+    Enum:
+      - "%"
+      - "count/mm3"
+      - "g/dL"
+      - "g/L"
+      - "IU/L"
+      - "mcg/mL"
+      - "mg/L"
+      - "mIU/L"
+      - "mL/min"
+      - "mm/h"
+      - "mmol/L"
+      - "ng/mL"
+      - "seconds"
+      - "U/L"
+      - "uIU/mL"
+      - "umol/L"
+      - "µg/L"
+      - "Unknown"
+      - "Not Reported"
+    Req: true
+    Private: false 
+    Strict: true
+  #laboratory_test
+  sensitivity:
+    Desc: The sensitivity of the modality used to determine minimal residual disease.
+    Term:
+      - Origin: caDSR
+        Code: '14313826'
+        Value: Disease Measurable Residual Disease Sensitivity Float
+        Version: "1.00"
+    Type: decimal
+    Req: true
+    Private: false 

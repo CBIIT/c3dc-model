@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 1b8e825
+commit 25a40a6
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2303,6 +2303,343 @@ diagnosis	tumor_stage_clinical_t	Tis (DCIS)
 diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 diagnosis	tumor_stage_clinical_t	Tis (Paget's)
 diagnosis	year_of_diagnosis	INTEGER
+genetic_analysis	age_at_genetic_analysis	INTEGER
+genetic_analysis	allelic_ratio	DECIMAL
+genetic_analysis	alteration	11q Deletion
+genetic_analysis	alteration	12q Gain
+genetic_analysis	alteration	16q Loss
+genetic_analysis	alteration	17q Gain
+genetic_analysis	alteration	1p Deletion
+genetic_analysis	alteration	1q Gain
+genetic_analysis	alteration	45XO
+genetic_analysis	alteration	45XO w/ Y chromosomal material
+genetic_analysis	alteration	46XX
+genetic_analysis	alteration	46XY
+genetic_analysis	alteration	47XXX
+genetic_analysis	alteration	47XXY
+genetic_analysis	alteration	47XYY
+genetic_analysis	alteration	48XXXX
+genetic_analysis	alteration	48XXXY
+genetic_analysis	alteration	8q Gain
+genetic_analysis	alteration	AKT mutation
+genetic_analysis	alteration	ALK Mutation
+genetic_analysis	alteration	ALK Rearrangement
+genetic_analysis	alteration	ALK p.R1275L mutation
+genetic_analysis	alteration	ARID1A mutation
+genetic_analysis	alteration	ATM mutation
+genetic_analysis	alteration	BCOR Rearranged
+genetic_analysis	alteration	BCOR mutation
+genetic_analysis	alteration	BCOR-MAML3
+genetic_analysis	alteration	BRAF Mutation
+genetic_analysis	alteration	BRAF V600E
+genetic_analysis	alteration	BRCA2 Mutation
+genetic_analysis	alteration	CCNB3-BCOR
+genetic_analysis	alteration	CCND1 mutation
+genetic_analysis	alteration	CCND2 Mutation
+genetic_analysis	alteration	CDK4 mutation
+genetic_analysis	alteration	CDKN2A
+genetic_analysis	alteration	CDKN2A Mutation
+genetic_analysis	alteration	CEBPA mutation - biallelic
+genetic_analysis	alteration	CEBPA mutation - monoallelic
+genetic_analysis	alteration	CEBPA mutation - mutation unspecified
+genetic_analysis	alteration	CIC Rearranged
+genetic_analysis	alteration	CIC-DUX4
+genetic_analysis	alteration	CIC-DUX4L10
+genetic_analysis	alteration	CKIT mutation - ex17
+genetic_analysis	alteration	CKIT mutation - ex8
+genetic_analysis	alteration	CKIT mutation - unspecified
+genetic_analysis	alteration	CTNNB1 Mutation
+genetic_analysis	alteration	Chromosome 11 Loss
+genetic_analysis	alteration	Chromosome 14q Loss
+genetic_analysis	alteration	Complex karyotype
+genetic_analysis	alteration	DICER1 mutation
+genetic_analysis	alteration	E2A/PBX1 t(1;19)
+genetic_analysis	alteration	ETV6 rearranged
+genetic_analysis	alteration	ETV6-RUNX1 t(12;21)(p13;q22)(formerly TEL-AML1)
+genetic_analysis	alteration	EWSR1 Rearranged
+genetic_analysis	alteration	EWSR1-ATF1
+genetic_analysis	alteration	EWSR1-CREB1
+genetic_analysis	alteration	EWSR1-DDIT3
+genetic_analysis	alteration	EWSR1-ERG
+genetic_analysis	alteration	EWSR1-ETV1
+genetic_analysis	alteration	EWSR1-ETV4
+genetic_analysis	alteration	EWSR1-FEV
+genetic_analysis	alteration	EWSR1-FLI1
+genetic_analysis	alteration	EWSR1-KLF17
+genetic_analysis	alteration	EWSR1-NR4A3
+genetic_analysis	alteration	EWSR1-PBX1
+genetic_analysis	alteration	EWSR1-POU5F1
+genetic_analysis	alteration	EWSR1-WT1
+genetic_analysis	alteration	EWSR1-ZNF444
+genetic_analysis	alteration	FBXW7 mutation
+genetic_analysis	alteration	FGFR4 mutation
+genetic_analysis	alteration	FLT3 internal tandem duplication (ITD)
+genetic_analysis	alteration	FLT3-TKD
+genetic_analysis	alteration	FOXO1 rearranged
+genetic_analysis	alteration	FUS Rearranged
+genetic_analysis	alteration	FUS Translocation Present
+genetic_analysis	alteration	FUS-DDIT3
+genetic_analysis	alteration	FUS-ERG
+genetic_analysis	alteration	FUS-FEV
+genetic_analysis	alteration	FUS-KLF17
+genetic_analysis	alteration	GAB1 mutation
+genetic_analysis	alteration	GATA1 mutation
+genetic_analysis	alteration	GLI2 Amplification
+genetic_analysis	alteration	HRAS mutation
+genetic_analysis	alteration	IGF1R mutation
+genetic_analysis	alteration	K-RAS mutation
+genetic_analysis	alteration	KRAS Mutation
+genetic_analysis	alteration	Loss of Chromosome 11q (Deletion)
+genetic_analysis	alteration	Loss of Chromosome 1p (Deletion)
+genetic_analysis	alteration	MDM2 mutation
+genetic_analysis	alteration	MLL Other partner
+genetic_analysis	alteration	MTOR mutation
+genetic_analysis	alteration	MYC Amplification
+genetic_analysis	alteration	MYCN Amplification
+genetic_analysis	alteration	MYCN mutation
+genetic_analysis	alteration	MYOD1 Mutation
+genetic_analysis	alteration	Monosomy 5
+genetic_analysis	alteration	Monosomy 7
+genetic_analysis	alteration	N-RAS mutation
+genetic_analysis	alteration	NF1 mutation
+genetic_analysis	alteration	NPM1 mutation
+genetic_analysis	alteration	NRAS mutation
+genetic_analysis	alteration	NTRK Rearranged
+genetic_analysis	alteration	Non-KMT2A MLLT10
+genetic_analysis	alteration	Other
+genetic_analysis	alteration	PDGFRA Mutation
+genetic_analysis	alteration	PIK3CA Mutation
+genetic_analysis	alteration	PKN1 mutation
+genetic_analysis	alteration	PTCH1 Mutation
+genetic_analysis	alteration	PTPN11 mutation
+genetic_analysis	alteration	ROBO1 mutation
+genetic_analysis	alteration	ROS1 rearranged
+genetic_analysis	alteration	RUNX1 mutation
+genetic_analysis	alteration	SMARCA4 mutation
+genetic_analysis	alteration	SMARCB1 deleted/mutated
+genetic_analysis	alteration	SMO Mutation
+genetic_analysis	alteration	SOS1 mutation
+genetic_analysis	alteration	SOS2 mutation
+genetic_analysis	alteration	STAG2
+genetic_analysis	alteration	SUFU Mutation
+genetic_analysis	alteration	TAF15-NR4A3
+genetic_analysis	alteration	TLS/FEV
+genetic_analysis	alteration	TP53
+genetic_analysis	alteration	TP53 Mutation
+genetic_analysis	alteration	Trisomy 10
+genetic_analysis	alteration	Trisomy 17
+genetic_analysis	alteration	Trisomy 4
+genetic_analysis	alteration	Trisomy 8
+genetic_analysis	alteration	Unknown
+genetic_analysis	alteration	WT1 mutation
+genetic_analysis	alteration	X Chromosome Inversion
+genetic_analysis	alteration	ZC3H7B-BCOR
+genetic_analysis	alteration	del(13q) (13q 14 - 21)
+genetic_analysis	alteration	del(17p)
+genetic_analysis	alteration	del(5q)(5q31-q32)
+genetic_analysis	alteration	der.12p
+genetic_analysis	alteration	iAMP21
+genetic_analysis	alteration	inv(16)(p13.3q24.3)/CBFA2T3-GLIS2
+genetic_analysis	alteration	inv(16)(p13q22)
+genetic_analysis	alteration	inv(3)(q21;q21.2)
+genetic_analysis	alteration	inv(X)(p11.4;p11.22)
+genetic_analysis	alteration	p.F1174L
+genetic_analysis	alteration	t(10;11)(p11.2;q23)
+genetic_analysis	alteration	t(10;11)(p12;q23) / MLL-MLLT10(AF10)
+genetic_analysis	alteration	t(10;19)(q26;q13)
+genetic_analysis	alteration	t(11;15)(p15;q35)/NUP98/JARID1A
+genetic_analysis	alteration	t(11;16)(q13; p11)
+genetic_analysis	alteration	t(11;17)(AF17)
+genetic_analysis	alteration	t(11;19)(q13;q13.4)
+genetic_analysis	alteration	t(11;19)(q23;p13) (MLL-ENL)/(MLL-ELL)
+genetic_analysis	alteration	t(11;19)(q23;p13.1) (MLL-ELL)
+genetic_analysis	alteration	t(11;19)(q23;p13.3) (MLL-ENL)
+genetic_analysis	alteration	t(11;22)(p13;q12)
+genetic_analysis	alteration	t(11;22)(q24;q12)
+genetic_analysis	alteration	t(11;22), NOS
+genetic_analysis	alteration	t(12;15)(p13;q25)
+genetic_analysis	alteration	t(12;16)(q13;p11)
+genetic_analysis	alteration	t(12;22)(q13.12;q12)
+genetic_analysis	alteration	t(12;22)(q13.3;q12)
+genetic_analysis	alteration	t(12;22)(q13;q12)
+genetic_analysis	alteration	t(12;22;20)(q13;q12;q11)
+genetic_analysis	alteration	t(15;17)(q24;q21)
+genetic_analysis	alteration	t(16;16)(p13.1;q22)
+genetic_analysis	alteration	t(16;21)(p11;q22)
+genetic_analysis	alteration	t(16;21)(p11;q22)FUS/ERG
+genetic_analysis	alteration	t(16;21)(q24;q22)RUNX1-CBFA2T3
+genetic_analysis	alteration	t(17;22)(q21;q12)
+genetic_analysis	alteration	t(17;22)(q22;q13)
+genetic_analysis	alteration	t(19;22)(q13;q12)
+genetic_analysis	alteration	t(1;10)(p22-31; q24-25)
+genetic_analysis	alteration	t(1;11)(q21;q23) / MLL-MLLT11(AF1Q)
+genetic_analysis	alteration	t(1;16)(p34;p11)
+genetic_analysis	alteration	t(1;22)(RBM15-MKL1)
+genetic_analysis	alteration	t(1;22)(p34;q12)
+genetic_analysis	alteration	t(1;22)(q23;q12)
+genetic_analysis	alteration	t(21;22)(q22;q12)
+genetic_analysis	alteration	t(2;12)
+genetic_analysis	alteration	t(2;16)(q35;p11)
+genetic_analysis	alteration	t(2;22)(q33.3;q12)
+genetic_analysis	alteration	t(2;22)(q33;q12)
+genetic_analysis	alteration	t(2;22)(q34;q12)
+genetic_analysis	alteration	t(3;12)(q23;p12.3)(ETV6/EVI1)
+genetic_analysis	alteration	t(3;3)(q21;q26.2), RPN1-EVI1
+genetic_analysis	alteration	t(3;5)(p25;q34)NPM1/MLF1
+genetic_analysis	alteration	t(4;11)(q21;q23) / MLL-MLLT2(AF4)
+genetic_analysis	alteration	t(4;19)(q25;q13)
+genetic_analysis	alteration	t(4;19)(q35;q13)
+genetic_analysis	alteration	t(5;11)(q35;p15) NSD1/NUP98
+genetic_analysis	alteration	t(5;18)(q35;q11)
+genetic_analysis	alteration	t(6;11)(q27;q23) / MLL-MLLT4(AF6)
+genetic_analysis	alteration	t(6;22)(p21;q12)
+genetic_analysis	alteration	t(6;9)(p23;q34) DEK/NUP214
+genetic_analysis	alteration	t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)
+genetic_analysis	alteration	t(7;16)(q33;p11)
+genetic_analysis	alteration	t(7;22)(p22;q12)
+genetic_analysis	alteration	t(8;14)(q24;q32) or other variant of B-ALL
+genetic_analysis	alteration	t(8;16)MOZ/CBP
+genetic_analysis	alteration	t(8;8)(q21;q13)
+genetic_analysis	alteration	t(9;11)(p22;q23) / MLL-MLLT3(AF9)
+genetic_analysis	alteration	t(9;15)(q22;q21)
+genetic_analysis	alteration	t(9;17)(q22;q11)
+genetic_analysis	alteration	t(9;17)(q22;q11.2)
+genetic_analysis	alteration	t(9;22)(q22-23;q11-12)
+genetic_analysis	alteration	t(9;22)(q22;q12)
+genetic_analysis	alteration	t(X;17)(p11.2;q25)
+genetic_analysis	alteration	t(X;18)(p11.21;q11)
+genetic_analysis	alteration	t(X;18)(p11.23;q11)
+genetic_analysis	alteration	t(X;20)(p11.2;q13.3)
+genetic_analysis	alteration	t(X;22((p11;q13)
+genetic_analysis	alteration	t(X;4)(p11;q31)
+genetic_analysis	dna_index_numeric	DECIMAL
+genetic_analysis	genetic_analysis_id	STRING
+genetic_analysis	hgvs_coding	STRING
+genetic_analysis	hgvs_protein	STRING
+genetic_analysis	id	STRING
+genetic_analysis	iscn	STRING
+genetic_analysis	status	Absent
+genetic_analysis	status	Not Done
+genetic_analysis	status	Present
+genetic_analysis	status	Unknown
+genetic_analysis	vaf_numeric	DECIMAL
+laboratory_test	age_at_lab	INTEGER
+laboratory_test	id	STRING
+laboratory_test	laboratory_test_id	STRING
+laboratory_test	method	Cytology
+laboratory_test	method	Flow Cytometry
+laboratory_test	method	MicroRNA Sequencing
+laboratory_test	method	Morphology
+laboratory_test	method	Not Reported
+laboratory_test	method	Other
+laboratory_test	method	PCR
+laboratory_test	method	Unknown
+laboratory_test	method	ddPCR
+laboratory_test	method	qPCR
+laboratory_test	result	Absent
+laboratory_test	result	Negative
+laboratory_test	result	Not Reported
+laboratory_test	result	Positive
+laboratory_test	result	Present
+laboratory_test	result	Unknown
+laboratory_test	result_modifier	STRING
+laboratory_test	result_numeric	INTEGER
+laboratory_test	result_text	STRING
+laboratory_test	result_unit	%
+laboratory_test	result_unit	IU/L
+laboratory_test	result_unit	Not Reported
+laboratory_test	result_unit	U/L
+laboratory_test	result_unit	Unknown
+laboratory_test	result_unit	count/mm3
+laboratory_test	result_unit	g/L
+laboratory_test	result_unit	g/dL
+laboratory_test	result_unit	mIU/L
+laboratory_test	result_unit	mL/min
+laboratory_test	result_unit	mcg/mL
+laboratory_test	result_unit	mg/L
+laboratory_test	result_unit	mm/h
+laboratory_test	result_unit	mmol/L
+laboratory_test	result_unit	ng/mL
+laboratory_test	result_unit	seconds
+laboratory_test	result_unit	uIU/mL
+laboratory_test	result_unit	umol/L
+laboratory_test	result_unit	µg/L
+laboratory_test	sensitivity	DECIMAL
+laboratory_test	specimen	Blood
+laboratory_test	specimen	Bone Marrow
+laboratory_test	specimen	Cell Free DNA BCT
+laboratory_test	specimen	Cerebrospinal Fluid
+laboratory_test	specimen	Not Reported
+laboratory_test	specimen	Other
+laboratory_test	specimen	Peritoneal Fluid
+laboratory_test	specimen	Plasma
+laboratory_test	specimen	Saliva
+laboratory_test	specimen	Serum
+laboratory_test	specimen	Stool Sample
+laboratory_test	specimen	Unknown
+laboratory_test	specimen	Urine
+laboratory_test	test	5 Prime Nucleotidase
+laboratory_test	test	AFP
+laboratory_test	test	ALP
+laboratory_test	test	ALT
+laboratory_test	test	ANC
+laboratory_test	test	AST
+laboratory_test	test	Absolute Neutrophil Count
+laboratory_test	test	Albumin
+laboratory_test	test	Alkaline Phophatase
+laboratory_test	test	Auer Rods
+laboratory_test	test	Blasts
+laboratory_test	test	CD34
+laboratory_test	test	CRP
+laboratory_test	test	Calcium
+laboratory_test	test	Chloride
+laboratory_test	test	Creatinine
+laboratory_test	test	Creatinine Clearance
+laboratory_test	test	Cytology (malignant cells)
+laboratory_test	test	Direct Bilirubin
+laboratory_test	test	EBV DNA
+laboratory_test	test	EBV IgG
+laboratory_test	test	ESR
+laboratory_test	test	Eosinophils
+laboratory_test	test	Ferritin
+laboratory_test	test	Free T3
+laboratory_test	test	Free T4
+laboratory_test	test	GGT
+laboratory_test	test	Glucose
+laboratory_test	test	HCT
+laboratory_test	test	HGB
+laboratory_test	test	Hemoglobin
+laboratory_test	test	INR
+laboratory_test	test	LDH
+laboratory_test	test	Leukocytes
+laboratory_test	test	Lipase
+laboratory_test	test	Lymphocytes
+laboratory_test	test	Malignant Cells
+laboratory_test	test	Monocytes
+laboratory_test	test	Myelocyte
+laboratory_test	test	Neutrophils
+laboratory_test	test	PT
+laboratory_test	test	PTT
+laboratory_test	test	Phosphorus
+laboratory_test	test	Platelets
+laboratory_test	test	Potassium
+laboratory_test	test	Protein
+laboratory_test	test	Protein Total
+laboratory_test	test	RBC
+laboratory_test	test	Segmented Neutrophils
+laboratory_test	test	Sodium
+laboratory_test	test	TSH
+laboratory_test	test	Total Bilirubin
+laboratory_test	test	Total T4
+laboratory_test	test	Uric Acid
+laboratory_test	test	WBC
+laboratory_test	test	cfDNA
+laboratory_test	test	miR-367-3p
+laboratory_test	test	miR-371a-3p
+laboratory_test	test	miR-372-3p
+laboratory_test	test	miR-373-3p
+laboratory_test	test	miR-375-3p
+laboratory_test	test	Î²-hCG
 participant	id	STRING
 participant	participant_id	STRING
 participant	sex_at_birth	Decline to answer
@@ -2860,8 +3197,10 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
+of_genetic_analysis	genetic_analysis	participant	NA	NA
+of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -2873,10 +3212,14 @@ of_treatment_response	treatment_response	participant	NA	NA
 property	description
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
+age_at_genetic_analysis	The age in days of the subject at the time of the genetic analysis.
+age_at_lab	The age in days of the subject at the time of the laboratory test.
 age_at_last_known_survival_status	The age (in days) when the last known survival status of the subject was captured.
 age_at_response	The age (in days) of subject when the response assessment was made.
 age_at_treatment_end	Subject Age in Days at End of Treatment Course Day Count
 age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Count
+allelic_ratio	A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
+alteration	The words by which the generally used name of the mutation is known.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
@@ -2884,11 +3227,12 @@ consent_number	A numeral or string of numerals used to identify the set of study
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
 diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
-diagnosis_basis	The type of event for which the diagnosis was obtained.
+diagnosis_basis	The origin of the diagnosis.
 diagnosis_classification_system	The standard or agency upon which the specific term used as the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
+dna_index_numeric	A decimal number capturing the ratio of the DNA content or chromosome number in a tumor sample compared to that in a normal sample.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
 external_url	The url of the study (often a dbGaP study page).
 file_category	A freeform description of the file.
@@ -2897,10 +3241,16 @@ file_name	The name by which a set of related records (either written or electron
 file_size	The numerical quantity documenting the physical magnitude of a set of related electronic records.
 file_type	Text that provides a description of a particular kind of set of related records.
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
+genetic_analysis_id	A unique sequence of characters used to identify the digital data associated with genetic testing.
+hgvs_coding	The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
+hgvs_protein	The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
 id	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
+iscn	The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
+laboratory_test_id	A unique sequence of characters used to identify the digital data associated with laboratory testing.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 laterality	Designates the side of the body where disease is found.
 md5sum	md5 hash
+method	The controlled methods and/or techniques used to assay a sample of blood, urine, or other body substance.
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
@@ -2909,14 +3259,23 @@ reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
 response	The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
 response_category	A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.
 response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
+result	The outcome of a laboratory test.
+result_modifier	Text term that helps define the outcome of a laboratory test.
+result_numeric	The numeric value of the blood, urine, or other body substance laboratory test being recorded.
+result_text	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
+result_unit	The code that represents the name of a unit of measure for reporting a laboratory result.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
+sensitivity	The sensitivity of the modality used to determine minimal residual disease.
 sex_at_birth	A textual description of a person's sex at birth.
+specimen	The biospecimen grouping that describes the kind of material that forms the sample.
+status	The presence or extent of a genetic alteration in an individual's genome.
 study_description	The long form description of the study.
 study_id	A sequence of characters used to identify, name, or characterize a pediatric study.
 study_name	The narrative title used as a textual label for a research data collection.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
+test	The words by which the laboratory assessment is known.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 treatment_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
 treatment_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
@@ -2927,4 +3286,5 @@ tumor_grade	A text term to express the degree of abnormality of cancer cells as 
 tumor_stage_clinical_m	Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_n	Extent of the regional lymph node involvement for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
 tumor_stage_clinical_t	Extent of the primary cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.
+vaf_numeric	A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
 year_of_diagnosis	The year in which a subject was diagnosed.
