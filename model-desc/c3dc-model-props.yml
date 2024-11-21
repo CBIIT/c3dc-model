@@ -3146,7 +3146,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15243156
         Value: Genetic Analysis Electronic Record Unique Identifier
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3169,7 +3169,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13362278
         Value: Gene Mutation Colloquial Name
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "11q Deletion"
       - "12q Gain"
@@ -3388,7 +3388,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13362328
         Value: Gene Alteration Assessment Status
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "Present"
       - "Absent"
@@ -3404,7 +3404,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15292721
         Value: Molecular Specimen Allelic Ratio Float
-        Version: 1.00
+        Version: "1.00"
     Type: decimal
     Req: true
     Private: false 
@@ -3416,7 +3416,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15292724
         Value: Molecular Specimen Variant Allele Frequency Float
-        Version: 1.00
+        Version: "1.00"
     Type: decimal
     Req: true
     Private: false 
@@ -3427,7 +3427,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15292729
         Value: Molecular Specimen DNA Index Float
-        Version: 1.00
+        Version: "1.00"
     Type: decimal
     Req: true
     Private: false 
@@ -3438,7 +3438,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13367956
         Value: Gene Mutation HGVS Coding Text
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3449,7 +3449,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13367959
         Value: Gene Mutation HGVS Protein Text
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3460,7 +3460,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13367961
         Value: Gene Mutation ISCN Karyotype Text
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3471,7 +3471,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15243682
         Value: Laboratory Test Electronic Record Unique Identifier
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3483,7 +3483,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 12306999
         Value: Subject Age at Time of Laboratory Test Day Count
-        Version: 1.00
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false 
@@ -3494,7 +3494,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13569486
         Value: Laboratory Procedure Test Name
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "5 Prime Nucleotidase"
       - "Absolute Neutrophil Count"
@@ -3568,7 +3568,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 12445832
         Value: Specimen Material Category
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "Blood"
       - "Bone Marrow"
@@ -3593,7 +3593,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15294491
         Value: Laboratory Procedure Experimental Method Type
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "Cytology"
       - "ddPCR"
@@ -3615,7 +3615,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15296752
         Value: Laboratory Procedure Test Result Positive Negative Finding Outcome
-        Version: 1.00
+        Version: "1.00"
     Enum:
       - "Positive"
       - "Negative"
@@ -3633,7 +3633,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13362271
         Value: Laboratory Procedure Test Result Text
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3644,7 +3644,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 15296781
         Value: Laboratory Procedure Test Result Modifier Text
-        Version: 1.00
+        Version: "1.00"
     Type: string
     Req: true
     Private: false 
@@ -3655,7 +3655,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 13336306
         Value: Laboratory Procedure Test Result Float
-        Version: 1.00
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false 
@@ -3697,7 +3697,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: 14313826
         Value: Disease Measurable Residual Disease Sensitivity Float
-        Version: 1.00
+        Version: "1.00"
     Type: decimal
     Req: true
     Private: false 
