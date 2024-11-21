@@ -3158,7 +3158,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12365610'
         Value: Subject Age at Genetic Analysis Day Count
-        Version: 2.00
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false 
@@ -3666,7 +3666,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2179671'
         Value: Lab Test Result Unit of Measure Code
-        Version: 2.00
+        Version: "2.00"
     Enum:
       - "%"
       - "count/mm3"
