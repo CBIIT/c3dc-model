@@ -3144,7 +3144,7 @@ PropDefinitions:
     Desc: A unique sequence of characters used to identify the digital data associated with genetic testing.
     Term:
       - Origin: caDSR
-        Code: 15243156
+        Code: '15243156'
         Value: Genetic Analysis Electronic Record Unique Identifier
         Version: "1.00"
     Type: string
@@ -3156,7 +3156,7 @@ PropDefinitions:
     Desc: The age in days of the subject at the time of the genetic analysis.
     Term:
       - Origin: caDSR
-        Code: 12365610
+        Code: '12365610'
         Value: Subject Age at Genetic Analysis Day Count
         Version: 2.00
     Type: integer
@@ -3167,7 +3167,7 @@ PropDefinitions:
     Desc: The words by which the generally used name of the mutation is known.
     Term:
       - Origin: caDSR
-        Code: 13362278
+        Code: '13362278'
         Value: Gene Mutation Colloquial Name
         Version: "1.00"
     Enum:
@@ -3386,7 +3386,7 @@ PropDefinitions:
     Desc: The presence or extent of a genetic alteration in an individual's genome.
     Term:
       - Origin: caDSR
-        Code: 13362328
+        Code: '13362328'
         Value: Gene Alteration Assessment Status
         Version: "1.00"
     Enum:
@@ -3402,7 +3402,7 @@ PropDefinitions:
     Desc: A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
     Term:
       - Origin: caDSR
-        Code: 15292721
+        Code: '15292721'
         Value: Molecular Specimen Allelic Ratio Float
         Version: "1.00"
     Type: decimal
@@ -3414,7 +3414,7 @@ PropDefinitions:
     Desc: A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
     Term:
       - Origin: caDSR
-        Code: 15292724
+        Code: '15292724'
         Value: Molecular Specimen Variant Allele Frequency Float
         Version: "1.00"
     Type: decimal
@@ -3425,7 +3425,7 @@ PropDefinitions:
     Desc: A decimal number capturing the ratio of the DNA content or chromosome number in a tumor sample compared to that in a normal sample.
     Term:
       - Origin: caDSR
-        Code: 15292729
+        Code: '15292729'
         Value: Molecular Specimen DNA Index Float
         Version: "1.00"
     Type: decimal
@@ -3436,7 +3436,7 @@ PropDefinitions:
     Desc: The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
     Term:
       - Origin: caDSR
-        Code: 13367956
+        Code: '13367956'
         Value: Gene Mutation HGVS Coding Text
         Version: "1.00"
     Type: string
@@ -3447,7 +3447,7 @@ PropDefinitions:
     Desc: The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.    
     Term:
       - Origin: caDSR
-        Code: 13367959
+        Code: '13367959'
         Value: Gene Mutation HGVS Protein Text
         Version: "1.00"
     Type: string
@@ -3458,7 +3458,7 @@ PropDefinitions:
     Desc: The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
     Term:
       - Origin: caDSR
-        Code: 13367961
+        Code: '13367961'
         Value: Gene Mutation ISCN Karyotype Text
         Version: "1.00"
     Type: string
@@ -3469,7 +3469,7 @@ PropDefinitions:
     Desc: A unique sequence of characters used to identify the digital data associated with laboratory testing.
     Term:
       - Origin: caDSR
-        Code: 15243682
+        Code: '15243682'
         Value: Laboratory Test Electronic Record Unique Identifier
         Version: "1.00"
     Type: string
@@ -3481,7 +3481,7 @@ PropDefinitions:
     Desc: The age in days of the subject at the time of the laboratory test.
     Term:
       - Origin: caDSR
-        Code: 12306999
+        Code: '12306999'
         Value: Subject Age at Time of Laboratory Test Day Count
         Version: "1.00"
     Type: integer
@@ -3492,7 +3492,7 @@ PropDefinitions:
     Desc: The words by which the laboratory assessment is known.
     Term:
       - Origin: caDSR
-        Code: 13569486
+        Code: '13569486'
         Value: Laboratory Procedure Test Name
         Version: "1.00"
     Enum:
@@ -3566,7 +3566,7 @@ PropDefinitions:
     Desc: The biospecimen grouping that describes the kind of material that forms the sample.
     Term:
       - Origin: caDSR
-        Code: 12445832
+        Code: '12445832'
         Value: Specimen Material Category
         Version: "1.00"
     Enum:
@@ -3591,7 +3591,7 @@ PropDefinitions:
     Desc: The controlled methods and/or techniques used to assay a sample of blood, urine, or other body substance.
     Term:
       - Origin: caDSR
-        Code: 15294491
+        Code: '15294491'
         Value: Laboratory Procedure Experimental Method Type
         Version: "1.00"
     Enum:
@@ -3613,7 +3613,7 @@ PropDefinitions:
     Desc: The outcome of a laboratory test.
     Term:
       - Origin: caDSR
-        Code: 15296752
+        Code: '15296752'
         Value: Laboratory Procedure Test Result Positive Negative Finding Outcome
         Version: "1.00"
     Enum:
@@ -3631,7 +3631,7 @@ PropDefinitions:
     Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
     Term:
       - Origin: caDSR
-        Code: 13362271
+        Code: '13362271'
         Value: Laboratory Procedure Test Result Text
         Version: "1.00"
     Type: string
@@ -3642,7 +3642,7 @@ PropDefinitions:
     Desc: Text term that helps define the outcome of a laboratory test.
     Term:
       - Origin: caDSR
-        Code: 15296781
+        Code: '15296781'
         Value: Laboratory Procedure Test Result Modifier Text
         Version: "1.00"
     Type: string
@@ -3653,7 +3653,7 @@ PropDefinitions:
     Desc: The numeric value of the blood, urine, or other body substance laboratory test being recorded.
     Term:
       - Origin: caDSR
-        Code: 13336306
+        Code: '13336306'
         Value: Laboratory Procedure Test Result Float
         Version: "1.00"
     Type: integer
@@ -3664,7 +3664,7 @@ PropDefinitions:
     Desc: The code that represents the name of a unit of measure for reporting a laboratory result.
     Term:
       - Origin: caDSR
-        Code: 2179671
+        Code: '2179671'
         Value: Lab Test Result Unit of Measure Code
         Version: 2.00
     Enum:
@@ -3695,7 +3695,7 @@ PropDefinitions:
     Desc: The sensitivity of the modality used to determine minimal residual disease.
     Term:
       - Origin: caDSR
-        Code: 14313826
+        Code: '14313826'
         Value: Disease Measurable Residual Disease Sensitivity Float
         Version: "1.00"
     Type: decimal
