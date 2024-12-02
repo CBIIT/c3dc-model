@@ -3668,6 +3668,7 @@ PropDefinitions:
         Value: Lab Test Result Unit of Measure Code
         Version: "2.00"
     Enum:
+      - "1000/uL"
       - "%"
       - "count/mm3"
       - "g/dL"
