@@ -1,5 +1,5 @@
 Handle: C3DC
-Version: v1.3.0
+Version: v2.0.1
 Nodes:
   diagnosis:
     Props:
@@ -11,14 +11,14 @@ Nodes:
       - disease_phase
       - tumor_classification
       - anatomic_site
+      - laterality
       - age_at_diagnosis
+      - year_of_diagnosis
       - toronto_childhood_cancer_staging
       - tumor_grade
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
       - tumor_stage_clinical_m
-      - year_of_diagnosis
-      - laterality
       - id
   participant:
     Props:
@@ -54,6 +54,33 @@ Nodes:
       - age_at_event_free_survival_status
       - first_event
       - cause_of_death
+      - id
+  genetic_analysis:
+    Props:
+      - genetic_analysis_id
+      - age_at_genetic_analysis
+      - allelic_ratio
+      - alteration
+      - status
+      - vaf_numeric
+      - dna_index_numeric
+      - hgvs_coding
+      - hgvs_protein
+      - iscn
+      - id
+  laboratory_test:
+    Props:
+      - laboratory_test_id
+      - age_at_lab
+      - test
+      - specimen
+      - method
+      - result
+      - result_text
+      - result_modifier
+      - result_numeric
+      - result_unit
+      - sensitivity
       - id
   treatment:
     Props:
@@ -128,4 +155,16 @@ Relationships:
     Mul: many_to_one
     Ends:
       - Src: treatment_response
+        Dst: participant
+  of_genetic_analysis:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: genetic_analysis
+        Dst: participant
+  of_laboratory_test:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: laboratory_test
         Dst: participant
