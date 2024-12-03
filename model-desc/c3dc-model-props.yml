@@ -7882,7 +7882,7 @@ PropDefinitions:
         Code: '15292721'
         Value: Molecular Specimen Allelic Ratio Float
         Version: "1.00"
-    Type: decimal
+    Type: number
     Req: true
     Private: false 
     Strict: true
@@ -7894,7 +7894,7 @@ PropDefinitions:
         Code: '15292724'
         Value: Molecular Specimen Variant Allele Frequency Float
         Version: "1.00"
-    Type: decimal
+    Type: number
     Req: true
     Private: false 
   #genetic_analysis
@@ -7905,7 +7905,7 @@ PropDefinitions:
         Code: '15292729'
         Value: Molecular Specimen DNA Index Float
         Version: "1.00"
-    Type: decimal
+    Type: number
     Req: true
     Private: false 
   #genetic_analysis
@@ -8175,6 +8175,6 @@ PropDefinitions:
         Code: '14313826'
         Value: Disease Measurable Residual Disease Sensitivity Float
         Version: "1.00"
-    Type: decimal
+    Type: number
     Req: true
     Private: false 
