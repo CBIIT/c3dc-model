@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 63e5d46
+commit 7a4328a
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2330,6 +2330,7 @@ genetic_analysis	alteration	ATM mutation
 genetic_analysis	alteration	BCOR Rearranged
 genetic_analysis	alteration	BCOR mutation
 genetic_analysis	alteration	BCOR-MAML3
+genetic_analysis	alteration	BCR-ABL1 Fusion
 genetic_analysis	alteration	BRAF Mutation
 genetic_analysis	alteration	BRAF V600E
 genetic_analysis	alteration	BRCA2 Mutation
@@ -2388,9 +2389,12 @@ genetic_analysis	alteration	GLI2 Amplification
 genetic_analysis	alteration	HRAS mutation
 genetic_analysis	alteration	IGF1R mutation
 genetic_analysis	alteration	K-RAS mutation
+genetic_analysis	alteration	KIT Exon 17 Mutation
+genetic_analysis	alteration	KIT Exon 8 Mutation
 genetic_analysis	alteration	KRAS Mutation
 genetic_analysis	alteration	Loss of Chromosome 11q (Deletion)
 genetic_analysis	alteration	Loss of Chromosome 1p (Deletion)
+genetic_analysis	alteration	Loss of chromosome Y (LOY)
 genetic_analysis	alteration	MDM2 mutation
 genetic_analysis	alteration	MLL Other partner
 genetic_analysis	alteration	MTOR mutation
@@ -2400,6 +2404,7 @@ genetic_analysis	alteration	MYCN mutation
 genetic_analysis	alteration	MYOD1 Mutation
 genetic_analysis	alteration	Monosomy 5
 genetic_analysis	alteration	Monosomy 7
+genetic_analysis	alteration	Monosomy X
 genetic_analysis	alteration	N-RAS mutation
 genetic_analysis	alteration	NF1 mutation
 genetic_analysis	alteration	NPM1 mutation
@@ -2423,11 +2428,13 @@ genetic_analysis	alteration	SOS2 mutation
 genetic_analysis	alteration	STAG2
 genetic_analysis	alteration	SUFU Mutation
 genetic_analysis	alteration	TAF15-NR4A3
+genetic_analysis	alteration	TCF3-PBX1 Fusion
 genetic_analysis	alteration	TLS/FEV
 genetic_analysis	alteration	TP53
 genetic_analysis	alteration	TP53 Mutation
 genetic_analysis	alteration	Trisomy 10
 genetic_analysis	alteration	Trisomy 17
+genetic_analysis	alteration	Trisomy 21
 genetic_analysis	alteration	Trisomy 4
 genetic_analysis	alteration	Trisomy 8
 genetic_analysis	alteration	Unknown
@@ -2436,9 +2443,13 @@ genetic_analysis	alteration	X Chromosome Inversion
 genetic_analysis	alteration	ZC3H7B-BCOR
 genetic_analysis	alteration	del(13q) (13q 14 - 21)
 genetic_analysis	alteration	del(17p)
+genetic_analysis	alteration	del(5q)
 genetic_analysis	alteration	del(5q)(5q31-q32)
+genetic_analysis	alteration	del(7q)
+genetic_analysis	alteration	del(9q)
 genetic_analysis	alteration	der.12p
 genetic_analysis	alteration	iAMP21
+genetic_analysis	alteration	inv(16)
 genetic_analysis	alteration	inv(16)(p13.3q24.3)/CBFA2T3-GLIS2
 genetic_analysis	alteration	inv(16)(p13q22)
 genetic_analysis	alteration	inv(3)(q21;q21.2)
@@ -2546,6 +2557,7 @@ laboratory_test	result_modifier	STRING
 laboratory_test	result_numeric	INTEGER
 laboratory_test	result_text	STRING
 laboratory_test	result_unit	%
+laboratory_test	result_unit	1000/uL
 laboratory_test	result_unit	IU/L
 laboratory_test	result_unit	Not Reported
 laboratory_test	result_unit	U/L
@@ -3108,6 +3120,7 @@ survival	event_free_survival_status	Not Censored
 survival	event_free_survival_status	Not Reported
 survival	event_free_survival_status	Unknown
 survival	first_event	Death
+survival	first_event	Induction Failure
 survival	first_event	Not Applicable
 survival	first_event	Not Reported
 survival	first_event	Progression
@@ -3197,8 +3210,8 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
