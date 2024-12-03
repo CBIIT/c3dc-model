@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit def9a95
+commit a4ad314
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2304,7 +2304,7 @@ diagnosis	tumor_stage_clinical_t	Tis (LCIS)
 diagnosis	tumor_stage_clinical_t	Tis (Paget's)
 diagnosis	year_of_diagnosis	INTEGER
 genetic_analysis	age_at_genetic_analysis	INTEGER
-genetic_analysis	allelic_ratio	DECIMAL
+genetic_analysis	allelic_ratio	NUMBER
 genetic_analysis	alteration	11q Deletion
 genetic_analysis	alteration	12q Gain
 genetic_analysis	alteration	16q Loss
@@ -2512,7 +2512,7 @@ genetic_analysis	alteration	t(X;18)(p11.23;q11)
 genetic_analysis	alteration	t(X;20)(p11.2;q13.3)
 genetic_analysis	alteration	t(X;22((p11;q13)
 genetic_analysis	alteration	t(X;4)(p11;q31)
-genetic_analysis	dna_index_numeric	DECIMAL
+genetic_analysis	dna_index_numeric	NUMBER
 genetic_analysis	genetic_analysis_id	STRING
 genetic_analysis	hgvs_coding	STRING
 genetic_analysis	hgvs_protein	STRING
@@ -2522,7 +2522,7 @@ genetic_analysis	status	Absent
 genetic_analysis	status	Not Done
 genetic_analysis	status	Present
 genetic_analysis	status	Unknown
-genetic_analysis	vaf_numeric	DECIMAL
+genetic_analysis	vaf_numeric	NUMBER
 laboratory_test	age_at_lab	INTEGER
 laboratory_test	id	STRING
 laboratory_test	laboratory_test_id	STRING
@@ -2564,7 +2564,7 @@ laboratory_test	result_unit	seconds
 laboratory_test	result_unit	uIU/mL
 laboratory_test	result_unit	umol/L
 laboratory_test	result_unit	µg/L
-laboratory_test	sensitivity	DECIMAL
+laboratory_test	sensitivity	NUMBER
 laboratory_test	specimen	Blood
 laboratory_test	specimen	Bone Marrow
 laboratory_test	specimen	Cell Free DNA BCT
@@ -3197,14 +3197,14 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	study	NA	NA
+of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
