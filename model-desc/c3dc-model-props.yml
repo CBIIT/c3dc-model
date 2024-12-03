@@ -2923,6 +2923,7 @@ PropDefinitions:
         Value: Study End Point Event Type
         Version: "1.00"
     Enum:
+      - "Induction Failure"
       - "Progression"
       - "Relapse"
       - "Second Malignant Neoplasm"
