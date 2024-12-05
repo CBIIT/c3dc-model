@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 7a4328a
+commit 3063fc9
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2504,12 +2504,14 @@ genetic_analysis	alteration	t(5;11)(q35;p15) NSD1/NUP98
 genetic_analysis	alteration	t(5;18)(q35;q11)
 genetic_analysis	alteration	t(6;11)(q27;q23) / MLL-MLLT4(AF6)
 genetic_analysis	alteration	t(6;22)(p21;q12)
+genetic_analysis	alteration	t(6;9)
 genetic_analysis	alteration	t(6;9)(p23;q34) DEK/NUP214
 genetic_analysis	alteration	t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)
 genetic_analysis	alteration	t(7;16)(q33;p11)
 genetic_analysis	alteration	t(7;22)(p22;q12)
 genetic_analysis	alteration	t(8;14)(q24;q32) or other variant of B-ALL
 genetic_analysis	alteration	t(8;16)MOZ/CBP
+genetic_analysis	alteration	t(8;21)
 genetic_analysis	alteration	t(8;8)(q21;q13)
 genetic_analysis	alteration	t(9;11)(p22;q23) / MLL-MLLT3(AF9)
 genetic_analysis	alteration	t(9;15)(q22;q21)
@@ -2554,7 +2556,7 @@ laboratory_test	result	Positive
 laboratory_test	result	Present
 laboratory_test	result	Unknown
 laboratory_test	result_modifier	STRING
-laboratory_test	result_numeric	INTEGER
+laboratory_test	result_numeric	NUMBER
 laboratory_test	result_text	STRING
 laboratory_test	result_unit	%
 laboratory_test	result_unit	1000/uL
