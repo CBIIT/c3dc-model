@@ -7834,12 +7834,14 @@ PropDefinitions:
       - "t(5;18)(q35;q11)"
       - "t(6;11)(q27;q23) / MLL-MLLT4(AF6)"
       - "t(6;22)(p21;q12)"
+      - "t(6;9)"
       - "t(6;9)(p23;q34) DEK/NUP214"
       - "t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)"
       - "t(7;16)(q33;p11)"
       - "t(7;22)(p22;q12)"
       - "t(8;14)(q24;q32) or other variant of B-ALL"
       - "t(8;16)MOZ/CBP"
+      - "t(8;21)"
       - "t(8;8)(q21;q13)"
       - "t(9;11)(p22;q23) / MLL-MLLT3(AF9)"
       - "t(9;15)(q22;q21)"
@@ -8145,7 +8147,7 @@ PropDefinitions:
         Code: '13336306'
         Value: Laboratory Procedure Test Result Float
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false 
   #laboratory_test
