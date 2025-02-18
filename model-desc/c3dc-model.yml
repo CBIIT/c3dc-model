@@ -109,6 +109,16 @@ Nodes:
       - md5sum
       - reference_file_url
       - dcf_indexd_guid
+      - id
+  synonym:
+    Props:
+      - synonym_id
+      - repository_of_synonym_id
+      - associated_id
+      - domain_description
+      - domain_category
+      - data_location
+      - id  
 Relationships:
   of_diagnosis: 
     Props: null
@@ -168,3 +178,11 @@ Relationships:
     Ends:
       - Src: laboratory_test
         Dst: participant
+  of_synonym:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: synonym
+        Dst: study
+      - Src: synonym
+        Dst: participant 
