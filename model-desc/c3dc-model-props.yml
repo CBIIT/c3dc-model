@@ -1933,7 +1933,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '15157224'
         Value: Subject Diagnosis Year Number
-        Version: "1.00"
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false
