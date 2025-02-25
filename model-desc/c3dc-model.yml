@@ -45,8 +45,6 @@ Nodes:
       - consent_number
       - external_url
       - study_status
-      - study_period_start
-      - study_period_stop
       - id
   survival:
     Props:
