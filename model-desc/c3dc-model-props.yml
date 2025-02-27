@@ -2847,7 +2847,22 @@ PropDefinitions:
     Desc: The url of the study (often a dbGaP study page).
     Type: string
     Req: true  # 02/22/2022 adeforge, not required?
-    Private: false     
+    Private: false
+  #study
+  study_status:
+    Desc: The status of the study.
+    Term:
+      - Origin: caDSR
+        Code: '15607838'
+        Value: Administrative Activity Study Status
+        Version: "1.00"
+    Enum:
+      - Active
+      - Completed
+      - Provisional
+    Req: true
+    Strict: true
+    Private: false
   #survival
   survival_id:
     Desc: A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.

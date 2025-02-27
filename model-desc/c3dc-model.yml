@@ -68,6 +68,7 @@ Nodes:
       - consent
       - consent_number
       - external_url
+      - study_status
       - id
   survival:
     Desc: "The survival node is comprised of properties which describe metadata related to vital status and medical events at timepoints for a participant."
