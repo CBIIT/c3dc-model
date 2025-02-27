@@ -1933,7 +1933,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '15157224'
         Value: Subject Diagnosis Year Number
-        Version: "1.00"
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false
@@ -2211,9 +2211,9 @@ PropDefinitions:
     Desc: A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
     Term:
       - Origin: caDSR
-        Code: '2003904'
+        Code: '15100774'
         Value: Sample ID
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -2771,13 +2771,9 @@ PropDefinitions:
     Desc: Text description of a sample or specimen.
     Term:
       - Origin: caDSR
-        Code: '2003907'
+        Code: '14688604'
         Value: Sample Description Text
-        Version: "null"
-      - Origin: caDSR
-        Code: '5432687'
-        Value: Tissue Sample Description
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
