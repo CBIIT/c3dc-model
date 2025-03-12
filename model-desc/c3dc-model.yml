@@ -1,5 +1,5 @@
 Handle: C3DC
-Version: v2.0.1
+Version: v2.1.0
 Nodes:
   diagnosis:
     Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
