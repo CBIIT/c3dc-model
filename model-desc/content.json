@@ -19,7 +19,15 @@
     "ui_settings":{
             "name": "C3DC",
             "assets": null,
-            "pdfConfig": null,
+            "pdfConfig": {
+                 "fileType": "pdf",
+                 "prefix": "c3dc_",
+                 "downloadPrefix": "c3dc_",
+                 "fileTransferManifestName": "c3dc_",
+                 "iconSrc": "logo",
+                 "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
+                 "landscape": true
+               },
             "configuration": {
               "pageTitle": "C3DC Data Model",
               "facetFilterSearchData": [
