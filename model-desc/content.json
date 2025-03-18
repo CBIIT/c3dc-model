@@ -21,15 +21,6 @@
             "assets": null,
             "configuration": {
               "pageTitle": "C3DC Data Model",
-              "pdfConfig": {
-                "fileType": "pdf",
-                "prefix": "c3dc_",
-                "downloadPrefix": "c3dc_",
-                "fileTransferManifestName": "c3dc_",
-                "iconSrc": "logo",
-                "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
-                "landscape": true
-              },
               "facetFilterSearchData": [
                 {
                   "groupName": "Category",
