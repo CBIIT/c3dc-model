@@ -19,6 +19,7 @@
     "ui_settings":{
             "name": "C3DC",
             "assets": null,
+            "pdfConfig": null,
             "configuration": {
               "pageTitle": "C3DC Data Model",
               "facetFilterSearchData": [
