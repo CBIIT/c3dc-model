@@ -1988,7 +1988,7 @@ PropDefinitions:
         Value: CCDI Property Unique Identifier
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Key: false
     Private: false
   #participant
@@ -7529,7 +7529,7 @@ PropDefinitions:
         - "Zuclomiphene Citrate"
         - "Unknown"
         - "Not Reported"
-    Req: false
+    Req: true
     Strict: true
     Private: false
   #treatment
@@ -8292,7 +8292,7 @@ PropDefinitions:
         Value: Research Activity Alternate Identifier Repository Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false 
   #synonym
   domain_category:
@@ -8303,7 +8303,7 @@ PropDefinitions:
         Value: Research Activity Alternate Identifier Repository Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #synonym
   data_location:
@@ -8314,5 +8314,5 @@ PropDefinitions:
         Value: Electronic File Pathname Text
         Version: "2.00"
     Type: string
-    Req: false
+    Req: true
     Private: false     
