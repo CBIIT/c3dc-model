@@ -28,17 +28,6 @@
                 "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
                 "landscape": true
             },
-            "graphViewConfig": {
-                "fit": {
-                    "x": 0,
-                    "y": 20,
-                    "zoom": 0.7,
-                    "minZoom": 0.7,
-                    "maxZoom": 2,
-                    "xInterval": 250,
-                    "yInterval": 90
-                }
-            },
             "facetFilterSearchData": [
                 {
                     "groupName": "Category",
