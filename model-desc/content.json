@@ -1,145 +1,142 @@
 {
-    "model-files": ["c3dc-model.yml","c3dc-model-props.yml"],
+    "model-files": ["c3dc-model.yml", "c3dc-model-props.yml"],
     "readme-file": "README.md",
     "loading-file": "c3dc-file-examples.zip",
     "semantics": {
-      "file-nodes": {
-        "file": {
-          "id-field": "file_id",
-          "name-field": "file_name",
-          "size-field": "file_size",
-          "md5-field": "md5sum"
+        "file-nodes": {
+            "file": {
+                "id-field": "file_id",
+                "name-field": "file_name",
+                "size-field": "file_size",
+                "md5-field": "md5sum"
+            }
         }
-      }
     },
     "current-version": "1.0.0",
-    "versions": [
-      "1.0.0"
-    ],
-    "ui_settings":{
-            "name": "C3DC",
-            "assets": null,
-            "configuration": {
-              "pageTitle": "C3DC Data Model",
-               "pdfConfig": {
-                 "fileType": "pdf",
-                 "prefix": "c3dc_",
-                 "downloadPrefix": "c3dc_",
-                 "fileTransferManifestName": "c3dc_",
-                 "iconSrc": "logo",
-                 "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
-                 "landscape": true
-               },
-             graphViewConfig: {
-                    fit: {
-                      x: 0,
-                      y: 20,
-                      zoom: 0.7,
-                      minZoom: 0.7,
-                      maxZoom: 2,
-                      xInterval: 250,
-                      yInterval: 90,
-                    },
-                    nodeTree: [
-                      ['program'],
-                      ['project'],
-                      ['study'],
-                      ['principal_investigator', 'subject', 'image_collection', 'associated_link'],
-                      ['targeted_therapy', 'non_targeted_therapy', 'surgery', 'radiotherapy', 'subject_status', 'specimen'],
-                      ['diagnosis', 'specimen', 'demographic'],
-                      ['node', 'data_file', 'exposure']
+    "versions": ["1.0.0"],
+    "ui_settings": {
+        "name": "C3DC",
+        "assets": null,
+        "configuration": {
+            "pageTitle": "C3DC Data Model",
+            "pdfConfig": {
+                "fileType": "pdf",
+                "prefix": "c3dc_",
+                "downloadPrefix": "c3dc_",
+                "fileTransferManifestName": "c3dc_",
+                "iconSrc": "logo",
+                "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
+                "landscape": true
+            },
+            "graphViewConfig": {
+                "fit": {
+                    "x": 0,
+                    "y": 20,
+                    "zoom": 0.7,
+                    "minZoom": 0.7,
+                    "maxZoom": 2,
+                    "xInterval": 250,
+                    "yInterval": 90
+                },
+                "nodeTree": [
+                    ["program"],
+                    ["project"],
+                    ["study"],
+                    ["principal_investigator", "subject", "image_collection", "associated_link"],
+                    ["targeted_therapy", "non_targeted_therapy", "surgery", "radiotherapy", "subject_status", "specimen"],
+                    ["diagnosis", "specimen", "demographic"],
+                    ["node", "data_file", "exposure"]
+                ]
+            },
+            "facetFilterSearchData": [
+                {
+                    "groupName": "Category",
+                    "datafield": "category",
+                    "section": "Filter By Nodes",
+                    "tooltip": "category",
+                    "show": true,
+                    "checkboxItems": [
+                        { "name": "Administrative", "isChecked": false, "group": "category" },
+                        { "name": "Analysis", "isChecked": false, "group": "category" },
+                        { "name": "Biospecimen", "isChecked": false, "group": "category" },
+                        { "name": "Case", "isChecked": false, "group": "category" },
+                        { "name": "Clinical", "isChecked": false, "group": "category" },
+                        { "name": "Clinical_Trial", "isChecked": false, "group": "category" },
+                        { "name": "Data_File", "isChecked": false, "group": "category" },
+                        { "name": "Study", "isChecked": false, "group": "category" }
                     ]
-                  },
-              "facetFilterSearchData": [
-                {
-                  "groupName": "Category",
-                  "datafield": "category",
-                  "section": "Filter By Nodes",
-                  "tooltip": "category",
-                  "show": true,
-                  "checkboxItems": [
-                    { "name": "Administrative", "isChecked": false, "group": "category" },
-                    { "name": "Analysis", "isChecked": false, "group": "category" },
-                    { "name": "Biospecimen", "isChecked": false, "group": "category" },
-                    { "name": "Case", "isChecked": false, "group": "category" },
-                    { "name": "Clinical", "isChecked": false, "group": "category" },
-                    { "name": "Clinical_Trial", "isChecked": false, "group": "category" },
-                    { "name": "Data_File", "isChecked": false, "group": "category" },
-                    { "name": "Study", "isChecked": false, "group": "category" }
-                  ]
                 },
                 {
-                  "groupName": "Assignment",
-                  "datafield": "assignment",
-                  "section": "Filter By Nodes",
-                  "tooltip": "assignment",
-                  "show": true,
-                  "checkboxItems": [
-                    { "name": "Core", "isChecked": false, "group": "assignment" },
-                    { "name": "Extended", "isChecked": false, "group": "assignment" }
-                  ]
+                    "groupName": "Assignment",
+                    "datafield": "assignment",
+                    "section": "Filter By Nodes",
+                    "tooltip": "assignment",
+                    "show": true,
+                    "checkboxItems": [
+                        { "name": "Core", "isChecked": false, "group": "assignment" },
+                        { "name": "Extended", "isChecked": false, "group": "assignment" }
+                    ]
                 },
                 {
-                  "groupName": "Class",
-                  "datafield": "class",
-                  "section": "Filter By Nodes",
-                  "tooltip": "class",
-                  "show": true,
-                  "checkboxItems": [
-                    { "name": "Primary", "isChecked": false, "group": "class" },
-                    { "name": "Secondary", "isChecked": false, "group": "class" }
-                  ]
+                    "groupName": "Class",
+                    "datafield": "class",
+                    "section": "Filter By Nodes",
+                    "tooltip": "class",
+                    "show": true,
+                    "checkboxItems": [
+                        { "name": "Primary", "isChecked": false, "group": "class" },
+                        { "name": "Secondary", "isChecked": false, "group": "class" }
+                    ]
                 },
                 {
-                  "groupName": "Inclusion",
-                  "datafield": "inclusion",
-                  "section": "Filter By Property",
-                  "tooltip": "inclusion",
-                  "show": true,
-                  "checkboxItems": [
-                    { "name": "Optional", "isChecked": false, "group": "optional" },
-                    { "name": "Preferred", "isChecked": false, "group": "preferred" },
-                    { "name": "Required", "isChecked": false, "group": "required" }
-                  ]
+                    "groupName": "Inclusion",
+                    "datafield": "inclusion",
+                    "section": "Filter By Property",
+                    "tooltip": "inclusion",
+                    "show": true,
+                    "checkboxItems": [
+                        { "name": "Optional", "isChecked": false, "group": "optional" },
+                        { "name": "Preferred", "isChecked": false, "group": "preferred" },
+                        { "name": "Required", "isChecked": false, "group": "required" }
+                    ]
                 },
                 {
-                  "groupName": "UI Display",
-                  "datafield": "uiDisplay",
-                  "section": "Filter By Property",
-                  "tooltip": "inclusion",
-                  "show": true,
-                  "checkboxItems": [
-                    { "name": "no", "isChecked": false, "group": "no" },
-                    { "name": "yes", "isChecked": false, "group": "yes" }
-                  ]
+                    "groupName": "UI Display",
+                    "datafield": "uiDisplay",
+                    "section": "Filter By Property",
+                    "tooltip": "inclusion",
+                    "show": true,
+                    "checkboxItems": [
+                        { "name": "no", "isChecked": false, "group": "no" },
+                        { "name": "yes", "isChecked": false, "group": "yes" }
+                    ]
                 }
-              ],
-              "facetFilterSectionVariables": {
+            ],
+            "facetFilterSectionVariables": {
                 "Filter By Nodes": {
-                  "color": "#0D71A3",
-                  "checkBoxColorsOne": "#E3F4FD",
-                  "checkBoxColorsTwo": "#f0f8ff",
-                  "checkBoxBorderColor": "#0D71A3",
-                  "height": "7px",
-                  "isExpanded": true
+                    "color": "#0D71A3",
+                    "checkBoxColorsOne": "#E3F4FD",
+                    "checkBoxColorsTwo": "#f0f8ff",
+                    "checkBoxBorderColor": "#0D71A3",
+                    "height": "7px",
+                    "isExpanded": true
                 },
                 "Filter By Relationship": {
-                  "color": "#FF9742",
-                  "checkBoxColorsOne": "#FF9742",
-                  "checkBoxColorsTwo": "#FF9742",
-                  "height": "7px",
-                  "isExpanded": true
+                    "color": "#FF9742",
+                    "checkBoxColorsOne": "#FF9742",
+                    "checkBoxColorsTwo": "#FF9742",
+                    "height": "7px",
+                    "isExpanded": true
                 },
                 "Filter By Property": {
-                  "color": "#0D71A3",
-                  "checkBoxColorsOne": "#E3F4FD",
-                  "checkBoxColorsTwo": "#f0f8ff",
-                  "checkBoxBorderColor": "#0D71A3",
-                  "height": "7px",
-                  "isExpanded": true
+                    "color": "#0D71A3",
+                    "checkBoxColorsOne": "#E3F4FD",
+                    "checkBoxColorsTwo": "#f0f8ff",
+                    "checkBoxBorderColor": "#0D71A3",
+                    "height": "7px",
+                    "isExpanded": true
                 }
-              }
             }
-          }
-
-  }
+        }
+    }
+}
