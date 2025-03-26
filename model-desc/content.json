@@ -36,9 +36,7 @@
                      "y": 20,
                      "zoom": 0.7,
                      "minZoom": 0.7,
-                     "maxZoom": 2,
-                     "xInterval": 250,
-                     "yInterval": 90
+                     "maxZoom": 2
                  },
                   "nodeTree": [
                     { "level": 1, "nodes": ["study"] },
