@@ -45,10 +45,10 @@
                     { "level": 2, "nodes": ["Participant"] },
                     { "level": 3, "nodes": ["sample", "survival", "genetic_analysis", "laboratory_test", "treatment", "synonym", "reference_file"] },
                     { "level": 4, "nodes": ["diagnosis", "treatment_response"] }
-                  ],
-                },
+                  ]
+                }
 
-             },
+             }
         },
             "facetFilterSearchData": [
                 {
