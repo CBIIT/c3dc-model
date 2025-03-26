@@ -29,6 +29,7 @@
                 "landscape": true
             },
              "graphViewConfig": {
+                 "legend": {},
                  "canvas":{
                  "fit": {
                      "x": 0,
