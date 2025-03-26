@@ -40,14 +40,10 @@
                      "yInterval": 90
                  },
                  "nodeTree": [
-                     ["program"],
-                     ["project"],
                      ["study"],
                      ["Participant"],
-                     ["principal_investigator", "subject", "image_collection", "associated_link"],
-                     ["targeted_therapy", "non_targeted_therapy", "surgery", "radiotherapy", "subject_status", "specimen"],
-                     ["diagnosis", "specimen", "demographic"],
-                     ["node", "data_file", "exposure"]
+                     ["sample", "survival", "genetic_analysis","laboratory_test","treatment","synonm","reference_file"],
+                      ["diagnosis","treatment_response"],
                  ]
              }
         },
