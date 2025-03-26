@@ -28,6 +28,28 @@
                 "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
                 "landscape": true
             },
+             "graphViewConfig": {
+                 "canvas":{
+                 "fit": {
+                     "x": 0,
+                     "y": 20,
+                     "zoom": 0.7,
+                     "minZoom": 0.7,
+                     "maxZoom": 2,
+                     "xInterval": 250,
+                     "yInterval": 90
+                 },
+                 "nodeTree": [
+                     ["program"],
+                     ["project"],
+                     ["study"],
+                     ["principal_investigator", "subject", "image_collection", "associated_link"],
+                     ["targeted_therapy", "non_targeted_therapy", "surgery", "radiotherapy", "subject_status", "specimen"],
+                     ["diagnosis", "specimen", "demographic"],
+                     ["node", "data_file", "exposure"]
+                 ]
+             }
+        },
             "facetFilterSearchData": [
                 {
                     "groupName": "Category",
