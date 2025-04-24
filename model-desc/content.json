@@ -38,7 +38,7 @@
                     "checkboxItems": [
                         { "name": "Administrative", "isChecked": false, "group": "category" },
                         { "name": "Analysis", "isChecked": false, "group": "category" },
-                        { "name": "Biospecimen", "isChecked": false, "group": "category" },
+                        { "name": "Sample", "isChecked": false, "group": "category" },
                         { "name": "Case", "isChecked": false, "group": "category" },
                         { "name": "Clinical", "isChecked": false, "group": "category" },
                         { "name": "Clinical_Trial", "isChecked": false, "group": "category" },
