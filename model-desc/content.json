@@ -20,6 +20,7 @@
         "configuration": {
             "pageTitle": "C3DC Data Model",
             "pdfConfig": {
+                "enabled": false,
                 "fileType": "pdf",
                 "prefix": "c3dc_",
                 "downloadPrefix": "c3dc_",
