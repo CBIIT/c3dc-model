@@ -29,6 +29,43 @@
                 "footnote": "https://hub.datacommons.cancer.gov/model-navigator/C3DC",
                 "landscape": true
             },
+
+             "graphViewConfig": {
+                 "legend": {},
+                 "canvas":{
+                 "fit": {
+                     "x": 0,
+                     "y": 20,
+                     "zoom": 0.7,
+                     "minZoom": 0.7,
+                     "maxZoom": 2
+                 },
+                  "nodeTree": [
+                    [
+                        "study"
+                    ],
+                    [
+                        "participant"
+                    ],
+                    [
+                        "sample",
+                        "survival",
+                        "genetic_analysis",
+                        "laboratory_test"
+                    ],
+                    [
+                        "treatment",
+                        "synonym",
+                        "reference_file"
+                    ],
+                    [
+                        "diagnosis",
+                        "treatment_response"
+                    ]
+                ]
+             }
+        },
+
             "facetFilterSearchData": [
                 {
                     "groupName": "Category",
