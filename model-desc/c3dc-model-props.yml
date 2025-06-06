@@ -2742,6 +2742,7 @@ PropDefinitions:
       - 'Relapse'
       - 'Recurrent Disease'
       - 'Relapse/Progression'
+      - 'Not Applicable'
       - 'Unknown'
     Req: true
     Strict: true
