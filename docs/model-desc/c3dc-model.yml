@@ -1,7 +1,13 @@
 Handle: C3DC
-Version: v2.0.1
+Version: v2.1.0
 Nodes:
   diagnosis:
+    Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - diagnosis_id
       - diagnosis
@@ -21,12 +27,24 @@ Nodes:
       - tumor_stage_clinical_m
       - id
   participant:
+    Desc: "The participant node is comprised of properties which describe the participant attributes."
+    Tags:
+      Category: participant
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - participant_id
       - race       
       - sex_at_birth
       - id
   sample:
+    Desc: "The sample node is comprised of properties which describe the sample attributes as collected from participant, cell line, or pdx model."
+    Tags:
+      Category: biospecimen
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - sample_id
       - anatomic_site
@@ -36,6 +54,12 @@ Nodes:
       - sample_description
       - id
   study:
+    Desc: "The study node is comprised of properties which describe high level metadata that applies to all facets of the study."
+    Tags:
+      Category: study
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - study_id
       - dbgap_accession 
@@ -44,8 +68,15 @@ Nodes:
       - consent
       - consent_number
       - external_url
+      - study_status
       - id
   survival:
+    Desc: "The survival node is comprised of properties which describe metadata related to vital status and medical events at timepoints for a participant."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
     Props:
       - survival_id
       - last_known_survival_status
@@ -56,6 +87,12 @@ Nodes:
       - cause_of_death
       - id
   genetic_analysis:
+    Desc: "The genetic analysis node is comprised of properties which describe genetic details of the participants."
+    Tags:
+      Category: clinical
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
@@ -69,6 +106,12 @@ Nodes:
       - iscn
       - id
   laboratory_test:
+    Desc: "The laboratory test node is comprised of properties which describe laboratory tests and results for a participant."
+    Tags:
+      Category: clinical
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
     Props:
       - laboratory_test_id
       - age_at_lab
@@ -83,14 +126,30 @@ Nodes:
       - sensitivity
       - id
   treatment:
+    Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - treatment_id
       - age_at_treatment_start
       - age_at_treatment_end
       - treatment_type
       - treatment_agent
+      - dose
+      - dose_unit
+      - dose_route
+      - dose_frequency
       - id
   treatment_response:
+    Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
     Props:
       - treatment_response_id
       - response
@@ -99,6 +158,12 @@ Nodes:
       - response_system
       - id
   reference_file: 
+    Desc: "The reference file node is comprised of properties which describe file metadata for reference files that were used in the harmonization process."
+    Tags:
+      Category: data_file
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
     Props:
       - reference_file_id
       - file_name
@@ -109,6 +174,22 @@ Nodes:
       - md5sum
       - reference_file_url
       - dcf_indexd_guid
+      - id
+  synonym:
+    Desc: "The synonym node is comprised of properties which describe how specific ids are related between multiple data repositories."
+    Tags:
+      Category: administrative
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - synonym_id
+      - repository_of_synonym_id
+      - associated_id
+      - domain_description
+      - domain_category
+      - data_location
+      - id  
 Relationships:
   of_diagnosis: 
     Props: null
@@ -136,8 +217,6 @@ Relationships:
     Ends:
       - Src: sample
         Dst: participant
-      - Src: sample
-        Dst: study
   of_survival:
     Props: null
     Mul: many_to_one 
@@ -168,3 +247,11 @@ Relationships:
     Ends:
       - Src: laboratory_test
         Dst: participant
+  of_synonym:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: synonym
+        Dst: study
+      - Src: synonym
+        Dst: participant 

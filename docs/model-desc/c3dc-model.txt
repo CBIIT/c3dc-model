@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 3063fc9
+commit 16de792
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2125,6 +2125,7 @@ diagnosis	diagnosis_classification_system	WHO CNS5 Integrated Diagnosis
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
 diagnosis	disease_phase	Initial Diagnosis
+diagnosis	disease_phase	Not Applicable
 diagnosis	disease_phase	Not Reported
 diagnosis	disease_phase	Post-Mortem
 diagnosis	disease_phase	Progression
@@ -2222,17 +2223,15 @@ diagnosis	tumor_classification	Not Reported
 diagnosis	tumor_classification	Primary
 diagnosis	tumor_classification	Regional
 diagnosis	tumor_classification	Unknown
-diagnosis	tumor_grade	G1
-diagnosis	tumor_grade	G2
-diagnosis	tumor_grade	G3
-diagnosis	tumor_grade	G4
-diagnosis	tumor_grade	GB
-diagnosis	tumor_grade	GX
-diagnosis	tumor_grade	High Grade
-diagnosis	tumor_grade	Intermediate Grade
-diagnosis	tumor_grade	Low Grade
+diagnosis	tumor_grade	G1 Low Grade
+diagnosis	tumor_grade	G2 Intermediate Grade
+diagnosis	tumor_grade	G3 High Grade
+diagnosis	tumor_grade	G4 Anaplastic
+diagnosis	tumor_grade	GB Borderline
+diagnosis	tumor_grade	GX Grade Cannot Be Assessed
 diagnosis	tumor_grade	Not Applicable
 diagnosis	tumor_grade	Not Reported
+diagnosis	tumor_grade	Unknown
 diagnosis	tumor_stage_clinical_m	M0
 diagnosis	tumor_stage_clinical_m	M1
 diagnosis	tumor_stage_clinical_m	M1a
@@ -2724,6 +2723,7 @@ reference_file	file_type	vmu
 reference_file	file_type	xls
 reference_file	file_type	xlsx
 reference_file	file_type	xml
+reference_file	id	STRING
 reference_file	md5sum	STRING
 reference_file	reference_file_id	STRING
 reference_file	reference_file_url	STRING
@@ -3107,6 +3107,9 @@ study	id	STRING
 study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
+study	study_status	Active
+study	study_status	Completed
+study	study_status	Provisional
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
 survival	cause_of_death	Due to non-study treatment
@@ -3135,8 +3138,19 @@ survival	last_known_survival_status	Dead
 survival	last_known_survival_status	Not Reported
 survival	last_known_survival_status	Unknown
 survival	survival_id	STRING
+synonym	associated_id	STRING
+synonym	data_location	STRING
+synonym	domain_category	STRING
+synonym	domain_description	STRING
+synonym	id	STRING
+synonym	repository_of_synonym_id	STRING
+synonym	synonym_id	STRING
 treatment	age_at_treatment_end	INTEGER
 treatment	age_at_treatment_start	INTEGER
+treatment	dose	STRING
+treatment	dose_frequency	STRING
+treatment	dose_route	STRING
+treatment	dose_unit	STRING
 treatment	id	STRING
 treatment	treatment_id	STRING
 treatment	treatment_type	3-Dimensional Conformal Radiation Therapy
@@ -3212,15 +3226,16 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
-of_sample	sample	study	NA	NA
 of_survival	survival	participant	NA	NA
+of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
@@ -3236,9 +3251,11 @@ age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Coun
 allelic_ratio	A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
 alteration	The words by which the generally used name of the mutation is known.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+associated_id	Text to identify the other name or alias of a person.
 cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+data_location	Data location.
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
 diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
@@ -3248,6 +3265,12 @@ diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
 disease_phase	The stage or period of an individual's treatment process during which relevant observations were recorded.
 dna_index_numeric	A decimal number capturing the ratio of the DNA content or chromosome number in a tumor sample compared to that in a normal sample.
+domain_category	A textual description of a storage location for digital data.
+domain_description	A textual description of a storage location for digital data.
+dose	The amount of exposure that a subject actually receives.
+dose_frequency	The text that represents the planned dosage frequency for a agent.
+dose_route	The text that describe the dosage route.
+dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
 external_url	The url of the study (often a dbGaP study page).
 file_category	A freeform description of the file.
@@ -3271,6 +3294,7 @@ participant_id	A sequence of letters, numbers, or characters that uniquely ident
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
 reference_file_id	A unique identifier for a clinical measure file.
 reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
+repository_of_synonym_id	A textual description of a storage location for digital data.
 response	The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
 response_category	A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.
 response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
@@ -3289,7 +3313,9 @@ status	The presence or extent of a genetic alteration in an individual's genome.
 study_description	The long form description of the study.
 study_id	A sequence of characters used to identify, name, or characterize a pediatric study.
 study_name	The narrative title used as a textual label for a research data collection.
+study_status	The status of the study.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
+synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
 test	The words by which the laboratory assessment is known.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 treatment_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.

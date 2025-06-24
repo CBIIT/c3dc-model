@@ -1933,7 +1933,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '15157224'
         Value: Subject Diagnosis Year Number
-        Version: "1.00"
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false
@@ -1988,7 +1988,7 @@ PropDefinitions:
         Value: CCDI Property Unique Identifier
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Key: false
     Private: false
   #participant
@@ -2211,9 +2211,9 @@ PropDefinitions:
     Desc: A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
     Term:
       - Origin: caDSR
-        Code: '2003904'
+        Code: '15100774'
         Value: Sample ID
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -2599,26 +2599,24 @@ PropDefinitions:
     Type: integer
     Req: true  
     Private: false
-  #sample
+  #diagnosis
   tumor_grade:
     Desc: A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
     Term:
       - Origin: caDSR
         Code: '11325685'
         Value: Diagnosis Tumor Grade
-        Version: "null"
+        Version: "2.00"
     Enum:
-      - "G1"
-      - "G2"
-      - "G3"
-      - "G4"
-      - "GB"
-      - "GX"
-      - "High Grade"
-      - "Intermediate Grade"
-      - "Low Grade"
+      - "G1 Low Grade"
+      - "G2 Intermediate Grade"
+      - "G3 High Grade"
+      - "G4 Anaplastic"
+      - "GB Borderline"
+      - "GX Grade Cannot Be Assessed"
       - "Not Applicable"
       - "Not Reported"
+      - "Unknown"
     Req: true  
     Strict: true
     Private: false
@@ -2744,6 +2742,7 @@ PropDefinitions:
       - 'Relapse'
       - 'Recurrent Disease'
       - 'Relapse/Progression'
+      - 'Not Applicable'
       - 'Unknown'
     Req: true
     Strict: true
@@ -2771,13 +2770,9 @@ PropDefinitions:
     Desc: Text description of a sample or specimen.
     Term:
       - Origin: caDSR
-        Code: '2003907'
+        Code: '14688604'
         Value: Sample Description Text
-        Version: "null"
-      - Origin: caDSR
-        Code: '5432687'
-        Value: Tissue Sample Description
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -2847,7 +2842,22 @@ PropDefinitions:
     Desc: The url of the study (often a dbGaP study page).
     Type: string
     Req: true  # 02/22/2022 adeforge, not required?
-    Private: false     
+    Private: false
+  #study
+  study_status:
+    Desc: The status of the study.
+    Term:
+      - Origin: caDSR
+        Code: '15607838'
+        Value: Administrative Activity Study Status
+        Version: "1.00"
+    Enum:
+      - Active
+      - Completed
+      - Provisional
+    Req: true
+    Strict: true
+    Private: false
   #survival
   survival_id:
     Desc: A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
@@ -7392,6 +7402,7 @@ PropDefinitions:
         - "Viagenpumatucel-L"
         - "Vibecotamab"
         - "Vibostolimab"
+        - "Vidarabine"
         - "Vilaprisan"
         - "Vinblastine"
         - "Vinblastine Sulfate"
@@ -7517,9 +7528,53 @@ PropDefinitions:
         - "Zuclomiphene Citrate"
         - "Unknown"
         - "Not Reported"
-    Req: false
+    Req: true
     Strict: true
     Private: false
+  #treatment
+  dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #treatment
+  dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: true
+    Private: false
+  #treatment
+  dose_route:
+    Desc: The text that describe the dosage route.
+    Term:
+      - Origin: caDSR
+        Code: '2179582'
+        Value: Dose Route Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #treatment
+  dose_frequency:
+    Desc: The text that represents the planned dosage frequency for a agent.
+    Term:
+      - Origin: caDSR
+        Code: '2179580'
+        Value: Dose Frequency Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
   #treatment_response
   treatment_response_id:
     Desc: In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
@@ -8193,3 +8248,70 @@ PropDefinitions:
     Type: number
     Req: true
     Private: false 
+  #synonym
+  synonym_id:
+    Desc: A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
+    Term:
+      - Origin: caDSR
+        Code: '14612666'
+        Value: Research Activity Alternate Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #synonym
+  repository_of_synonym_id:
+    Desc: A textual description of a storage location for digital data.
+    Term:
+      - Origin: caDSR
+        Code: '14612686'
+        Value: Research Activity Alternate Identifier Repository Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+  #synonym
+  associated_id:
+    Desc: Text to identify the other name or alias of a person.
+    Term:
+      - Origin: caDSR
+        Code: '3773730'
+        Value: Person Other Name Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false  
+  #synonym
+  domain_description:
+    Desc: A textual description of a storage location for digital data.
+    Term:
+      - Origin: caDSR
+        Code: '14612686'
+        Value: Research Activity Alternate Identifier Repository Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #synonym
+  domain_category:
+    Desc: A textual description of a storage location for digital data.
+    Term:
+      - Origin: caDSR
+        Code: '14612686'
+        Value: Research Activity Alternate Identifier Repository Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+  #synonym
+  data_location:
+    Desc: Data location.
+    Term: 
+      - Origin: caDSR
+        Code: '11556141'
+        Value: Electronic File Pathname Text
+        Version: "2.00"
+    Type: string
+    Req: true
+    Private: false     
