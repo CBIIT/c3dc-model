@@ -2219,6 +2219,28 @@ PropDefinitions:
     Private: false
     Key: true
   #sample
+  percent_tumor:
+    Desc: Numeric value that represents the percentage of infiltration by tumor cells in a sample.
+    Term:
+      - Origin: caDSR
+        Code: '5432686'
+        Value: Specimen Tumor Cell Percentage Value
+        Version: "1.00"
+    Type: integer
+    Req: true
+    Private: false
+  #sample
+  percent_necrosis:
+    Desc: Numeric value to represent the percentage of cell death in a malignant tumor sample or specimen.
+    Term:
+      - Origin: caDSR
+        Code: '13368719'
+        Value: Disease Response Percent Necrosis Percentage Value
+        Version: "1.00"
+    Type: integer
+    Req: true
+    Private: false
+  #sample
   anatomic_site:
     Desc: The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
     Term:
