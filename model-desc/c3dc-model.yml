@@ -52,6 +52,8 @@ Nodes:
       - sample_tumor_status
       - tumor_classification
       - sample_description
+      - percent_tumor
+      - percent_necrosis
       - id
   study:
     Desc: "The study node is comprised of properties which describe high level metadata that applies to all facets of the study."
