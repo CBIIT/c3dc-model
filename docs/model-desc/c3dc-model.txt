@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit dbc375a
+commit 7ec4103
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -3087,6 +3087,8 @@ sample	anatomic_site	Not Reported
 sample	anatomic_site	Unknown
 sample	id	STRING
 sample	participant_age_at_collection	INTEGER
+sample	percent_necrosis	INTEGER
+sample	percent_tumor	INTEGER
 sample	sample_description	STRING
 sample	sample_id	STRING
 sample	sample_tumor_status	Normal
@@ -3226,8 +3228,8 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
@@ -3291,6 +3293,8 @@ md5sum	md5 hash
 method	The controlled methods and/or techniques used to assay a sample of blood, urine, or other body substance.
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
+percent_necrosis	Numeric value to represent the percentage of cell death in a malignant tumor sample or specimen.
+percent_tumor	Numeric value that represents the percentage of infiltration by tumor cells in a sample.
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
 reference_file_id	A unique identifier for a clinical measure file.
 reference_file_url	Location of the source_file_url file, using AWS S3 protocol.
