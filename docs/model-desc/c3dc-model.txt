@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 7ec4103
+commit f392582
 node	property	value_or_TYPE
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
@@ -2108,20 +2108,6 @@ diagnosis	diagnosis	[---- ICD-O 3.2 ----]
 diagnosis	diagnosis	[---- Indication for Study ----]
 diagnosis	diagnosis	[---- Miscellaneous ----]
 diagnosis	diagnosis	see diagnosis_comment
-diagnosis	diagnosis_basis	Clinical
-diagnosis	diagnosis_basis	Molecular
-diagnosis	diagnosis_basis	Not Reported
-diagnosis	diagnosis_basis	Pathology
-diagnosis	diagnosis_basis	Unknown
-diagnosis	diagnosis_classification_system	CNS Diagnosis Category
-diagnosis	diagnosis_classification_system	French-American-British Classification
-diagnosis	diagnosis_classification_system	ICD-O-3.2
-diagnosis	diagnosis_classification_system	Indication for Study
-diagnosis	diagnosis_classification_system	Not Reported
-diagnosis	diagnosis_classification_system	St. Jude Cloud Disease Ontology
-diagnosis	diagnosis_classification_system	Unknown
-diagnosis	diagnosis_classification_system	WHO AML Classification of Tumors
-diagnosis	diagnosis_classification_system	WHO CNS5 Integrated Diagnosis
 diagnosis	diagnosis_comment	STRING
 diagnosis	diagnosis_id	STRING
 diagnosis	disease_phase	Initial Diagnosis
@@ -3228,8 +3214,8 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	study	NA	NA
@@ -3262,6 +3248,7 @@ dbgap_accession	A stable unique alphanumeric identifier assigned to a study and 
 dcf_indexd_guid	An assigned globally unique identifier (GUID) that is assigned for the indexing process, making files available. This is usually not supplied by the submitter, but created in the ingestion process.
 diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
 diagnosis_basis	The origin of the diagnosis.
+diagnosis_category	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
 diagnosis_classification_system	The standard or agency upon which the specific term used as the diagnosis value was obtained.
 diagnosis_comment	Freeform text entry for further details about the diagnosis.
 diagnosis_id	sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
