@@ -11,6 +11,7 @@ Nodes:
     Props:
       - diagnosis_id
       - diagnosis
+      - diagnosis_category
       - diagnosis_classification_system
       - diagnosis_basis
       - diagnosis_comment
