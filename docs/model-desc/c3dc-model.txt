@@ -1,6 +1,11 @@
 repo https://github.com/CBIIT/c3dc-model
-commit d1dbcda
+commit f2c2274
 node	property	value_or_TYPE
+consent_group	consent_group_id	STRING
+consent_group	consent_group_name	STRING
+consent_group	consent_group_number	STRING
+consent_group	consent_group_suffix	STRING
+consent_group	id	STRING
 diagnosis	age_at_diagnosis	INTEGER
 diagnosis	anatomic_site	C00.0 : External upper lip
 diagnosis	anatomic_site	C00.1 : External lower lip
@@ -1965,16 +1970,17 @@ treatment_response	response_system	mRECIST
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_diagnosis	diagnosis	participant	NA	NA
+of_consent_group	consent_group	study	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
-of_participant	participant	study	NA	NA
+of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
@@ -1993,6 +1999,10 @@ anatomic_site	The location within the body as captured in the topography label o
 associated_id	Text to identify the other name or alias of a person.
 cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+consent_group_id	A sequence of characters used to uniquely identify, name, or characterize the presence and nature of a consent group in a study.
+consent_group_name	The words or acronym which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+consent_group_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
+consent_group_suffix	Suffix applied to DCF indexing file record to note the appropriate participant's consent group.
 consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 data_location	Data location.
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
