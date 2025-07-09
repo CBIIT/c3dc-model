@@ -1,6 +1,19 @@
 Handle: C3DC
 Version: v2.1.0
 Nodes:
+  consent_group:
+    Desc: "A set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository."
+    Tags:
+      Category: participant
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - consent_group_id
+      - consent_group_name
+      - consent_group_number
+      - consent_group_suffix 
+      - id
   diagnosis:
     Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
     Tags:
@@ -194,6 +207,12 @@ Nodes:
       - data_location
       - id  
 Relationships:
+  of_consent_group:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: consent_group
+        Dst: study
   of_diagnosis: 
     Props: null
     Mul: many_to_one
@@ -202,42 +221,6 @@ Relationships:
         Dst: participant
       - Src: diagnosis
         Dst: sample
-  of_reference_file: 
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: reference_file
-        Dst: study  
-  of_participant: 
-    Props: null
-    Mul: many_to_one 
-    Ends:
-      - Src: participant
-        Dst: study
-  of_sample: 
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: sample
-        Dst: participant
-  of_survival:
-    Props: null
-    Mul: many_to_one 
-    Ends:
-      - Src: survival
-        Dst: participant
-  of_treatment:
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: treatment
-        Dst: participant
-  of_treatment_response:
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: treatment_response
-        Dst: participant
   of_genetic_analysis:
     Props: null
     Mul: many_to_one
@@ -250,6 +233,30 @@ Relationships:
     Ends:
       - Src: laboratory_test
         Dst: participant
+  of_participant: 
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: participant
+        Dst: consent_group
+  of_reference_file: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: reference_file
+        Dst: study  
+  of_sample: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: sample
+        Dst: participant
+  of_survival:
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: survival
+        Dst: participant
   of_synonym:
     Props: null
     Mul: many_to_one
@@ -258,3 +265,15 @@ Relationships:
         Dst: study
       - Src: synonym
         Dst: participant 
+  of_treatment:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment
+        Dst: participant
+  of_treatment_response:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_response
+        Dst: participant
