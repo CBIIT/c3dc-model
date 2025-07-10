@@ -6698,7 +6698,7 @@ PropDefinitions:
         Value: Genetic Reference Sequence
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_analysis
   chromosome:
@@ -6720,7 +6720,7 @@ PropDefinitions:
         Value: Molecular Analysis Cytoband Text
         Version: "2.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_analysis
   gene_symbol:
@@ -6742,7 +6742,7 @@ PropDefinitions:
         Value: Gene Occurrence HGNC Symbol Name
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_analysis
   transcript:
@@ -6775,7 +6775,7 @@ PropDefinitions:
         Value: Molecular Analysis Exon Identification Number
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_alteration
   fusion_partner_exon:
@@ -6786,7 +6786,7 @@ PropDefinitions:
         Value: Molecular Analysis Exon Identification Number
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_analysis
   hgvs_coding:
@@ -7060,7 +7060,7 @@ PropDefinitions:
         Value: Molecular Specimen Allelic Ratio Float
         Version: "1.00"
     Type: number
-    Req: false
+    Req: true
     Private: false 
     Strict: true
   #genetic_analysis
@@ -7072,7 +7072,7 @@ PropDefinitions:
         Value: Molecular Specimen Variant Allele Frequency Float
         Version: "1.00"
     Type: number
-    Req: false
+    Req: true
     Private: false 
   #genetic_analysis
   dna_index_numeric:
@@ -7083,7 +7083,7 @@ PropDefinitions:
         Value: Molecular Specimen DNA Index Float
         Version: "1.00"
     Type: number
-    Req: false
+    Req: true
     Private: false 
   #genetic_analysis
   karyotype:
@@ -7094,7 +7094,7 @@ PropDefinitions:
         Value: Gene Mutation ISCN Karyotype Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false 
   #genetic_analysis
   status:
