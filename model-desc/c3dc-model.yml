@@ -80,6 +80,7 @@ Nodes:
       - study_id
       - dbgap_accession 
       - study_name
+      - study_description
       - external_url
       - study_status
       - id
