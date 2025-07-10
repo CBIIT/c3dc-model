@@ -146,16 +146,11 @@ Nodes:
       Template: 'Yes'
     Props:
       - laboratory_test_id
-      - age_at_lab
-      - test
-      - specimen
-      - method
-      - result
-      - result_text
-      - result_modifier
-      - result_numeric
-      - result_unit
-      - sensitivity
+      - analysis_method
+      - laboratory_test_name
+      - test_result_text
+      - test_result_numeric
+      - test_unit
       - id
   treatment:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
