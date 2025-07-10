@@ -6709,7 +6709,7 @@ PropDefinitions:
         Value: Gene Human Chromosome Name
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_alteration
   cytoband:
@@ -6764,7 +6764,7 @@ PropDefinitions:
         Value: Molecular Analysis Transcript Location Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #genetic_alteration
   exon:
@@ -6951,6 +6951,7 @@ PropDefinitions:
       - "NPM1 mutation"
       - "NRAS mutation"
       - "NTRK Rearranged"
+      - "Not Reported"
       - "Other"
       - "p.F1174L"
       - "PDGFRA Mutation"
@@ -7048,7 +7049,7 @@ PropDefinitions:
       - "WT1 mutation"
       - "X Chromosome Inversion"
       - "ZC3H7B-BCOR"
-    Req: false
+    Req: true
     Strict: false
     Private: false 
   #genetic_analysis
@@ -7109,7 +7110,7 @@ PropDefinitions:
       - "Absent"
       - "Unknown"
       - "Not Done"
-    Req: false
+    Req: true
     Private: false 
     Strict: true 
   #laboratory_test
@@ -7165,7 +7166,7 @@ PropDefinitions:
       - "Unknown"
       - "Not Reported"
       - "Not Applicable"
-    Req: false
+    Req: true
     Strict: false
     Private: false
   #laboratoy_test
@@ -8237,7 +8238,7 @@ PropDefinitions:
       - "Not Reported"
       - "Other"
       - "Unknown"
-    Req: false
+    Req: true
     Strict: false
     Private: false
   #laboratory_test
@@ -8249,7 +8250,7 @@ PropDefinitions:
         Value: Laboratory Procedure Numeric Test Result Float
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #laboratory_test
   test_result_text:
@@ -8260,7 +8261,7 @@ PropDefinitions:
         Value: Laboratory Procedure Test Result Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #laboratory_test
   test_unit:
@@ -8271,7 +8272,7 @@ PropDefinitions:
         Value: Lab Test Result Unit of Measure Code
         Version: "2.00"
     Type: string
-    Req: false
+    Req: true
     Private: false
   #synonym
   synonym_id:
