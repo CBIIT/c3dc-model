@@ -81,8 +81,6 @@ Nodes:
       - dbgap_accession 
       - study_name
       - study_description
-      - consent
-      - consent_number
       - external_url
       - study_status
       - id
@@ -103,23 +101,39 @@ Nodes:
       - cause_of_death
       - id
   genetic_analysis:
-    Desc: "The genetic analysis node is comprised of properties which describe genetic details of the participants."
-    Tags:
-      Category: clinical
+    Desc: "The genetic analysis node is comprised of properties which describe the participant's genetic test results."
+    Tags: 
+      Category: analysis
       Assignment: extended
       Class: secondary
       Template: 'Yes'
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
-      - allelic_ratio
-      - alteration
-      - status
-      - vaf_numeric
-      - dna_index_numeric
+      - genomic_source_category
+      - reported_significance
+      - reported_significance_system
+      - test
+      - result
+      - reference_genome
+      - chromosome
+      - cytoband
+      - gene_symbol
+      - transcript
+      - exon
       - hgvs_coding
       - hgvs_protein
-      - iscn
+      - hgvs_genome
+      - chromosome_location
+      - allelic_ratio
+      - vaf_numeric
+      - alteration
+      - dna_index_numeric
+      - karyotype
+      - status
+      - fusion_partner_gene
+      - fusion_partner_transcript
+      - fusion_partner_exon
       - id
   laboratory_test:
     Desc: "The laboratory test node is comprised of properties which describe laboratory tests and results for a participant."
@@ -130,16 +144,11 @@ Nodes:
       Template: 'Yes'
     Props:
       - laboratory_test_id
-      - age_at_lab
-      - test
-      - specimen
-      - method
-      - result
-      - result_text
-      - result_modifier
-      - result_numeric
-      - result_unit
-      - sensitivity
+      - analysis_method
+      - laboratory_test_name
+      - test_result_text
+      - test_result_numeric
+      - test_unit
       - id
   treatment:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
@@ -224,7 +233,9 @@ Relationships:
   of_genetic_analysis:
     Props: null
     Mul: many_to_one
-    Ends:
+    Ends: 
+      - Src: genetic_analysis
+        Dst: sample
       - Src: genetic_analysis
         Dst: participant
   of_laboratory_test:
@@ -233,6 +244,8 @@ Relationships:
     Ends:
       - Src: laboratory_test
         Dst: participant
+      - Src: laboratory_test
+        Dst: sample
   of_participant: 
     Props: null
     Mul: many_to_one 
