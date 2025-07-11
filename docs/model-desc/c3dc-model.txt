@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 98c8622
+commit b655a6d
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1285,9 +1285,30 @@ genetic_analysis	status	Unknown
 genetic_analysis	test	STRING
 genetic_analysis	transcript	STRING
 genetic_analysis	vaf_numeric	NUMBER
-laboratory_test	analysis_method	NA
+laboratory_test	age_at_laboratory_test	NUMBER
 laboratory_test	id	STRING
 laboratory_test	laboratory_test_id	STRING
+laboratory_test	laboratory_test_method	Comparative Genomic Hybridization
+laboratory_test	laboratory_test_method	Cytogenetics, NOS
+laboratory_test	laboratory_test_method	FISH
+laboratory_test	laboratory_test_method	Flow Cytometry
+laboratory_test	laboratory_test_method	IHC
+laboratory_test	laboratory_test_method	ISH
+laboratory_test	laboratory_test_method	Karyotype
+laboratory_test	laboratory_test_method	Microarray
+laboratory_test	laboratory_test_method	Microsatellite Analysis
+laboratory_test	laboratory_test_method	Not Applicable
+laboratory_test	laboratory_test_method	Not Reported
+laboratory_test	laboratory_test_method	Nuclear Staining
+laboratory_test	laboratory_test_method	Other
+laboratory_test	laboratory_test_method	RNA Sequencing
+laboratory_test	laboratory_test_method	RT-PCR
+laboratory_test	laboratory_test_method	Sequencing, NOS
+laboratory_test	laboratory_test_method	Southern Blotting
+laboratory_test	laboratory_test_method	Targeted Sequencing
+laboratory_test	laboratory_test_method	Unknown
+laboratory_test	laboratory_test_method	WGS
+laboratory_test	laboratory_test_method	WXS
 laboratory_test	laboratory_test_name	
 laboratory_test	laboratory_test_name	% lymphocyte of CD45 cells
 laboratory_test	laboratory_test_name	11-Deoxycorticosterone, Serum
@@ -2923,10 +2944,10 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	participant	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
+of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -2952,12 +2973,10 @@ associated_id	Text to identify the other name or alias of a person.
 cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 chromosome_location	Physical map location of a Gene, expressed as either a cytological chromosomal band or by chromosome, start point and end point.
-consent	Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_group_id	A sequence of characters used to uniquely identify, name, or characterize the presence and nature of a consent group in a study.
 consent_group_name	The words or acronym which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_group_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_group_suffix	Suffix applied to DCF indexing file record to note the appropriate participant's consent group.
-consent_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
 data_location	Data location.
 dbgap_accession	A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).
