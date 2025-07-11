@@ -1091,29 +1091,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #study
-  consent:
-    Desc: Words which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
-    Term:
-      - Origin: caDSR
-        Code: '14534329'
-        Value: Research Activity dbGaP Consent Group Text
-        Version: "null"
-    Type: string
-    Req: true
-    Private: false 
-  #study
-  consent_number:
-    Desc: A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
-    Term:
-      - Origin: caDSR
-        Code: '14534330'
-        Value: Research Activity dbGaP Consent Group Number
-        Version: "null"
-    Type: integer
-    Req: true
-    Private: false     
-  # sample
+  #sample
   sample_id:
     Desc: A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
     Term:
