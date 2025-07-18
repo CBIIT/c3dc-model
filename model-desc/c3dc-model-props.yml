@@ -7093,23 +7093,23 @@ PropDefinitions:
     Strict: true 
   #laboratory_test
   laboratory_test_id:
-    Desc: A unique sequence of characters used to identify, name, or characterize a laboratory procedure that involves the study of tissues, cells, and fluids at the molecular level.
+    Desc: A unique sequence of characters used to identify the digital data associated with laboratory testing.
     Term:
       - Origin: caDSR
-        Code: '14589997'
-        Value: Molecular Test Unique Identifier
+        Code: '15243682'
+        Value: Laboratory Test Electronic Record Unique Identifier
         Version: "1.00"
     Type: string
     Req: true
-    Private: false
+    Private: false 
     Key: true
   #laboratory_test
   age_at_laboratory_test:
-    Desc: The age (in days) of the subject when the molecular test was performed.
+    Desc: The age in days of the subject at the time of the laboratory test.
     Term:
       - Origin: caDSR
-        Code: '14590166'
-        Value: Subject Age at Molecular Test Day Count
+        Code: '12306999'
+        Value: Subject Age at Time of Laboratory Test Day Count
         Version: "1.00"
     Type: number
     Req: true
@@ -8227,7 +8227,7 @@ PropDefinitions:
         Code: '13336306'
         Value: Laboratory Procedure Numeric Test Result Float
         Version: "1.00"
-    Type: string
+    Type: number
     Req: true
     Private: false
   #laboratory_test
@@ -8252,9 +8252,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false 
-    Type: string
-    Req: true
-    Private: false
   #laboratory_test
   test_unit:
     Desc: The code that represents the name of a unit of measure for reporting a laboratory result.
@@ -8266,7 +8263,42 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-    PropDefinitions:
+  #laboratory_test
+  specimen:
+    Desc: The biospecimen grouping that describes the kind of material that forms the sample.
+    Term:
+      - Origin: caDSR
+        Code: '12445832'
+        Value: Specimen Material Category
+        Version: "1.00"
+    Enum:
+      - "Blood"
+      - "Bone Marrow"
+      - "Cell Free DNA BCT"
+      - "Cerebrospinal Fluid"
+      - "Peritoneal Fluid"
+      - "Plasma"
+      - "Saliva"
+      - "Serum"
+      - "Stool Sample"
+      - "Urine"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
+    Req: true
+    Strict: false
+    Private: false 
+  #laboratory_test
+  sensitivity:
+    Desc: The sensitivity of the modality used to determine minimal residual disease.
+    Term:
+      - Origin: caDSR
+        Code: '14313826'
+        Value: Disease Measurable Residual Disease Sensitivity Float
+        Version: "1.00"
+    Type: number
+    Req: true
+    Private: false 
   #diagnosis
   diagnosis_id:
     Desc:  sequence of characters used to uniquely identify, name, or characterize the presence and nature of a disease or condition.
@@ -16265,65 +16297,6 @@ PropDefinitions:
         Value: Gene Mutation HGVS Protein Text
         Version: "1.00"
     Type: string
-    Req: true
-    Private: false 
-  #laboratory_test
-  laboratory_test_id:
-    Desc: A unique sequence of characters used to identify the digital data associated with laboratory testing.
-    Term:
-      - Origin: caDSR
-        Code: '15243682'
-        Value: Laboratory Test Electronic Record Unique Identifier
-        Version: "1.00"
-    Type: string
-    Req: true
-    Private: false 
-    Key: true
-  #laboratory_test
-  age_at_lab:
-    Desc: The age in days of the subject at the time of the laboratory test.
-    Term:
-      - Origin: caDSR
-        Code: '12306999'
-        Value: Subject Age at Time of Laboratory Test Day Count
-        Version: "1.00"
-    Type: integer
-    Req: true
-    Private: false 
-  #laboratory_test
-  specimen:
-    Desc: The biospecimen grouping that describes the kind of material that forms the sample.
-    Term:
-      - Origin: caDSR
-        Code: '12445832'
-        Value: Specimen Material Category
-        Version: "1.00"
-    Enum:
-      - "Blood"
-      - "Bone Marrow"
-      - "Cell Free DNA BCT"
-      - "Cerebrospinal Fluid"
-      - "Peritoneal Fluid"
-      - "Plasma"
-      - "Saliva"
-      - "Serum"
-      - "Stool Sample"
-      - "Urine"
-      - "Other"
-      - "Unknown"
-      - "Not Reported"
-    Req: true
-    Private: false 
-    Strict: true
-  #laboratory_test
-  sensitivity:
-    Desc: The sensitivity of the modality used to determine minimal residual disease.
-    Term:
-      - Origin: caDSR
-        Code: '14313826'
-        Value: Disease Measurable Residual Disease Sensitivity Float
-        Version: "1.00"
-    Type: number
     Req: true
     Private: false 
   #synonym
