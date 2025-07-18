@@ -148,8 +148,11 @@ Nodes:
       - laboratory_test_name
       - test_result_text
       - test_result_numeric
+      - test_result_modifier
       - test_unit
       - age_at_laboratory_test
+      - specimen
+      - sensitivity
       - id
   treatment:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
