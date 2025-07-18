@@ -8256,7 +8256,7 @@ PropDefinitions:
     Req: true
     Private: false
   #laboratory_test
-  result_modifier:
+  test_result_modifier:
     Desc: Text term that helps define the outcome of a laboratory test.
     Term:
       - Origin: caDSR
