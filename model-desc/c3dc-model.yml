@@ -148,6 +148,7 @@ Nodes:
       - laboratory_test_name
       - test_result_text
       - test_result_numeric
+      - test_result_modifier
       - test_unit
       - age_at_laboratory_test
       - specimen
