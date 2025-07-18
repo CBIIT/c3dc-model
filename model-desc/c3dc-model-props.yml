@@ -8220,16 +8220,30 @@ PropDefinitions:
     Strict: false
     Private: false
   #laboratory_test
-  test_result_numeric:
-    Desc: The numeric value of the blood, urine, or other body substance laboratory test being recorded.
+  specimen:
+    Desc: The biospecimen grouping that describes the kind of material that forms the sample.
     Term:
       - Origin: caDSR
-        Code: '13336306'
-        Value: Laboratory Procedure Numeric Test Result Float
+        Code: '12445832'
+        Value: Specimen Material Category
         Version: "1.00"
-    Type: string
+    Enum:
+      - "Blood"
+      - "Bone Marrow"
+      - "Cell Free DNA BCT"
+      - "Cerebrospinal Fluid"
+      - "Peritoneal Fluid"
+      - "Plasma"
+      - "Saliva"
+      - "Serum"
+      - "Stool Sample"
+      - "Urine"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
     Req: true
-    Private: false
+    Strict: false
+    Private: false 
   #laboratory_test
   test_result_text:
     Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
@@ -8242,7 +8256,29 @@ PropDefinitions:
     Req: true
     Private: false
   #laboratory_test
-  test_unit:
+  result_modifier:
+    Desc: Text term that helps define the outcome of a laboratory test.
+    Term:
+      - Origin: caDSR
+        Code: '15296781'
+        Value: Laboratory Procedure Test Result Modifier Text
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false 
+  #laboratory_test
+  test_result_numeric:
+    Desc: The numeric value of the blood, urine, or other body substance laboratory test being recorded.
+    Term:
+      - Origin: caDSR
+        Code: '13336306'
+        Value: Laboratory Procedure Numeric Test Result Float
+        Version: "1.00"
+    Type: number
+    Req: true
+    Private: false
+  #laboratory_test
+  test_result_unit:
     Desc: The code that represents the name of a unit of measure for reporting a laboratory result.
     Term:
       - Origin: caDSR
@@ -8250,6 +8286,17 @@ PropDefinitions:
         Value: Lab Test Result Unit of Measure Code
         Version: "2.00"
     Type: string
+    Req: true
+    Private: false
+  #laboratory_test
+  sensitivity:
+    Desc: The sensitivity of the modality used to determine minimal residual disease.
+    Term:
+      - Origin: caDSR
+        Code: '14313826'
+        Value: Disease Measurable Residual Disease Sensitivity Float
+        Version: "1.00"
+    Type: number
     Req: true
     Private: false
   #synonym
