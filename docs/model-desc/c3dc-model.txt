@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 1a840c8
+commit 24af276
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -2379,7 +2379,7 @@ laboratory_test	specimen	Serum
 laboratory_test	specimen	Stool Sample
 laboratory_test	specimen	Unknown
 laboratory_test	specimen	Urine
-laboratory_test	test_result_modifier	NA
+laboratory_test	test_result_modifier	STRING
 laboratory_test	test_result_numeric	NUMBER
 laboratory_test	test_result_text	STRING
 laboratory_test	test_result_unit	STRING
@@ -2957,12 +2957,12 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
-of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
+of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -3051,7 +3051,6 @@ response	The result of an evaluation to determine whether pathologic and/or clin
 response_category	A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.
 response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
 result	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
-result_modifier	Text term that helps define the outcome of a laboratory test.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the sample in the investigation or study.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
@@ -3066,6 +3065,7 @@ study_status	The status of the study.
 survival_id	A unique sequence of alphanumeric characters used to identify the survival event in the investigation or study.
 synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
 test	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
+test_result_modifier	Text term that helps define the outcome of a laboratory test.
 test_result_numeric	The numeric value of the blood, urine, or other body substance laboratory test being recorded.
 test_result_text	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
 test_result_unit	The code that represents the name of a unit of measure for reporting a laboratory result.
