@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit f7b1cf0
+commit 074e42d
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -2961,10 +2961,10 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
-of_genetic_analysis	genetic_analysis	participant	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
+of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
