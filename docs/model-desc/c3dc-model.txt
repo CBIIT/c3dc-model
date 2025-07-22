@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 0a93376
+commit f7b1cf0
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -407,7 +407,7 @@ diagnosis	diagnosis	Alveolar soft part sarcoma
 diagnosis	diagnosis	Anaplastic Ependymoma, Posterior Fossa
 diagnosis	diagnosis	Anaplastic Large Cell Lymphoma
 diagnosis	diagnosis	Anaplastic Meningioma
-diagnosis	diagnosis	Anaplastic large cell lymphoma (ALK+/ALK−)
+diagnosis	diagnosis	Anaplastic large cell lymphoma (ALK+/ALK-)
 diagnosis	diagnosis	Anaplastic large cell lymphoma, ALK positive
 diagnosis	diagnosis	Anaplastic large cell lymphoma, T-cell and Null-cell type
 diagnosis	diagnosis	Angiocentric glioma
@@ -2963,16 +2963,16 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	sample	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
+of_laboratory_test	laboratory_test	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
