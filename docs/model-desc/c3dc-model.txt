@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 043c63c
+commit 9a38e89
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -415,7 +415,7 @@ diagnosis	diagnosis	Angiomatoid fibrous histiocytoma
 diagnosis	diagnosis	Angiomyofibroblastoma
 diagnosis	diagnosis	Angiomyosarcoma
 diagnosis	diagnosis	Astroblastoma
-diagnosis	diagnosis	Astroblastoma, MN1-altered
+diagnosis	diagnosis	Astroblastoma, MN1-altered
 diagnosis	diagnosis	Astrocytoma, IDH-mutant
 diagnosis	diagnosis	Astrocytoma, NOS
 diagnosis	diagnosis	Astrocytoma, anaplastic, NOS
@@ -432,6 +432,7 @@ diagnosis	diagnosis	B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearr
 diagnosis	diagnosis	B lymphoblastic leukemia/lymphoma, BCR-ABL1-like
 diagnosis	diagnosis	B lymphoblastic leukemia/lymphoma, NOS
 diagnosis	diagnosis	B-Cell Acute Lymphoblastic Leukemia, NOS
+diagnosis	diagnosis	Basal cell adenocarcinoma
 diagnosis	diagnosis	Benign cystic nephroma
 diagnosis	diagnosis	Blue nevus, malignant
 diagnosis	diagnosis	Burkitt Lymphoma
@@ -447,8 +448,8 @@ diagnosis	diagnosis	CNS embryonal tumor
 diagnosis	diagnosis	CNS embryonal tumor with rhabdoid features
 diagnosis	diagnosis	CNS embryonal tumor, NOS
 diagnosis	diagnosis	CNS embryonal tumor, NOS or NEC
-diagnosis	diagnosis	CNS neuroblastoma, FOXR2-activated
-diagnosis	diagnosis	CNS tumor with BCOR internal tandem duplication
+diagnosis	diagnosis	CNS neuroblastoma, FOXR2-activated
+diagnosis	diagnosis	CNS tumor with BCOR internal tandem duplication
 diagnosis	diagnosis	Carcinoid tumor of uncertain malignant potential
 diagnosis	diagnosis	Carcinoma ex pleomorphic adenoma
 diagnosis	diagnosis	Carcinoma in situ, NOS
@@ -501,10 +502,10 @@ diagnosis	diagnosis	Desmoplastic fibroma
 diagnosis	diagnosis	Desmoplastic infantile astrocytoma
 diagnosis	diagnosis	Desmoplastic infantile ganglioglioma / desmoplastic infantile astrocytoma
 diagnosis	diagnosis	Desmoplastic melanoma, NOS
-diagnosis	diagnosis	Desmoplastic myxoid tumor of the pineal region, SMARCB1-mutant
+diagnosis	diagnosis	Desmoplastic myxoid tumor of the pineal region, SMARCB1-mutant
 diagnosis	diagnosis	Desmoplastic nodular medulloblastoma
 diagnosis	diagnosis	Desmoplastic small round cell tumor
-diagnosis	diagnosis	Diffuse astrocytoma, MYB- or MYBL1-altered
+diagnosis	diagnosis	Diffuse astrocytoma, MYB- or MYBL1-altered
 diagnosis	diagnosis	Diffuse glioneuronal tumor with oligodendroglioma-like features and nuclear clusters
 diagnosis	diagnosis	Diffuse hemispheric glioma, H3 G34-mutant
 diagnosis	diagnosis	Diffuse large B-cell lymphoma, NOS
@@ -537,6 +538,7 @@ diagnosis	diagnosis	Erdheim-Chester disease
 diagnosis	diagnosis	Ewing sarcoma
 diagnosis	diagnosis	Extraventricular neurocytoma
 diagnosis	diagnosis	Fibrillary astrocytoma
+diagnosis	diagnosis	Fibroblastic osteosarcoma
 diagnosis	diagnosis	Fibroma, NOS
 diagnosis	diagnosis	Fibrosarcoma, NOS
 diagnosis	diagnosis	Follicular adenocarcinoma, well differentiated
@@ -643,8 +645,8 @@ diagnosis	diagnosis	Medulloblastoma, Group 3
 diagnosis	diagnosis	Medulloblastoma, Group 4
 diagnosis	diagnosis	Medulloblastoma, NOS
 diagnosis	diagnosis	Medulloblastoma, NOS or NEC
-diagnosis	diagnosis	Medulloblastoma, SHH-activated and TP53-mutant
-diagnosis	diagnosis	Medulloblastoma, SHH-activated and TP53-wildtype
+diagnosis	diagnosis	Medulloblastoma, SHH-activated and TP53-mutant
+diagnosis	diagnosis	Medulloblastoma, SHH-activated and TP53-wildtype
 diagnosis	diagnosis	Medulloblastoma, WNT-activated
 diagnosis	diagnosis	Medulloblastoma, WNT-activated, NOS
 diagnosis	diagnosis	Medulloblastoma, non-WNT/non-SHH
@@ -722,6 +724,7 @@ diagnosis	diagnosis	Oligodendroglioma, IDH-mutant, and 1p/19q-codeleted
 diagnosis	diagnosis	Oligodendroglioma, NOS
 diagnosis	diagnosis	Oligodendroglioma, anaplastic, NOS
 diagnosis	diagnosis	Ossifying fibromyxoid tumor, NOS
+diagnosis	diagnosis	Osteoblastoma, NOS
 diagnosis	diagnosis	Osteosarcoma
 diagnosis	diagnosis	Osteosarcoma, NOS
 diagnosis	diagnosis	Other
@@ -733,6 +736,7 @@ diagnosis	diagnosis	Pancreatic neuroendocrine tumor, nonfunctioning
 diagnosis	diagnosis	Pancreatoblastoma
 diagnosis	diagnosis	Papillary adenocarcinoma, NOS
 diagnosis	diagnosis	Papillary carcinoma, NOS
+diagnosis	diagnosis	Papillary carcinoma, encapsulated, of thyroid
 diagnosis	diagnosis	Papillary carcinoma, follicular variant
 diagnosis	diagnosis	Papillary craniopharyngioma
 diagnosis	diagnosis	Papillary glioneuronal tumor
@@ -779,7 +783,7 @@ diagnosis	diagnosis	Precursor cell lymphoblastic lymphoma, NOS
 diagnosis	diagnosis	Primary cutaneous CD30 positive T-cell lymphoproliferative disorder
 diagnosis	diagnosis	Primary cutaneous follicle center lymphoma
 diagnosis	diagnosis	Primary diffuse large B-cell lymphoma of the CNS
-diagnosis	diagnosis	Primary intracranial sarcoma, DICER1-mutant
+diagnosis	diagnosis	Primary intracranial sarcoma, DICER1-mutant
 diagnosis	diagnosis	Primitive Neuroectodermal Tumor
 diagnosis	diagnosis	Proliferative dermal lesion in congenital nevus
 diagnosis	diagnosis	Renal cell carcinoma, NOS
@@ -816,8 +820,8 @@ diagnosis	diagnosis	Solid pseudopapillary tumor of ovary
 diagnosis	diagnosis	Solitary fibrous tumor
 diagnosis	diagnosis	Solitary fibrous tumor, NOS
 diagnosis	diagnosis	Spinal ependymoma
+diagnosis	diagnosis	Spinal ependymoma, MYCN-amplified
 diagnosis	diagnosis	Spinal ependymoma, NOS or NEC
-diagnosis	diagnosis	Spinal ependymoma, MYCN-amplified
 diagnosis	diagnosis	Spindle cell carcinoma, NOS
 diagnosis	diagnosis	Spindle cell rhabdomyosarcoma
 diagnosis	diagnosis	Spindle cell sarcoma
@@ -831,8 +835,8 @@ diagnosis	diagnosis	Subependymal giant cell astrocytoma
 diagnosis	diagnosis	Subependymoma
 diagnosis	diagnosis	Supratentorial ependymoma
 diagnosis	diagnosis	Supratentorial ependymoma, NOS or NEC
-diagnosis	diagnosis	Supratentorial ependymoma, YAP1 fusion-positive
-diagnosis	diagnosis	Supratentorial ependymoma, ZFTA fusion-positive
+diagnosis	diagnosis	Supratentorial ependymoma, YAP1 fusion-positive
+diagnosis	diagnosis	Supratentorial ependymoma, ZFTA fusion-positive
 diagnosis	diagnosis	Sympathetic paraganglioma
 diagnosis	diagnosis	Synovial sarcoma, NOS
 diagnosis	diagnosis	Synovial sarcoma, biphasic
@@ -2961,8 +2965,8 @@ of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
-of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
+of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
