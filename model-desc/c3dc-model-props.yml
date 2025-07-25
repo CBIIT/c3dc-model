@@ -6773,6 +6773,17 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  #genetic_alteration
+  translocation_partner_cytoband:
+    Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
+    Term:
+      - Origin: caDSR
+        Code: '6142405'
+        Value: Molecular Analysis Cytoband Text
+        Version: "2.00"
+    Type: string
+    Req: true
+    Private: false
   #genetic_analysis
   gene_symbol:
     Desc: A short-form abbreviation for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).    
