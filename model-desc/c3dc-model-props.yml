@@ -7053,6 +7053,30 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
+  #genetic_alteration
+  alteration_effect:
+    Desc: The type of effect of a sequence change on the function of an RNA, DNA, or protein.
+    Term:
+      - Origin: caDSR
+        Code: '13367935'
+        Value: Gene Alteration Effect Type
+        Version: "1.00"
+    Enum:
+      - "Frameshift"
+      - "Missense"
+      - "Monosomy"
+      - "None (inframe)"
+      - "Nullisomy"
+      - "Splice Acceptor"
+      - "Splice Donor"
+      - "Start Lost"
+      - "Stop Gained"
+      - "Stop Lost"
+      - "Synonymous"
+      - "Trisomy"
+    Req: true
+    Strict: false
+    Private: false
   #genetic_analysis
   allelic_ratio:
     Desc: A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
