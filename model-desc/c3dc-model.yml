@@ -138,7 +138,6 @@ Nodes:
       - fusion_partner_exon
       - translocation_partner_chromosome
       - translocation_partner_cytoband
-      
       - id
   laboratory_test:
     Desc: "The laboratory test node is comprised of properties which describe laboratory tests and results for a participant."
