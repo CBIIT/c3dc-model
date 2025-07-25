@@ -6657,6 +6657,17 @@ PropDefinitions:
     Req: true
     Private: false
   #genetic_analysis
+  method:
+    Desc: Method of the test or examination.
+    Term:
+      - Origin: caDSR
+        Code: '6408813'
+        Value: Lab Method
+        Version: "2.00"
+    Type: string
+    Req: true
+    Private: false
+  #genetic_analysis
   result:
     Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
     Term:
