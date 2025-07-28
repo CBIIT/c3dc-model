@@ -6666,11 +6666,11 @@ PropDefinitions:
         Version: "2.00"
     Enum:
       - "Archer Fusion"
-      - "DNA-Seq"
+      - "DNA Sequencing"
       - "Methylation Analysis"
-      - "Pathological"
-      - "Radiological"
-      - "RNA-Seq"
+      - "Pathology"
+      - "Radiology"
+      - "RNA Sequencing"
     Req: true
     Private: false
   #genetic_analysis
