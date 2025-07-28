@@ -6658,13 +6658,19 @@ PropDefinitions:
     Private: false
   #genetic_analysis
   method:
-    Desc: Method of the test or examination.
+    Desc: The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
     Term:
       - Origin: caDSR
-        Code: '6408813'
-        Value: Lab Method
+        Code: '12373576'
+        Value: Research Activity Experimental Method Type
         Version: "2.00"
-    Type: string
+    Enum:
+      - "Archer Fusion"
+      - "DNA-Seq"
+      - "Methylation Analysis"
+      - "Pathological"
+      - "Radiological"
+      - "RNA-Seq"
     Req: true
     Private: false
   #genetic_analysis
