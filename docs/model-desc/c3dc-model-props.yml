@@ -6657,6 +6657,23 @@ PropDefinitions:
     Req: true
     Private: false
   #genetic_analysis
+  method:
+    Desc: The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
+    Term:
+      - Origin: caDSR
+        Code: '12373576'
+        Value: Research Activity Experimental Method Type
+        Version: "2.00"
+    Enum:
+      - "Archer Fusion"
+      - "DNA Sequencing"
+      - "Methylation Analysis"
+      - "Pathology"
+      - "Radiology"
+      - "RNA Sequencing"
+    Req: true
+    Private: false
+  #genetic_analysis
   result:
     Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
     Term:
@@ -6690,11 +6707,91 @@ PropDefinitions:
         Code: '11379445'
         Value: Gene Human Chromosome Name
         Version: "1.00"
+    Enum:
+      - "Chr 1"
+      - "Chr 10"
+      - "Chr 11"
+      - "Chr 12"
+      - "Chr 13"
+      - "Chr 14"
+      - "Chr 15"
+      - "Chr 16"
+      - "Chr 17"
+      - "Chr 18"
+      - "Chr 19"
+      - "Chr 2"
+      - "Chr 20"
+      - "Chr 21"
+      - "Chr 22"
+      - "Chr 23"
+      - "Chr 3"
+      - "Chr 4"
+      - "Chr 5"
+      - "Chr 6"
+      - "Chr 7"
+      - "Chr 8"
+      - "Chr 9"
+      - "Chr M"
+      - "Chr X"
+      - "Chr Y"
+      - "Not Reported"
+      - "Unknown"
+    Req: true
+    Strict: true
+    Private: false
+  #genetic_analysis
+  translocation_partner_chromosome:
+    Desc: Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
+    Term:
+      - Origin: caDSR
+        Code: '11379445'
+        Value: Gene Human Chromosome Name
+        Version: "1.00"
+    Enum:
+      - "Chr 1"
+      - "Chr 10"
+      - "Chr 11"
+      - "Chr 12"
+      - "Chr 13"
+      - "Chr 14"
+      - "Chr 15"
+      - "Chr 16"
+      - "Chr 17"
+      - "Chr 18"
+      - "Chr 19"
+      - "Chr 2"
+      - "Chr 20"
+      - "Chr 21"
+      - "Chr 22"
+      - "Chr 23"
+      - "Chr 3"
+      - "Chr 4"
+      - "Chr 5"
+      - "Chr 6"
+      - "Chr 7"
+      - "Chr 8"
+      - "Chr 9"
+      - "Chr M"
+      - "Chr X"
+      - "Chr Y"
+      - "Not Reported"
+      - "Unknown"
+    Req: true
+    Strict: true
+    Private: false
+  #genetic_alteration
+  cytoband:
+    Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
+    Term:
+      - Origin: caDSR
+        Code: '6142405'
+        Value: Molecular Analysis Cytoband Text
+        Version: "2.00"
     Type: string
     Req: true
     Private: false
   #genetic_alteration
-  cytoband:
+  translocation_partner_cytoband:
     Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
     Term:
       - Origin: caDSR
@@ -6800,17 +6897,6 @@ PropDefinitions:
         Code: '11529031'
         Value: Genome Assembly NCBI Genetic Reference Sequence Text
         Version: "2.00"
-    Type: string
-    Req: true
-    Private: false
-  #genetic_alteration
-  chromosome_location:
-    Desc: Physical map location of a Gene, expressed as either a cytological chromosomal band or by chromosome, start point and end point.    
-    Term:
-      - Origin: caDSR
-        Code: '2557992'
-        Value: Chromosome Map Location
-        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -7033,7 +7119,61 @@ PropDefinitions:
       - "ZC3H7B-BCOR"
     Req: true
     Strict: false
-    Private: false 
+    Private: false
+  #genetic_alteration
+  alteration_type:
+    Desc: The type of gain, loss or alteration of the sequences comprising a gene.
+    Term:
+      - Origin: caDSR
+        Code: '13367930'
+        Value: Gene Alteration Type
+        Version: "1.00"
+    Enum:
+      - "Chromosomal Deletion"
+      - "Chromosomal Duplication"
+      - "Chromosomal Inversion"
+      - "Chromosomal Translocation"
+      - "Chromothripsis"
+      - "Deletion"
+      - "Gene Fusion"
+      - "Gene Rearrangement"
+      - "Insertion"
+      - "Insertion, Duplication"
+      - "Isochromosome"
+      - "Mutation, NOS"
+      - "Not Reported"
+      - "Other"
+      - "Substitution"
+      - "Unknown"
+      - "Whole Chromosome Gain"
+      - "Whole Chromosome Loss"
+    Req: true
+    Strict: false
+    Private: false
+  #genetic_alteration
+  alteration_effect:
+    Desc: The type of effect of a sequence change on the function of an RNA, DNA, or protein.
+    Term:
+      - Origin: caDSR
+        Code: '13367935'
+        Value: Gene Alteration Effect Type
+        Version: "1.00"
+    Enum:
+      - "Frameshift"
+      - "Missense"
+      - "Monosomy"
+      - "None (inframe)"
+      - "Nullisomy"
+      - "Splice Acceptor"
+      - "Splice Donor"
+      - "Start Lost"
+      - "Stop Gained"
+      - "Stop Lost"
+      - "Synonymous"
+      - "Trisomy"
+    Req: true
+    Strict: false
+    Private: false
   #genetic_analysis
   allelic_ratio:
     Desc: A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
@@ -7069,12 +7209,12 @@ PropDefinitions:
     Req: true
     Private: false 
   #genetic_analysis
-  karyotype:
-    Desc: The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
+  iscn:
+    Desc: A description of the International System for Human Cytogenetic Nomenclature laboratory test results.
     Term:
       - Origin: caDSR
-        Code: '13367961'
-        Value: Gene Mutation ISCN Karyotype Text
+        Code: '6587455'
+        Value: International System for Human Cytogenetic Nomenclature Laboratory Test Result Description Text
         Version: "1.00"
     Type: string
     Req: true
