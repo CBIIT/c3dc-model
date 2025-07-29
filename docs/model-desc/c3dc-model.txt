@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 074e42d
+commit 4bb3778
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1258,8 +1258,64 @@ genetic_analysis	alteration	t(X;18)(p11.23;q11)
 genetic_analysis	alteration	t(X;20)(p11.2;q13.3)
 genetic_analysis	alteration	t(X;22((p11;q13)
 genetic_analysis	alteration	t(X;4)(p11;q31)
-genetic_analysis	chromosome	STRING
-genetic_analysis	chromosome_location	STRING
+genetic_analysis	alteration_effect	Frameshift
+genetic_analysis	alteration_effect	Missense
+genetic_analysis	alteration_effect	Monosomy
+genetic_analysis	alteration_effect	None (inframe)
+genetic_analysis	alteration_effect	Nullisomy
+genetic_analysis	alteration_effect	Splice Acceptor
+genetic_analysis	alteration_effect	Splice Donor
+genetic_analysis	alteration_effect	Start Lost
+genetic_analysis	alteration_effect	Stop Gained
+genetic_analysis	alteration_effect	Stop Lost
+genetic_analysis	alteration_effect	Synonymous
+genetic_analysis	alteration_effect	Trisomy
+genetic_analysis	alteration_type	Chromosomal Deletion
+genetic_analysis	alteration_type	Chromosomal Duplication
+genetic_analysis	alteration_type	Chromosomal Inversion
+genetic_analysis	alteration_type	Chromosomal Translocation
+genetic_analysis	alteration_type	Chromothripsis
+genetic_analysis	alteration_type	Deletion
+genetic_analysis	alteration_type	Gene Fusion
+genetic_analysis	alteration_type	Gene Rearrangement
+genetic_analysis	alteration_type	Insertion
+genetic_analysis	alteration_type	Insertion, Duplication
+genetic_analysis	alteration_type	Isochromosome
+genetic_analysis	alteration_type	Mutation, NOS
+genetic_analysis	alteration_type	Not Reported
+genetic_analysis	alteration_type	Other
+genetic_analysis	alteration_type	Substitution
+genetic_analysis	alteration_type	Unknown
+genetic_analysis	alteration_type	Whole Chromosome Gain
+genetic_analysis	alteration_type	Whole Chromosome Loss
+genetic_analysis	chromosome	Chr 1
+genetic_analysis	chromosome	Chr 10
+genetic_analysis	chromosome	Chr 11
+genetic_analysis	chromosome	Chr 12
+genetic_analysis	chromosome	Chr 13
+genetic_analysis	chromosome	Chr 14
+genetic_analysis	chromosome	Chr 15
+genetic_analysis	chromosome	Chr 16
+genetic_analysis	chromosome	Chr 17
+genetic_analysis	chromosome	Chr 18
+genetic_analysis	chromosome	Chr 19
+genetic_analysis	chromosome	Chr 2
+genetic_analysis	chromosome	Chr 20
+genetic_analysis	chromosome	Chr 21
+genetic_analysis	chromosome	Chr 22
+genetic_analysis	chromosome	Chr 23
+genetic_analysis	chromosome	Chr 3
+genetic_analysis	chromosome	Chr 4
+genetic_analysis	chromosome	Chr 5
+genetic_analysis	chromosome	Chr 6
+genetic_analysis	chromosome	Chr 7
+genetic_analysis	chromosome	Chr 8
+genetic_analysis	chromosome	Chr 9
+genetic_analysis	chromosome	Chr M
+genetic_analysis	chromosome	Chr X
+genetic_analysis	chromosome	Chr Y
+genetic_analysis	chromosome	Not Reported
+genetic_analysis	chromosome	Unknown
 genetic_analysis	cytoband	STRING
 genetic_analysis	dna_index_numeric	NUMBER
 genetic_analysis	exon	STRING
@@ -1277,7 +1333,13 @@ genetic_analysis	hgvs_coding	STRING
 genetic_analysis	hgvs_genome	STRING
 genetic_analysis	hgvs_protein	STRING
 genetic_analysis	id	STRING
-genetic_analysis	karyotype	STRING
+genetic_analysis	iscn	STRING
+genetic_analysis	method	Archer Fusion
+genetic_analysis	method	DNA Sequencing
+genetic_analysis	method	Methylation Analysis
+genetic_analysis	method	Pathology
+genetic_analysis	method	RNA Sequencing
+genetic_analysis	method	Radiology
 genetic_analysis	reference_genome	STRING
 genetic_analysis	reported_significance	STRING
 genetic_analysis	reported_significance_system	STRING
@@ -1288,6 +1350,35 @@ genetic_analysis	status	Present
 genetic_analysis	status	Unknown
 genetic_analysis	test	STRING
 genetic_analysis	transcript	STRING
+genetic_analysis	translocation_partner_chromosome	Chr 1
+genetic_analysis	translocation_partner_chromosome	Chr 10
+genetic_analysis	translocation_partner_chromosome	Chr 11
+genetic_analysis	translocation_partner_chromosome	Chr 12
+genetic_analysis	translocation_partner_chromosome	Chr 13
+genetic_analysis	translocation_partner_chromosome	Chr 14
+genetic_analysis	translocation_partner_chromosome	Chr 15
+genetic_analysis	translocation_partner_chromosome	Chr 16
+genetic_analysis	translocation_partner_chromosome	Chr 17
+genetic_analysis	translocation_partner_chromosome	Chr 18
+genetic_analysis	translocation_partner_chromosome	Chr 19
+genetic_analysis	translocation_partner_chromosome	Chr 2
+genetic_analysis	translocation_partner_chromosome	Chr 20
+genetic_analysis	translocation_partner_chromosome	Chr 21
+genetic_analysis	translocation_partner_chromosome	Chr 22
+genetic_analysis	translocation_partner_chromosome	Chr 23
+genetic_analysis	translocation_partner_chromosome	Chr 3
+genetic_analysis	translocation_partner_chromosome	Chr 4
+genetic_analysis	translocation_partner_chromosome	Chr 5
+genetic_analysis	translocation_partner_chromosome	Chr 6
+genetic_analysis	translocation_partner_chromosome	Chr 7
+genetic_analysis	translocation_partner_chromosome	Chr 8
+genetic_analysis	translocation_partner_chromosome	Chr 9
+genetic_analysis	translocation_partner_chromosome	Chr M
+genetic_analysis	translocation_partner_chromosome	Chr X
+genetic_analysis	translocation_partner_chromosome	Chr Y
+genetic_analysis	translocation_partner_chromosome	Not Reported
+genetic_analysis	translocation_partner_chromosome	Unknown
+genetic_analysis	translocation_partner_cytoband	STRING
 genetic_analysis	vaf_numeric	NUMBER
 laboratory_test	age_at_laboratory_test	NUMBER
 laboratory_test	id	STRING
@@ -2961,12 +3052,12 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	participant	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
+of_laboratory_test	laboratory_test	participant	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
@@ -2987,11 +3078,12 @@ age_at_treatment_end	Subject Age in Days at End of Treatment Course Day Count
 age_at_treatment_start	Subject Age in Days at Start of Treatment Course Day Count
 allelic_ratio	A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
 alteration	The words by which the generally used name of the mutation is known.
+alteration_effect	The type of effect of a sequence change on the function of an RNA, DNA, or protein.
+alteration_type	The type of gain, loss or alteration of the sequences comprising a gene.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 associated_id	Text to identify the other name or alias of a person.
 cause_of_death	A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
 chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
-chromosome_location	Physical map location of a Gene, expressed as either a cytological chromosomal band or by chromosome, start point and end point.
 consent_group_id	A sequence of characters used to uniquely identify, name, or characterize the presence and nature of a consent group in a study.
 consent_group_name	The words or acronym which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
 consent_group_number	A numeral or string of numerals used to identify the set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
@@ -3033,13 +3125,14 @@ hgvs_coding	The words which describe the designation of a DNA coding sequence va
 hgvs_genome	One or more characters used to identify the published NCBI genetic sequence that is used as a reference against which other sequences are compared.
 hgvs_protein	The words which describe a protein sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
 id	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
-karyotype	The words which describe a karyotype finding as classified by the International System for Human Cytogenetic Nomenclature.
+iscn	A description of the International System for Human Cytogenetic Nomenclature laboratory test results.
 laboratory_test_id	A unique sequence of characters used to identify, name, or characterize a laboratory procedure that involves the study of tissues, cells, and fluids at the molecular level.
 laboratory_test_method	The text term used to describe the method used for molecular analysis.
 laboratory_test_name	The name of the lab test or examination used to obtain the measurement or finding.
 last_known_survival_status	Individual's vital status, indicating whether they are currently alive, deceased, or if their status remains unknown or unspecified.
 laterality	Designates the side of the body where disease is found.
 md5sum	md5 hash
+method	The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
 participant_age_at_collection	The age of the participant (in days) at the time of sample collection.
 participant_id	A sequence of letters, numbers, or characters that uniquely identifies the subject who has taken part in the investigation or research study.
 percent_necrosis	Numeric value to represent the percentage of cell death in a malignant tumor sample or specimen.
@@ -3075,6 +3168,8 @@ test_result_text	A textual description of the outcome of any procedure that invo
 test_result_unit	The code that represents the name of a unit of measure for reporting a laboratory result.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
+translocation_partner_chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
+translocation_partner_cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
 treatment_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
 treatment_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
 treatment_response_id	In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
