@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 4bb3778
+commit e4db6bb
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1404,7 +1404,6 @@ laboratory_test	laboratory_test_method	Targeted Sequencing
 laboratory_test	laboratory_test_method	Unknown
 laboratory_test	laboratory_test_method	WGS
 laboratory_test	laboratory_test_method	WXS
-laboratory_test	laboratory_test_name	
 laboratory_test	laboratory_test_name	% lymphocyte of CD45 cells
 laboratory_test	laboratory_test_name	11-Deoxycorticosterone, Serum
 laboratory_test	laboratory_test_name	11-Deoxycortisol, Serum
@@ -1868,6 +1867,7 @@ laboratory_test	laboratory_test_name	EGFR vXXI Immunohistochemical Labeling, Tis
 laboratory_test	laboratory_test_name	ESR
 laboratory_test	laboratory_test_name	Endoxifen, Serum/Plasma
 laboratory_test	laboratory_test_name	Endoxifen, Tissue
+laboratory_test	laboratory_test_name	Eosinophil
 laboratory_test	laboratory_test_name	Eosinophilic Myelocytes, %, Bone Marrow
 laboratory_test	laboratory_test_name	Eosinophils, #, Blood
 laboratory_test	laboratory_test_name	Eosinophils, %, Blood
@@ -1945,6 +1945,7 @@ laboratory_test	laboratory_test_name	Fungitell (Beta-D-Glucan) Assay Qualitative
 laboratory_test	laboratory_test_name	Fungitell (Beta-D-Glucan) Assay Quantitative Blood
 laboratory_test	laboratory_test_name	GGT
 laboratory_test	laboratory_test_name	GMCSF, Serum
+laboratory_test	laboratory_test_name	Gabapentin
 laboratory_test	laboratory_test_name	Gamma Globulin, %, 24 hour, Urine
 laboratory_test	laboratory_test_name	Gamma Globulin, Electrophoresis, Random Urine
 laboratory_test	laboratory_test_name	Gamma Globulin, Electrophoresis, Timed Urine
@@ -2164,6 +2165,7 @@ laboratory_test	laboratory_test_name	Mullerian inhibiting substance, Serum
 laboratory_test	laboratory_test_name	Myelin Basic Protein, Cerebrospinal Fluid
 laboratory_test	laboratory_test_name	Myeloblasts
 laboratory_test	laboratory_test_name	Myeloblasts, %, Bone Marrow
+laboratory_test	laboratory_test_name	Myelocyte
 laboratory_test	laboratory_test_name	Myelocytes
 laboratory_test	laboratory_test_name	Myelocytes, %, Bone Marrow
 laboratory_test	laboratory_test_name	Myeloperoxidase Ab, Serum
@@ -2227,6 +2229,7 @@ laboratory_test	laboratory_test_name	Phenytoin, Serum
 laboratory_test	laboratory_test_name	Pheresis Bag, #, Platelet
 laboratory_test	laboratory_test_name	Pheresis Bag, #, WBC
 laboratory_test	laboratory_test_name	Phosphate (inorganic Phosphorus), Serum
+laboratory_test	laboratory_test_name	Phosphorus
 laboratory_test	laboratory_test_name	Plasma Cells, %, Bone Marrow
 laboratory_test	laboratory_test_name	Plasminogen Activator Inhibitor (PAI-1), Serum
 laboratory_test	laboratory_test_name	Plasminogen Activator Inhibitor (PAI-1), Tissue
@@ -2481,13 +2484,13 @@ laboratory_test	test_result_unit	STRING
 participant	id	STRING
 participant	participant_id	STRING
 participant	sex_at_birth	Decline to answer
-participant	sex_at_birth	Don't Know
+participant	sex_at_birth	Don't know
 participant	sex_at_birth	Female
 participant	sex_at_birth	Intersex
 participant	sex_at_birth	Male
-participant	sex_at_birth	None of These Describe Me
+participant	sex_at_birth	None of these describe me
 participant	sex_at_birth	Not Reported
-participant	sex_at_birth	Prefer Not to Answer
+participant	sex_at_birth	Prefer not to answer
 participant	sex_at_birth	Unknown
 reference_file	dcf_indexd_guid	STRING
 reference_file	file_category	input source data
@@ -2920,6 +2923,7 @@ sample	sample_tumor_status	Normal
 sample	sample_tumor_status	Not Reported
 sample	sample_tumor_status	Peritumoral
 sample	sample_tumor_status	Tumor
+sample	sample_tumor_status	Unknown
 sample	tumor_classification	Metastatic
 sample	tumor_classification	Not Applicable
 sample	tumor_classification	Not Reported
@@ -2932,9 +2936,9 @@ study	id	STRING
 study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
-study	study_status	Active
-study	study_status	Completed
-study	study_status	Provisional
+study	study_status	Active Study
+study	study_status	Completed Study
+study	study_status	Provisional Study
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
 survival	cause_of_death	Due to non-study treatment
@@ -2946,8 +2950,18 @@ survival	cause_of_death	Not Applicable
 survival	cause_of_death	Not Reported
 survival	cause_of_death	Unknown
 survival	event_free_survival_status	Censored
+survival	event_free_survival_status	Death
+survival	event_free_survival_status	Death without Remission
+survival	event_free_survival_status	Event
+survival	event_free_survival_status	Induction Death
+survival	event_free_survival_status	Induction Failure
+survival	event_free_survival_status	None
 survival	event_free_survival_status	Not Censored
 survival	event_free_survival_status	Not Reported
+survival	event_free_survival_status	Other
+survival	event_free_survival_status	Progression
+survival	event_free_survival_status	Relapse
+survival	event_free_survival_status	Second Malignant Neoplasm
 survival	event_free_survival_status	Unknown
 survival	first_event	Death
 survival	first_event	Induction Failure
@@ -2960,7 +2974,7 @@ survival	first_event	Unknown
 survival	id	STRING
 survival	last_known_survival_status	Alive
 survival	last_known_survival_status	Dead
-survival	last_known_survival_status	Not Reported
+survival	last_known_survival_status	Not reported
 survival	last_known_survival_status	Unknown
 survival	survival_id	STRING
 synonym	associated_id	STRING

@@ -758,7 +758,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '13299113'
         Value: Childhood Cancer Toronto Guidelines Stage
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "Acute lymphoblastic leukemia CNS1"
       - "Acute lymphoblastic leukemia CNS2"
@@ -886,7 +886,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6584918'
         Value: unique universal identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -909,7 +909,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12220014'
         Value: Subject Data Origin Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -921,7 +921,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2192199'
         Value: Race Category Text
-        Version: "null"
+        Version: "1.00"
     Type:
       value_type: list
       item_type:
@@ -945,17 +945,17 @@ PropDefinitions:
       - Origin: caDSR
         Code: '7572817'
         Value: Person Sex at Birth Category
-        Version: "2.0"
+        Version: "3.00"
     Enum:
       - "Female"
       - "Intersex"
       - "Male"
       - 'Not Reported'
       - "Unknown"
-      - "Don't Know"
+      - "Don't know"
       - "Decline to answer"
-      - "None of These Describe Me"
-      - "Prefer Not to Answer" 
+      - "None of these describe me"
+      - "Prefer not to answer" 
     Req: true
     Strict: true
     Private: false
@@ -966,7 +966,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2534569'
         Value: Additional Finding Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -978,11 +978,11 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115804'
         Value: File Occurrence Name
-        Version: "null"
+        Version: "1.00"
       - Origin: caDSR
         Code: '7787681'
         Value: Raw Data Electronic File Name
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -993,11 +993,11 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6983162'
         Value: File Type Descriptive Text # no PVs
-        Version: "null"
+        Version: "1.00"
       - Origin: caDSR
         Code: '7797710' #caDSR PVs are csv, bam, fastq, txt
         Value: Raw Data File Format
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "bam"
       - "bam_index"
@@ -1076,7 +1076,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115806'
         Value: Data File Size Value
-        Version: "null"
+        Version: "1.00"
       - Origin: NCIt
         Code: 'C171276'
         Value: MD5 Checksum 
@@ -1091,7 +1091,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '6115805'
         Value: File Hash Value Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1136,7 +1136,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14156279'
         Value: Disease Anatomic Site ICD-O-3 Label Text
-        Version: "null"
+        Version: "2.00"
     Enum:
       - "C76.2 : Abdomen, NOS"
       - "C15.2 : Abdominal esophagus"
@@ -1506,7 +1506,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2731348'
         Value: Biospecimen Collection Study Subject Age
-        Version: "null"
+        Version: "1.00"
     Type: integer
     Req: true  
     Private: false
@@ -1538,7 +1538,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440328'
         Value: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "T0"
       - "T1"
@@ -1586,7 +1586,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440330'
         Value: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node N Stage
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "N0"
       - "N0 (i-)"
@@ -1623,7 +1623,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3440331'
         Value: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis M Stage
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "cM0 (i+)"
       - "M0"
@@ -1643,7 +1643,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12217251'
         Value: Disease Phase Timepoint Category
-        Version: "null"
+        Version: "1.00"
     Enum:
       - 'Initial Diagnosis'
       - 'Not Reported'
@@ -1665,7 +1665,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12922545'
         Value: Tumor Classification Type
-        Version: "null"
+        Version: "1.00"
     Enum:
       - 'Primary'
       - 'Regional'
@@ -1694,12 +1694,13 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14688604'
         Value: Specimen Neoplasm Category
-        Version: "null"
+        Version: "2.00"
     Enum:
       - 'Normal'
       - 'Peritumoral'
       - 'Tumor'
       - 'Not Reported'
+      - 'Unknown'
     Req: true
     Strict: true
     Private: false    
@@ -1710,7 +1711,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12960571'
         Value: Study Pediatric Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1722,7 +1723,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11524544'
         Value: Research Activity dbGaP Accession Number Identifier 
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1733,7 +1734,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '11459810'
         Value: Study Name Text
-        Version: "1.00"
+        Version: "4.00"
     Type: string
     Req: true
     Private: false
@@ -1763,9 +1764,9 @@ PropDefinitions:
         Value: Administrative Activity Study Status
         Version: "1.00"
     Enum:
-      - Active
-      - Completed
-      - Provisional
+      - "Active Study"
+      - "Completed Study"
+      - "Provisional Study"
     Req: true
     Strict: true
     Private: false
@@ -1776,7 +1777,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14534325'
         Value: CCDI Accession Number Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1788,11 +1789,11 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2847330'
         Value: Participant Vital Status Type
-        Version: "null"
+        Version: "1.00"
     Enum:
       - "Alive"
       - "Dead"
-      - 'Not Reported'
+      - 'Not reported'
       - "Unknown"
     Req: true
     Strict: true
@@ -1804,7 +1805,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12305768'
         Value: Subject Age at Last Known Survival Status Day Count
-        Version: "null"
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false
@@ -1815,12 +1816,22 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3070936'
         Value: Study End Point Event Type
-        Version: "null"
+        Version: "2.00"
     Enum:
       - "Censored"
+      - "Unknown"
+      - "Death"
+      - "Death without Remission"
+      - "Event"
+      - "Induction Death"
+      - "Induction Failure"
+      - "None"
       - "Not Censored"
       - 'Not Reported'
-      - "Unknown"
+      - "Other"
+      - "Progression"
+      - "Relapse"
+      - "Second Malignant Neoplasm"
     Req: true
     Strict: true
     Private: false
@@ -1831,7 +1842,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '3229334'
         Value: Study End Point Event Occurrence Day Count
-        Version: "null"
+        Version: "1.1"
     Type: integer
     Req: true
     Private: false
@@ -1882,7 +1893,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14569111'
         Value: Treatment Method Unique Identifier
-        Version: "null"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -1894,7 +1905,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12304723'
         Value: Subject Age at End of Treatment Course Day Count
-        Version: "null"
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false
@@ -1905,7 +1916,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12304720'
         Value: Subject Age at Start of Treatment Course Day Count
-        Version: "null"
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false
@@ -3794,6 +3805,7 @@ PropDefinitions:
         - "Erlotinib Hydrochloride"
         - "Ertumaxomab"
         - "Erythrocyte-encapsulated L-asparaginase Suspension"
+        - "Erythropoietin"
         - "Esorubicin"
         - "Esorubicin Hydrochloride"
         - "Esperamicin A1"
@@ -3966,6 +3978,7 @@ PropDefinitions:
         - "Futuximab/Modotuximab Mixture"
         - "G Protein-coupled Estrogen Receptor Agonist LNS8801"
         - "G-Quadruplex Stabilizer BMVC"
+        - "Gabapentin"
         - "Galamustine"
         - "Galarubicin"
         - "Galectin Inhibitor GR-MD-02"
@@ -4023,6 +4036,7 @@ PropDefinitions:
         - "Glasdegib Maleate"
         - "Glaucarubolone"
         - "Glecaprevir/Pibrentasvir"
+        - "Glembatumumab"
         - "Glembatumumab Vedotin"
         - "Glesatinib"
         - "Glioblastoma Cancer Vaccine ERC1671"
@@ -4042,7 +4056,9 @@ PropDefinitions:
         - "Glutathione Pegylated Liposomal Doxorubicin Hydrochloride Formulation 2B3-101"
         - "Glyco-engineered Anti-CD20 Monoclonal Antibody CHO H01"
         - "Glycooptimized Trastuzumab-GEX"
+        - "GCSF"
         - "GM-CSF-encoding Oncolytic Adenovirus CGTG-102"
+        - "GMCSF"
         - "Gold Sodium Thiomalate"
         - "Golnerminogene Pradenovec"
         - "Golotimod"
@@ -4821,6 +4837,7 @@ PropDefinitions:
         - "Monoclonal T-cell Receptor Anti-CD3 scFv Fusion Protein IMCgp100"
         - "Monomethyl Auristatin E"
         - "Morinda Citrifolia Fruit Extract"
+        - "Morphine"
         - "Morpholinodoxorubicin"
         - "Mosedipimod"
         - "Mosunetuzumab"
@@ -4975,6 +4992,7 @@ PropDefinitions:
         - "Nogalamycin"
         - "Nogapendekin Alfa"
         - "Nolatrexed Dihydrochloride"
+        - "Non-Corticosteroid Immunosuppressive Agent"
         - "Non-Small Cell Lung Cancer mRNA-Derived Vaccine CV9201"
         - "Norgestrel"
         - "North American Ginseng Extract AFX-2"
@@ -5207,6 +5225,7 @@ PropDefinitions:
         - "PDK1 Inhibitor AR-12"
         - "pDNA-encoding Emm55 Autologous Cancer Cell Vaccine IFx-Hu2.0"
         - "PE/HPV16 E7/KDEL Fusion Protein/GPI-0100 TVGV-1"
+        - "PEG-filgrastim"
         - "PEG-interleukin-2"
         - "PEG-PEI-cholesterol Lipopolymer-encased IL-12 DNA Plasmid Vector GEN-1"
         - "PEG-Proline-Interferon Alfa-2b"
@@ -5379,6 +5398,7 @@ PropDefinitions:
         - "Platinum Acetylacetonate-Titanium Dioxide Nanoparticles"
         - "Platinum Compound"
         - "Plevitrexed"
+        - "Plerixafor"
         - "Plicamycin"
         - "Plinabulin"
         - "Plitidepsin"
@@ -5840,6 +5860,7 @@ PropDefinitions:
         - "Sodium Salicylate"
         - "Sodium Selenite"
         - "Sodium Stibogluconate"
+        - "Sodium Thiosulfate"
         - "Sodium-Potassium Adenosine Triphosphatase Inhibitor RX108"
         - "Sofituzumab Vedotin"
         - "Solitomab"
@@ -5934,6 +5955,7 @@ PropDefinitions:
         - "Synthetic Long E6/E7 Peptides Vaccine HPV-01"
         - "Synthetic Long HPV16 E6/E7 Peptides Vaccine ISA101b"
         - "Synthetic Plumbagin PCUR-101"
+        - "Systemic Corticosteroid"
         - "T900607"
         - "Tabalumab"
         - "Tabelecleucel"
@@ -6071,6 +6093,7 @@ PropDefinitions:
         - "Thymidylate Synthase Inhibitor DFP-11207"
         - "Thymopentin"
         - "Thyroid Extract"
+        - "Thyroid Hormone Replacement"
         - "Tiazofurin"
         - "Tidutamab"
         - "Tigapotide"
@@ -6123,6 +6146,7 @@ PropDefinitions:
         - "Tomivosertib"
         - "Topical Betulinic Acid"
         - "Topical Celecoxib"
+        - "Topical Corticosteroid"
         - "Topical Fluorouracil"
         - "Topical Gemcitabine Hydrochloride"
         - "Topical Potassium Dobesilate"
@@ -6874,7 +6898,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '13367956'
         Value: Gene Mutation HGVS Coding Text
-        Version: "1.00"
+        Version: "2.00"
     Type: string
     Req: true
     Private: false 
@@ -6885,7 +6909,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '13367959'
         Value: Gene Mutation HGVS Protein Text
-        Version: "1.00"
+        Version: "2.00"
     Type: string
     Req: true
     Private: false 
@@ -7213,9 +7237,9 @@ PropDefinitions:
     Desc: A description of the International System for Human Cytogenetic Nomenclature laboratory test results.
     Term:
       - Origin: caDSR
-        Code: '6587455'
-        Value: International System for Human Cytogenetic Nomenclature Laboratory Test Result Description Text
-        Version: "1.00"
+        Code: '13367961'
+        Value: Gene Mutation ISCN Karyotype Text
+        Version: "2.00"
     Type: string
     Req: true
     Private: false 
@@ -7744,6 +7768,7 @@ PropDefinitions:
       - "EGFR vXXI Immunohistochemical Labeling, Tissue"
       - "Endoxifen, Serum/Plasma"
       - "Endoxifen, Tissue"
+      - "Eosinophil"
       - "Eosinophilic Myelocytes, %, Bone Marrow"
       - "Eosinophils, #, Blood"
       - "Eosinophils, %, Blood"
@@ -7815,6 +7840,7 @@ PropDefinitions:
       - "Functional Residual Capacity, Respiratory System"
       - "Fungitell (Beta-D-Glucan) Assay Qualitative Blood"
       - "Fungitell (Beta-D-Glucan) Assay Quantitative Blood"
+      - "Gabapentin"
       - "Gamma Globulin, %, 24 hour, Urine"
       - "Gamma Globulin, Electrophoresis, Random Urine"
       - "Gamma Globulin, Electrophoresis, Timed Urine"
@@ -7985,7 +8011,6 @@ PropDefinitions:
       - "Lymphocytes, %, Cerebrospinal Fluid"
       - "Lymphocytes, Variant, #, Blood"
       - "Magnesium, Ionized, Serum"
-      - ""
       - "Magnesium, Serum"
       - "Maximum Forced Expiratory Flow, Respiratory System"
       - "Mean Corpuscular Hemoglobin (MCH), Red Blood Cells"
@@ -8015,6 +8040,7 @@ PropDefinitions:
       - "Mullerian inhibiting substance, Serum"
       - "Myelin Basic Protein, Cerebrospinal Fluid"
       - "Myeloblasts, %, Bone Marrow"
+      - "Myelocyte"
       - "Myelocytes, %, Bone Marrow"
       - "Myeloperoxidase Ab, Serum"
       - "Myoglobin, Urine"
@@ -8072,6 +8098,7 @@ PropDefinitions:
       - "Pheresis Bag, #, Platelet"
       - "Pheresis Bag, #, WBC"
       - "Phosphate (inorganic Phosphorus), Serum"
+      - "Phosphorus"
       - "Plasma Cells, %, Bone Marrow"
       - "Plasminogen Activator Inhibitor (PAI-1), Serum"
       - "Plasminogen Activator Inhibitor (PAI-1), Tissue"
@@ -8165,6 +8192,7 @@ PropDefinitions:
       - "Spermidine, Tissue"
       - "Spermine, Tissue"
       - "Squamous Epithelial Cells, Spot Urine"
+      - "T4"
       - "T lymphocyte Cytotoxic Cells (CTL), Blood"
       - "T Lymphocyte Helper Cells, Blood"
       - "T Lymphocyte Suppressor Cells , Blood"
@@ -8326,7 +8354,6 @@ PropDefinitions:
       - "Serum Free Immunoglobulin Light Chain, Lambda"
       - "Serum Free Immunoglobulin Light Chain, NOS"
       - "Sodium"
-      - "T4"
       - "Total Bilirubin"
       - "Total Protein"
       - "TSH"
