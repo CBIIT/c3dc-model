@@ -382,7 +382,7 @@ PropDefinitions:
       - "Meningothelial meningioma"
       - "Merkel cell carcinoma"
       - "Mesenchymal chondrosarcoma"
-      - "Mesenchymoma, NOS""
+      - "Mesenchymoma, NOS"
       - "Mesoblastic nephroma"
       - "Mesothelioma, biphasic, malignant"
       - "Metastases to the brain and spinal cord parenchyma"
@@ -606,7 +606,7 @@ PropDefinitions:
       - "see diagnosis_comment"
       - "Unknown"
     Req: true
-    Strict: true
+    Strict: false
     Private: false  
   #diagnosis
   diagnosis_category:
@@ -633,8 +633,10 @@ PropDefinitions:
       item_type:
         - "Acinar cell neoplasms"
         - "Adenomas and adenocarcinomas"
+        - "Adnexal and skin appendage neoplasms"
         - "Adult-type diffuse gliomas"
         - "Atypical teratoid/rhabdoid tumor"
+        - "Basal cell neoplasms"
         - "Blood vessel tumors"
         - "Chondro-osseous tumors"
         - "Choroid Plexus tumors"
@@ -653,6 +655,7 @@ PropDefinitions:
         - "Ependymal tumors"
         - "Ependymoma"
         - "Epithelial neoplasms, NOS"
+        - "Fibroepithelial neoplasms"
         - "Fibromatous neoplasms"
         - "Germ cell neoplasms"
         - "Germ cell tumors"
@@ -665,6 +668,7 @@ PropDefinitions:
         - "High-Grade Glioma"
         - "Histiocytic tumors"
         - "Hodgkin and non-Hodgkin lymphomas"
+        - "Immunoproliferative diseases"
         - "Leukemias, NOS"
         - "Lipomatous neoplasms"
         - "Low-Grade Glioma"
