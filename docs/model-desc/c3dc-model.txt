@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 7b5789e
+commit 29b746c
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -2936,9 +2936,9 @@ study	id	STRING
 study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
-study	study_status	Active Study
-study	study_status	Completed Study
-study	study_status	Provisional Study
+study	study_status	Active
+study	study_status	Completed
+study	study_status	Provisional
 survival	age_at_event_free_survival_status	INTEGER
 survival	age_at_last_known_survival_status	INTEGER
 survival	cause_of_death	Due to non-study treatment
@@ -3066,18 +3066,18 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	sample	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
+of_laboratory_test	laboratory_test	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	study	NA	NA
 of_synonym	synonym	participant	NA	NA
+of_synonym	synonym	study	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 

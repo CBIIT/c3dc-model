@@ -597,7 +597,7 @@ PropDefinitions:
         - "Acinar cell neoplasms"
         - "Adenomas and adenocarcinomas"
         - "Adult-type diffuse gliomas"
-        - "Atypical teratoid/rhabdoid tumor "
+        - "Atypical teratoid/rhabdoid tumor"
         - "Blood vessel tumors"
         - "Chondro-osseous tumors"
         - "Choroid Plexus tumors"
@@ -1764,9 +1764,9 @@ PropDefinitions:
         Value: Administrative Activity Study Status
         Version: "1.00"
     Enum:
-      - "Active Study"
-      - "Completed Study"
-      - "Provisional Study"
+      - "Active"
+      - "Completed"
+      - "Provisional"
     Req: true
     Strict: true
     Private: false
