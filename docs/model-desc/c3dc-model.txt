@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 29b746c
+commit 7fcb876
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -389,6 +389,7 @@ diagnosis	diagnosis	Acute myeloid leukemia, minimal differentiation
 diagnosis	diagnosis	Acute myeloid leukemia, t(8;21)(q22;q22)
 diagnosis	diagnosis	Acute myelomonocytic leukemia, NOS
 diagnosis	diagnosis	Acute promyelocytic leukemia, t(15;17)(q22;q11-12)
+diagnosis	diagnosis	Adamantinoma of long bones
 diagnosis	diagnosis	Adamantinomatous craniopharyngioma
 diagnosis	diagnosis	Adenocarcinoma in adenomatous polyposis coli
 diagnosis	diagnosis	Adenocarcinoma in situ in adenomatous polyp
@@ -411,6 +412,7 @@ diagnosis	diagnosis	Anaplastic large cell lymphoma (ALK+/ALK-)
 diagnosis	diagnosis	Anaplastic large cell lymphoma, ALK positive
 diagnosis	diagnosis	Anaplastic large cell lymphoma, T-cell and Null-cell type
 diagnosis	diagnosis	Angiocentric glioma
+diagnosis	diagnosis	Angiocentric immunoproliferative lesion
 diagnosis	diagnosis	Angiomatoid fibrous histiocytoma
 diagnosis	diagnosis	Angiomyofibroblastoma
 diagnosis	diagnosis	Angiomyosarcoma
@@ -433,6 +435,7 @@ diagnosis	diagnosis	B lymphoblastic leukemia/lymphoma, BCR-ABL1-like
 diagnosis	diagnosis	B lymphoblastic leukemia/lymphoma, NOS
 diagnosis	diagnosis	B-Cell Acute Lymphoblastic Leukemia, NOS
 diagnosis	diagnosis	Basal cell adenocarcinoma
+diagnosis	diagnosis	Basal cell carcinoma, NOS
 diagnosis	diagnosis	Benign cystic nephroma
 diagnosis	diagnosis	Blue nevus, malignant
 diagnosis	diagnosis	Burkitt Lymphoma
@@ -450,6 +453,7 @@ diagnosis	diagnosis	CNS embryonal tumor, NOS
 diagnosis	diagnosis	CNS embryonal tumor, NOS or NEC
 diagnosis	diagnosis	CNS neuroblastoma, FOXR2-activated
 diagnosis	diagnosis	CNS tumor with BCOR internal tandem duplication
+diagnosis	diagnosis	Calcifying nested stromal-epithelial tumor
 diagnosis	diagnosis	Carcinoid tumor of uncertain malignant potential
 diagnosis	diagnosis	Carcinoma ex pleomorphic adenoma
 diagnosis	diagnosis	Carcinoma in situ, NOS
@@ -458,6 +462,7 @@ diagnosis	diagnosis	Carcinoma, diffuse type
 diagnosis	diagnosis	Carcinoma, metastatic, NOS
 diagnosis	diagnosis	Carcinoma, undifferentiated, NOS
 diagnosis	diagnosis	Carcinomatosis
+diagnosis	diagnosis	Carotid body paraganglioma
 diagnosis	diagnosis	Cavernous hemangioma
 diagnosis	diagnosis	Central neurocytoma
 diagnosis	diagnosis	Central osteosarcoma, NOS
@@ -466,6 +471,7 @@ diagnosis	diagnosis	Cerebellar liponeurocytoma
 diagnosis	diagnosis	Cholangiocarcinoma
 diagnosis	diagnosis	Chondroblastic osteosarcoma
 diagnosis	diagnosis	Chondroid chordoma
+diagnosis	diagnosis	Chondromyxoid fibroma
 diagnosis	diagnosis	Chondrosarcoma
 diagnosis	diagnosis	Chondrosarcoma, NOS
 diagnosis	diagnosis	Chordoid glioma
@@ -484,10 +490,12 @@ diagnosis	diagnosis	Chronic eosinophilic leukemia
 diagnosis	diagnosis	Chronic myelogenous leukemia, BCR/ABL positive
 diagnosis	diagnosis	Chronic myeloid leukemia, NOS
 diagnosis	diagnosis	Clear cell adenocarcinoma, NOS
+diagnosis	diagnosis	Clear cell adenoma
 diagnosis	diagnosis	Clear cell meningioma
 diagnosis	diagnosis	Clear cell sarcoma of kidney
 diagnosis	diagnosis	Clear cell sarcoma, NOS
 diagnosis	diagnosis	Composite Hodgkin and non-Hodgkin lymphoma
+diagnosis	diagnosis	Congenital melanocytic nevus, NOS
 diagnosis	diagnosis	Craniopharyngioma
 diagnosis	diagnosis	Craniopharyngioma, NOS
 diagnosis	diagnosis	Craniopharyngioma, NOS or NEC
@@ -495,6 +503,7 @@ diagnosis	diagnosis	Craniopharyngioma, adamantinomatous
 diagnosis	diagnosis	Cribriform carcinoma, NOS
 diagnosis	diagnosis	Cribriform neuroepithelial tumor
 diagnosis	diagnosis	Cutaneous T-cell lymphoma, NOS
+diagnosis	diagnosis	Dedifferentiated liposarcoma
 diagnosis	diagnosis	Dermatofibrosarcoma protuberans, NOS
 diagnosis	diagnosis	Dermatofibrosarcoma protuberans, fibrosarcomatous
 diagnosis	diagnosis	Dermoid cyst, NOS
@@ -515,6 +524,7 @@ diagnosis	diagnosis	Diffuse midline glioma, H3 K27-altered
 diagnosis	diagnosis	Diffuse midline glioma, H3 K27M-mutant
 diagnosis	diagnosis	Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype
 diagnosis	diagnosis	Dysembryoplastic neuroepithelial tumor
+diagnosis	diagnosis	Dysgerminoma
 diagnosis	diagnosis	Dysplastic cerebellar gangliocytoma (Lhermitte-Duclos disease)
 diagnosis	diagnosis	Embryonal carcinoma
 diagnosis	diagnosis	Embryonal carcinoma, NOS
@@ -572,6 +582,8 @@ diagnosis	diagnosis	Glioneuronal and neuronal tumors
 diagnosis	diagnosis	Glioneuronal and neuronal tumors, NOS or NEC
 diagnosis	diagnosis	Gliosarcoma
 diagnosis	diagnosis	Glomus tumor, malignant
+diagnosis	diagnosis	Granular cell tumor, NOS
+diagnosis	diagnosis	Granulosa cell tumor, adult type
 diagnosis	diagnosis	Granulosa cell tumor, juvenile
 diagnosis	diagnosis	Granulosa cell tumor, malignant
 diagnosis	diagnosis	HHV8 positive diffuse large B-cell lymphoma
@@ -593,6 +605,7 @@ diagnosis	diagnosis	Histiocytic sarcoma
 diagnosis	diagnosis	Hodgkin lymphoma, NOS
 diagnosis	diagnosis	Hodgkin lymphoma, nodular sclerosis, NOS
 diagnosis	diagnosis	Hybrid nerve sheath tumor
+diagnosis	diagnosis	Hypernephroid tumor
 diagnosis	diagnosis	Immature teratoma
 diagnosis	diagnosis	Immunodeficiency-associated CNS lymphoma
 diagnosis	diagnosis	Infant-type hemispheric glioma
@@ -614,7 +627,9 @@ diagnosis	diagnosis	Leukemia, NOS
 diagnosis	diagnosis	Leydig cell tumor, NOS
 diagnosis	diagnosis	Leydig cell tumor, benign
 diagnosis	diagnosis	Lipoblastomatosis
+diagnosis	diagnosis	Lipofibromatosis
 diagnosis	diagnosis	Liposarcoma, NOS
+diagnosis	diagnosis	Lobular carcinoma in situ, NOS
 diagnosis	diagnosis	Low cumulative sun damage melanoma
 diagnosis	diagnosis	Low-Grade Glioma
 diagnosis	diagnosis	Low-grade glioma, NOS or NEC
@@ -624,6 +639,7 @@ diagnosis	diagnosis	Lymphoid leukemia, NOS
 diagnosis	diagnosis	Lymphomatoid granulomatosis
 diagnosis	diagnosis	Lymphoproliferative disorder, NOS
 diagnosis	diagnosis	MALT lymphoma of the dura
+diagnosis	diagnosis	Malignant eccrine spiradenoma
 diagnosis	diagnosis	Malignant histiocytosis
 diagnosis	diagnosis	Malignant lymphoma, NOS
 diagnosis	diagnosis	Malignant lymphoma, non-Hodgkin, NOS
@@ -640,6 +656,7 @@ diagnosis	diagnosis	Mast cell leukemia
 diagnosis	diagnosis	Mature teratoma
 diagnosis	diagnosis	Mediastinal large B-cell lymphoma
 diagnosis	diagnosis	Medullary carcinoma, NOS
+diagnosis	diagnosis	Medullary thyroid carcinoma
 diagnosis	diagnosis	Medulloblastoma
 diagnosis	diagnosis	Medulloblastoma, Group 3
 diagnosis	diagnosis	Medulloblastoma, Group 4
@@ -666,6 +683,7 @@ diagnosis	diagnosis	Meningiomatosis, NOS
 diagnosis	diagnosis	Meningothelial meningioma
 diagnosis	diagnosis	Merkel cell carcinoma
 diagnosis	diagnosis	Mesenchymal chondrosarcoma
+diagnosis	diagnosis	Mesenchymoma, NOS
 diagnosis	diagnosis	Mesoblastic nephroma
 diagnosis	diagnosis	Mesothelioma, biphasic, malignant
 diagnosis	diagnosis	Metastases to the brain and spinal cord parenchyma
@@ -677,6 +695,9 @@ diagnosis	diagnosis	Mixed phenotype acute leukemia, B/myeloid, NOS
 diagnosis	diagnosis	Mixed phenotype acute leukemia, T/myeloid, NOS
 diagnosis	diagnosis	Mixed type rhabdomyosarcoma
 diagnosis	diagnosis	Mucinous adenocarcinoma
+diagnosis	diagnosis	Mucinous adenoma
+diagnosis	diagnosis	Mucinous cystadenocarcinoma, NOS
+diagnosis	diagnosis	Mucinous cystic tumor of borderline malignancy
 diagnosis	diagnosis	Mucoepidermoid carcinoma
 diagnosis	diagnosis	Multinodular and vacuolating neuronal tumor
 diagnosis	diagnosis	Mycosis fungoides
@@ -689,6 +710,7 @@ diagnosis	diagnosis	Myeloid leukemia, NOS
 diagnosis	diagnosis	Myeloid sarcoma
 diagnosis	diagnosis	Myeloproliferative neoplasm, unclassifiable
 diagnosis	diagnosis	Myoepithelial carcinoma
+diagnosis	diagnosis	Myofibroblastic sarcoma
 diagnosis	diagnosis	Myofibroblastic tumor, NOS
 diagnosis	diagnosis	Myofibroma
 diagnosis	diagnosis	Myofibromatosis
@@ -697,6 +719,7 @@ diagnosis	diagnosis	Myxoid chondrosarcoma
 diagnosis	diagnosis	Myxoid glioneuronal tumor
 diagnosis	diagnosis	Myxoid liposarcoma
 diagnosis	diagnosis	Myxopapillary ependymoma
+diagnosis	diagnosis	Myxosarcoma
 diagnosis	diagnosis	Neoplasm, benign
 diagnosis	diagnosis	Neoplasm, malignant
 diagnosis	diagnosis	Neoplasm, malignant, uncertain whether primary or metastatic
@@ -713,10 +736,12 @@ diagnosis	diagnosis	Neurofibroma, NOS
 diagnosis	diagnosis	Neurofibromatosis, NOS
 diagnosis	diagnosis	Neuroma, NOS
 diagnosis	diagnosis	Nodular melanoma
+diagnosis	diagnosis	Non-invasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP)
 diagnosis	diagnosis	Normal
 diagnosis	diagnosis	Not Reported
 diagnosis	diagnosis	Nuclear protein in testis (NUT)-associated carcinoma
-diagnosis	diagnosis	Odontogenic Carcinosarcoma
+diagnosis	diagnosis	Odontogenic carcinosarcoma
+diagnosis	diagnosis	Odontogenic tumor, malignant
 diagnosis	diagnosis	Olfactory neuroblastoma
 diagnosis	diagnosis	Olfactory neurocytoma
 diagnosis	diagnosis	Oligoastrocytoma, NOS
@@ -736,9 +761,10 @@ diagnosis	diagnosis	Pancreatic neuroendocrine tumor, nonfunctioning
 diagnosis	diagnosis	Pancreatoblastoma
 diagnosis	diagnosis	Papillary adenocarcinoma, NOS
 diagnosis	diagnosis	Papillary carcinoma, NOS
-diagnosis	diagnosis	Papillary carcinoma, encapsulated, of thyroid
+diagnosis	diagnosis	Papillary carcinoma, encapsulated of thyroid
 diagnosis	diagnosis	Papillary carcinoma, follicular variant
 diagnosis	diagnosis	Papillary craniopharyngioma
+diagnosis	diagnosis	Papillary ependymoma
 diagnosis	diagnosis	Papillary glioneuronal tumor
 diagnosis	diagnosis	Papillary intralymphatic angioendothelioma
 diagnosis	diagnosis	Papillary microcarcinoma
@@ -751,8 +777,11 @@ diagnosis	diagnosis	Paraganglioma, malignant
 diagnosis	diagnosis	Parosteal osteosarcoma
 diagnosis	diagnosis	Perineurioma
 diagnosis	diagnosis	Periosteal osteosarcoma
+diagnosis	diagnosis	Perivascular epithelioid tumor, malignant
 diagnosis	diagnosis	Pheochromocytoma, NOS
+diagnosis	diagnosis	Phyllodes tumor, benign
 diagnosis	diagnosis	Pigmented dermatofibrosarcoma protuberans
+diagnosis	diagnosis	Pigmented nevus, NOS
 diagnosis	diagnosis	Pilocytic astrocytoma
 diagnosis	diagnosis	Pilomyxoid astrocytoma
 diagnosis	diagnosis	Pineal parenchymal tumor of intermediate differentiation
@@ -811,7 +840,9 @@ diagnosis	diagnosis	Sex cord-gonadal stromal tumor, NOS
 diagnosis	diagnosis	Sex cord-gonadal stromal tumor, incompletely differentiated
 diagnosis	diagnosis	Sex cord-gonadal stromal tumor, mixed forms
 diagnosis	diagnosis	Signet ring cell carcinoma
+diagnosis	diagnosis	Skin appendage adenoma
 diagnosis	diagnosis	Small cell carcinoma, NOS
+diagnosis	diagnosis	Small cell carcinoma, intermediate cell
 diagnosis	diagnosis	Small cell sarcoma
 diagnosis	diagnosis	Smooth muscle tumor of uncertain malignant potential
 diagnosis	diagnosis	Soft tissue tumor, benign
@@ -819,6 +850,7 @@ diagnosis	diagnosis	Solid pseudopapillary neoplasm of pancreas
 diagnosis	diagnosis	Solid pseudopapillary tumor of ovary
 diagnosis	diagnosis	Solitary fibrous tumor
 diagnosis	diagnosis	Solitary fibrous tumor, NOS
+diagnosis	diagnosis	Solitary fibrous tumor/Hemangiopericytoma, grade 1
 diagnosis	diagnosis	Spinal ependymoma
 diagnosis	diagnosis	Spinal ependymoma, MYCN-amplified
 diagnosis	diagnosis	Spinal ependymoma, NOS or NEC
@@ -830,6 +862,7 @@ diagnosis	diagnosis	Squamous cell carcinoma, NOS
 diagnosis	diagnosis	Squamous cell carcinoma, large cell, nonkeratinizing, NOS
 diagnosis	diagnosis	Squamous cell carcinoma, metastatic, NOS
 diagnosis	diagnosis	Squamous cell carcinoma, small cell, nonkeratinizing
+diagnosis	diagnosis	Stromal tumor, NOS
 diagnosis	diagnosis	Subcutaneous panniculitis-like T-cell lymphoma
 diagnosis	diagnosis	Subependymal giant cell astrocytoma
 diagnosis	diagnosis	Subependymoma
@@ -848,9 +881,13 @@ diagnosis	diagnosis	T-cell/histiocyte rich large B-cell lymphoma
 diagnosis	diagnosis	Telangiectatic osteosarcoma
 diagnosis	diagnosis	Tenosynovial giant cell tumor, NOS
 diagnosis	diagnosis	Teratocarcinoma
+diagnosis	diagnosis	Teratoma with malignant transformation
 diagnosis	diagnosis	Teratoma with somatic-type malignancy
 diagnosis	diagnosis	Teratoma, NOS
+diagnosis	diagnosis	Teratoma, benign
 diagnosis	diagnosis	Teratoma, malignant, NOS
+diagnosis	diagnosis	Thecoma, luteinized
+diagnosis	diagnosis	Therapy-related myelodysplastic syndrome, NOS
 diagnosis	diagnosis	Therapy-related myeloid neoplasm
 diagnosis	diagnosis	Thymic carcinoma, NOS
 diagnosis	diagnosis	Thymoma, NOS
@@ -3066,8 +3103,8 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
@@ -3076,8 +3113,8 @@ of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
