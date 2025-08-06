@@ -7194,24 +7194,20 @@ PropDefinitions:
         Value: Gene Alteration Type
         Version: "1.00"
     Enum:
-      - "Chromosomal Deletion"
-      - "Chromosomal Duplication"
-      - "Chromosomal Inversion"
-      - "Chromosomal Translocation"
+      - “Chromosomal Gain”
+      - “Chromosomal Loss”
       - "Chromothripsis"
       - "Deletion"
-      - "Gene Fusion"
-      - "Gene Rearrangement"
-      - "Insertion"
-      - "Insertion, Duplication"
+      - “Duplication”
+      - “Inversion”
       - "Isochromosome"
       - "Mutation, NOS"
-      - "Not Reported"
       - "Other"
+      - “Rearrangement”
       - "Substitution"
+      - “Translocation”
+      - "Insertion"
       - "Unknown"
-      - "Whole Chromosome Gain"
-      - "Whole Chromosome Loss"
     Req: true
     Strict: false
     Private: false
@@ -7225,6 +7221,7 @@ PropDefinitions:
         Version: "1.00"
     Enum:
       - "Frameshift"
+      - “Gene Fusion”
       - "Missense"
       - "Monosomy"
       - "None (inframe)"
