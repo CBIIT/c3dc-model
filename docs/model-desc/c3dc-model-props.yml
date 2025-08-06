@@ -6845,7 +6845,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   cytoband:
     Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
     Term:
@@ -6856,7 +6856,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   translocation_partner_cytoband:
     Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
     Term:
@@ -6911,7 +6911,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   exon:
     Desc: The text term used to describe a specific exon targeted or included in molecular analysis.
     Term:
@@ -6922,7 +6922,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   fusion_partner_exon:
     Desc: The text term used to describe a specific exon targeted or included in molecular analysis.
     Term:
@@ -6966,7 +6966,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   alteration:
     Desc: The words by which the generally used name of the mutation is known.
     Term:
@@ -7186,7 +7186,7 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   alteration_type:
     Desc: The type of gain, loss or alteration of the sequences comprising a gene.
     Term:
@@ -7213,7 +7213,7 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
-  #genetic_alteration
+  #genetic_analysis
   alteration_effect:
     Desc: The type of effect of a sequence change on the function of an RNA, DNA, or protein.
     Term:
