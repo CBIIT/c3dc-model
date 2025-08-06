@@ -6736,6 +6736,7 @@ PropDefinitions:
       - "Pathology"
       - "Radiology"
       - "RNA Sequencing"
+      - "Not Reported"
     Req: true
     Private: false
   #genetic_analysis
@@ -7235,6 +7236,7 @@ PropDefinitions:
       - "Stop Lost"
       - "Synonymous"
       - "Trisomy"
+      - "Not Reported"
     Req: true
     Strict: false
     Private: false
