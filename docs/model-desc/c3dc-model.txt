@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 47c7da1
+commit 9d9e2e8
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1301,6 +1301,7 @@ genetic_analysis	alteration_effect	Gene Fusion
 genetic_analysis	alteration_effect	Missense
 genetic_analysis	alteration_effect	Monosomy
 genetic_analysis	alteration_effect	None (inframe)
+genetic_analysis	alteration_effect	Not Reported
 genetic_analysis	alteration_effect	Nullisomy
 genetic_analysis	alteration_effect	Splice Acceptor
 genetic_analysis	alteration_effect	Splice Donor
@@ -1373,6 +1374,7 @@ genetic_analysis	iscn	STRING
 genetic_analysis	method	Archer Fusion
 genetic_analysis	method	DNA Sequencing
 genetic_analysis	method	Methylation Analysis
+genetic_analysis	method	Not Reported
 genetic_analysis	method	Pathology
 genetic_analysis	method	RNA Sequencing
 genetic_analysis	method	Radiology
@@ -3106,14 +3108,14 @@ of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
+of_laboratory_test	laboratory_test	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
