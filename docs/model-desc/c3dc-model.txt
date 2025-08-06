@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit 601f71e
+commit 47c7da1
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1297,6 +1297,7 @@ genetic_analysis	alteration	t(X;22((p11;q13)
 genetic_analysis	alteration	t(X;4)(p11;q31)
 genetic_analysis	alteration_effect	Amplification
 genetic_analysis	alteration_effect	Frameshift
+genetic_analysis	alteration_effect	Gene Fusion
 genetic_analysis	alteration_effect	Missense
 genetic_analysis	alteration_effect	Monosomy
 genetic_analysis	alteration_effect	None (inframe)
@@ -1308,7 +1309,6 @@ genetic_analysis	alteration_effect	Stop Gained
 genetic_analysis	alteration_effect	Stop Lost
 genetic_analysis	alteration_effect	Synonymous
 genetic_analysis	alteration_effect	Trisomy
-genetic_analysis	alteration_effect	“Gene Fusion”
 genetic_analysis	alteration_type	Chromosomal Gain
 genetic_analysis	alteration_type	Chromosomal Loss
 genetic_analysis	alteration_type	Chromothripsis
