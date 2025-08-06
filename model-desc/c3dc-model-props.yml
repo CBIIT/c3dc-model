@@ -7223,7 +7223,7 @@ PropDefinitions:
     Enum:
       - "Amplification"
       - "Frameshift"
-      - “Gene Fusion”
+      - "Gene Fusion"
       - "Missense"
       - "Monosomy"
       - "None (inframe)"
