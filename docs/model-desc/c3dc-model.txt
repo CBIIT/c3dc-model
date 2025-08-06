@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/c3dc-model
-commit b137606
+commit 10b8484
 node	property	value_or_TYPE
 consent_group	consent_group_id	STRING
 consent_group	consent_group_name	STRING
@@ -1295,6 +1295,7 @@ genetic_analysis	alteration	t(X;18)(p11.23;q11)
 genetic_analysis	alteration	t(X;20)(p11.2;q13.3)
 genetic_analysis	alteration	t(X;22((p11;q13)
 genetic_analysis	alteration	t(X;4)(p11;q31)
+genetic_analysis	alteration_effect	Amplification
 genetic_analysis	alteration_effect	Frameshift
 genetic_analysis	alteration_effect	Missense
 genetic_analysis	alteration_effect	Monosomy
@@ -1308,20 +1309,21 @@ genetic_analysis	alteration_effect	Stop Lost
 genetic_analysis	alteration_effect	Synonymous
 genetic_analysis	alteration_effect	Trisomy
 genetic_analysis	alteration_effect	“Gene Fusion”
+genetic_analysis	alteration_type	Chromosomal Gain
+genetic_analysis	alteration_type	Chromosomal Loss
 genetic_analysis	alteration_type	Chromothripsis
 genetic_analysis	alteration_type	Deletion
+genetic_analysis	alteration_type	Duplication
 genetic_analysis	alteration_type	Insertion
+genetic_analysis	alteration_type	Internal Tandem Duplication
+genetic_analysis	alteration_type	Inversion
 genetic_analysis	alteration_type	Isochromosome
 genetic_analysis	alteration_type	Mutation, NOS
 genetic_analysis	alteration_type	Other
+genetic_analysis	alteration_type	Rearrangement
 genetic_analysis	alteration_type	Substitution
+genetic_analysis	alteration_type	Translocation
 genetic_analysis	alteration_type	Unknown
-genetic_analysis	alteration_type	“Chromosomal Gain”
-genetic_analysis	alteration_type	“Chromosomal Loss”
-genetic_analysis	alteration_type	“Duplication”
-genetic_analysis	alteration_type	“Inversion”
-genetic_analysis	alteration_type	“Rearrangement”
-genetic_analysis	alteration_type	“Translocation”
 genetic_analysis	chromosome	Chr 1
 genetic_analysis	chromosome	Chr 10
 genetic_analysis	chromosome	Chr 11
@@ -3100,8 +3102,8 @@ treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_consent_group	consent_group	study	NA	NA
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
@@ -3110,8 +3112,8 @@ of_participant	participant	consent_group	NA	NA
 of_reference_file	reference_file	study	NA	NA
 of_sample	sample	participant	NA	NA
 of_survival	survival	participant	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
