@@ -352,6 +352,8 @@ PropDefinitions:
       - "MALT lymphoma of the dura"
       - "Marginal zone B-cell lymphoma, NOS"
       - "Mast cell leukemia"
+      - "Mature T- and NK-cell lymphomas"
+      - "Mature T-cell lymphoma, NOS"
       - "Mature teratoma"
       - "Mediastinal large B-cell lymphoma"
       - "Medullary carcinoma, NOS"
@@ -522,6 +524,7 @@ PropDefinitions:
       - "Rosai-Dorfman disease"
       - "Rosette-forming glioneuronal tumor"
       - "Sarcoma, NOS"
+      - "Sarcoma with BCOR genetic alterations"
       - "Schwannoma"
       - "Schwannoma, NOS"
       - "Sclerosing stromal tumor"
@@ -676,6 +679,7 @@ PropDefinitions:
         - "Lymphoid leukemias"
         - "Lymphomas"
         - "Mast cell neoplasms"
+        - "Mature T- and NK-cell lymphomas"
         - "Medulloblastoma"
         - "Melanocytic tumors"
         - "Meningiomas"
@@ -717,6 +721,7 @@ PropDefinitions:
         - "Trophoblastic neoplasms"
         - "Tumors of the sellar region"
         - "Uncertain differentiation"
+        - "Not reported"
     Req: true
     Strict: false
     Private: false
