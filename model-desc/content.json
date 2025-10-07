@@ -60,8 +60,7 @@
                     ],
                     [
                         "diagnosis",
-                        "treatment_response",
-                        "consent_group"
+                        "treatment_response"
                     ]
                 ]
              }
