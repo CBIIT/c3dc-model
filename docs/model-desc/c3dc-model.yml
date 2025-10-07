@@ -1,10 +1,30 @@
 Handle: C3DC
-Version: v2.0.1
+Version: v4.0.5
 Nodes:
+  consent_group:
+    Desc: "A set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository."
+    Tags:
+      Category: participant
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - consent_group_id
+      - consent_group_name
+      - consent_group_number
+      - consent_group_suffix 
+      - id
   diagnosis:
+    Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - diagnosis_id
       - diagnosis
+      - diagnosis_category
       - diagnosis_classification_system
       - diagnosis_basis
       - diagnosis_comment
@@ -21,12 +41,24 @@ Nodes:
       - tumor_stage_clinical_m
       - id
   participant:
+    Desc: "The participant node is comprised of properties which describe the participant attributes."
+    Tags:
+      Category: participant
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - participant_id
       - race       
       - sex_at_birth
       - id
   sample:
+    Desc: "The sample node is comprised of properties which describe the sample attributes as collected from participant, cell line, or pdx model."
+    Tags:
+      Category: biospecimen
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - sample_id
       - anatomic_site
@@ -34,18 +66,31 @@ Nodes:
       - sample_tumor_status
       - tumor_classification
       - sample_description
+      - percent_tumor
+      - percent_necrosis
       - id
   study:
+    Desc: "The study node is comprised of properties which describe high level metadata that applies to all facets of the study."
+    Tags:
+      Category: study
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - study_id
       - dbgap_accession 
       - study_name
       - study_description
-      - consent
-      - consent_number
       - external_url
+      - study_status
       - id
   survival:
+    Desc: "The survival node is comprised of properties which describe metadata related to vital status and medical events at timepoints for a participant."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
     Props:
       - survival_id
       - last_known_survival_status
@@ -56,41 +101,88 @@ Nodes:
       - cause_of_death
       - id
   genetic_analysis:
+    Desc: "The genetic analysis node is comprised of properties which describe the participant's genetic test results."
+    Tags: 
+      Category: analysis
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
-      - allelic_ratio
-      - alteration
-      - status
-      - vaf_numeric
-      - dna_index_numeric
-      - hgvs_coding
-      - hgvs_protein
-      - iscn
-      - id
-  laboratory_test:
-    Props:
-      - laboratory_test_id
-      - age_at_lab
+      - genomic_source_category
+      - reported_significance
+      - reported_significance_system
       - test
-      - specimen
       - method
       - result
-      - result_text
-      - result_modifier
-      - result_numeric
-      - result_unit
+      - reference_genome
+      - chromosome
+      - cytoband
+      - gene_symbol
+      - transcript
+      - exon
+      - hgvs_coding
+      - hgvs_protein
+      - hgvs_genome
+      - allelic_ratio
+      - vaf_numeric
+      - alteration
+      - alteration_type
+      - alteration_effect
+      - dna_index_numeric
+      - iscn
+      - status
+      - fusion_partner_gene
+      - fusion_partner_transcript
+      - fusion_partner_exon
+      - translocation_partner_chromosome
+      - translocation_partner_cytoband
+      - id
+  laboratory_test:
+    Desc: "The laboratory test node is comprised of properties which describe laboratory tests and results for a participant."
+    Tags:
+      Category: clinical
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - laboratory_test_id
+      - age_at_laboratory_test
+      - laboratory_test_method
+      - laboratory_test_name
+      - specimen
+      - test_result_text
+      - test_result_modifier
+      - test_result_numeric
+      - test_result_unit
       - sensitivity
       - id
   treatment:
+    Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - treatment_id
       - age_at_treatment_start
       - age_at_treatment_end
       - treatment_type
       - treatment_agent
+      - dose
+      - dose_unit
+      - dose_route
+      - dose_frequency
       - id
   treatment_response:
+    Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
     Props:
       - treatment_response_id
       - response
@@ -99,6 +191,12 @@ Nodes:
       - response_system
       - id
   reference_file: 
+    Desc: "The reference file node is comprised of properties which describe file metadata for reference files that were used in the harmonization process."
+    Tags:
+      Category: data_file
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
     Props:
       - reference_file_id
       - file_name
@@ -109,7 +207,29 @@ Nodes:
       - md5sum
       - reference_file_url
       - dcf_indexd_guid
+      - id
+  synonym:
+    Desc: "The synonym node is comprised of properties which describe how specific ids are related between multiple data repositories."
+    Tags:
+      Category: administrative
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - synonym_id
+      - repository_of_synonym_id
+      - associated_id
+      - domain_description
+      - domain_category
+      - data_location
+      - id  
 Relationships:
+  of_consent_group:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: consent_group
+        Dst: study
   of_diagnosis: 
     Props: null
     Mul: many_to_one
@@ -118,32 +238,54 @@ Relationships:
         Dst: participant
       - Src: diagnosis
         Dst: sample
+  of_genetic_analysis:
+    Props: null
+    Mul: many_to_one
+    Ends: 
+      - Src: genetic_analysis
+        Dst: sample
+      - Src: genetic_analysis
+        Dst: participant
+  of_laboratory_test:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: laboratory_test
+        Dst: participant
+      - Src: laboratory_test
+        Dst: sample
+  of_participant: 
+    Props: null
+    Mul: many_to_one 
+    Ends:
+      - Src: participant
+        Dst: consent_group
   of_reference_file: 
     Props: null
     Mul: many_to_one
     Ends:
       - Src: reference_file
         Dst: study  
-  of_participant: 
-    Props: null
-    Mul: many_to_one 
-    Ends:
-      - Src: participant
-        Dst: study
   of_sample: 
     Props: null
     Mul: many_to_one
     Ends:
       - Src: sample
         Dst: participant
-      - Src: sample
-        Dst: study
   of_survival:
     Props: null
     Mul: many_to_one 
     Ends:
       - Src: survival
         Dst: participant
+  of_synonym:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: synonym
+        Dst: study
+      - Src: synonym
+        Dst: participant 
   of_treatment:
     Props: null
     Mul: many_to_one
@@ -155,16 +297,4 @@ Relationships:
     Mul: many_to_one
     Ends:
       - Src: treatment_response
-        Dst: participant
-  of_genetic_analysis:
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: genetic_analysis
-        Dst: participant
-  of_laboratory_test:
-    Props: null
-    Mul: many_to_one
-    Ends:
-      - Src: laboratory_test
         Dst: participant
